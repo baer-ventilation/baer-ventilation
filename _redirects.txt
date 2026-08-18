@@ -1,0 +1,4 @@
+https://baer-ventilation.com/*    https://www.baer-ventilation.com/$1  301
+
+
+
