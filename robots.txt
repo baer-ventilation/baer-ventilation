@@ -1,7 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.baer-ventilation.com/sitemap.xml
+Sitemap: https://baer-ventilation.com/sitemap.xml
+
 
 
 
