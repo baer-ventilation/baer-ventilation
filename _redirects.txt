@@ -1,4 +1,1 @@
-https://baer-ventilation.com/*    https://www.baer-ventilation.com/$1  301
-
-
-
+https://www.baer-ventilation.com/* https://baer-ventilation.com/:splat 301
