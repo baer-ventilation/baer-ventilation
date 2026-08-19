@@ -2,48 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- 首页 -->
   <url>
-    <loc>https://www.baer-ventilation.com/</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://baer-ventilation.com/</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- 关于我们 -->
   <url>
-    <loc>https://www.baer-ventilation.com/about</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://baer-ventilation.com/about</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- 产品总列表页 -->
   <url>
-    <loc>https://www.baer-ventilation.com/products</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://baer-ventilation.com/products</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- 单个产品详情页 -->
   <url>
-    <loc>https://www.baer-ventilation.com/product-6inch-984cfm</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://baer-ventilation.com/product-6inch-984cfm</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- 联系我们 -->
   <url>
-    <loc>https://www.baer-ventilation.com/contact</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://baer-ventilation.com/contact</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- asset 页面（如果是静态资源介绍页） -->
+  <!-- asset 页面 -->
   <url>
-    <loc>https://www.baer-ventilation.com/asset</loc>
-    <lastmod>2026-08-13</lastmod>
+    <loc>https://baer-ventilation.com/asset</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
