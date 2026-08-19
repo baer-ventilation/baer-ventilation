@@ -1,10 +1,7 @@
 name: Add BAER Factory Video Showcase
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/baer-factory-video-once.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write
