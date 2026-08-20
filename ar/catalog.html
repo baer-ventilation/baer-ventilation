@@ -1,92 +1,110 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>قائمة المنتجات | باير للتهوية</title>
-  <meta name="description" content="قائمة كاملة لمراوح الطرد المركزي، المراوح المحورية وملحقات التهوية الصناعية، اطلع على المواصفات والمعايير.">
-  <meta name="keywords" content="مراوح تهوية، مراوح طرد مركزي، مراوح محورية، معدات تهوية صناعية">
-  <link rel="canonical" href="https://baer-ventilation.com/ar/catalog.html">
-  <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/catalog.html">
-  <link rel="alternate" hreflang="zh" href="https://baer-ventilation.com/zh/catalog.html">
-  <link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/catalog.html">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui, sans-serif;}
-    body{line-height:1.6;color:#333;}
-    header{background:#1a2b48;color:#fff;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;}
-    .logo{font-size:1.4rem;font-weight:bold;}
-    nav a{color:#fff;margin:0 0.8rem;text-decoration:none;}
-    .page-header{background:#f4f7fb;padding:2.5rem 5%;text-align:center;}
-    .page-header h1{font-size:2rem;margin-bottom:0.5rem;}
-    .container{max-width:1240px;margin:0 auto;padding:2.5rem 5%;}
-    .product-grid{display:grid;grid-template-columns:repeat(auto‑fit,minmax(280px,1fr));gap:2rem;}
-    .catalog-card{border:1px solid #e2e8f0;border‑radius:8px;overflow:hidden;transition:0.2s;}
-    .catalog-card:hover{box‑shadow:0 4px 12px #00000015;}
-    .card-img{height:200px;background:#f3f5f8;display:flex;align‑items:center;justify‑content:center;color:#777;}
-    .card-body{padding:1.2rem;}
-    .card-body h3{margin‑bottom:0.6rem;font‑size:1.1rem;}
-    .card-body p{font‑size:0.95rem;color:#555;margin‑bottom:1rem;}
-    .card‑link{display:inline‑block;background:#254b9c;color:#fff;padding:0.6rem 1.2rem;border‑radius:4px;text‑decoration:none;font‑size:0.9rem;}
-    footer{background:#1a2b48;color:#fff;padding:2rem 5%;margin‑top:4rem;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كتالوج المنتجات - Baer Ventilation</title>
+    <meta name="description" content="كتالوج منتجات باير للتهوية، مراوح طاردة مركزية، مراوح محورية، مراوح إزالة الغبار وملحقات التهوية الصناعية.">
+    <meta name="keywords" content="مراوح صناعية,مراوح طاردة مركزية,مراوح محورية,معدات تهوية">
+
+    <link rel="canonical" href="https://baer-ventilation.com/ar/catalog.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://baer-ventilation.com/zh/catalog.html">
+    <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/catalog.html">
+    <link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/zh/catalog.html">
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif;}
+        body{color:#222;line-height:1.6;}
+        .header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;border-bottom:1px solid #eee;}
+        .logo{font-size:22px;font-weight:bold;}
+        nav a{margin:0 10px;text-decoration:none;color:#333;}
+        .lang-switch a{padding:6px 12px;border:1px solid #222;border-radius:4px;text-decoration:none;color:#222;margin-right:8px;}
+        .lang-switch a.active{background:#222;color:#fff;}
+        .banner{background:#f7f9fa;padding:3rem 2rem;text-align:center;}
+        .banner h1{font-size:32px;margin-bottom:10px;}
+        .container{max-width:1200px;margin:0 auto;padding:3rem 2rem;}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;}
+        .card{border:1px solid #eee;border-radius:8px;overflow:hidden;transition:0.3s;}
+        .card:hover{box-shadow:0 4px 12px #00000015;}
+        .card-img{height:200px;background:#f4f6f8;display:flex;align-items:center;justify-content:center;color:#999;}
+        .card-body{padding:1.2rem;}
+        .card-body h3{margin-bottom:0.6rem;}
+        .card-body p{color:#555;font-size:0.95rem;margin-bottom:1rem;}
+        .card-body a{text-decoration:none;color:#fff;background:#222;padding:8px 16px;border-radius:4px;display:inline-block;}
+        .download-box{text-align:center;padding:2rem;background:#f7f9fa;border-radius:8px;margin-bottom:3rem;}
+        .download-box a{display:inline-block;padding:12px 24px;background:#222;color:#fff;text-decoration:none;border-radius:4px;}
+        .footer{background:#111;color:#fff;text-align:center;padding:2rem;margin-top:3rem;}
+        @media(max-width:768px){
+            .header{flex-direction:column;gap:12px;}
+            .banner h1{font-size:24px;}
+        }
+    </style>
 </head>
 <body>
-<header>
-  <div class="logo">BAER‑VENTILATION</div>
-  <nav>
-    <a href="./index.html">الرئيسية</a>
-    <a href="./catalog.html">المنتجات</a>
-    <a href="./about.html">من نحن</a>
-    <a href="./contact.html">اتصل بنا</a>
-    <a href="../zh/catalog.html">中文</a>
-  </nav>
+<header class="header">
+    <div class="logo">Baer Ventilation</div>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="catalog.html">كتالوج المنتجات</a>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">اتصل بنا</a>
+    </nav>
+    <div class="lang-switch">
+        <a href="catalog.html" class="active">العربية</a>
+        <a href="../zh/catalog.html">中文</a>
+    </div>
 </header>
 
-<section class="page-header">
-  <h1>قائمة المنتجات</h1>
-  <p>مجموعة كاملة من مراوح ومعدات التهوية الصناعية</p>
+<section class="banner">
+    <h1>كتالوج المنتجات</h1>
+    <p>مجموعة كاملة من مراوح ومعدات التهوية الصناعية</p>
 </section>
 
 <div class="container">
-  <div class="product-grid">
-    <div class="catalog-card">
-      <div class="card-img">
-        مكان صورة المنتج <img src="" alt="مراوح طرد مركزي صناعية">
-      </div>
-      <div class="card-body">
-        <h3>مراوح طرد مركزي صناعية</h3>
-        <p>مراوح ذات ضغط هواء عالي لعمليات إزالة الغبار والعوادم</p>
-        <a href="./sample-product.html" class="card‑link">عرض التفاصيل</a>
-      </div>
+    <div class="download-box">
+        <h3>تحميل كتالوج المنتجات بصيغة PDF</h3>
+        <br>
+        <a href="../baer-fan-catalog.pdf" target="_blank">تحميل ملف PDF</a>
     </div>
 
-    <div class="catalog-card">
-      <div class="card-img">
-        مكان صورة المنتج <img src="" alt="مراوح محورية للتهوية">
-      </div>
-      <div class="card-body">
-        <h3>مراوح محورية للتهوية</h3>
-        <p>معدات تهوية ذات تدفق هواء كبير للمباني والأنابيب</p>
-        <a href="./sample-product.html" class="card‑link">عرض التفاصيل</a>
-      </div>
+    <div class="grid">
+        <div class="card">
+            <div class="card-img">مكان صورة المنتج</div>
+            <div class="card-body">
+                <h3>مراوح طاردة مركزية</h3>
+                <p>مراوح تهوية مركزية عالية الضغط، تستخدم لإزالة الغبار، معالجة العوادم وتدفق الهواء في الأنابيب.</p>
+                <a href="sample-product.html">عرض التفاصيل</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">مكان صورة المنتج</div>
+            <div class="card-body">
+                <h3>مراوح محورية</h3>
+                <p>مراوح محورية ذات تدفق هواء كبير، لتهوية المصانع وتبريد الورشات.</p>
+                <a href="sample-product.html">عرض التفاصيل</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">مكان صورة المنتج</div>
+            <div class="card-body">
+                <h3>مراوح إزالة الغبار</h3>
+                <p>مراوح مخصصة لبيئات الغبار، تعمل مع معدات إزالة الغبار.</p>
+                <a href="sample-product.html">عرض التفاصيل</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">مكان صورة المنتج</div>
+            <div class="card-body">
+                <h3>ملحقات التهوية</h3>
+                <p>صمامات هواء، أنابيب هواء، أغطية وجميع ملحقات أنظمة التهوية.</p>
+                <a href="sample-product.html">عرض التفاصيل</a>
+            </div>
+        </div>
     </div>
-
-    <div class="catalog-card">
-      <div class="card-img">
-        مكان صورة المنتج <img src="" alt="ملحقات التهوية">
-      </div>
-      <div class="card-body">
-        <h3>ملحقات أنظمة التهوية</h3>
-        <p>قطع غيار كاملة لفتحات الهواء والصمامات والأنابيب</p>
-        <a href="./sample-product.html" class="card‑link">عرض التفاصيل</a>
-      </div>
-    </div>
-  </div>
 </div>
 
-<footer>
-  <p>© 2026 BAER‑VENTILATION. جميع الحقوق محفوظة.</p>
-  <p>البريد الإلكتروني：info@baer‑ventilation.com</p>
+<footer class="footer">
+    <p>© 2026 Baer Ventilation جميع الحقوق محفوظة</p>
 </footer>
 </body>
 </html>
