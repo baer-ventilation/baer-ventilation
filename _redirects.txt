@@ -1,2 +1,11 @@
-/zh/*    /zh/:splat
-/ar/*    /ar/:splat
+# 访问 /about 自动301重定向到中文版本
+/about /zh/about.html 301
+/contact /zh/contact.html 301
+/catalog /zh/catalog.html 301
+
+# 防止直接访问旧根html文件，重定向到zh
+/about.html /zh/about.html 301
+/contact.html /zh/contact.html 301
+
+# 没有文件时，交给根index.html语言跳转
+/* /index.html 200
