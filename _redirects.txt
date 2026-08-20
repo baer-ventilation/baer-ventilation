@@ -1,1 +1,2 @@
-https://www.baer-ventilation.com/* https://baer-ventilation.com/:splat 301
+/zh/*    /zh/:splat
+/ar/*    /ar/:splat
