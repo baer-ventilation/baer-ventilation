@@ -86,4 +86,21 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- 无阿拉伯版本的根目录产品页面 -->
+    <url>
+        <loc>https://baer-ventilation.com/products.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/products.html"/>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://baer-ventilation.com/product-6inch-984cfm.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/product-6inch-984cfm.html"/>
+        <lastmod>2026-08-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
 </urlset>
