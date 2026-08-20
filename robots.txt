@@ -1,12 +1,8 @@
 User-agent: *
 Allow: /
 
-# 禁止抓取无用资源
-Disallow: /cgi-bin/
-Disallow: /tmp/
-
-# 站点地图
 Sitemap: https://baer-ventilation.com/sitemap.xml
+
 
 
 
