@@ -2,36 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial‑scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baer Ventilation</title>
-    <link rel="canonical" href="https://baer‑ventilation.com/">
-    <link rel="alternate" hreflang="zh‑CN" href="https://baer‑ventilation.com/zh/index.html">
-    <link rel="alternate" hreflang="ar" href="https://baer‑ventilation.com/ar/index.html">
-    <link rel="alternate" hreflang="x‑default" href="https://baer‑ventilation.com/zh/index.html">
+    <script>
+        (function(){
+            // 获取url参数，强制语言
+            const params = new URLSearchParams(window.location.search);
+            const forceLang = params.get('lang');
+
+            if(forceLang === 'ar'){
+                window.location.href = '/ar/index.html';
+                return;
+            }
+            if(forceLang === 'zh'){
+                window.location.href = '/zh/index.html';
+                return;
+            }
+
+            // 获取浏览器语言
+            let browserLang = navigator.language || navigator.userLanguage;
+            browserLang = browserLang.toLowerCase();
+
+            if(browserLang.startsWith('ar')){
+                window.location.href = '/ar/index.html';
+            }else{
+                // 默认中文
+                window.location.href = '/zh/index.html';
+            }
+        })();
+    </script>
 </head>
 <body>
-<script>
-// 获取浏览器首选语言
-const lang = navigator.language || navigator.userLanguage;
-let targetUrl = "/zh/index.html";
-
-if(lang.startsWith("ar")){
-    targetUrl = "/ar/index.html";
-}else if(lang.startsWith("zh")){
-    targetUrl = "/zh/index.html";
-}
-
-window.location.href = targetUrl;
-</script>
-<div style="text‑align:center;margin‑top:10rem;">
-    <p>正在跳转，请稍候...</p>
-    <p>
-        <a href="/zh/index.html">中文访问</a>
-        &nbsp;|&nbsp;
-        <a href="/ar/index.html">العربية</a>
-    </p>
-</div>
+    <div style="text-align:center;margin-top:100px;font-family:system-ui;">
+        <p>Redirecting... / إعادة التوجيه...</p>
+        <p>
+            <a href="/zh/index.html">中文</a> |
+            <a href="/ar/index.html">العربية</a>
+        </p>
+    </div>
 </body>
 </html>
-
-                    
