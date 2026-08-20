@@ -1,44 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baer Ventilation</title>
-    <script>
-        (function(){
-            // 获取url参数，强制语言
-            const params = new URLSearchParams(window.location.search);
-            const forceLang = params.get('lang');
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAER Ventilation | Industrial Fans & Ventilation Equipment Manufacturer</title>
+<meta name="description" content="BAER Ventilation manufactures high‑quality industrial fans and ventilation solutions. Factory production, quality control, global supply for commercial & industrial ventilation projects.">
+<link rel="canonical" href="https://baer-ventilation.com/">
 
-            if(forceLang === 'ar'){
-                window.location.href = '/ar/index.html';
-                return;
-            }
-            if(forceLang === 'zh'){
-                window.location.href = '/zh/index.html';
-                return;
-            }
+<link rel="alternate" hreflang="en" href="https://baer-ventilation.com/">
+<link rel="alternate" hreflang="zh" href="https://baer-ventilation.com/zh/">
+<link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/">
 
-            // 获取浏览器语言
-            let browserLang = navigator.language || navigator.userLanguage;
-            browserLang = browserLang.toLowerCase();
-
-            if(browserLang.startsWith('ar')){
-                window.location.href = '/ar/index.html';
-            }else{
-                // 默认中文
-                window.location.href = '/zh/index.html';
-            }
-        })();
-    </script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Manufacturer",
+  "name":"BAER Ventilation",
+  "description":"Manufacturer of industrial ventilation fans and ventilation equipment for industrial and commercial projects, global supply chain with in‑house production & quality control.",
+  "url":"https://baer-ventilation.com/",
+  "video":{
+    "@type":"VideoObject",
+    "name":"SEE HOW BAER FANS ARE MADE",
+    "description":"BAER Ventilation factory tour showing fan manufacturing, assembly lines and quality‑control testing.",
+    "contentUrl":"https://baer-ventilation.com/factory-tour-baer.mp4"
+  }
+}
+</script>
 </head>
+
 <body>
-    <div style="text-align:center;margin-top:100px;font-family:system-ui;">
-        <p>Redirecting... / إعادة التوجيه...</p>
-        <p>
-            <a href="/zh/index.html">中文</a> |
-            <a href="/ar/index.html">العربية</a>
-        </p>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">BAER<span>VENT</span></a>
+            <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
+            <div class="nav-links" id="nav-links">
+                <a href="#" data-i18n="nav-home">Home</a>
+                <a href="#products" data-i18n="nav-products">Products</a>
+                <a href="#about" data-i18n="nav-about">About Us</a>
+                <a href="/baer-fan-catalog.pdf" target="_blank" data-i18n="nav-catalog">Catalog</a>
+                <a href="#inquiry" data-i18n="nav-contact">Contact</a>
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <div class="lang-btn" id="lang-btn"><span data-i18n="nav-lang">LANGUAGE</span> ▾</div>
+                    <div class="lang-content" id="lang-content">
+                        <a href="javascript:void(0)" onclick="setLanguage('en')">English (Global)</a>
+                        <a href="javascript:void(0)" onclick="setLanguage('ar')">Arabic (العربية)</a>
+                        <a href="javascript:void(0)" onclick="setLanguage('zh')">Chinese (中文)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-slider">
+        <div class="slides">
+            <div class="slide active image-only-slide" style="background-image: url('https://sc02.alicdn.com/kf/A4fa2bde5c7754b548a9cf5da5e3bec3aQ.png'); background-position: center center; background-size: cover;">
+                <img class="hero-banner-img" src="https://sc02.alicdn.com/kf/A4fa2bde5c7754b548a9cf5da5e3bec3aQ.png" alt="BAER Ventilation Products" style="display:none; width:100%; height:auto; object-fit:contain; vertical-align:top;">
+            </div>
+            <div class="slide" style="background-image: url('https://sc02.alicdn.com/kf/Hfb326e99a2ae4e9caea179320f45bf57Y.jpg');">
+                <div class="container slide-content">
+                    <span class="hero-tag" data-i18n="h-t2">Modern Living Standards</span>
+                    <h1 class="hero-title" data-i18n="h-title2">PREMIUM <span>EXHAUST FAN</span><br>SERIES</h1>
+                    <p class="hero-desc" data-i18n="h-d2">Sleek designs with intelligent humidity sensors, delivering 26dB whisper-quiet performance for modern interiors.</p>
+                    <a href="#products" class="baer-btn-v2" data-i18n="hero-view">VIEW RANGE</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://sc02.alicdn.com/kf/Af4decc95729547cbab67684b731324aek.png');">
+                <div class="container slide-content">
+                    <span class="hero-tag">Industrial Power</span>
+                    <h1 class="hero-title">HIGH-PERFORMANCE <span>SHUTTER</span><br>EXHAUST FANS</h1>
+                    <p class="hero-desc">Engineered for rapid air exchange in kitchens and workshops. Features an automatic back-draft shutter to maintain indoor freshness.</p>
+                    <a href="#products" class="baer-btn-v2" data-i18n="hero-view">VIEW DETAILS</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://sc02.alicdn.com/kf/Hec5a13f240a64a4abb56c37f601a6877S.jpg');">
+                <div class="container slide-content">
+                    <span class="hero-tag">Healthy IAQ Expert</span>
+                    <h1 class="hero-title">WHISPER-QUIET <span>FRESH AIR</span><br>FOR YOUR FAMILY</h1>
+                    <p class="hero-desc">Advanced noise-dampening technology ensures a silent, healthy environment for residential bedrooms and nurseries.</p>
+                    <a href="Zhejiang Baer Exhaust Fan Catalog.pdf" target="_blank" class="baer-btn-v2" style="background: #FF9900;" data-i18n="nav-catalog">GET CATALOG PDF</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+    </section>
+
+    <main class="container" id="products">
+        <section style="margin-top: 80px;">
+            <div style="border-bottom: 2px solid #E21E26; display: inline-block; margin-bottom: 30px;">
+                <h2 style="font-size: 24px; color: #0F172A; margin: 0; padding-bottom: 10px; text-transform: uppercase;" data-i18n="series-01">01.Exhaust Fan Series</h2>
+            </div>
+            <div class="baer-grid" style="grid-template-columns: 1.5fr 1fr;">
+                <div class="baer-card clickable" onclick="openProductModal('p1')" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                    <img src="https://sc02.alicdn.com/kf/H5ab785de74ed4850a9fbf3621c91530cH.jpg" style="width:100%; height:300px; object-fit: contain; background: #fff;">
+                    <div style="padding: 25px;">
+                        <h3 style="margin-top: 0;" data-i18n="p01-title1">Ceiling Mount Exhaust Fan</h3>
+                        <div class="click-hint"><span data-i18n="view-specs">VIEW SPECS</span> ➔</div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div class="baer-card clickable" onclick="openProductModal('p2')" style="padding: 15px; display: flex; gap: 15px; align-items: center; flex-direction: row !important;">
+                        <img src="https://sc02.alicdn.com/kf/H5fbe6fbc92284181968eba3dff7ed880E.jpg" style="width: 80px; height: 80px; object-fit: contain;">
+                        <div>
+                            <h4 style="margin: 0; font-size: 15px;" data-i18n="p02-n1">Standard Window Fan</h4>
+                            <div class="click-hint" style="margin-top:5px;"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                        </div>
+                    </div>
+                    <div class="baer-card clickable" onclick="openProductModal('p3')" style="padding: 15px; display: flex; gap: 15px; align-items: center; flex-direction: row !important;">
+                        <img src="https://sc02.alicdn.com/kf/A216d65f6e04a43438a882ca3e9b88721Z.png" style="width: 80px; height: 80px; object-fit: contain;">
+                        <div>
+                            <h4 style="margin: 0; font-size: 15px;" data-i18n="p01-n3">Double-Grill Window Fan</h4>
+                            <div class="click-hint" style="margin-top:5px;"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                        </div>
+                    </div>
+                    <div class="baer-card clickable" onclick="openProductModal('p4')" style="padding: 15px; display: flex; gap: 15px; align-items: center; flex-direction: row !important;">
+                        <img src="https://sc02.alicdn.com/kf/H42e66ea71d5445fcbb62c7c68e493d94v.jpg" style="width: 80px; height: 80px; object-fit: contain;">
+                        <div>
+                            <h4 style="margin: 0; font-size: 15px;" data-i18n="p04-n1">Industrial Axial Fan</h4>
+                            <div class="click-hint" style="margin-top:5px;"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px;">
+            <div style="border-bottom: 2px solid #E21E26; display: inline-block; margin-bottom: 30px;">
+                <h2 style="font-size: 24px; color: #0F172A; margin: 0; padding-bottom: 10px; text-transform: uppercase;" data-i18n="series-02">02.Mixed Flow Inline Duct Fans</h2>
+            </div>
+            <div class="baer-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="baer-card clickable" onclick="openProductModal('p5')" style="text-align: center;">
+                    <img src="https://sc02.alicdn.com/kf/Hf77c8f2216ff4576b9f83c896fdd000fq.jpg" style="width: 100%; height: 220px; object-fit: contain;">
+                    <h3 style="margin-top: 15px; font-size: 18px;" data-i18n="p05-n1">Standard Mixed Flow Series</h3>
+                    <div class="click-hint" style="justify-content: center;"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                </div>
+                <div class="baer-card clickable" onclick="openProductModal('p7')" style="text-align: center;">
+                    <img src="https://sc02.alicdn.com/kf/A69a6450d8e504c9a9c1dcaedccad5c3e2.png" style="width: 100%; height: 220px; object-fit: contain;">
+                    <h3 style="margin-top: 15px; font-size: 18px;" data-i18n="p02-n2">High-Efficiency Booster</h3>
+                    <div class="click-hint" style="justify-content: center;"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                </div>
+                <div class="baer-card clickable" onclick="openProductModal('p8')" style="text-align: center;">
+                    <img src="https://sc02.alicdn.com/kf/A96cb71eed6d94b289be81e750dfc9fe1M.png" style="width: 100%; height: 220px; object-fit: contain;">
+                    <h3 style="margin-top: 15px; font-size: 18px;" data-i18n="p02-n3">Intelligent DC Inverter</h3>
+                    <div class="click-hint" style="justify-content: center;"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px;">
+            <div style="border-bottom: 2px solid #E21E26; display: inline-block; margin-bottom: 30px;">
+                <h2 style="font-size: 24px; color: #0F172A; margin: 0; padding-bottom: 10px; text-transform: uppercase;" data-i18n="series-03">03.Ventilation & Bathroom</h2>
+            </div>
+            <div class="baer-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                <!-- 第一款产品：全系列卫浴展示 -->
+                <div class="baer-card clickable" onclick="openProductModal('p9')" style="display: flex; flex-direction: row !important; align-items: center; gap: 20px; padding: 20px;">
+                    <img src="https://sc02.alicdn.com/kf/H0f20bd34e6864282a2d71d6aa8f11a35f.jpg" style="width: 180px; height: 180px; object-fit: contain;">
+                    <div>
+                        <h4 style="margin: 0 0 10px 0; font-size: 18px;" data-i18n="p03-n-last">Export Pro Bathroom Series</h4>
+                        <div class="click-hint"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                    </div>
+                </div>
+
+                <!-- 第二款产品：圆型拉绳换气扇 -->
+                <div class="baer-card clickable" onclick="openProductModal('p3-n2')" style="display: flex; flex-direction: row !important; align-items: center; gap: 20px; padding: 20px;">
+                    <img src="https://sc02.alicdn.com/kf/Abe879211958d43a4996a2f163a09d541e.png" style="width: 180px; height: 180px; object-fit: contain;">
+                    <div>
+                        <h4 style="margin: 0 0 10px 0; font-size: 18px;" data-i18n="p03-n2">Circular Pull-Cord Fan</h4>
+                        <p style="font-size: 13px; color: #64748B; line-height: 1.5;" data-i18n="p03-d2">Classic circular design with convenient pull-cord switch.</p>
+                        <div class="click-hint"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px;">
+            <div style="border-bottom: 2px solid #E21E26; display: inline-block; margin-bottom: 30px;">
+                <h2 style="font-size: 24px; color: #0F172A; margin: 0; padding-bottom: 10px; text-transform: uppercase;" data-i18n="series-04">04.Silent Cabinet Fans</h2>
+            </div>
+            <div class="baer-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="baer-card clickable" onclick="openProductModal('p10')" style="text-align: center;">
+                    <img src="https://sc02.alicdn.com/kf/Hb4c5e8471a3e46d599e56f223890a1d36.jpg" style="width: 100%; height: 220px; object-fit: contain;">
+                    <h3 style="margin-top: 15px; font-size: 18px;" data-i18n="p10-n1">Acoustic Cabinet Series</h3>
+                    <div class="click-hint" style="justify-content: center;"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                </div>
+                <div class="baer-card clickable" onclick="openProductModal('p13')" style="text-align: center;">
+                    <img src="https://sc02.alicdn.com/kf/Ac07b0ea4758d43eca21098ba7444ee35Q.png" style="width: 100%; height: 220px; object-fit: contain;">
+                    <h3 style="margin-top: 15px; font-size: 18px;" data-i18n="p13-n1">Fresh Air Purification Unit</h3>
+                    <div class="click-hint" style="justify-content: center;"><span data-i18n="view-details">DETAILS</span> ➔</div>
+                </div>
+            </div>
+        </section>
+    </main>
+<section class="baer-factory-video" id="factory-video">
+  <div class="baer-factory-video__inner">
+    <div class="baer-factory-video__heading">
+      <span>INSIDE BAER FACTORY</span>
+      <h2>SEE HOW BAER FANS ARE MADE</h2>
+      <p>From manufacturing to quality control, discover the production capabilities behind BAER Ventilation.</p>
     </div>
-</body>
-</html>
+    <div class="baer-factory-video__frame">
+      <video class="baer-factory-video__media" autoplay muted loop playsinline preload="metadata" aria-label="BAER Ventilation factory tour">
+        <source src="factory-tour-baer.mp4" type="video/mp4">
+      </video>
+      <div class="baer-factory-video__shade"></div>
+      <div class="baer-factory-video__copy">
+        <div class="baer-factory-video__eyebrow">MANUFACTURING · QUALITY · GLOBAL SUPPLY</div>
+        <h3>Built for Reliable Ventilation</h3>
+        <p>Explore our production environment, assembly lines, testing processes and finished-product warehouse.</p>
+        <button type="button" class="baer-factory-video__play" aria-label="Play or pause factory video"><span class="play-icon">▶</span><span>PLAY / PAUSE</span></button>
+      </div>
+      <div class="baer-factory-video__progress"><span></span></div>
+    </div>
+  </div>
+</section>
+<style>.baer-factory-video{padding:100px 0;background:#0b0b0c;color:#fff;overflow:hidden}.baer-factory-video__inner{width:min(1400px,92%);margin:0 auto}.baer-factory-video__heading{text-align:center;max-width:820px;margin:0 auto 38px}.baer-factory-video__heading span{display:block;color:#e91d25;font-size:13px;font-weight:800;letter-spacing:2.5px;margin-bottom:13px}.baer-factory-video__heading h2{margin:0;font-size:clamp(32px,4vw,58px);line-height:1.05;font-weight:800;letter-spacing:-1.5px}.baer-factory-video__heading p{margin:18px auto 0;color:#a9a9ad;font-size:16px;line-height:1.7}.baer-factory-video__frame{position:relative;aspect-ratio:1.987/1;background:#111;border-radius:2px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.35)}.baer-factory-video__media{width:100%;height:100%;display:block;object-fit:cover}.baer-factory-video__shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.58) 0%,rgba(0,0,0,.18) 45%,rgba(0,0,0,.05) 100%),linear-gradient(0deg,rgba(0,0,0,.4),transparent 40%);pointer-events:none}.baer-factory-video__copy{position:absolute;left:clamp(24px,5vw,72px);bottom:clamp(34px,6vw,72px);max-width:560px}.baer-factory-video__eyebrow{font-size:11px;letter-spacing:2px;font-weight:800;margin-bottom:13px}.baer-factory-video__copy h3{font-size:clamp(28px,3.2vw,48px);line-height:1.05;margin:0 0 13px;font-weight:800}.baer-factory-video__copy p{font-size:15px;line-height:1.65;color:rgba(255,255,255,.86);margin:0 0 22px;max-width:520px}.baer-factory-video__play{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.7);background:rgba(0,0,0,.22);color:#fff;padding:11px 16px;font-size:11px;font-weight:800;letter-spacing:1.2px;cursor:pointer;backdrop-filter:blur(6px)}.baer-factory-video__play:hover{background:#e91d25;border-color:#e91d25}.play-icon{font-size:12px}.baer-factory-video__progress{position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(255,255,255,.16)}.baer-factory-video__progress span{display:block;height:100%;width:0;background:#e91d25}@media(max-width:700px){.baer-factory-video{padding:65px 0}.baer-factory-video__heading{text-align:left;margin-bottom:24px}.baer-factory-video__frame{aspect-ratio:16/10;border-radius:0}.baer-factory-video__shade{background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.05) 70%)}.baer-factory-video__copy{left:22px;right:22px;bottom:28px}.baer-factory-video__copy p{font-size:13px;margin-bottom:15px}}</style>
+<script>(function(){const s=document.querySelector('#factory-video');if(!s)return;const v=s.querySelector('video'),b=s.querySelector('.baer-factory-video__play'),p=s.querySelector('.baer-factory-video__progress span');b.addEventListener('click',()=>v.paused?v.play():v.pause());v.addEventListener('timeupdate',()=>{if(v.duration)p.style.width=(v.currentTime/v.duration*100)+'%'});})();</script>
+
+        <section class="section-padding" id="about">
+            <div class="container">
+                <div class="factory-intro">
+                    <div class="factory-image"><img src="https://sc02.alicdn.com/kf/Hc569fcd0b6de46489946f63751a93234k.jpg" alt="BAER Factory"></div>
+                    <div class="factory-text">
+                        <span style="color: var(--baer-red); font-weight: bold; font-size: 14px; letter-spacing: 1px;">THE EXPERT IN FANS</span>
+                        <h3 data-i18n="f-title">Industry Leading Manufacturing</h3>
+                        <p data-i18n="f-desc">Zhejiang Baer Electrical Technology Co., Ltd. is a professional ventilation supplier in Shengzhou, China.</p>
+                        <p>Our <strong>50,000 m²</strong> facility ensures every unit meets the highest standards of reliability.</p>
+                        <div class="stat-grid">
+                            <div class="stat-item">
+                                <div class="stat-num-wrapper">
+                                    <span class="stat-num js-counter" data-target="20">0</span>
+                                    <span class="stat-num-suffix">+</span>
+                                </div>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num-wrapper">
+                                    <span class="stat-num js-counter" data-target="50">0</span>
+                                    <span class="stat-num-suffix">k+</span>
+                                </div>
+                                <span class="stat-label">Production Base</span>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num-wrapper">
+                                    <span class="stat-num js-counter" data-target="100">0</span>
+                                    <span class="stat-num-suffix">+</span>
+                                </div>
+                                <span class="stat-label">Precision Units</span>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-num-wrapper">
+                                    <span class="stat-num js-counter" data-target="50">0</span>
+                                    <span class="stat-num-suffix">+</span>
+                                </div>
+                                <span class="stat-label">Export Countries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="workshop-grid">
+                <div class="workshop-item"><img src="https://sc02.alicdn.com/kf/H1ffa8f663c8d4673a363cbbc1d122767i.jpg"><div class="label" data-i18n="ws-1">RAW MATERIAL & MOLDS</div></div>
+                <div class="workshop-item"><img src="https://sc02.alicdn.com/kf/H681e8977b88840dea9fe25b76106098cl.jpg"><div class="label" data-i18n="ws-2">INJECTION MOLDING LINE</div></div>
+                <div class="workshop-item"><img src="https://sc02.alicdn.com/kf/Hb52c5940e0e749689f77318524e2df86X.jpg"><div class="label" data-i18n="ws-3">CNC LASER CUTTING</div></div>
+                <div class="workshop-item"><img src="https://sc02.alicdn.com/kf/H2a6ed922c4e94268b6ea08ffc96519a7x.jpg"><div class="label" data-i18n="ws-4">PRODUCT ASSEMBLY</div></div>
+                <div class="workshop-item"><img src="https://sc02.alicdn.com/kf/H67150a65c2a7439782e9fe8e415fbdc3r.jpg"><div class="label" data-i18n="ws-5">MOTOR TESTING</div></div>
+                <div class="workshop-item"><img src="https://sc02.alicdn.com/kf/H17f46a73e0c64005873036095a303c2eE.jpg"><div class="label" data-i18n="ws-6">SAMPLE SHOWROOM</div></div>
+                <div class="workshop-item"><img src="https://sc02.alicdn.com/kf/Hecfaacfd52b54d4fa7217df74a2ab043N.jpg"><div class="label" data-i18n="ws-7">PROFESSIONAL PACKAGING</div></div>
+                <div class="workshop-item"><img src="https://sc02.alicdn.com/kf/Hf86b0ad51f8346ec95f56a8a6c5d93a7k.jpg"><div class="label" data-i18n="ws-8">GLOBAL WAREHOUSE</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inquiry-section" id="inquiry">
+        <div class="container">
+            <div class="inquiry-form">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <h2 style="margin: 0; font-size: 24px;">Start Your Global Partnership</h2>
+                    <p style="color: #64748b; font-size: 14px;">Factory direct pricing and technical support for B2B partners.</p>
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div>
+                            <label class="form-label" data-i18n="inq-name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px; opacity: 0.7;"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                NAME
+                            </label>
+                            <input type="text" class="form-input" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label class="form-label" data-i18n="inq-email">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px; opacity: 0.7;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                EMAIL
+                            </label>
+                            <input type="email" class="form-input" placeholder="Work Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label class="form-label" data-i18n="inq-wa">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px; opacity: 0.7;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                WHATSAPP / MOBILE
+                            </label>
+                            <input type="text" class="form-input" placeholder="+86...">
+                        </div>
+                        <div>
+                            <label class="form-label" data-i18n="inq-type">PRODUCT TYPE</label>
+                            <select class="form-input">
+                                <option>01.Exhaust Fan Series</option><option>02.Mixed Flow Inline Duct Fans</option><option>03.Ventilation & Bathroom</option><option>04.Silent Cabinet Fans</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label class="form-label" data-i18n="inq-req">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px; opacity: 0.7;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            DETAILED REQUIREMENTS
+                        </label>
+                        <textarea class="form-input" rows="4" placeholder="Quantities, certifications, or custom requests..."></textarea>
+                    </div>
+                    <button type="button" class="baer-btn-v2" style="width: 100%;" data-i18n="inq-submit">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid-mobile">
+                <div>
+                    <div class="footer-logo-box" style="background: rgba(255,255,255,0.95); padding: 12px; border-radius: 6px; display: inline-block; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                        <img src="https://sc02.alicdn.com/kf/Hd0916011c26d461e9f29c3b47c213d67M.jpg" alt="BAER Sci&Tech" style="height: 45px; display: block;">
+                    </div>
+                    <p style="font-size: 14px; line-height: 1.8; color: #CBD5E1; margin-bottom: 20px;">
+                        Global Ventilation Fan Production <strong>Since 2003</strong>.<br>
+                        Operating from our <strong>50,000m²</strong> base in Zhejiang, China.
+                    </p>
+                    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px;">
+                        <p style="font-size: 13px; line-height: 1.6; color: #94A3B8; margin-bottom: 12px;">
+                            <strong>Zhejiang Baer Electrical Technology Co.,Ltd</strong>, manufacturing <strong>VENTILATION EXHAUST FAN</strong>, have a full range including Ceiling duct exhaust fans, Wall shutter fans, Inline duct fans and Air vents.
+                        </p>
+                        <p style="font-size: 13px; line-height: 1.6; color: #94A3B8; margin-bottom: 15px;">
+                            We can offer samples and competitive factory direct price.
+                        </p>
+                        <p style="font-size: 14px; color: #E21E26; font-weight: 700; letter-spacing: 0.5px;">
+                            Welcome to inquiry for wholesale & projects!
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="color: #FFF; margin-bottom: 20px;" data-i18n="nav-quick-links">QUICK LINKS</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#products" data-i18n="nav-products">Products</a></li><li><a href="#about" data-i18n="nav-about">About Us</a></li><li></li><li><a href="#inquiry" data-i18n="nav-quote">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #FFF; margin-bottom: 20px;">CONTACT</h4>
+                    <p style="font-size: 14px; display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E21E26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <a href="mailto:sunny@zjbaer.com" style="color: inherit; text-decoration: none;">sunny@zjbaer.com</a>
+                    </p>
+                    <p style="font-size: 14px; display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E21E26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>WhatsApp/WeChat:+86 136 5585 9122</span>
+                    </p>
+                    <p style="font-size: 13px; color: #94A3B8; display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E21E26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>8-1 Jingwu Road, Ganlin Town, Shengzhou City, Shaoxing City, Zhejiang Province, China</span>
+                    </p>
+                    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+                        <p style="font-size: 13px; color: #94A3B8; display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E21E26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+                            <strong>Zhejiang Baer Electrical Technology Co.,Ltd</strong>
+                        </p>
+                        <p style="font-size: 13px; color: #94A3B8; display: flex; align-items: center; gap: 10px; margin-bottom: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E21E26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            <a href="https://www.baer-ventilation.com" target="_blank" style="color: #94A3B8; text-decoration: none;">www.baer-ventilation.com</a>
+                        </p>
+                    </div>
+                    <div style="display: flex; gap: 15px; margin-top: 15px;">
+                        <div style="text-align: center;">
+                            <img src="https://sc02.alicdn.com/kf/H5b6717b6b3434a5b9dd418e150a3b571y.jpg" style="width: 80px; height: 80px; border-radius: 4px; border: 1px solid #334155; padding: 2px; background: white;">
+                            <div style="font-size: 10px; color: #94A3B8; margin-top: 5px;">WhatsApp</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="https://sc02.alicdn.com/kf/H23ab67a6236d49fc86eec16e9425e4ece.jpg" style="width: 80px; height: 80px; border-radius: 4px; border: 1px solid #334155; padding: 2px; background: white;">
+                            <div style="font-size: 10px; color: #94A3B8; margin-top: 5px;">WeChat</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 30px; font-size: 11px; opacity: 0.6;">© 2026 BAER Ventilation Technology Co., Ltd.</div>
+        </div>
+    </footer>
+
+    <div class="floating-tools">
+        <a href="https://wa.me/8613655859122" class="tool-btn btn-wa">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span class="tool-label">WhatsApp</span>
+        </a>
+        <a href="/baer-fan-catalog.pdf" target="_blank" class="tool-btn btn-pdf">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+            <span class="tool-label">Catalog</span>
+        </a>
+        <a href="#inquiry" class="tool-btn btn-rfq">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke
