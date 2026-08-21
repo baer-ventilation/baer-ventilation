@@ -1017,3 +1017,185 @@ footer ul a:hover { color: #fff; }
   }
   .app-card { aspect-ratio: 16/9; }
 }
+
+/* ══════════════════════════════════════
+   WHY CHOOSE BAER — redesigned
+══════════════════════════════════════ */
+.why-section {
+  position: relative;
+  padding: 100px 0 110px;
+  background: #0b0e18;
+  overflow: hidden;
+}
+
+/* diagonal red slashes in background */
+.why-slash {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 320px;
+  background: linear-gradient(135deg, rgba(226,30,38,.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+.why-slash--left  { left: -60px;  transform: skewX(-8deg); }
+.why-slash--right { right: -60px; transform: skewX(8deg);
+  background: linear-gradient(225deg, rgba(226,30,38,.10) 0%, transparent 60%); }
+
+/* subtle dot grid */
+.why-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+/* header */
+.why-header {
+  text-align: center;
+  margin-bottom: 64px;
+  position: relative;
+}
+.why-eyebrow {
+  display: inline-block;
+  background: var(--baer-red);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding: 5px 18px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.why-heading {
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-weight: 900;
+  color: #fff;
+  margin: 0 0 20px;
+  letter-spacing: -1px;
+  line-height: 1.08;
+}
+.why-rule {
+  width: 60px;
+  height: 3px;
+  background: var(--baer-red);
+  margin: 0 auto;
+}
+
+/* 3-column grid */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+/* card */
+.why-card {
+  position: relative;
+  padding: 40px 32px 36px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.07);
+  overflow: hidden;
+  transition: background .3s, border-color .3s;
+  cursor: default;
+}
+.why-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--baer-red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .35s ease;
+}
+.why-card:hover {
+  background: rgba(226,30,38,.07);
+  border-color: rgba(226,30,38,.25);
+}
+.why-card:hover::before { transform: scaleX(1); }
+
+/* large faint number */
+.why-card__num {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 64px;
+  font-weight: 900;
+  color: rgba(255,255,255,.05);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  transition: color .3s;
+}
+.why-card:hover .why-card__num { color: rgba(226,30,38,.12); }
+
+/* icon circle */
+.why-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(226,30,38,.15);
+  color: var(--baer-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: background .3s, transform .3s;
+}
+.why-card:hover .why-card__icon {
+  background: var(--baer-red);
+  color: #fff;
+  transform: scale(1.08);
+}
+
+/* big stat */
+.why-card__stat {
+  font-size: 32px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+.why-card__stat span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #94A3B8;
+  letter-spacing: 0;
+  margin-left: 3px;
+}
+
+/* title */
+.why-card__title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 10px;
+}
+
+/* desc */
+.why-card__desc {
+  font-size: 13.5px;
+  color: #64748B;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* accent card (3rd — Fast Lead Time) */
+.why-card--accent {
+  background: linear-gradient(135deg, rgba(226,30,38,.18) 0%, rgba(226,30,38,.06) 100%);
+  border-color: rgba(226,30,38,.3);
+}
+.why-card--accent::before { transform: scaleX(1); }
+.why-card--accent .why-card__stat { color: #FF6B6B; }
+.why-card--accent .why-card__num { color: rgba(226,30,38,.14); }
+
+/* responsive */
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .why-grid { grid-template-columns: 1fr; gap: 0; }
+  .why-card { padding: 32px 24px; }
+}
