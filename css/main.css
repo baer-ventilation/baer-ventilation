@@ -586,10 +586,19 @@ footer ul a:hover { color: #fff; }
 /* ═══════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════ */
+/* OEM section grid responsive */
 @media (max-width: 1024px) {
   .workshop-grid { grid-template-columns: repeat(4, 1fr); }
   .factory-intro { grid-template-columns: 1fr; gap: 40px; }
   .factory-image img { height: 300px; }
+}
+
+/* OEM dark section grid fallback */
+@media (max-width: 860px) {
+  #certifications div[style*="grid-template-columns:repeat(auto-fit,minmax(140px"],
+  section[style*="padding:90px 0;background:var(--baer-dark)"] .container > div {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media (max-width: 768px) {
