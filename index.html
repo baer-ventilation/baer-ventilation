@@ -221,93 +221,119 @@
 <script>(function(){const s=document.querySelector('#factory-video');if(!s)return;const v=s.querySelector('video'),b=s.querySelector('.baer-factory-video__play'),p=s.querySelector('.baer-factory-video__progress span');b.addEventListener('click',()=>v.paused?v.play():v.pause());v.addEventListener('timeupdate',()=>{if(v.duration)p.style.width=(v.currentTime/v.duration*100)+'%'});})();</script>
 
     <!-- ═══ CERTIFICATIONS ═══ -->
-    <section id="certifications" style="padding:80px 0;background:#fff;">
-        <div class="container">
-            <div style="text-align:center;margin-bottom:56px;">
-                <span style="display:inline-block;background:rgba(226,30,38,.08);color:var(--baer-red);font-size:11px;font-weight:800;letter-spacing:3px;padding:5px 14px;border-radius:20px;margin-bottom:16px;" data-i18n="cert-tag">CERTIFIED &amp; COMPLIANT</span>
-                <h2 style="font-size:clamp(24px,3vw,38px);font-weight:800;margin:0 0 14px;" data-i18n="cert-title">International Quality Certifications</h2>
-                <p style="color:#64748B;margin:0 auto;max-width:500px;line-height:1.7;" data-i18n="cert-desc">Every BAER product is tested and certified to meet global safety and performance standards.</p>
+    <section id="certifications" style="padding:80px 0 90px;background:linear-gradient(160deg,#0F172A 0%,#1a2a1a 100%);overflow:hidden;position:relative;">
+        <!-- subtle grid pattern -->
+        <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:32px 32px;pointer-events:none;"></div>
+        <div class="container" style="position:relative;z-index:1;">
+            <div style="text-align:center;margin-bottom:60px;">
+                <span style="display:inline-block;background:rgba(226,30,38,.2);color:#FF6B6B;font-size:11px;font-weight:800;letter-spacing:3px;padding:5px 16px;border-radius:20px;margin-bottom:18px;" data-i18n="cert-tag">CERTIFIED &amp; COMPLIANT</span>
+                <h2 style="font-size:clamp(26px,3vw,42px);font-weight:800;margin:0 0 14px;color:#fff;" data-i18n="cert-title">Our Certifications</h2>
+                <p style="color:#94A3B8;margin:0 auto;max-width:520px;line-height:1.7;" data-i18n="cert-desc">Every BAER product is tested and certified to meet global safety and performance standards.</p>
             </div>
-            <!-- 6格均分，强制一行 -->
-            <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:16px;max-width:1000px;margin:0 auto;">
 
+            <!-- Fan layout: 6 cert cards in perspective fan -->
+            <div class="cert-fan-wrap">
                 <!-- CE -->
-                <div class="cert-card">
-                    <div class="cert-icon-wrap">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-                            <circle cx="24" cy="24" r="22" stroke="#E21E26" stroke-width="2.5"/>
-                            <path d="M32 17.5A10 10 0 1 0 32 30.5" stroke="#E21E26" stroke-width="2.5" stroke-linecap="round"/>
-                            <line x1="22" y1="24" x2="34" y2="24" stroke="#E21E26" stroke-width="2.5" stroke-linecap="round"/>
-                        </svg>
+                <div class="cert-doc cert-doc--1">
+                    <div class="cert-doc__inner">
+                        <div class="cert-doc__header">
+                            <div class="cert-doc__logo">CE</div>
+                            <div class="cert-doc__lines"><span></span><span></span></div>
+                        </div>
+                        <div class="cert-doc__seal">
+                            <svg viewBox="0 0 60 60" width="52" height="52"><circle cx="30" cy="30" r="28" stroke="#c8a96e" stroke-width="1.5" fill="none"/><circle cx="30" cy="30" r="22" stroke="#c8a96e" stroke-width="1" fill="none"/><text x="30" y="35" text-anchor="middle" font-size="16" font-weight="900" fill="#c8a96e" font-family="Arial">CE</text></svg>
+                        </div>
+                        <div class="cert-doc__lines cert-doc__lines--body"><span></span><span></span><span></span><span class="short"></span></div>
+                        <div class="cert-doc__footer">
+                            <div class="cert-doc__sig"></div>
+                            <div class="cert-doc__stamp"></div>
+                        </div>
                     </div>
-                    <div class="cert-name">CE</div>
-                    <div class="cert-label" data-i18n="cert-ce">EU Market Access</div>
+                    <div class="cert-doc__label" data-i18n="cert-ce">EU Market Access</div>
                 </div>
 
                 <!-- CCC -->
-                <div class="cert-card">
-                    <div class="cert-icon-wrap">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-                            <circle cx="24" cy="24" r="22" stroke="#E21E26" stroke-width="2.5"/>
-                            <path d="M30 17.5A8 8 0 1 0 30 30.5" stroke="#E21E26" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M36 17.5A8 8 0 1 0 36 30.5" stroke="#E21E26" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                <div class="cert-doc cert-doc--2">
+                    <div class="cert-doc__inner">
+                        <div class="cert-doc__header">
+                            <div class="cert-doc__logo" style="font-size:11px;letter-spacing:-1px;">CCC</div>
+                            <div class="cert-doc__lines"><span></span><span></span></div>
+                        </div>
+                        <div class="cert-doc__seal">
+                            <svg viewBox="0 0 60 60" width="52" height="52"><circle cx="30" cy="30" r="28" stroke="#c8a96e" stroke-width="1.5" fill="none"/><circle cx="30" cy="30" r="22" stroke="#c8a96e" stroke-width="1" fill="none"/><text x="30" y="35" text-anchor="middle" font-size="11" font-weight="900" fill="#c8a96e" font-family="Arial">3C</text></svg>
+                        </div>
+                        <div class="cert-doc__lines cert-doc__lines--body"><span></span><span></span><span></span><span class="short"></span></div>
+                        <div class="cert-doc__footer"><div class="cert-doc__sig"></div><div class="cert-doc__stamp"></div></div>
                     </div>
-                    <div class="cert-name">CCC</div>
-                    <div class="cert-label" data-i18n="cert-3c">China Compulsory</div>
+                    <div class="cert-doc__label" data-i18n="cert-3c">China Compulsory</div>
                 </div>
 
                 <!-- ISO 9001 -->
-                <div class="cert-card">
-                    <div class="cert-icon-wrap">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-                            <rect x="6" y="8" width="36" height="32" rx="4" stroke="#E21E26" stroke-width="2.5"/>
-                            <polyline points="15,24 21,30 33,18" stroke="#E21E26" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                <div class="cert-doc cert-doc--3">
+                    <div class="cert-doc__inner">
+                        <div class="cert-doc__header">
+                            <div class="cert-doc__logo" style="font-size:9px;letter-spacing:0;">ISO 9001</div>
+                            <div class="cert-doc__lines"><span></span><span></span></div>
+                        </div>
+                        <div class="cert-doc__seal">
+                            <svg viewBox="0 0 60 60" width="52" height="52"><circle cx="30" cy="30" r="28" stroke="#c8a96e" stroke-width="1.5" fill="none"/><circle cx="30" cy="30" r="22" stroke="#c8a96e" stroke-width="1" fill="none"/><text x="30" y="28" text-anchor="middle" font-size="8" font-weight="700" fill="#c8a96e" font-family="Arial">ISO</text><text x="30" y="38" text-anchor="middle" font-size="10" font-weight="900" fill="#c8a96e" font-family="Arial">9001</text></svg>
+                        </div>
+                        <div class="cert-doc__lines cert-doc__lines--body"><span></span><span></span><span></span><span class="short"></span></div>
+                        <div class="cert-doc__footer"><div class="cert-doc__sig"></div><div class="cert-doc__stamp"></div></div>
                     </div>
-                    <div class="cert-name">ISO 9001</div>
-                    <div class="cert-label" data-i18n="cert-iso">Quality Mgmt.</div>
+                    <div class="cert-doc__label" data-i18n="cert-iso">Quality Mgmt.</div>
                 </div>
 
-                <!-- CB -->
-                <div class="cert-card">
-                    <div class="cert-icon-wrap">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-                            <path d="M24 4L6 12V24c0 9.6 7.6 18.5 18 20 10.4-1.5 18-10.4 18-20V12L24 4Z" stroke="#E21E26" stroke-width="2.5" stroke-linejoin="round"/>
-                            <polyline points="16,24 21,29 32,18" stroke="#E21E26" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                <!-- CB (center, highlighted) -->
+                <div class="cert-doc cert-doc--4 cert-doc--center">
+                    <div class="cert-doc__inner">
+                        <div class="cert-doc__header" style="background:linear-gradient(135deg,#E21E26,#a01018);">
+                            <div class="cert-doc__logo" style="color:#fff;">CB</div>
+                            <div class="cert-doc__lines"><span style="background:rgba(255,255,255,.4);"></span><span style="background:rgba(255,255,255,.25);"></span></div>
+                        </div>
+                        <div class="cert-doc__seal">
+                            <svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="28" stroke="#c8a96e" stroke-width="2" fill="none"/><circle cx="30" cy="30" r="22" stroke="#c8a96e" stroke-width="1" fill="none"/><text x="30" y="35" text-anchor="middle" font-size="16" font-weight="900" fill="#c8a96e" font-family="Arial">CB</text></svg>
+                        </div>
+                        <div class="cert-doc__lines cert-doc__lines--body"><span></span><span></span><span></span><span class="short"></span></div>
+                        <div class="cert-doc__footer"><div class="cert-doc__sig"></div><div class="cert-doc__stamp" style="background:#E21E26;opacity:.25;"></div></div>
                     </div>
-                    <div class="cert-name">CB</div>
-                    <div class="cert-label" data-i18n="cert-cb">IEC Global Safety</div>
+                    <div class="cert-doc__label" data-i18n="cert-cb">IEC Global Safety</div>
                 </div>
 
                 <!-- SAA -->
-                <div class="cert-card">
-                    <div class="cert-icon-wrap">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-                            <circle cx="24" cy="24" r="22" stroke="#E21E26" stroke-width="2.5"/>
-                            <path d="M14 28 C16 20 22 16 28 20 C32 22 32 28 28 30 C24 32 22 36 24 40" stroke="#E21E26" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="24" cy="13" r="2.5" fill="#E21E26"/>
-                        </svg>
+                <div class="cert-doc cert-doc--5">
+                    <div class="cert-doc__inner">
+                        <div class="cert-doc__header">
+                            <div class="cert-doc__logo">SAA</div>
+                            <div class="cert-doc__lines"><span></span><span></span></div>
+                        </div>
+                        <div class="cert-doc__seal">
+                            <svg viewBox="0 0 60 60" width="52" height="52"><circle cx="30" cy="30" r="28" stroke="#c8a96e" stroke-width="1.5" fill="none"/><circle cx="30" cy="30" r="22" stroke="#c8a96e" stroke-width="1" fill="none"/><text x="30" y="35" text-anchor="middle" font-size="13" font-weight="900" fill="#c8a96e" font-family="Arial">SAA</text></svg>
+                        </div>
+                        <div class="cert-doc__lines cert-doc__lines--body"><span></span><span></span><span></span><span class="short"></span></div>
+                        <div class="cert-doc__footer"><div class="cert-doc__sig"></div><div class="cert-doc__stamp"></div></div>
                     </div>
-                    <div class="cert-name">SAA</div>
-                    <div class="cert-label" data-i18n="cert-saa">Australia Listed</div>
+                    <div class="cert-doc__label" data-i18n="cert-saa">Australia Listed</div>
                 </div>
 
                 <!-- ETL -->
-                <div class="cert-card">
-                    <div class="cert-icon-wrap">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-                            <polygon points="24,4 44,38 4,38" stroke="#E21E26" stroke-width="2.5" stroke-linejoin="round"/>
-                            <line x1="24" y1="18" x2="24" y2="28" stroke="#E21E26" stroke-width="2.5" stroke-linecap="round"/>
-                            <circle cx="24" cy="33" r="1.5" fill="#E21E26"/>
-                        </svg>
+                <div class="cert-doc cert-doc--6">
+                    <div class="cert-doc__inner">
+                        <div class="cert-doc__header">
+                            <div class="cert-doc__logo">ETL</div>
+                            <div class="cert-doc__lines"><span></span><span></span></div>
+                        </div>
+                        <div class="cert-doc__seal">
+                            <svg viewBox="0 0 60 60" width="52" height="52"><circle cx="30" cy="30" r="28" stroke="#c8a96e" stroke-width="1.5" fill="none"/><circle cx="30" cy="30" r="22" stroke="#c8a96e" stroke-width="1" fill="none"/><text x="30" y="35" text-anchor="middle" font-size="13" font-weight="900" fill="#c8a96e" font-family="Arial">ETL</text></svg>
+                        </div>
+                        <div class="cert-doc__lines cert-doc__lines--body"><span></span><span></span><span></span><span class="short"></span></div>
+                        <div class="cert-doc__footer"><div class="cert-doc__sig"></div><div class="cert-doc__stamp"></div></div>
                     </div>
-                    <div class="cert-name">ETL</div>
-                    <div class="cert-label" data-i18n="cert-etl">N. America Listed</div>
+                    <div class="cert-doc__label" data-i18n="cert-etl">N. America Listed</div>
                 </div>
-
             </div>
+
+            <p style="text-align:center;margin-top:44px;color:#64748B;font-size:13px;" data-i18n="cert-note">* Certificates available upon request with every order</p>
         </div>
     </section>
 
