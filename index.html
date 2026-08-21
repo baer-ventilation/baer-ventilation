@@ -425,43 +425,98 @@
     </section>
 
     <!-- ═══ WHY CHOOSE BAER ═══ -->
-    <section style="padding:90px 0;background:#fff;">
-        <div class="container">
-            <div style="text-align:center;margin-bottom:52px;">
-                <span style="display:block;color:var(--baer-red);font-size:12px;font-weight:800;letter-spacing:2.5px;margin-bottom:10px;" data-i18n="why-tag">WHY BAER</span>
-                <h2 style="font-size:clamp(22px,3vw,38px);font-weight:800;margin:0;" data-i18n="why-title">Why Global Buyers Choose Us</h2>
+    <section id="why-baer" class="why-section">
+        <!-- diagonal slash decoration -->
+        <div class="why-slash why-slash--left"></div>
+        <div class="why-slash why-slash--right"></div>
+
+        <div class="container" style="position:relative;z-index:1;">
+            <div class="why-header">
+                <span class="why-eyebrow" data-i18n="why-tag">WHY BAER</span>
+                <h2 class="why-heading" data-i18n="why-title">Why Global Buyers Choose Us</h2>
+                <div class="why-rule"></div>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;">
-                <div style="padding:32px;border:1px solid #E2E8F0;border-radius:12px;border-top:4px solid var(--baer-red);">
-                    <div style="font-size:36px;margin-bottom:16px;">🏗️</div>
-                    <h4 style="margin:0 0 10px;font-size:17px;" data-i18n="why-1h">Factory Direct</h4>
-                    <p style="color:#64748B;font-size:14px;line-height:1.7;margin:0;" data-i18n="why-1d">50,000m² own factory in Zhejiang. No middlemen — direct pricing means 15–30% lower cost vs trading companies.</p>
+
+            <div class="why-grid">
+
+                <!-- 1 Factory Direct -->
+                <div class="why-card">
+                    <div class="why-card__num">01</div>
+                    <div class="why-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M12 12v4"/><path d="M9 14h6"/>
+                        </svg>
+                    </div>
+                    <div class="why-card__stat">50,000 <span>m²</span></div>
+                    <h4 class="why-card__title" data-i18n="why-1h">Factory Direct</h4>
+                    <p class="why-card__desc" data-i18n="why-1d">Own factory in Zhejiang — no middlemen. Direct pricing is 15–30% lower than trading companies.</p>
                 </div>
-                <div style="padding:32px;border:1px solid #E2E8F0;border-radius:12px;border-top:4px solid var(--baer-red);">
-                    <div style="font-size:36px;margin-bottom:16px;">🔧</div>
-                    <h4 style="margin:0 0 10px;font-size:17px;" data-i18n="why-2h">OEM / ODM Capability</h4>
-                    <p style="color:#64748B;font-size:14px;line-height:1.7;margin:0;" data-i18n="why-2d">Custom logo, color, voltage, blade design, and packaging. MOQ from 500 pcs. Full private-label solutions available.</p>
+
+                <!-- 2 OEM / ODM -->
+                <div class="why-card">
+                    <div class="why-card__num">02</div>
+                    <div class="why-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                        </svg>
+                    </div>
+                    <div class="why-card__stat">MOQ <span>500pcs</span></div>
+                    <h4 class="why-card__title" data-i18n="why-2h">OEM / ODM Capability</h4>
+                    <p class="why-card__desc" data-i18n="why-2d">Custom logo, voltage, blade design & packaging. Full private-label solutions available.</p>
                 </div>
-                <div style="padding:32px;border:1px solid #E2E8F0;border-radius:12px;border-top:4px solid var(--baer-red);">
-                    <div style="font-size:36px;margin-bottom:16px;">🚀</div>
-                    <h4 style="margin:0 0 10px;font-size:17px;" data-i18n="why-3h">Fast Lead Time</h4>
-                    <p style="color:#64748B;font-size:14px;line-height:1.7;margin:0;" data-i18n="why-3d">Sample in 7 days. Mass production in 25–35 days. In-stock models ship within 3 days. Flexible scheduling for seasonal demand.</p>
+
+                <!-- 3 Fast Lead Time -->
+                <div class="why-card why-card--accent">
+                    <div class="why-card__num">03</div>
+                    <div class="why-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="why-card__stat">7 <span>day sample</span></div>
+                    <h4 class="why-card__title" data-i18n="why-3h">Fast Lead Time</h4>
+                    <p class="why-card__desc" data-i18n="why-3d">Sample ready in 7 days. Mass production in 25–35 days. In-stock ships within 3 days.</p>
                 </div>
-                <div style="padding:32px;border:1px solid #E2E8F0;border-radius:12px;border-top:4px solid var(--baer-red);">
-                    <div style="font-size:36px;margin-bottom:16px;">🛡️</div>
-                    <h4 style="margin:0 0 10px;font-size:17px;" data-i18n="why-4h">2-Year Warranty</h4>
-                    <p style="color:#64748B;font-size:14px;line-height:1.7;margin:0;" data-i18n="why-4d">All products carry a 2-year warranty. Defective units replaced or refunded within 30 days of confirmation. Lifetime technical support.</p>
+
+                <!-- 4 Warranty -->
+                <div class="why-card">
+                    <div class="why-card__num">04</div>
+                    <div class="why-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <div class="why-card__stat">2 <span>year warranty</span></div>
+                    <h4 class="why-card__title" data-i18n="why-4h">2-Year Warranty</h4>
+                    <p class="why-card__desc" data-i18n="why-4d">Defective units replaced or refunded within 30 days. Lifetime technical support included.</p>
                 </div>
-                <div style="padding:32px;border:1px solid #E2E8F0;border-radius:12px;border-top:4px solid var(--baer-red);">
-                    <div style="font-size:36px;margin-bottom:16px;">📋</div>
-                    <h4 style="margin:0 0 10px;font-size:17px;" data-i18n="why-5h">CE / RoHS Certified</h4>
-                    <p style="color:#64748B;font-size:14px;line-height:1.7;margin:0;" data-i18n="why-5d">Fully certified for EU, Middle East and Australia markets. Test reports and certificates provided with every order for smooth customs clearance.</p>
+
+                <!-- 5 Certified -->
+                <div class="why-card">
+                    <div class="why-card__num">05</div>
+                    <div class="why-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+                        </svg>
+                    </div>
+                    <div class="why-card__stat">6 <span>certifications</span></div>
+                    <h4 class="why-card__title" data-i18n="why-5h">Globally Certified</h4>
+                    <p class="why-card__desc" data-i18n="why-5d">CE, CCC, ISO 9001, CB, SAA, ETL. Full test reports provided with every order for smooth customs clearance.</p>
                 </div>
-                <div style="padding:32px;border:1px solid #E2E8F0;border-radius:12px;border-top:4px solid var(--baer-red);">
-                    <div style="font-size:36px;margin-bottom:16px;">🌍</div>
-                    <h4 style="margin:0 0 10px;font-size:17px;" data-i18n="why-6h">50+ Countries Served</h4>
-                    <p style="color:#64748B;font-size:14px;line-height:1.7;margin:0;" data-i18n="why-6d">Active distribution in Saudi Arabia, UAE, Iraq, UK, France, Germany, Australia, and more. Experienced in LCL, FCL, and air freight logistics.</p>
+
+                <!-- 6 Countries -->
+                <div class="why-card">
+                    <div class="why-card__num">06</div>
+                    <div class="why-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <div class="why-card__stat">50+ <span>countries</span></div>
+                    <h4 class="why-card__title" data-i18n="why-6h">Global Distribution</h4>
+                    <p class="why-card__desc" data-i18n="why-6d">Saudi Arabia, UAE, Iraq, UK, France, Germany, Australia and more. LCL, FCL & air freight all supported.</p>
                 </div>
+
             </div>
         </div>
     </section>
