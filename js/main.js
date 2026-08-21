@@ -107,94 +107,200 @@
     counters.forEach(function (el) { observer.observe(el); });
   })();
 
-  /* ── Product Modal ── */
+  /* ── Product Modal (multilingual) ── */
+
+  /* spec label translations: key → [en, ar, zh] */
+  var specLabels = {
+    'Size':            ['Size',            'المقاس',           '尺寸'],
+    'Airflow':         ['Airflow',         'تدفق الهواء',      '风量'],
+    'Noise':           ['Noise',           'مستوى الضوضاء',    '噪音'],
+    'Power':           ['Power',           'الطاقة',           '功率'],
+    'Voltage':         ['Voltage',         'الجهد الكهربائي',  '电压'],
+    'Certification':   ['Certification',   'الشهادات',         '认证'],
+    'Static Pressure': ['Static Pressure', 'الضغط الستاتيكي',  '静压'],
+    'IP Rating':       ['IP Rating',       'درجة الحماية IP',  'IP防护等级'],
+    'Motor':           ['Motor',           'المحرك',           '电机'],
+    'Energy Saving':   ['Energy Saving',   'توفير الطاقة',     '节能'],
+    'Control':         ['Control',         'التحكم',           '控制方式'],
+    'Filter':          ['Filter',          'الفلتر',           '过滤器'],
+    'Heat Recovery':   ['Heat Recovery',   'استعادة الحرارة',  '热回收效率'],
+    'Application':     ['Application',     'التطبيقات',        '应用场景'],
+    'Switch':          ['Switch',          'مفتاح التشغيل',    '开关方式'],
+    'MOQ':             ['MOQ',             'الحد الأدنى للطلب','最小起订量']
+  };
+
+  /* inquiry button label per language */
+  var inquireLabel = {
+    en: 'Inquire Now',
+    ar: 'استفسر الآن',
+    zh: '立即询盘'
+  };
+
+  /* productData: each entry has img + per-language title/desc/specs */
   var productData = {
     p1: {
-      title: 'Ceiling Mount Exhaust Fan',
       img: 'https://sc02.alicdn.com/kf/H5ab785de74ed4850a9fbf3621c91530cH.jpg',
-      desc: 'Energy-efficient ceiling-mounted exhaust fan designed for residential and light-commercial applications. Features low-noise motor, automatic shutter, and easy grid installation.',
-      specs: [['Size', '100mm / 150mm / 200mm'], ['Airflow', '80~350 m³/h'], ['Noise', '≤26 dB(A)'], ['Power', '8~25 W'], ['Voltage', '220V / 50Hz'], ['Certification', 'CE, RoHS']]
+      en: { title: 'Ceiling Mount Exhaust Fan',
+            desc:  'Energy-efficient ceiling-mounted exhaust fan designed for residential and light-commercial applications. Features low-noise motor, automatic shutter, and easy grid installation.',
+            specs: [['Size','100mm / 150mm / 200mm'],['Airflow','80~350 m³/h'],['Noise','≤26 dB(A)'],['Power','8~25 W'],['Voltage','220V / 50Hz'],['Certification','CE, RoHS']] },
+      ar: { title: 'مروحة شفط سقفية',
+            desc:  'مروحة شفط سقفية موفرة للطاقة مصممة للاستخدامات السكنية والتجارية الخفيفة. تتميز بمحرك منخفض الضوضاء وغالق تلقائي وتركيب شبكي سهل.',
+            specs: [['Size','100mm / 150mm / 200mm'],['Airflow','80~350 m³/h'],['Noise','≤26 dB(A)'],['Power','8~25 W'],['Voltage','220V / 50Hz'],['Certification','CE, RoHS']] },
+      zh: { title: '吸顶换气扇',
+            desc:  '节能吸顶式换气扇，专为住宅及轻商业场所设计。具备低噪音电机、自动百叶和简易格栅安装功能。',
+            specs: [['Size','100mm / 150mm / 200mm'],['Airflow','80~350 m³/h'],['Noise','≤26 dB(A)'],['Power','8~25 W'],['Voltage','220V / 50Hz'],['Certification','CE, RoHS']] }
     },
     p2: {
-      title: 'Standard Window Fan',
       img: 'https://sc02.alicdn.com/kf/H5fbe6fbc92284181968eba3dff7ed880E.jpg',
-      desc: 'Classic window-mounted exhaust fan suitable for kitchens, bathrooms, and small workshops. Durable ABS housing with anti-back-draft shutter.',
-      specs: [['Size', '150mm / 200mm / 250mm'], ['Airflow', '120~450 m³/h'], ['Noise', '≤38 dB(A)'], ['Power', '15~45 W'], ['Voltage', '220V / 50Hz']]
+      en: { title: 'Standard Window Fan',
+            desc:  'Classic window-mounted exhaust fan suitable for kitchens, bathrooms, and small workshops. Durable ABS housing with anti-back-draft shutter.',
+            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','120~450 m³/h'],['Noise','≤38 dB(A)'],['Power','15~45 W'],['Voltage','220V / 50Hz']] },
+      ar: { title: 'مروحة نافذة قياسية',
+            desc:  'مروحة شفط كلاسيكية مثبتة على النافذة مناسبة للمطابخ والحمامات والورش الصغيرة. هيكل ABS متين مع غالق مضاد للتدفق العكسي.',
+            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','120~450 m³/h'],['Noise','≤38 dB(A)'],['Power','15~45 W'],['Voltage','220V / 50Hz']] },
+      zh: { title: '标准窗式换气扇',
+            desc:  '经典窗式安装换气扇，适用于厨房、卫浴及小型工作间。耐用ABS外壳，配备防回流百叶。',
+            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','120~450 m³/h'],['Noise','≤38 dB(A)'],['Power','15~45 W'],['Voltage','220V / 50Hz']] }
     },
     p3: {
-      title: 'Double-Grill Window Fan',
       img: 'https://sc02.alicdn.com/kf/A216d65f6e04a43438a882ca3e9b88721Z.png',
-      desc: 'Two-layer grille design for improved airflow direction control. Ideal for through-wall installation in residential and commercial buildings.',
-      specs: [['Size', '150mm / 200mm'], ['Airflow', '140~380 m³/h'], ['Noise', '≤32 dB(A)'], ['Power', '18~35 W'], ['Voltage', '220V / 50Hz']]
+      en: { title: 'Double-Grill Window Fan',
+            desc:  'Two-layer grille design for improved airflow direction control. Ideal for through-wall installation in residential and commercial buildings.',
+            specs: [['Size','150mm / 200mm'],['Airflow','140~380 m³/h'],['Noise','≤32 dB(A)'],['Power','18~35 W'],['Voltage','220V / 50Hz']] },
+      ar: { title: 'مروحة نافذة مزدوجة الشبك',
+            desc:  'تصميم شبكي مزدوج لتحسين التحكم في اتجاه تدفق الهواء. مثالية للتركيب في الجدران للمباني السكنية والتجارية.',
+            specs: [['Size','150mm / 200mm'],['Airflow','140~380 m³/h'],['Noise','≤32 dB(A)'],['Power','18~35 W'],['Voltage','220V / 50Hz']] },
+      zh: { title: '双格栅窗式换气扇',
+            desc:  '双层格栅设计，有效改善气流方向控制。适合住宅及商业建筑穿墙安装。',
+            specs: [['Size','150mm / 200mm'],['Airflow','140~380 m³/h'],['Noise','≤32 dB(A)'],['Power','18~35 W'],['Voltage','220V / 50Hz']] }
     },
     p4: {
-      title: 'Industrial Axial Fan',
       img: 'https://sc02.alicdn.com/kf/H42e66ea71d5445fcbb62c7c68e493d94v.jpg',
-      desc: 'Heavy-duty axial fan for industrial ventilation. High static pressure, continuous duty, IP55 rated for harsh environments.',
-      specs: [['Size', '300mm ~ 800mm'], ['Airflow', '1000~25000 m³/h'], ['Static Pressure', 'Up to 180 Pa'], ['Power', '0.25~5.5 kW'], ['IP Rating', 'IP55']]
+      en: { title: 'Industrial Axial Fan',
+            desc:  'Heavy-duty axial fan for industrial ventilation. High static pressure, continuous duty, IP55 rated for harsh environments.',
+            specs: [['Size','300mm ~ 800mm'],['Airflow','1000~25000 m³/h'],['Static Pressure','Up to 180 Pa'],['Power','0.25~5.5 kW'],['IP Rating','IP55']] },
+      ar: { title: 'مروحة محورية صناعية',
+            desc:  'مروحة محورية للأعمال الشاقة للتهوية الصناعية. ضغط ستاتيكي عالٍ، تشغيل مستمر، مقاومة IP55 للبيئات القاسية.',
+            specs: [['Size','300mm ~ 800mm'],['Airflow','1000~25000 m³/h'],['Static Pressure','Up to 180 Pa'],['Power','0.25~5.5 kW'],['IP Rating','IP55']] },
+      zh: { title: '工业轴流风机',
+            desc:  '重型轴流风机，适用于工业通风场合。高静压，可连续运行，IP55防护等级，耐恶劣环境。',
+            specs: [['Size','300mm ~ 800mm'],['Airflow','1000~25000 m³/h'],['Static Pressure','Up to 180 Pa'],['Power','0.25~5.5 kW'],['IP Rating','IP55']] }
     },
     p5: {
-      title: 'Standard Mixed Flow Series',
       img: 'https://sc02.alicdn.com/kf/Hf77c8f2216ff4576b9f83c896fdd000fq.jpg',
-      desc: 'Inline duct fan combining axial and centrifugal design for high airflow with moderate static pressure. Suitable for residential HRV and HVAC duct systems.',
-      specs: [['Size', '100mm / 125mm / 150mm / 200mm'], ['Airflow', '100~800 m³/h'], ['Static Pressure', 'Up to 180 Pa'], ['Noise', '≤38 dB(A)'], ['Power', '25~110 W']]
+      en: { title: 'Standard Mixed Flow Series',
+            desc:  'Inline duct fan combining axial and centrifugal design for high airflow with moderate static pressure. Suitable for residential HRV and HVAC duct systems.',
+            specs: [['Size','100mm / 125mm / 150mm / 200mm'],['Airflow','100~800 m³/h'],['Static Pressure','Up to 180 Pa'],['Noise','≤38 dB(A)'],['Power','25~110 W']] },
+      ar: { title: 'سلسلة التدفق المختلط القياسي',
+            desc:  'مروحة قناة مدمجة تجمع بين التصميم المحوري والطرد المركزي لتدفق هواء عالٍ مع ضغط ستاتيكي معتدل. مناسبة لأنظمة HRV السكنية وقنوات HVAC.',
+            specs: [['Size','100mm / 125mm / 150mm / 200mm'],['Airflow','100~800 m³/h'],['Static Pressure','Up to 180 Pa'],['Noise','≤38 dB(A)'],['Power','25~110 W']] },
+      zh: { title: '标准斜流管道风机',
+            desc:  '管道内嵌式风机，融合轴流与离心设计，高风量、中等静压。适用于住宅新风系统及暖通管道。',
+            specs: [['Size','100mm / 125mm / 150mm / 200mm'],['Airflow','100~800 m³/h'],['Static Pressure','Up to 180 Pa'],['Noise','≤38 dB(A)'],['Power','25~110 W']] }
     },
     p7: {
-      title: 'High-Efficiency Booster Fan',
       img: 'https://sc02.alicdn.com/kf/A69a6450d8e504c9a9c1dcaedccad5c3e2.png',
-      desc: 'Mixed flow booster for long duct runs. High static pressure overcomes resistance in complex HVAC systems.',
-      specs: [['Size', '150mm / 200mm / 250mm'], ['Airflow', '300~1200 m³/h'], ['Static Pressure', 'Up to 280 Pa'], ['Power', '55~250 W']]
+      en: { title: 'High-Efficiency Booster Fan',
+            desc:  'Mixed flow booster for long duct runs. High static pressure overcomes resistance in complex HVAC systems.',
+            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','300~1200 m³/h'],['Static Pressure','Up to 280 Pa'],['Power','55~250 W']] },
+      ar: { title: 'معزز تدفق عالي الكفاءة',
+            desc:  'معزز تدفق مختلط لمسارات القنوات الطويلة. ضغط ستاتيكي عالٍ يتغلب على مقاومة أنظمة HVAC المعقدة.',
+            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','300~1200 m³/h'],['Static Pressure','Up to 280 Pa'],['Power','55~250 W']] },
+      zh: { title: '高效助推风机',
+            desc:  '斜流助推风机，适用于长管道场合。超高静压，克服复杂暖通系统阻力。',
+            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','300~1200 m³/h'],['Static Pressure','Up to 280 Pa'],['Power','55~250 W']] }
     },
     p8: {
-      title: 'Intelligent DC Inverter Fan',
       img: 'https://sc02.alicdn.com/kf/A96cb71eed6d94b289be81e750dfc9fe1M.png',
-      desc: 'DC brushless motor with variable speed control. Up to 60% energy saving vs AC equivalents. Smart humidity / CO₂ trigger available.',
-      specs: [['Size', '125mm / 150mm / 200mm'], ['Airflow', '150~900 m³/h'], ['Motor', 'DC Brushless'], ['Energy Saving', 'Up to 60%'], ['Control', 'PWM / 0-10V / Smart Sensor']]
+      en: { title: 'Intelligent DC Inverter Fan',
+            desc:  'DC brushless motor with variable speed control. Up to 60% energy saving vs AC equivalents. Smart humidity / CO₂ trigger available.',
+            specs: [['Size','125mm / 150mm / 200mm'],['Airflow','150~900 m³/h'],['Motor','DC Brushless'],['Energy Saving','Up to 60%'],['Control','PWM / 0-10V / Smart Sensor']] },
+      ar: { title: 'مروحة عاكس DC الذكية',
+            desc:  'محرك بدون فرش DC مع تحكم في السرعة المتغيرة. توفير طاقة يصل إلى 60% مقارنة بنظيراتها AC. متوفر مع مشغل رطوبة / CO₂ ذكي.',
+            specs: [['Size','125mm / 150mm / 200mm'],['Airflow','150~900 m³/h'],['Motor','DC بدون فرش'],['Energy Saving','حتى 60%'],['Control','PWM / 0-10V / حساس ذكي']] },
+      zh: { title: '智能直流变频风机',
+            desc:  '直流无刷电机，无级变速控制。比同规格交流产品节能最高60%。可选配湿度/CO₂智能触发。',
+            specs: [['Size','125mm / 150mm / 200mm'],['Airflow','150~900 m³/h'],['Motor','直流无刷'],['Energy Saving','最高节能60%'],['Control','PWM / 0-10V / 智能传感器']] }
     },
     p9: {
-      title: 'Export Pro Bathroom Series',
       img: 'https://sc02.alicdn.com/kf/H0f20bd34e6864282a2d71d6aa8f11a35f.jpg',
-      desc: 'Complete bathroom exhaust fan range covering ceiling, wall, and window-mounted configurations. CE certified, designed specifically for Middle East and European export markets.',
-      specs: [['Airflow', '50~220 m³/h'], ['Noise', '≤28 dB(A)'], ['IP Rating', 'IP44 (bathroom safe)'], ['Certification', 'CE, RoHS'], ['MOQ', '500 pcs']]
+      en: { title: 'Export Pro Bathroom Series',
+            desc:  'Complete bathroom exhaust fan range covering ceiling, wall, and window-mounted configurations. CE certified, designed specifically for Middle East and European export markets.',
+            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['IP Rating','IP44 (bathroom safe)'],['Certification','CE, RoHS'],['MOQ','500 pcs']] },
+      ar: { title: 'سلسلة حمامات التصدير الاحترافية',
+            desc:  'مجموعة كاملة من مراوح شفط الحمامات تشمل التركيب في السقف والجدار والنافذة. معتمدة CE، مصممة خصيصاً لأسواق التصدير في الشرق الأوسط وأوروبا.',
+            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['IP Rating','IP44 (مقاوم للرطوبة)'],['Certification','CE, RoHS'],['MOQ','500 قطعة']] },
+      zh: { title: '出口专业卫浴系列',
+            desc:  '完整卫浴换气扇系列，涵盖吸顶、壁装和窗装款式。CE认证，专为中东及欧洲出口市场设计。',
+            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['IP Rating','IP44（浴室安全）'],['Certification','CE, RoHS'],['MOQ','500件起订']] }
     },
     'p3-n2': {
-      title: 'Circular Pull-Cord Fan',
       img: 'https://sc02.alicdn.com/kf/Abe879211958d43a4996a2f163a09d541e.png',
-      desc: 'Classic round panel design with convenient pull-cord switch. Perfect for bathrooms and kitchens without wall switches. Compact and easy to install.',
-      specs: [['Size', '100mm / 150mm'], ['Airflow', '60~140 m³/h'], ['Noise', '≤26 dB(A)'], ['Power', '8~18 W'], ['Switch', 'Pull-cord']]
+      en: { title: 'Circular Pull-Cord Fan',
+            desc:  'Classic round panel design with convenient pull-cord switch. Perfect for bathrooms and kitchens without wall switches. Compact and easy to install.',
+            specs: [['Size','100mm / 150mm'],['Airflow','60~140 m³/h'],['Noise','≤26 dB(A)'],['Power','8~18 W'],['Switch','Pull-cord']] },
+      ar: { title: 'مروحة دائرية بسلسلة سحب',
+            desc:  'تصميم لوحة دائري كلاسيكي مع مفتاح سلسلة سحب مريح. مثالية للحمامات والمطابخ التي لا تحتوي على مفاتيح حائط. مدمجة وسهلة التركيب.',
+            specs: [['Size','100mm / 150mm'],['Airflow','60~140 m³/h'],['Noise','≤26 dB(A)'],['Power','8~18 W'],['Switch','سلسلة سحب']] },
+      zh: { title: '圆型拉绳换气扇',
+            desc:  '经典圆形面板设计，配备便捷拉绳开关。特别适合没有墙壁开关的卫浴和厨房。体积小巧，安装简便。',
+            specs: [['Size','100mm / 150mm'],['Airflow','60~140 m³/h'],['Noise','≤26 dB(A)'],['Power','8~18 W'],['Switch','拉绳开关']] }
     },
     p10: {
-      title: 'Acoustic Cabinet Fan',
       img: 'https://sc02.alicdn.com/kf/Hb4c5e8471a3e46d599e56f223890a1d36.jpg',
-      desc: 'Ultra-quiet inline fan engineered for server cabinet, home cinema, and bedroom applications. Double-skin acoustic lining reduces noise to exceptional levels.',
-      specs: [['Size', '100mm / 125mm / 150mm'], ['Airflow', '80~450 m³/h'], ['Noise', '≤18 dB(A)'], ['Motor', 'DC Brushless'], ['Application', 'Cabinet / Studio / Bedroom']]
+      en: { title: 'Acoustic Cabinet Fan',
+            desc:  'Ultra-quiet inline fan engineered for server cabinet, home cinema, and bedroom applications. Double-skin acoustic lining reduces noise to exceptional levels.',
+            specs: [['Size','100mm / 125mm / 150mm'],['Airflow','80~450 m³/h'],['Noise','≤18 dB(A)'],['Motor','DC Brushless'],['Application','Cabinet / Studio / Bedroom']] },
+      ar: { title: 'مروحة خزانة صوتية',
+            desc:  'مروحة مدمجة فائقة الهدوء مصممة لخزانات الخوادم وسينما المنازل وتطبيقات غرف النوم. البطانة الصوتية المزدوجة تقلل الضوضاء إلى مستويات استثنائية.',
+            specs: [['Size','100mm / 125mm / 150mm'],['Airflow','80~450 m³/h'],['Noise','≤18 dB(A)'],['Motor','DC بدون فرش'],['Application','خزانة / ستوديو / غرفة نوم']] },
+      zh: { title: '静音机柜风机',
+            desc:  '超静音管道内嵌式风机，专为服务器机柜、家庭影院和卧室设计。双层吸音内衬，将噪音降至极低水平。',
+            specs: [['Size','100mm / 125mm / 150mm'],['Airflow','80~450 m³/h'],['Noise','≤18 dB(A)'],['Motor','直流无刷'],['Application','机柜 / 录音室 / 卧室']] }
     },
     p13: {
-      title: 'Fresh Air Purification Unit',
       img: 'https://sc02.alicdn.com/kf/Ac07b0ea4758d43eca21098ba7444ee35Q.png',
-      desc: 'Integrated ERV unit with H13 HEPA + activated carbon filter. Provides fresh air intake while recovering heat/cooling, ideal for sealed modern buildings.',
-      specs: [['Airflow', '150~350 m³/h'], ['Filter', 'H13 HEPA + Activated Carbon'], ['Heat Recovery', 'Up to 85%'], ['Noise', '≤32 dB(A)'], ['Application', 'Apartment / Office / Clinic']]
+      en: { title: 'Fresh Air Purification Unit',
+            desc:  'Integrated ERV unit with H13 HEPA + activated carbon filter. Provides fresh air intake while recovering heat/cooling, ideal for sealed modern buildings.',
+            specs: [['Airflow','150~350 m³/h'],['Filter','H13 HEPA + Activated Carbon'],['Heat Recovery','Up to 85%'],['Noise','≤32 dB(A)'],['Application','Apartment / Office / Clinic']] },
+      ar: { title: 'وحدة تنقية الهواء النقي',
+            desc:  'وحدة ERV متكاملة مع فلتر HEPA H13 + كربون نشط. توفر تدفق هواء نقي مع استعادة الحرارة/التبريد، مثالية للمباني الحديثة المغلقة.',
+            specs: [['Airflow','150~350 m³/h'],['Filter','HEPA H13 + كربون نشط'],['Heat Recovery','حتى 85%'],['Noise','≤32 dB(A)'],['Application','شقة / مكتب / عيادة']] },
+      zh: { title: '新风净化机组',
+            desc:  '集成ERV全热交换机组，配备H13 HEPA+活性炭过滤器。在回收热/冷量的同时引入新鲜空气，适合密封型现代建筑。',
+            specs: [['Airflow','150~350 m³/h'],['Filter','H13 HEPA + 活性炭'],['Heat Recovery','最高85%'],['Noise','≤32 dB(A)'],['Application','公寓 / 办公室 / 诊所']] }
     }
   };
 
+  /* track current language (default en) */
+  var currentLang = 'en';
+
   window.openProductModal = function (id) {
-    var data = productData[id];
-    if (!data) return;
+    var entry = productData[id];
+    if (!entry) return;
 
     var overlay = document.getElementById('product-modal');
     var content = document.getElementById('modal-content');
     if (!overlay || !content) return;
 
+    var lang = currentLang;
+    var data = entry[lang] || entry['en'];
+    var langIdx = { en: 0, ar: 1, zh: 2 }[lang] || 0;
+
     var specsHtml = data.specs.map(function (row) {
-      return '<tr><th>' + row[0] + '</th><td>' + row[1] + '</td></tr>';
+      var labelEntry = specLabels[row[0]];
+      var label = labelEntry ? labelEntry[langIdx] : row[0];
+      return '<tr><th>' + label + '</th><td>' + row[1] + '</td></tr>';
     }).join('');
 
+    var btnLabel = inquireLabel[lang] || inquireLabel['en'];
+
     content.innerHTML =
-      '<img src="' + data.img + '" alt="' + data.title + '" loading="lazy">' +
+      '<img src="' + entry.img + '" alt="' + data.title + '" loading="lazy">' +
       '<h2>' + data.title + '</h2>' +
       '<p>' + data.desc + '</p>' +
       (data.specs.length ? '<table><tbody>' + specsHtml + '</tbody></table>' : '') +
-      '<div style="margin-top:24px;"><a href="#inquiry" class="baer-btn-v2" onclick="closeProductModal()" style="text-decoration:none;">Inquire Now</a></div>';
+      '<div style="margin-top:24px;"><a href="#inquiry" class="baer-btn-v2" onclick="closeProductModal()" style="text-decoration:none;">' + btnLabel + '</a></div>';
 
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -298,6 +404,7 @@
 
   window.setLanguage = function (lang) {
     if (!i18n[lang]) return;
+    currentLang = lang;
     var dict = i18n[lang];
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-i18n');
@@ -312,7 +419,7 @@
   /* restore saved language */
   try {
     var saved = localStorage.getItem('baer-lang');
-    if (saved && i18n[saved]) window.setLanguage(saved);
+    if (saved && i18n[saved]) { currentLang = saved; window.setLanguage(saved); }
   } catch (e) {}
 
 })();
