@@ -19,7 +19,7 @@
 </script>
 <title>How to Verify a China Exhaust Fan Manufacturer | BAER Ventilation</title>
 <meta name="description" content="A practical B2B checklist for verifying a China exhaust fan manufacturer before placing an order: company identity, factory capability, product testing, certifications, samples and after-sales support.">
-<link rel="canonical" href="https://baer-ventilation.com/how-to-verify-china-exhaust-fan-manufacturer.html">
+<link rel="canonical" href="https://baer-ventilation.com/how-to-verify-china-exhaust-fan-manufacturer">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/main.css">
 <meta property="og:type" content="article">
@@ -111,8 +111,8 @@
     <a class="brand" href="/">BAER<span>VENTILATION</span></a>
     <nav class="main-nav" aria-label="Primary navigation">
       <a href="/">Home</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/guide-middle-east.html">ME Guide</a>
+      <a href="/faq">FAQ</a>
+      <a href="/guide-middle-east">ME Guide</a>
       <a class="quote" href="/#inquiry">Get Quote</a>
     </nav>
   </div>
@@ -232,12 +232,29 @@
   <section class="related">
     <h2>Related Articles</h2>
     <ul>
-      <li><a href="/guide-middle-east.html">Middle East Buyer's Guide to BAER Ventilation Products</a></li>
-      <li><a href="/exhaust-fan-middle-east-climate.html">How to Choose the Right Exhaust Fan for Middle East Climate</a></li>
-      <li><a href="/faq.html">FAQ: MOQ, Lead Time, Certifications and OEM Services</a></li>
+      <li><a href="/guide-middle-east">Middle East Buyer's Guide to BAER Ventilation Products</a></li>
+      <li><a href="/exhaust-fan-middle-east-climate">How to Choose the Right Exhaust Fan for Middle East Climate</a></li>
+      <li><a href="/faq">FAQ: MOQ, Lead Time, Certifications and OEM Services</a></li>
     </ul>
   </section>
 </main>
 <footer>© 2026 BAER Ventilation · Zhejiang Baer Electrical Technology Co., Ltd · <a href="/">baer-ventilation.com</a></footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
