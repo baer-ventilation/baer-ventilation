@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>【产品名称】 | BAER通风设备</title>
-    <link rel="canonical" href="https://baer-ventilation.com/zh/sample-product.html">
-    <link rel="alternate" hreflang="zh-CN" href="https://baer-ventilation.com/zh/sample-product.html">
-    <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/sample-product.html">
+    <link rel="canonical" href="https://baer-ventilation.com/zh/sample-product">
+    <link rel="alternate" hreflang="zh-CN" href="https://baer-ventilation.com/zh/sample-product">
+    <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/sample-product">
     <link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/">
 
         <meta name="description" content="【产品名称】，规格参数、性能特点，工业通风设备采购。">
@@ -28,21 +28,29 @@
     .back-link{display:inline-block;margin:1rem 0;color:#254b9c;text-decoration:none;}
     footer{background:#1a2b48;color:#fff;padding:2rem 5%;margin-top:4rem;}
   </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
 </head>
 <body>
 <header>
   <div class="logo">BAER-VENTILATION</div>
   <nav>
-    <a href="./index.html">首页</a>
-    <a href="./catalog.html">产品目录</a>
-    <a href="./about.html">关于我们</a>
-    <a href="./contact.html">联系我们</a>
-    <a href="../ar/sample-product.html">العربية</a>
+    <a href="./">首页</a>
+    <a href="./products/">产品目录</a>
+    <a href="./about">关于我们</a>
+    <a href="./contact">联系我们</a>
+    <a href="../ar/sample-product">العربية</a>
   </nav>
 </header>
 
 <div class="container">
-  <a href="./catalog.html" class="back-link">← 返回产品目录</a>
+  <a href="./products/" class="back-link">← 返回产品目录</a>
   <div class="product-wrap">
     <div class="product-img">
       【此处替换产品图片 <img src="xxx.jpg" alt="产品名称">】
@@ -93,7 +101,7 @@
     <p>工厂车间、除尘系统、管道通风、厂房换气等场景。</p>
 
     <div style="margin-top:2rem;">
-      <a href="./contact.html" style="background:#254b9c;color:#fff;padding:0.9rem 1.8rem;border-radius:4px;text-decoration:none;">咨询获取报价</a>
+      <a href="./contact" style="background:#254b9c;color:#fff;padding:0.9rem 1.8rem;border-radius:4px;text-decoration:none;">咨询获取报价</a>
     </div>
   </div>
 </div>
@@ -102,5 +110,22 @@
   <p>© 2026 BAER-VENTILATION. All rights reserved.</p>
   <p>邮箱：info@baer-ventilation.com</p>
 </footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
