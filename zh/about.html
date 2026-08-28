@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于我们 - Baer Ventilation</title>
-    <link rel="canonical" href="https://baer-ventilation.com/zh/about.html">
-    <link rel="alternate" hreflang="zh-CN" href="https://baer-ventilation.com/zh/about.html">
-    <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/about.html">
+    <link rel="canonical" href="https://baer-ventilation.com/zh/about">
+    <link rel="alternate" hreflang="zh-CN" href="https://baer-ventilation.com/zh/about">
+    <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/about">
     <link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/">
 
         <meta name="description" content="Baer Ventilation 是专业工业通风设备生产厂家，专注工业风机研发、生产与出口，提供一站式通风解决方案。">
@@ -33,19 +33,27 @@
             .banner h1{font-size:24px;}
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
 </head>
 <body>
 <header class="header">
     <div class="logo">Baer Ventilation</div>
     <nav>
-        <a href="index.html">首页</a>
-        <a href="catalog.html">产品目录</a>
-        <a href="about.html">关于我们</a>
-        <a href="contact.html">联系我们</a>
+        <a href="./">首页</a>
+        <a href="products/">产品目录</a>
+        <a href="about">关于我们</a>
+        <a href="contact">联系我们</a>
     </nav>
     <div class="lang-switch">
-        <a href="about.html" class="active">中文</a>
-        <a href="../ar/about.html">العربية</a>
+        <a href="about" class="active">中文</a>
+        <a href="../ar/about">العربية</a>
     </div>
 </header>
 
@@ -75,12 +83,29 @@
     <div class="content-block">
         <h2>合作愿景</h2>
         <p>我们始终坚持“品质为本、诚信共赢”的经营理念，致力于成为全球客户信赖的工业通风设备合作伙伴，欢迎海内外客户咨询、洽谈合作。</p>
-        <a href="contact.html" class="btn">立即咨询</a>
+        <a href="contact" class="btn">立即咨询</a>
     </div>
 </div>
 
 <footer class="footer">
     <p>© 2026 Baer Ventilation All Rights Reserved</p>
 </footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
