@@ -21,7 +21,7 @@
 </script>
 <title>How to Choose the Right Exhaust Fan for Middle East Climate | BAER Ventilation</title>
 <meta name="description" content="A practical guide for buyers in Saudi Arabia, UAE, Iraq, Kuwait and Qatar: how to select exhaust fans that handle extreme heat, dust and humidity in Middle East conditions.">
-<link rel="canonical" href="https://baer-ventilation.com/exhaust-fan-middle-east-climate.html">
+<link rel="canonical" href="https://baer-ventilation.com/exhaust-fan-middle-east-climate">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/main.css">
 
@@ -222,8 +222,8 @@
     <a href="/" style="font-size:22px;font-weight:900;color:#C0392B;text-decoration:none;letter-spacing:-0.5px;">BAER<span style="color:#1E293B;font-weight:400;font-size:14px;margin-left:6px;">VENTILATION</span></a>
     <nav style="display:flex;gap:24px;font-size:14px;font-weight:600;">
       <a href="/" style="color:#1E293B;text-decoration:none;">Home</a>
-      <a href="/faq.html" style="color:#1E293B;text-decoration:none;">FAQ</a>
-      <a href="/guide-middle-east.html" style="color:#1E293B;text-decoration:none;">ME Guide</a>
+      <a href="/faq" style="color:#1E293B;text-decoration:none;">FAQ</a>
+      <a href="/guide-middle-east" style="color:#1E293B;text-decoration:none;">ME Guide</a>
       <a href="/#inquiry" style="background:#C0392B;color:#fff;padding:8px 18px;border-radius:5px;text-decoration:none;">Get Quote</a>
     </nav>
   </div>
@@ -237,7 +237,7 @@
 </div>
 
 <nav class="breadcrumb">
-  <a href="/">Home</a> › <a href="/guide-middle-east.html">Middle East Guide</a> › Choosing Exhaust Fans for Extreme Heat
+  <a href="/">Home</a> › <a href="/guide-middle-east">Middle East Guide</a> › Choosing Exhaust Fans for Extreme Heat
 </nav>
 
 <!-- ── Article body ── -->
@@ -476,9 +476,9 @@
   <!-- Related articles -->
   <h2>Related Articles</h2>
   <ul>
-    <li><a href="/guide-middle-east.html" style="color:#E21E26;">Middle East Buyer's Complete Guide to BAER Ventilation Products</a></li>
-    <li><a href="/ceiling-vs-window-fan.html" style="color:#E21E26;">Ceiling Fan vs Window Fan: Which Is Right for Your Project?</a></li>
-    <li><a href="/faq.html" style="color:#E21E26;">FAQ: MOQ, Lead Time, Certifications &amp; OEM Services</a></li>
+    <li><a href="/guide-middle-east" style="color:#E21E26;">Middle East Buyer's Complete Guide to BAER Ventilation Products</a></li>
+    <li><a href="/ceiling-vs-window-fan" style="color:#E21E26;">Ceiling Fan vs Window Fan: Which Is Right for Your Project?</a></li>
+    <li><a href="/faq" style="color:#E21E26;">FAQ: MOQ, Lead Time, Certifications &amp; OEM Services</a></li>
   </ul>
 
 </div><!-- /.art-body -->
@@ -487,5 +487,22 @@
   <p style="margin:0;">© 2026 BAER Ventilation · Zhejiang Baer Electrical Technology Co., Ltd · <a href="/" style="color:#C0392B;text-decoration:none;">baer-ventilation.com</a></p>
 </footer>
 
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
