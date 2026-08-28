@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اتصل بنا - Baer Ventilation</title>
-    <link rel="canonical" href="https://baer-ventilation.com/ar/contact.html">
-    <link rel="alternate" hreflang="zh-CN" href="https://baer-ventilation.com/zh/contact.html">
-    <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/contact.html">
+    <link rel="canonical" href="https://baer-ventilation.com/ar/contact">
+    <link rel="alternate" hreflang="zh-CN" href="https://baer-ventilation.com/zh/contact">
+    <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/contact">
     <link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/">
 
         <meta name="description" content="تواصل مع باير للتهوية للحصول على عروض الأسعار، اختيار النماذج التقنية والحلول المخصصة، نرحب بتعاون التجار الخارجيين.">
@@ -37,19 +37,27 @@
             .container{grid-template-columns:1fr;}
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
 </head>
 <body>
 <header class="header">
     <div class="logo">Baer Ventilation</div>
     <nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="catalog.html">كتالوج المنتجات</a>
-        <a href="about.html">من نحن</a>
-        <a href="contact.html">اتصل بنا</a>
+        <a href="./">الرئيسية</a>
+        <a href="products/">كتالوج المنتجات</a>
+        <a href="about">من نحن</a>
+        <a href="contact">اتصل بنا</a>
     </nav>
     <div class="lang-switch">
-        <a href="contact.html" class="active">العربية</a>
-        <a href="../zh/contact.html">中文</a>
+        <a href="contact" class="active">العربية</a>
+        <a href="../zh/contact">中文</a>
     </div>
 </header>
 
@@ -106,5 +114,22 @@
 <footer class="footer">
     <p>© 2026 Baer Ventilation جميع الحقوق محفوظة</p>
 </footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
