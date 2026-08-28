@@ -15,7 +15,7 @@
 </script>
 <title>How Are BAER Exhaust Fans Made? Factory Walkthrough | BAER Ventilation</title>
 <meta name="description" content="See how BAER exhaust fans are developed, assembled, tested and prepared for export. A practical factory walkthrough for distributors, contractors and project buyers.">
-<link rel="canonical" href="https://baer-ventilation.com/baer-factory-walkthrough.html">
+<link rel="canonical" href="https://baer-ventilation.com/baer-factory-walkthrough">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/main.css">
 <meta property="og:type" content="article">
@@ -63,7 +63,7 @@
 </style>
 </head>
 <body>
-<header class="site-header"><div class="header-inner"><a class="brand" href="/">BAER<span>VENTILATION</span></a><nav class="main-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/faq.html">FAQ</a><a href="/guide-middle-east.html">ME Guide</a><a class="quote" href="/#inquiry">Get Quote</a></nav></div></header>
+<header class="site-header"><div class="header-inner"><a class="brand" href="/">BAER<span>VENTILATION</span></a><nav class="main-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/faq">FAQ</a><a href="/guide-middle-east">ME Guide</a><a class="quote" href="/#inquiry">Get Quote</a></nav></div></header>
 <section class="hero"><div class="eyebrow">Factory Direct · B2B</div><h1>How Are BAER Exhaust Fans Made? Factory Walkthrough</h1><div class="meta">By BAER Ventilation &nbsp;·&nbsp; August 2026 &nbsp;·&nbsp; 8 min read</div></section>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › BAER Factory Walkthrough</nav>
 <main class="article">
@@ -113,8 +113,25 @@
 <h3>What quality checks should buyers ask about?</h3><p>Ask about incoming-part inspection, assembly checks, electrical testing, airflow or performance checks, noise and vibration checks, final inspection and export packing.</p>
 <h3>Does BAER offer OEM and ODM services?</h3><p>BAER Ventilation offers OEM and ODM discussions for suitable products. Confirm the model, quantity, artwork, tooling and approval process before ordering.</p>
 <section class="cta"><h2>Want to Review a Fan Project With the Factory?</h2><p>Send your application, destination, quantity and required specifications. BAER Ventilation can help match the request to a suitable exhaust fan or ventilation configuration.</p><a class="btn" href="/#inquiry">Request a Factory Quote</a></section>
-<section class="related"><h2>Related Articles</h2><ul><li><a href="/how-to-verify-china-exhaust-fan-manufacturer.html">How to Verify a China Exhaust Fan Manufacturer Before You Order</a></li><li><a href="/exhaust-fan-certifications-guide.html">Exhaust Fan Certification Guide: CE, CCC, CB, SAA and ETL</a></li><li><a href="/exhaust-fan-middle-east-climate.html">How to Choose the Right Exhaust Fan for Middle East Climate</a></li><li><a href="/faq.html">FAQ: MOQ, Lead Time, Certifications and OEM Services</a></li></ul></section>
+<section class="related"><h2>Related Articles</h2><ul><li><a href="/how-to-verify-china-exhaust-fan-manufacturer">How to Verify a China Exhaust Fan Manufacturer Before You Order</a></li><li><a href="/exhaust-fan-certifications-guide">Exhaust Fan Certification Guide: CE, CCC, CB, SAA and ETL</a></li><li><a href="/exhaust-fan-middle-east-climate">How to Choose the Right Exhaust Fan for Middle East Climate</a></li><li><a href="/faq">FAQ: MOQ, Lead Time, Certifications and OEM Services</a></li></ul></section>
 </main>
 <footer>© 2026 BAER Ventilation · Zhejiang Baer Electrical Technology Co., Ltd · <a href="/">baer-ventilation.com</a></footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
