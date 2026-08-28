@@ -1,0 +1,7 @@
+# Redirect old file URLs to new directory-style URLs
+/products.html /products/ 301
+/zh/catalog.html /zh/products/ 301
+/ar/catalog.html /ar/products/ 301
+
+# SPA fallback for remaining unmatched paths
+/* /index.html 200
