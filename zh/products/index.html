@@ -39,15 +39,23 @@
             .banner h1{font-size:24px;}
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
 </head>
 <body>
 <header class="header">
     <div class="logo">Baer Ventilation</div>
     <nav>
-        <a href="../index.html">首页</a>
+        <a href="../">首页</a>
         <a href="./">产品目录</a>
-        <a href="../about.html">关于我们</a>
-        <a href="../contact.html">联系我们</a>
+        <a href="../about">关于我们</a>
+        <a href="../contact">联系我们</a>
     </nav>
     <div class="lang-switch">
         <a href="./" class="active">中文</a>
@@ -73,7 +81,7 @@
             <div class="card-body">
                 <h3>离心风机</h3>
                 <p>高压离心通风机，适用于除尘、废气处理、管道送风。</p>
-                <a href="../sample-product.html">查看详情</a>
+                <a href="../sample-product">查看详情</a>
             </div>
         </div>
         <div class="card">
@@ -81,7 +89,7 @@
             <div class="card-body">
                 <h3>轴流风机</h3>
                 <p>大流量轴流风机，厂房通风、车间排风散热。</p>
-                <a href="../sample-product.html">查看详情</a>
+                <a href="../sample-product">查看详情</a>
             </div>
         </div>
         <div class="card">
@@ -89,7 +97,7 @@
             <div class="card-body">
                 <h3>除尘风机</h3>
                 <p>粉尘环境专用风机，配套除尘设备使用。</p>
-                <a href="../sample-product.html">查看详情</a>
+                <a href="../sample-product">查看详情</a>
             </div>
         </div>
         <div class="card">
@@ -97,7 +105,7 @@
             <div class="card-body">
                 <h3>通风配件</h3>
                 <p>风阀、风管、防护罩等全套通风配件。</p>
-                <a href="../sample-product.html">查看详情</a>
+                <a href="../sample-product">查看详情</a>
             </div>
         </div>
     </div>
@@ -106,5 +114,22 @@
 <footer class="footer">
     <p>© 2026 Baer Ventilation All Rights Reserved</p>
 </footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
