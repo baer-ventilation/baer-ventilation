@@ -26,6 +26,14 @@
   .ty-trust-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #64748B; }
   .ty-trust-item svg { color: #E21E26; flex-shrink: 0; }
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
 </head>
 <body>
 
@@ -102,5 +110,23 @@
   © 2026 Zhejiang Baer Electrical Technology Co., Ltd. — <a href="/" style="color:#94A3B8;text-decoration:none;">baer-ventilation.com</a>
 </footer>
 
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
+<script>if (typeof gtag === 'function') gtag('event', 'generate_lead');</script>
 </body>
 </html>
