@@ -39,15 +39,23 @@
             .banner h1{font-size:24px;}
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
 </head>
 <body>
 <header class="header">
     <div class="logo">Baer Ventilation</div>
     <nav>
-        <a href="../index.html">الرئيسية</a>
+        <a href="../">الرئيسية</a>
         <a href="./">كتالوج المنتجات</a>
-        <a href="../about.html">من نحن</a>
-        <a href="../contact.html">اتصل بنا</a>
+        <a href="../about">من نحن</a>
+        <a href="../contact">اتصل بنا</a>
     </nav>
     <div class="lang-switch">
         <a href="./" class="active">العربية</a>
@@ -73,7 +81,7 @@
             <div class="card-body">
                 <h3>مراوح طاردة مركزية</h3>
                 <p>مراوح تهوية مركزية عالية الضغط، تستخدم لإزالة الغبار، معالجة العوادم وتدفق الهواء في الأنابيب.</p>
-                <a href="../sample-product.html">عرض التفاصيل</a>
+                <a href="../sample-product">عرض التفاصيل</a>
             </div>
         </div>
         <div class="card">
@@ -81,7 +89,7 @@
             <div class="card-body">
                 <h3>مراوح محورية</h3>
                 <p>مراوح محورية ذات تدفق هواء كبير، لتهوية المصانع وتبريد الورشات.</p>
-                <a href="../sample-product.html">عرض التفاصيل</a>
+                <a href="../sample-product">عرض التفاصيل</a>
             </div>
         </div>
         <div class="card">
@@ -89,7 +97,7 @@
             <div class="card-body">
                 <h3>مراوح إزالة الغبار</h3>
                 <p>مراوح مخصصة لبيئات الغبار، تعمل مع معدات إزالة الغبار.</p>
-                <a href="../sample-product.html">عرض التفاصيل</a>
+                <a href="../sample-product">عرض التفاصيل</a>
             </div>
         </div>
         <div class="card">
@@ -97,7 +105,7 @@
             <div class="card-body">
                 <h3>ملحقات التهوية</h3>
                 <p>صمامات هواء، أنابيب هواء، أغطية وجميع ملحقات أنظمة التهوية.</p>
-                <a href="../sample-product.html">عرض التفاصيل</a>
+                <a href="../sample-product">عرض التفاصيل</a>
             </div>
         </div>
     </div>
@@ -106,5 +114,22 @@
 <footer class="footer">
     <p>© 2026 Baer Ventilation جميع الحقوق محفوظة</p>
 </footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
