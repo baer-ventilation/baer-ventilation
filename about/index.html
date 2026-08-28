@@ -6,8 +6,8 @@
     <title>About Us | BAER Ventilation Industrial Fan Manufacturer</title>
     <link rel="canonical" href="https://baer-ventilation.com/about/">
     <link rel="alternate" hreflang="en" href="https://baer-ventilation.com/about/">
-    <link rel="alternate" hreflang="zh-CN" href="https://baer-ventilation.com/zh/about.html">
-    <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/about.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://baer-ventilation.com/zh/about">
+    <link rel="alternate" hreflang="ar" href="https://baer-ventilation.com/ar/about">
     <link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/">
     <meta name="description" content="BAER Ventilation is a manufacturer of industrial ventilation fans and exhaust fans, with in-house production, quality control and global export to Middle East, Europe and North America.">
     <meta name="keywords" content="BAER Ventilation, industrial fan manufacturer, ventilation equipment factory, exhaust fan supplier">
@@ -30,20 +30,28 @@
             .banner h1{font-size:24px;}
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
 </head>
 <body>
 <header class="header">
     <div class="logo">Baer Ventilation</div>
     <nav>
-        <a href="../index.html">Home</a>
+        <a href="../">Home</a>
         <a href="../products/">Products</a>
         <a href="./">About Us</a>
         <a href="../contact/">Contact</a>
     </nav>
     <div class="lang-switch">
         <a href="./" class="active">English</a>
-        <a href="../zh/about.html">中文</a>
-        <a href="../ar/about.html">العربية</a>
+        <a href="../zh/about">中文</a>
+        <a href="../ar/about">العربية</a>
     </div>
 </header>
 
@@ -78,5 +86,22 @@
 <footer class="footer">
     <p>&copy; 2026 Baer Ventilation All Rights Reserved</p>
 </footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
