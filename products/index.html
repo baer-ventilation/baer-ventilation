@@ -38,12 +38,20 @@
             .banner h1{font-size:24px;}
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
 </head>
 <body>
 <header class="header">
     <div class="logo">Baer Ventilation</div>
     <nav>
-        <a href="../index.html">Home</a>
+        <a href="../">Home</a>
         <a href="./">Products</a>
         <a href="../about/">About Us</a>
         <a href="../contact/">Contact</a>
@@ -73,7 +81,7 @@
             <div class="card-body">
                 <h3>Centrifugal Fans</h3>
                 <p>High-pressure centrifugal ventilation fans for dust removal, exhaust gas treatment and ducted air supply.</p>
-                <a href="../product-6inch-984cfm.html">View Details</a>
+                <a href="../product-6inch-984cfm">View Details</a>
             </div>
         </div>
         <div class="card">
@@ -81,7 +89,7 @@
             <div class="card-body">
                 <h3>Axial Flow Fans</h3>
                 <p>High-flow axial fans for factory ventilation, workshop exhaust heat dissipation.</p>
-                <a href="../product-6inch-984cfm.html">View Details</a>
+                <a href="../product-6inch-984cfm">View Details</a>
             </div>
         </div>
         <div class="card">
@@ -89,7 +97,7 @@
             <div class="card-body">
                 <h3>Dust Exhaust Fans</h3>
                 <p>Dust-resistant fans for dusty environments, used with dust removal equipment.</p>
-                <a href="../product-6inch-984cfm.html">View Details</a>
+                <a href="../product-6inch-984cfm">View Details</a>
             </div>
         </div>
         <div class="card">
@@ -97,7 +105,7 @@
             <div class="card-body">
                 <h3>Ventilation Accessories</h3>
                 <p>Dampers, ducts, guards and complete ventilation system accessories.</p>
-                <a href="../product-6inch-984cfm.html">View Details</a>
+                <a href="../product-6inch-984cfm">View Details</a>
             </div>
         </div>
     </div>
@@ -106,5 +114,22 @@
 <footer class="footer">
     <p>&copy; 2026 Baer Ventilation All Rights Reserved</p>
 </footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
