@@ -33,26 +33,34 @@
             .hero h1{font-size:26px;}
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
 </head>
 <body>
 <header class="header">
     <div class="logo">Baer Ventilation</div>
     <nav>
-        <a href="index.html">首页</a>
-        <a href="catalog.html">产品目录</a>
-        <a href="about.html">关于我们</a>
-        <a href="contact.html">联系我们</a>
+        <a href="./">首页</a>
+        <a href="products/">产品目录</a>
+        <a href="about">关于我们</a>
+        <a href="contact">联系我们</a>
     </nav>
     <div class="lang-switch">
-        <a href="index.html" class="active">中文</a>
-        <a href="../ar/index.html">العربية</a>
+        <a href="./" class="active">中文</a>
+        <a href="../ar/">العربية</a>
     </div>
 </header>
 
 <section class="hero">
     <h1>专业工业通风设备制造商</h1>
     <p>Baer Ventilation专注研发、生产各类工业风机、排风通风设备，面向全球提供可靠通风整体解决方案。</p>
-    <a href="catalog.html" class="btn">浏览产品目录</a>
+    <a href="products/" class="btn">浏览产品目录</a>
 </section>
 
 <section class="section">
@@ -74,5 +82,22 @@
     <p>© 2026 Baer Ventilation All Rights Reserved</p>
 </footer>
 
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
