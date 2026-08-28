@@ -15,7 +15,7 @@
 </script>
 <title>Exhaust Fan Certification Guide: CE, CCC, CB, SAA and ETL | BAER</title>
 <meta name="description" content="A practical buyer's guide to checking CE, CCC, CB, SAA and ETL documentation for exhaust fans. Learn what to match before ordering from a China ventilation fan manufacturer.">
-<link rel="canonical" href="https://baer-ventilation.com/exhaust-fan-certifications-guide.html">
+<link rel="canonical" href="https://baer-ventilation.com/exhaust-fan-certifications-guide">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/main.css">
 <meta property="og:type" content="article">
@@ -63,7 +63,7 @@
 </style>
 </head>
 <body>
-<header class="site-header"><div class="header-inner"><a class="brand" href="/">BAER<span>VENTILATION</span></a><nav class="main-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/faq.html">FAQ</a><a href="/guide-middle-east.html">ME Guide</a><a class="quote" href="/#inquiry">Get Quote</a></nav></div></header>
+<header class="site-header"><div class="header-inner"><a class="brand" href="/">BAER<span>VENTILATION</span></a><nav class="main-nav" aria-label="Primary navigation"><a href="/">Home</a><a href="/faq">FAQ</a><a href="/guide-middle-east">ME Guide</a><a class="quote" href="/#inquiry">Get Quote</a></nav></div></header>
 <section class="hero"><div class="eyebrow">B2B Compliance Guide</div><h1>Exhaust Fan Certification Guide: CE, CCC, CB, SAA and ETL</h1><div class="meta">By BAER Ventilation &nbsp;·&nbsp; August 2026 &nbsp;·&nbsp; 8 min read</div></section>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › Exhaust Fan Certification Guide</nav>
 <main class="article">
@@ -122,8 +122,25 @@
 <h3>Which certification documents should I request from a supplier?</h3><p>Request the applicable certificate, test report, covered model list, issuing-body information, declaration or conformity document where applicable, and the document version used for your shipment.</p>
 <h3>Can BAER provide certification documents before an order?</h3><p>Ask BAER Ventilation for the documents applicable to your selected model and destination market before approving the purchase order.</p>
 <section class="cta"><h2>Need a Model-Specific Certification Pack?</h2><p>Send your destination country, model or application, voltage, frequency and quantity. BAER Ventilation can review the request and prepare the relevant documentation for your quotation.</p><a class="btn" href="/#inquiry">Request Documentation</a></section>
-<section class="related"><h2>Related Articles</h2><ul><li><a href="/how-to-verify-china-exhaust-fan-manufacturer.html">How to Verify a China Exhaust Fan Manufacturer Before You Order</a></li><li><a href="/guide-middle-east.html">Middle East Buyer's Guide to BAER Ventilation Products</a></li><li><a href="/exhaust-fan-middle-east-climate.html">How to Choose the Right Exhaust Fan for Middle East Climate</a></li><li><a href="/faq.html">FAQ: MOQ, Lead Time, Certifications and OEM Services</a></li></ul></section>
+<section class="related"><h2>Related Articles</h2><ul><li><a href="/how-to-verify-china-exhaust-fan-manufacturer">How to Verify a China Exhaust Fan Manufacturer Before You Order</a></li><li><a href="/guide-middle-east">Middle East Buyer's Guide to BAER Ventilation Products</a></li><li><a href="/exhaust-fan-middle-east-climate">How to Choose the Right Exhaust Fan for Middle East Climate</a></li><li><a href="/faq">FAQ: MOQ, Lead Time, Certifications and OEM Services</a></li></ul></section>
 </main>
 <footer>© 2026 BAER Ventilation · Zhejiang Baer Electrical Technology Co., Ltd · <a href="/">baer-ventilation.com</a></footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 </html>
