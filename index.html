@@ -130,11 +130,11 @@
 
     <div class="lang-content" style="min-width:200px;">
 
-        <a href="/faq.html">FAQ</a>
+        <a href="/faq">FAQ</a>
 
-        <a href="/guide-middle-east.html">Middle East Buyer Guide</a>
+        <a href="/guide-middle-east">Middle East Buyer Guide</a>
 
-        <a href="/ceiling-vs-window-fan.html">Ceiling vs Window Fan</a>
+        <a href="/ceiling-vs-window-fan">Ceiling vs Window Fan</a>
 
     </div>
 
@@ -220,11 +220,11 @@
 
                     <a href="/baer-fan-catalog.pdf" target="_blank" class="baer-btn-v2" data-i18n="nav-catalog">GET CATALOG PDF</a>
 
-                  <li><a href="/faq.html">FAQ</a></li>
+                  <li><a href="/faq">FAQ</a></li>
 
-<li><a href="/guide-middle-east.html">Middle East Guide</a></li>
+<li><a href="/guide-middle-east">Middle East Guide</a></li>
 
-<li><a href="/ceiling-vs-window-fan.html">Ceiling vs Window Fan</a></li>
+<li><a href="/ceiling-vs-window-fan">Ceiling vs Window Fan</a></li>
 
                 </div>
 
@@ -1408,7 +1408,7 @@
 
                     <input type="hidden" name="access_key" value="b6181897-97cf-4965-a4fd-7c13e5061fa6">
 
-                    <input type="hidden" name="redirect" value="https://baer-ventilation.com/thankyou.html">
+                    <input type="hidden" name="redirect" value="https://baer-ventilation.com/thankyou">
 
                     <input type="hidden" name="subject" value="New Inquiry from BAER Website">
 
@@ -1700,6 +1700,23 @@
 
     <script src="js/main.js"></script>
 
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
 </body>
 
 </html>
