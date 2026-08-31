@@ -3,6 +3,7 @@
 # Allow all crawlers (default)
 User-agent: *
 Allow: /
+Disallow: /thankyou
 
 # Explicitly allow AI crawlers (important for ChatGPT / Perplexity / Gemini indexing)
 User-agent: GPTBot
@@ -28,5 +29,10 @@ Allow: /
 
 User-agent: cohere-ai
 Allow: /
+
+# Chinese and Arabic versions are canonical alternates — keep them crawlable
+User-agent: *
+Allow: /zh/
+Allow: /ar/
 
 Sitemap: https://baer-ventilation.com/sitemap.xml
