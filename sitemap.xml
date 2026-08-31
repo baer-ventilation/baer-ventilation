@@ -170,7 +170,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://baer-ventilation.com/zh/about</loc>
+    <loc>https://baer-ventilation.com/zh/about/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -182,7 +182,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://baer-ventilation.com/zh/contact</loc>
+    <loc>https://baer-ventilation.com/zh/contact/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -202,7 +202,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://baer-ventilation.com/ar/about</loc>
+    <loc>https://baer-ventilation.com/ar/about/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -214,7 +214,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://baer-ventilation.com/ar/contact</loc>
+    <loc>https://baer-ventilation.com/ar/contact/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
