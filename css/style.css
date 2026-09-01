@@ -38,7 +38,6 @@ footer { margin-top:60px; padding:20px 0; border-top:1px solid #eee; font-size:1
 #applications .app-icon-box { width:34px !important; height:34px !important; border-radius:3px !important; }
 #applications .app-title { font-size:15px !important; line-height:1.15 !important; }
 #applications .app-sub { font-size:10px !important; line-height:1.5 !important; }
-
 #applications .app-card:nth-child(1) .app-img { content:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=82'); }
 #applications .app-card:nth-child(2) .app-img { content:url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=900&q=82'); }
 #applications .app-card:nth-child(3) .app-img { content:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=82'); }
@@ -64,6 +63,24 @@ footer { margin-top:60px; padding:20px 0; border-top:1px solid #eee; font-size:1
 #about .workshop-item:hover img { transform:scale(1.045) !important; filter:saturate(1.04) contrast(1.03) !important; }
 #about .workshop-item .label { font-size:10px !important; letter-spacing:1.1px !important; padding:24px 10px 11px !important; }
 
+/* Put the real Application section before Factory Tour on the rendered page. */
+body { display:flex; flex-direction:column; }
+body > nav.navbar { order:1; }
+body > .hero-slider { order:2; }
+body > main#products { order:3; }
+body > #applications { order:4; }
+body > #factory-video { order:5; }
+body > #certifications { order:6; }
+body > #about { order:7; }
+body > #why-baer { order:8; }
+body > section:nth-of-type(7) { order:9; }
+body > section:nth-of-type(8) { order:10; }
+body > section:nth-of-type(9) { order:11; }
+body > #inquiry { order:12; }
+body > footer { order:13; }
+body > .floating-tools,
+body > .modal-overlay { order:99; }
+
 @media (max-width:900px){
   #applications > .container,#about .factory-intro { grid-template-columns:1fr !important; }
   #applications > .container > div:first-child { max-width:650px !important; text-align:center !important; margin:0 auto !important; }
@@ -86,66 +103,4 @@ footer { margin-top:60px; padding:20px 0; border-top:1px solid #eee; font-size:1
   h2 { font-size:20px; }
   nav a { margin-right:12px; font-size:14px; }
   .table-wrap { overflow-x:auto; }
-}
-
-/* ============================================================
-   Homepage visual fallback — restore Application gallery above
-   the existing Factory Tour without changing homepage data.
-   ============================================================ */
-#factory-video {
-  position:relative !important;
-  margin-top:430px !important;
-}
-#factory-video::before {
-  content:'APPLICATION SCENARIOS\A Residential   •   Industrial   •   Commercial   •   Healthcare   •   HVAC Projects';
-  white-space:pre-line;
-  position:absolute;
-  left:0;
-  right:0;
-  top:-430px;
-  height:390px;
-  padding:54px max(4vw,24px) 30px;
-  display:flex;
-  align-items:flex-end;
-  justify-content:center;
-  text-align:center;
-  z-index:1;
-  color:#fff;
-  font-size:clamp(22px,3vw,40px);
-  line-height:1.25;
-  font-weight:900;
-  letter-spacing:-.8px;
-  background-image:
-    linear-gradient(180deg,rgba(11,14,24,.16),rgba(11,14,24,.92)),
-    url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=82'),
-    url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=900&q=82'),
-    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=82'),
-    url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=82'),
-    url('https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=900&q=82');
-  background-size:100% 100%,19.2% 100%,19.2% 100%,19.2% 100%,19.2% 100%,19.2% 100%;
-  background-position:0 0,0 0,20.2% 0,40.4% 0,60.6% 0,80.8% 0;
-  background-repeat:no-repeat;
-  box-shadow:0 20px 50px rgba(0,0,0,.16);
-}
-#factory-video::after {
-  content:'';
-  position:absolute;
-  left:0;
-  right:0;
-  top:-40px;
-  height:40px;
-  background:linear-gradient(180deg,#fff,rgba(255,255,255,0));
-  pointer-events:none;
-}
-@media (max-width:700px){
-  #factory-video { margin-top:290px !important; }
-  #factory-video::before {
-    top:-290px;
-    height:260px;
-    padding:28px 22px 22px;
-    font-size:clamp(20px,6vw,30px);
-    background-size:100% 100%,100% 100%,0 0,0 0,0 0,0 0;
-    background-position:0 0,0 0,0 0,0 0,0 0,0 0;
-  }
-  #factory-video::after { top:-20px; height:20px; }
 }
