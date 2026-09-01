@@ -104,3 +104,173 @@ body > .modal-overlay { order:99; }
   nav a { margin-right:12px; font-size:14px; }
   .table-wrap { overflow-x:auto; }
 }
+
+/* ============================================================
+   BAER Homepage — stronger reference-style composition
+   ============================================================ */
+/* Applications: make this a clearly differentiated editorial block. */
+#applications {
+  padding:92px 0 104px !important;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(226,30,38,.11), transparent 31%),
+    linear-gradient(180deg,#0b1220 0%,#090d16 100%) !important;
+}
+#applications > .container {
+  grid-template-columns:minmax(210px,.28fr) minmax(0,1fr) !important;
+  gap:42px !important;
+  align-items:stretch !important;
+}
+#applications > .container > div:first-child {
+  max-width:250px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+}
+#applications > .container > div:first-child h2 {
+  font-size:clamp(34px,4vw,52px) !important;
+  font-weight:900 !important;
+  letter-spacing:-1.4px !important;
+}
+#applications > .container > div:first-child p {
+  font-size:14px !important;
+  color:#a7b1c0 !important;
+}
+#applications > .container > div:first-child::after {
+  margin-top:28px !important;
+  padding:0 0 9px !important;
+  font-size:11px !important;
+}
+#applications > .container > div:last-child {
+  grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  align-items:stretch !important;
+}
+#applications .app-card {
+  min-height:420px !important;
+  aspect-ratio:auto !important;
+  background:#111827 !important;
+  border:0 !important;
+  overflow:hidden !important;
+  position:relative !important;
+  box-shadow:0 18px 48px rgba(0,0,0,.32) !important;
+}
+#applications .app-img {
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  opacity:.78 !important;
+  filter:saturate(.84) contrast(1.04) !important;
+}
+#applications .app-overlay {
+  position:absolute !important;
+  inset:0 !important;
+  background:linear-gradient(180deg,rgba(3,7,18,.04) 18%,rgba(3,7,18,.22) 46%,rgba(3,7,18,.93) 100%) !important;
+}
+#applications .app-content {
+  position:absolute !important;
+  left:0 !important;
+  right:0 !important;
+  bottom:0 !important;
+  z-index:2 !important;
+  padding:28px 18px 20px !important;
+}
+#applications .app-icon-box {
+  width:38px !important;
+  height:38px !important;
+  margin-bottom:12px !important;
+  background:#e21e26 !important;
+}
+#applications .app-title {
+  font-size:18px !important;
+  line-height:1.1 !important;
+  margin:0 0 7px !important;
+}
+#applications .app-sub {
+  font-size:11px !important;
+  line-height:1.55 !important;
+  color:rgba(255,255,255,.78) !important;
+}
+#applications .app-card:hover {
+  transform:translateY(-5px) !important;
+  box-shadow:0 24px 58px rgba(0,0,0,.42) !important;
+}
+#applications .app-card:hover .app-img {
+  opacity:.56 !important;
+  transform:scale(1.06) !important;
+}
+
+/* Factory: turn the existing section into a stronger two-part visual story. */
+#about.section-padding {
+  padding:104px 0 112px !important;
+}
+#about .factory-intro {
+  grid-template-columns:minmax(0,1.18fr) minmax(330px,.82fr) !important;
+  gap:60px !important;
+  margin-bottom:72px !important;
+}
+#about .factory-image {
+  order:2 !important;
+  min-height:510px !important;
+  box-shadow:0 28px 70px rgba(15,23,42,.18) !important;
+}
+#about .factory-image img {
+  height:510px !important;
+  object-fit:cover !important;
+}
+#about .factory-text {
+  order:1 !important;
+  align-self:center !important;
+}
+#about .factory-text h3 {
+  font-size:clamp(36px,4.1vw,58px) !important;
+  max-width:520px !important;
+  font-weight:900 !important;
+}
+#about .factory-text p {
+  max-width:560px !important;
+  font-size:15px !important;
+  color:#566274 !important;
+}
+#about .stat-grid {
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:10px !important;
+}
+#about .stat-item {
+  min-height:112px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+}
+#about .workshop-grid {
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:12px !important;
+}
+#about .workshop-item {
+  aspect-ratio:1.32 !important;
+}
+
+@media (max-width:1100px){
+  #applications > .container { grid-template-columns:1fr !important; }
+  #applications > .container > div:first-child { max-width:700px !important; align-items:center !important; text-align:center !important; margin:0 auto 8px !important; }
+  #applications > .container > div:last-child { grid-template-columns:repeat(3,minmax(0,1fr)) !important; }
+  #applications .app-card { min-height:360px !important; }
+  #about .factory-intro { grid-template-columns:1fr 1fr !important; gap:34px !important; }
+}
+@media (max-width:900px){
+  #applications > .container > div:last-child { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+  #applications .app-card { min-height:320px !important; }
+  #about .factory-intro { grid-template-columns:1fr !important; }
+  #about .factory-image { order:1 !important; }
+  #about .factory-text { order:2 !important; }
+  #about .factory-image img { height:390px !important; }
+}
+@media (max-width:560px){
+  #applications > .container > div:last-child { grid-template-columns:1fr !important; }
+  #applications .app-card { min-height:280px !important; }
+  #applications { padding:76px 0 82px !important; }
+  #about.section-padding { padding:76px 0 84px !important; }
+  #about .factory-image { min-height:0 !important; }
+  #about .factory-image img { height:300px !important; }
+}
