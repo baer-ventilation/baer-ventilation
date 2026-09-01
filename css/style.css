@@ -87,3 +87,65 @@ footer { margin-top:60px; padding:20px 0; border-top:1px solid #eee; font-size:1
   nav a { margin-right:12px; font-size:14px; }
   .table-wrap { overflow-x:auto; }
 }
+
+/* ============================================================
+   Homepage visual fallback — restore Application gallery above
+   the existing Factory Tour without changing homepage data.
+   ============================================================ */
+#factory-video {
+  position:relative !important;
+  margin-top:430px !important;
+}
+#factory-video::before {
+  content:'APPLICATION SCENARIOS\A Residential   •   Industrial   •   Commercial   •   Healthcare   •   HVAC Projects';
+  white-space:pre-line;
+  position:absolute;
+  left:0;
+  right:0;
+  top:-430px;
+  height:390px;
+  padding:54px max(4vw,24px) 30px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  text-align:center;
+  z-index:1;
+  color:#fff;
+  font-size:clamp(22px,3vw,40px);
+  line-height:1.25;
+  font-weight:900;
+  letter-spacing:-.8px;
+  background-image:
+    linear-gradient(180deg,rgba(11,14,24,.16),rgba(11,14,24,.92)),
+    url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=82'),
+    url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=900&q=82'),
+    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=82'),
+    url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=82'),
+    url('https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=900&q=82');
+  background-size:100% 100%,19.2% 100%,19.2% 100%,19.2% 100%,19.2% 100%,19.2% 100%;
+  background-position:0 0,0 0,20.2% 0,40.4% 0,60.6% 0,80.8% 0;
+  background-repeat:no-repeat;
+  box-shadow:0 20px 50px rgba(0,0,0,.16);
+}
+#factory-video::after {
+  content:'';
+  position:absolute;
+  left:0;
+  right:0;
+  top:-40px;
+  height:40px;
+  background:linear-gradient(180deg,#fff,rgba(255,255,255,0));
+  pointer-events:none;
+}
+@media (max-width:700px){
+  #factory-video { margin-top:290px !important; }
+  #factory-video::before {
+    top:-290px;
+    height:260px;
+    padding:28px 22px 22px;
+    font-size:clamp(20px,6vw,30px);
+    background-size:100% 100%,100% 100%,0 0,0 0,0 0,0 0;
+    background-position:0 0,0 0,0 0,0 0,0 0,0 0;
+  }
+  #factory-video::after { top:-20px; height:20px; }
+}
