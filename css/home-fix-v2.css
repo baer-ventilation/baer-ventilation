@@ -93,3 +93,129 @@ body > .floating-tools, body > .modal-overlay { order:99 !important; }
 @media (min-width:1600px) {
   #products { padding-left:max(24px,calc((100vw - 1360px)/2)) !important; padding-right:max(24px,calc((100vw - 1360px)/2)) !important; }
 }
+
+/* 7) Product Series 03 — fix the two horizontal cards on mobile and desktop. */
+#products > section:nth-child(3) .baer-grid {
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  align-items:stretch !important;
+}
+#products > section:nth-child(3) .baer-card {
+  min-width:0 !important;
+  min-height:250px !important;
+  padding:20px !important;
+  overflow:hidden !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:20px !important;
+}
+#products > section:nth-child(3) .baer-card img {
+  width:clamp(120px,14vw,180px) !important;
+  height:clamp(120px,14vw,180px) !important;
+  flex:0 0 clamp(120px,14vw,180px) !important;
+  object-fit:contain !important;
+  margin:0 !important;
+}
+#products > section:nth-child(3) .baer-card > div:last-child {
+  min-width:0 !important;
+  flex:1 1 auto !important;
+}
+#products > section:nth-child(3) .baer-card h4,
+#products > section:nth-child(3) .baer-card p {
+  overflow-wrap:anywhere !important;
+  word-break:normal !important;
+}
+
+/* 8) Certifications — replace the fan/rotation layout with a clean responsive gallery. */
+#certifications .cert-fan-wrap {
+  display:grid !important;
+  grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+  align-items:stretch !important;
+  gap:14px !important;
+  width:100% !important;
+  height:auto !important;
+  transform:none !important;
+  overflow:visible !important;
+  perspective:none !important;
+}
+#certifications .cert-doc,
+#certifications .cert-doc--1,
+#certifications .cert-doc--2,
+#certifications .cert-doc--3,
+#certifications .cert-doc--4,
+#certifications .cert-doc--5,
+#certifications .cert-doc--6 {
+  transform:none !important;
+  margin:0 !important;
+  z-index:auto !important;
+  width:auto !important;
+}
+#certifications .cert-doc__inner,
+#certifications .cert-doc--center .cert-doc__inner {
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:3/4 !important;
+  box-shadow:0 8px 24px rgba(0,0,0,.22) !important;
+  border-radius:4px !important;
+}
+#certifications .cert-doc__label {
+  margin-top:10px !important;
+  font-size:10px !important;
+  line-height:1.4 !important;
+  min-height:28px !important;
+}
+#certifications .cert-doc:hover .cert-doc__inner {
+  transform:translateY(-5px) !important;
+  box-shadow:0 15px 34px rgba(0,0,0,.30) !important;
+}
+
+@media (max-width:1100px) {
+  #certifications .cert-fan-wrap { grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:16px !important; }
+  #products > section:nth-child(3) .baer-grid { grid-template-columns:1fr 1fr !important; }
+}
+
+@media (max-width:768px) {
+  /* Series 03 becomes one complete card per row. */
+  #products > section:nth-child(3) .baer-grid { grid-template-columns:1fr !important; gap:14px !important; }
+  #products > section:nth-child(3) .baer-card {
+    min-height:0 !important;
+    padding:14px !important;
+    gap:14px !important;
+    align-items:center !important;
+  }
+  #products > section:nth-child(3) .baer-card img {
+    width:110px !important;
+    height:110px !important;
+    flex:0 0 110px !important;
+  }
+  #products > section:nth-child(3) .baer-card h4 { font-size:16px !important; line-height:1.25 !important; margin:0 0 6px !important; }
+  #products > section:nth-child(3) .baer-card p { font-size:12px !important; line-height:1.55 !important; margin:0 0 5px !important; }
+
+  /* Certificates: three columns on tablet/small phone, still readable. */
+  #certifications .cert-fan-wrap { grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:12px !important; }
+  #certifications .cert-doc__label { font-size:9px !important; letter-spacing:.35px !important; }
+}
+
+@media (max-width:480px) {
+  /* Certificate gallery: two columns for comfortable reading. */
+  #certifications .cert-fan-wrap { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:12px !important; }
+  #certifications .cert-doc__inner,
+  #certifications .cert-doc--center .cert-doc__inner { aspect-ratio:3/4 !important; }
+  #certifications .cert-doc__label { font-size:10px !important; min-height:30px !important; }
+
+  /* Series 03: stack image and copy so no text can be clipped. */
+  #products > section:nth-child(3) .baer-card { display:grid !important; grid-template-columns:1fr !important; justify-items:stretch !important; text-align:center !important; gap:10px !important; }
+  #products > section:nth-child(3) .baer-card img { width:150px !important; height:150px !important; flex:none !important; margin:0 auto !important; }
+  #products > section:nth-child(3) .baer-card > div:last-child { width:100% !important; }
+  #products > section:nth-child(3) .click-hint { justify-content:center !important; }
+}
+
+/* 9) Inquiry area: keep heading/form visually separated from certifications. */
+#inquiry.inquiry-section {
+  position:relative !important;
+  z-index:1 !important;
+  padding-top:88px !important;
+}
+#inquiry .inquiry-form {
+  position:relative !important;
+  z-index:2 !important;
+}
