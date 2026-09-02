@@ -219,3 +219,90 @@ body > .floating-tools, body > .modal-overlay { order:99 !important; }
   position:relative !important;
   z-index:2 !important;
 }
+
+/* 10) FAQ -> inquiry certification trust strip: make it a clean, readable certification bar. */
+#inquiry > .container > div:first-child {
+  display:flex !important;
+  flex-wrap:wrap !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:12px 22px !important;
+  margin:0 auto 34px !important;
+  max-width:980px !important;
+  padding:14px 18px !important;
+  background:#0f172a !important;
+  border:1px solid #1e293b !important;
+  border-radius:10px !important;
+  box-shadow:0 10px 30px rgba(15,23,42,.12) !important;
+}
+#inquiry > .container > div:first-child > div {
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:7px !important;
+  min-height:32px !important;
+  padding:4px 8px !important;
+  color:#e2e8f0 !important;
+  font-size:12px !important;
+  line-height:1.35 !important;
+  white-space:nowrap !important;
+}
+#inquiry > .container > div:first-child > div img {
+  width:auto !important;
+  height:28px !important;
+  max-width:42px !important;
+  object-fit:contain !important;
+  display:block !important;
+  flex:0 0 auto !important;
+  background:#fff !important;
+  border-radius:3px !important;
+  padding:2px 4px !important;
+}
+#inquiry > .container > div:first-child > div:last-child {
+  flex:1 1 230px !important;
+  min-width:200px !important;
+  color:#cbd5e1 !important;
+  white-space:normal !important;
+  text-align:center !important;
+}
+#inquiry > .container > div:first-child > div:last-child span:first-child {
+  color:#f59e0b !important;
+  font-weight:800 !important;
+}
+
+@media (max-width:768px) {
+  #inquiry > .container > div:first-child {
+    gap:8px !important;
+    padding:12px 10px !important;
+    margin:0 12px 26px !important;
+    border-radius:8px !important;
+  }
+  #inquiry > .container > div:first-child > div {
+    flex:1 1 calc(50% - 8px) !important;
+    min-width:140px !important;
+    font-size:11px !important;
+    padding:4px 3px !important;
+  }
+  #inquiry > .container > div:first-child > div img {
+    height:24px !important;
+    max-width:38px !important;
+  }
+  #inquiry > .container > div:first-child > div:last-child {
+    flex-basis:100% !important;
+    min-width:0 !important;
+    font-size:10.5px !important;
+    line-height:1.45 !important;
+    padding-top:6px !important;
+  }
+}
+
+@media (max-width:480px) {
+  #inquiry > .container > div:first-child {
+    margin-left:10px !important;
+    margin-right:10px !important;
+  }
+  #inquiry > .container > div:first-child > div {
+    min-width:0 !important;
+    flex-basis:calc(50% - 6px) !important;
+  }
+}
