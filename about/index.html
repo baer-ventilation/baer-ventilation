@@ -52,22 +52,22 @@
   .stat{text-align:center;padding:24px 16px;}
   .stat .num{font-size:34px;font-weight:900;color:var(--baer-red);line-height:1.1;}
   .stat .lbl{font-size:13px;color:var(--baer-gray);margin-top:6px;font-weight:600;}
-  .cert-grid{display:flex;justify-content:center;align-items:flex-end;flex-wrap:wrap;padding:40px 16px;position:relative;height:400px;margin-top:12px;}
-  .cert-item{width:120px;height:260px;background:#fff;border:2px solid #E2E8F0;border-radius:12px;padding:16px 12px;text-align:center;transition:all .4s cubic-bezier(.34,1.56,.64,1);position:absolute;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;box-shadow:0 4px 12px rgba(15,23,42,.08);}
-  .cert-item:nth-child(1){left:5%;transform:rotateZ(-20deg);}
-  .cert-item:nth-child(2){left:18%;transform:rotateZ(-12deg);}
-  .cert-item:nth-child(3){left:31%;transform:rotateZ(-4deg);}
-  .cert-item:nth-child(4){left:44%;transform:rotateZ(4deg);}
-  .cert-item:nth-child(5){left:57%;transform:rotateZ(12deg);}
-  .cert-item:nth-child(6){left:70%;transform:rotateZ(20deg);}
-  .cert-item:hover{bottom:40px;box-shadow:0 20px 40px rgba(15,23,42,.15);border-color:#DC2626;z-index:10;}
-  .cert-badge{display:inline-block;background:linear-gradient(135deg,#DC2626 0%,#EF4444 100%);color:#fff;font-size:10px;font-weight:800;padding:4px 10px;border-radius:12px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px;flex-shrink:0;}
-  .cert-img-wrap{width:60px;height:80px;flex-shrink:0;margin-bottom:6px;}
-  .cert-item img{width:100%;height:100%;object-fit:contain;background:linear-gradient(135deg,#F8FAFC 0%,#F1F5F9 100%);border-radius:6px;transition:transform .3s ease;}
-  .cert-item:hover img{transform:scale(1.08);}
-  .cert-main{font-size:13px;font-weight:800;color:var(--baer-dark);margin-bottom:2px;line-height:1.2;word-break:break-word;}
-  .cert-sub{font-size:10px;font-weight:600;color:#0284C7;margin-bottom:4px;letter-spacing:.2px;}
-  .cert-desc{font-size:11px;color:var(--baer-gray);line-height:1.4;word-break:break-word;}
+  .cert-fan-deck{position:relative;height:420px;display:flex;justify-content:center;align-items:flex-end;padding:2rem 1rem;margin-top:12px;}
+  .cert-fan-card{width:120px;height:260px;background:#fff;border:1.5px solid #E2E8F0;border-radius:10px;padding:1rem;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;cursor:pointer;position:absolute;bottom:0;transition:all .5s cubic-bezier(.34,1.56,.64,1);box-shadow:0 4px 16px rgba(15,23,42,.08);}
+  .cert-fan-card:nth-child(1){left:3%;transform:rotateZ(-25deg);}
+  .cert-fan-card:nth-child(2){left:15%;transform:rotateZ(-15deg);}
+  .cert-fan-card:nth-child(3){left:27%;transform:rotateZ(-5deg);}
+  .cert-fan-card:nth-child(4){left:39%;transform:rotateZ(5deg);}
+  .cert-fan-card:nth-child(5){left:51%;transform:rotateZ(15deg);}
+  .cert-fan-card:nth-child(6){left:63%;transform:rotateZ(25deg);}
+  .cert-fan-card:hover{bottom:40px;box-shadow:0 24px 48px rgba(15,23,42,.16);border-color:#DC2626;z-index:10;}
+  .cert-fan-badge{display:inline-block;background:linear-gradient(135deg,#DC2626 0%,#EF4444 100%);color:#fff;font-size:10px;font-weight:800;padding:5px 10px;border-radius:16px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:0.5rem;}
+  .cert-fan-img{width:80px;height:110px;display:flex;align-items:center;justify-content:center;margin:0.5rem 0;flex-shrink:0;}
+  .cert-fan-img img{width:100%;height:100%;object-fit:contain;transition:transform .3s ease;}
+  .cert-fan-card:hover .cert-fan-img img{transform:scale(1.08);}
+  .cert-fan-main{font-size:13px;font-weight:700;color:var(--baer-dark);line-height:1.2;margin-top:0.25rem;}
+  .cert-fan-sub{font-size:10px;color:#0284C7;font-weight:600;margin-top:0.25rem;}
+  .cert-fan-desc{font-size:11px;color:var(--baer-gray);line-height:1.4;margin-top:0.5rem;}
   .inquiry-form{background:#fff;border-radius:12px;padding:34px;box-shadow:var(--shadow);}
   .inquiry-form h2{font-size:24px;font-weight:800;color:var(--baer-dark);margin-bottom:8px;}
   .inquiry-form .fs{color:var(--baer-gray);font-size:14px;margin-bottom:24px;}
@@ -239,60 +239,60 @@
       <h2 class="sec-title">Certified & Compliant</h2>
       <p class="sec-sub">All products independently tested and certified by leading international standards organizations. Ensuring quality and safety across every market we serve.</p>
     </div>
-    <div class="cert-grid">
-      <div class="cert-item">
-        <div class="cert-badge">EU</div>
-        <div class="cert-img-wrap">
-          <img src="/certs/cert_ce.jpg" alt="CE certificate" loading="lazy" decoding="async" width="600" height="600">
+    <div class="cert-fan-deck">
+      <div class="cert-fan-card">
+        <div class="cert-fan-badge">EU</div>
+        <div class="cert-fan-img">
+          <img src="/certs/cert_ce.jpg" alt="CE certificate" loading="lazy" decoding="async" width="300" height="400">
         </div>
-        <div class="cert-main">CE Marking</div>
-        <div class="cert-sub">European Union Directive 2006/42/EC</div>
-        <div class="cert-desc">Confirms compliance with EU safety and environmental standards for all appliances.</div>
+        <div class="cert-fan-main">CE Marking</div>
+        <div class="cert-fan-sub">European Union</div>
+        <div class="cert-fan-desc">Compliance with EU safety standards</div>
       </div>
-      <div class="cert-item">
-        <div class="cert-badge">QMS</div>
-        <div class="cert-img-wrap">
-          <img src="/certs/cert_iso9001.jpg" alt="ISO 9001 certificate" loading="lazy" decoding="async" width="600" height="600">
+      <div class="cert-fan-card">
+        <div class="cert-fan-badge">QMS</div>
+        <div class="cert-fan-img">
+          <img src="/certs/cert_iso9001.jpg" alt="ISO 9001 certificate" loading="lazy" decoding="async" width="300" height="400">
         </div>
-        <div class="cert-main">ISO 9001</div>
-        <div class="cert-sub">Quality Management System</div>
-        <div class="cert-desc">International standard for consistent quality in manufacturing and service delivery.</div>
+        <div class="cert-fan-main">ISO 9001</div>
+        <div class="cert-fan-sub">Quality Management</div>
+        <div class="cert-fan-desc">Consistent quality assurance</div>
       </div>
-      <div class="cert-item">
-        <div class="cert-badge">CN</div>
-        <div class="cert-img-wrap">
-          <img src="/certs/cert_3c.jpg" alt="CCC certificate" loading="lazy" decoding="async" width="600" height="600">
+      <div class="cert-fan-card">
+        <div class="cert-fan-badge">CN</div>
+        <div class="cert-fan-img">
+          <img src="/certs/cert_3c.jpg" alt="CCC certificate" loading="lazy" decoding="async" width="300" height="400">
         </div>
-        <div class="cert-main">3C (CCC)</div>
-        <div class="cert-sub">China Compulsory Certification</div>
-        <div class="cert-desc">Mandatory safety certification required for products sold in mainland China.</div>
+        <div class="cert-fan-main">3C (CCC)</div>
+        <div class="cert-fan-sub">China Certification</div>
+        <div class="cert-fan-desc">Mainland China requirement</div>
       </div>
-      <div class="cert-item">
-        <div class="cert-badge">INT</div>
-        <div class="cert-img-wrap">
-          <img src="/certs/cert_cb.jpg" alt="CB certificate" loading="lazy" decoding="async" width="600" height="600">
+      <div class="cert-fan-card">
+        <div class="cert-fan-badge">INT</div>
+        <div class="cert-fan-img">
+          <img src="/certs/cert_cb.jpg" alt="CB certificate" loading="lazy" decoding="async" width="300" height="400">
         </div>
-        <div class="cert-main">CB Scheme</div>
-        <div class="cert-sub">IEC System for Mutual Recognition</div>
-        <div class="cert-desc">Simplifies trade by recognizing testing for global appliance safety standards.</div>
+        <div class="cert-fan-main">CB Scheme</div>
+        <div class="cert-fan-sub">IEC Mutual Recognition</div>
+        <div class="cert-fan-desc">International trade simplification</div>
       </div>
-      <div class="cert-item">
-        <div class="cert-badge">AU/NZ</div>
-        <div class="cert-img-wrap">
-          <img src="/certs/cert_saa.jpg" alt="SAA certificate" loading="lazy" decoding="async" width="600" height="600">
+      <div class="cert-fan-card">
+        <div class="cert-fan-badge">AU/NZ</div>
+        <div class="cert-fan-img">
+          <img src="/certs/cert_saa.jpg" alt="SAA certificate" loading="lazy" decoding="async" width="300" height="400">
         </div>
-        <div class="cert-main">SAA</div>
-        <div class="cert-sub">Standards Australia / Standards NZ</div>
-        <div class="cert-desc">Required for product safety compliance in Australia and New Zealand markets.</div>
+        <div class="cert-fan-main">SAA</div>
+        <div class="cert-fan-sub">Australia & New Zealand</div>
+        <div class="cert-fan-desc">Oceania compliance mark</div>
       </div>
-      <div class="cert-item">
-        <div class="cert-badge">NA</div>
-        <div class="cert-img-wrap">
-          <img src="/certs/cert_etl.jpg" alt="ETL certificate" loading="lazy" decoding="async" width="600" height="600">
+      <div class="cert-fan-card">
+        <div class="cert-fan-badge">NA</div>
+        <div class="cert-fan-img">
+          <img src="/certs/cert_etl.jpg" alt="ETL certificate" loading="lazy" decoding="async" width="300" height="400">
         </div>
-        <div class="cert-main">ETL</div>
-        <div class="cert-sub">Intertek Testing & Certification</div>
-        <div class="cert-desc">US and Canadian product safety mark for electrical appliances and components.</div>
+        <div class="cert-fan-main">ETL</div>
+        <div class="cert-fan-sub">North America</div>
+        <div class="cert-fan-desc">US & Canada safety mark</div>
       </div>
     </div>
   </div>
