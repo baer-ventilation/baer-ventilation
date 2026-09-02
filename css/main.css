@@ -676,7 +676,50 @@ footer ul a:hover { color: #fff; }
 }
 
 /* ══════════════════════════════════════
-   CERTIFICATION CLEAN GRID (replaces fan layout)
+   /* SERIES 03 ROW CARDS (homepage) */
+
+.series-grid { gap: 24px; }
+.series-card-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+.series-card-row .series-card-img {
+  flex: 0 0 180px;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+.series-card-row .series-card-body {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+  .series-card-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 14px;
+    padding: 16px;
+  }
+  .series-card-row .series-card-img {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+  }
+  .series-card-row .series-card-body { width: 100%; }
+  .series-card-row .click-hint { justify-content: center; }
+}
+
+@media (max-width: 420px) {
+  .series-card-row .series-card-img { width: 130px; height: 130px; }
+}
+
+CERTIFICATION CLEAN GRID (replaces fan layout)
 ══════════════════════════════════════ */
 .cert-grid-clean {
   display: grid;
