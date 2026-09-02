@@ -16,22 +16,28 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Repair homepage
-        shell: python
+        shell: bash
         run: |
+          python3 - <<'PY'
           from pathlib import Path
 
           p = Path('index.html')
           text = p.read_text(encoding='utf-8-sig')
           marker = 'BAER HOMEPAGE PRESENTATION REPAIR 2026-09-02'
-          css = '''\n<!-- BAER HOMEPAGE PRESENTATION REPAIR 2026-09-02 -->\n<style>\n/* Keep the existing business data; only repair presentation and layout behavior. */\n/* Factory counters: do not depend on IntersectionObserver timing for visible values. */\n#about .stat-grid .stat-item .js-counter {\n  font-size: 0 !important;\n  line-height: 1 !important;\n}\n#about .stat-grid .stat-item .js-counter::before {\n  font-size: clamp(28px,2.8vw,38px);\n  line-height: 1;\n  font-weight: 900;\n  color: #0f172a;\n}\n#about .stat-grid .stat-item:nth-child(1) .js-counter::before { content: '20+'; }\n#about .stat-grid .stat-item:nth-child(2) .js-counter::before { content: '50k+'; }\n#about .stat-grid .stat-item:nth-child(3) .js-counter::before { content: '100+'; }\n#about .stat-grid .stat-item:nth-child(4) .js-counter::before { content: '50+'; }\n\n/* The homepage product main contains all major sections. Reorder its direct section children. */\nmain#products {\n  display: flex !important;\n  flex-direction: column !important;\n}\nmain#products > section { order: 0; }\nmain#products > #applications { order: 10 !important; }\nmain#products > #factory-video { order: 20 !important; }\nmain#products > #certifications { order: 30 !important; }\nmain#products > #about { order: 40 !important; }\nmain#products > #why-baer { order: 50 !important; }\nmain#products > section:nth-of-type(7) { order: 60 !important; }\nmain#products > section:nth-of-type(8) { order: 70 !important; }\nmain#products > section:nth-of-type(9) { order: 80 !important; }\nmain#products > #inquiry { order: 90 !important; }\n</style>\n'''
+          css = '''\n<!-- BAER HOMEPAGE PRESENTATION REPAIR 2026-09-02 -->\n<style>\n/* Keep existing business data; repair only visible presentation and layout behavior. */\n#about .stat-grid .stat-item .js-counter {\n  font-size: 0 !important;\n  line-height: 1 !important;\n}\n#about .stat-grid .stat-item .js-counter::before {\n  font-size: clamp(28px,2.8vw,38px);\n  line-height: 1;\n  font-weight: 900;\n  color: #0f172a;\n}\n#about .stat-grid .stat-item:nth-child(1) .js-counter::before { content: '20+'; }\n#about .stat-grid .stat-item:nth-child(2) .js-counter::before { content: '50k+'; }\n#about .stat-grid .stat-item:nth-child(3) .js-counter::before { content: '100+'; }\n#about .stat-grid .stat-item:nth-child(4) .js-counter::before { content: '50+'; }\n\n/* #products is the section container for the remaining homepage modules. */\nmain#products {\n  display: flex !important;\n  flex-direction: column !important;\n}\nmain#products > section { order: 0; }\nmain#products > #applications { order: 10 !important; }\nmain#products > #factory-video { order: 20 !important; }\nmain#products > #certifications { order: 30 !important; }\nmain#products > #about { order: 40 !important; }\nmain#products > #why-baer { order: 50 !important; }\nmain#products > section:nth-of-type(7) { order: 60 !important; }\nmain#products > section:nth-of-type(8) { order: 70 !important; }\nmain#products > section:nth-of-type(9) { order: 80 !important; }\nmain#products > #inquiry { order: 90 !important; }\n</style>\n'''
           if marker not in text:
               text = text.replace('</head>', css + '</head>', 1)
               p.write_text(text, encoding='utf-8')
+          PY
 
       - name: Commit repair
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html
-          git diff --cached --quiet || git commit -m "chore: repair homepage presentation"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes needed"
+          else
+            git commit -m "chore: repair homepage presentation"
+            git push
+          fi
