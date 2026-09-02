@@ -52,12 +52,16 @@
   .stat{text-align:center;padding:24px 16px;}
   .stat .num{font-size:34px;font-weight:900;color:var(--baer-red);line-height:1.1;}
   .stat .lbl{font-size:13px;color:var(--baer-gray);margin-top:6px;font-weight:600;}
-  .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;}
-  .cert-item{background:#fff;border:1px solid #E2E8F0;border-radius:var(--radius);padding:14px;text-align:center;transition:box-shadow .25s ease;}
-  .cert-item:hover{box-shadow:var(--shadow);}
-  .cert-item img{width:100%;aspect-ratio:3/4;height:auto;object-fit:contain;background:#fff;border-radius:4px;}
-  .cert-item .cn{margin-top:10px;font-size:13px;font-weight:700;color:var(--baer-dark);}
-  .cert-item .cd{font-size:11px;color:var(--baer-gray);margin-top:2px;}
+  .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px;margin-top:12px;}
+  .cert-item{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:24px 20px;text-align:center;transition:all .3s cubic-bezier(.4,.0,.2,1);position:relative;display:flex;flex-direction:column;height:100%;}
+  .cert-item:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(15,23,42,.12);border-color:#CBD5E1;}
+  .cert-badge{position:absolute;top:12px;right:12px;background:linear-gradient(135deg,#DC2626 0%,#EF4444 100%);color:#fff;font-size:11px;font-weight:800;padding:6px 12px;border-radius:20px;letter-spacing:.5px;text-transform:uppercase;}
+  .cert-img-wrap{margin:16px 0 20px;flex-grow:1;}
+  .cert-item img{width:100%;height:200px;object-fit:contain;background:linear-gradient(135deg,#F8FAFC 0%,#F1F5F9 100%);border-radius:8px;transition:transform .3s ease;}
+  .cert-item:hover img{transform:scale(1.04);}
+  .cert-main{font-size:16px;font-weight:800;color:var(--baer-dark);margin-bottom:6px;line-height:1.3;}
+  .cert-sub{font-size:12px;font-weight:600;color:#0284C7;margin-bottom:12px;letter-spacing:.3px;}
+  .cert-desc{font-size:13px;color:var(--baer-gray);line-height:1.6;margin-top:auto;}
   .inquiry-form{background:#fff;border-radius:12px;padding:34px;box-shadow:var(--shadow);}
   .inquiry-form h2{font-size:24px;font-weight:800;color:var(--baer-dark);margin-bottom:8px;}
   .inquiry-form .fs{color:var(--baer-gray);font-size:14px;margin-bottom:24px;}
@@ -225,39 +229,65 @@
 
 <section class="section alt">
   <div class="container">
-    <h2 class="sec-title">Certified & Compliant</h2>
-    <p class="sec-sub">Independently tested and certified for the EU, Middle East, Australia and North America.</p>
+    <div style="text-align:center;margin-bottom:48px;">
+      <h2 class="sec-title">Certified & Compliant</h2>
+      <p class="sec-sub">All products independently tested and certified by leading international standards organizations. Ensuring quality and safety across every market we serve.</p>
+    </div>
     <div class="cert-grid">
       <div class="cert-item">
-  <img src="/certs/cert_ce.jpg" alt="CE certificate" loading="lazy" decoding="async" width="600" height="600">
-  <div class="cn">CE / EU</div>
-  <div class="cd">CE</div>
-</div>
-<div class="cert-item">
-  <img src="/certs/cert_iso9001.jpg" alt="ISO 9001 certificate" loading="lazy" decoding="async" width="600" height="600">
-  <div class="cn">ISO 9001</div>
-  <div class="cd">ISO 9001</div>
-</div>
-<div class="cert-item">
-  <img src="/certs/cert_3c.jpg" alt="CCC certificate" loading="lazy" decoding="async" width="600" height="600">
-  <div class="cn">3C (China)</div>
-  <div class="cd">CCC</div>
-</div>
-<div class="cert-item">
-  <img src="/certs/cert_cb.jpg" alt="CB certificate" loading="lazy" decoding="async" width="600" height="600">
-  <div class="cn">CB Scheme</div>
-  <div class="cd">CB</div>
-</div>
-<div class="cert-item">
-  <img src="/certs/cert_saa.jpg" alt="SAA certificate" loading="lazy" decoding="async" width="600" height="600">
-  <div class="cn">SAA (AU/NZ)</div>
-  <div class="cd">SAA</div>
-</div>
-<div class="cert-item">
-  <img src="/certs/cert_etl.jpg" alt="ETL certificate" loading="lazy" decoding="async" width="600" height="600">
-  <div class="cn">ETL (NA)</div>
-  <div class="cd">ETL</div>
-</div>
+        <div class="cert-badge">EU</div>
+        <div class="cert-img-wrap">
+          <img src="/certs/cert_ce.jpg" alt="CE certificate" loading="lazy" decoding="async" width="600" height="600">
+        </div>
+        <div class="cert-main">CE Marking</div>
+        <div class="cert-sub">European Union Directive 2006/42/EC</div>
+        <div class="cert-desc">Confirms compliance with EU safety and environmental standards for all appliances.</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-badge">QMS</div>
+        <div class="cert-img-wrap">
+          <img src="/certs/cert_iso9001.jpg" alt="ISO 9001 certificate" loading="lazy" decoding="async" width="600" height="600">
+        </div>
+        <div class="cert-main">ISO 9001</div>
+        <div class="cert-sub">Quality Management System</div>
+        <div class="cert-desc">International standard for consistent quality in manufacturing and service delivery.</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-badge">CN</div>
+        <div class="cert-img-wrap">
+          <img src="/certs/cert_3c.jpg" alt="CCC certificate" loading="lazy" decoding="async" width="600" height="600">
+        </div>
+        <div class="cert-main">3C (CCC)</div>
+        <div class="cert-sub">China Compulsory Certification</div>
+        <div class="cert-desc">Mandatory safety certification required for products sold in mainland China.</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-badge">INT</div>
+        <div class="cert-img-wrap">
+          <img src="/certs/cert_cb.jpg" alt="CB certificate" loading="lazy" decoding="async" width="600" height="600">
+        </div>
+        <div class="cert-main">CB Scheme</div>
+        <div class="cert-sub">IEC System for Mutual Recognition</div>
+        <div class="cert-desc">Simplifies trade by recognizing testing for global appliance safety standards.</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-badge">AU/NZ</div>
+        <div class="cert-img-wrap">
+          <img src="/certs/cert_saa.jpg" alt="SAA certificate" loading="lazy" decoding="async" width="600" height="600">
+        </div>
+        <div class="cert-main">SAA</div>
+        <div class="cert-sub">Standards Australia / Standards NZ</div>
+        <div class="cert-desc">Required for product safety compliance in Australia and New Zealand markets.</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-badge">NA</div>
+        <div class="cert-img-wrap">
+          <img src="/certs/cert_etl.jpg" alt="ETL certificate" loading="lazy" decoding="async" width="600" height="600">
+        </div>
+        <div class="cert-main">ETL</div>
+        <div class="cert-sub">Intertek Testing & Certification</div>
+        <div class="cert-desc">US and Canadian product safety mark for electrical appliances and components.</div>
+      </div>
     </div>
   </div>
 </section>
