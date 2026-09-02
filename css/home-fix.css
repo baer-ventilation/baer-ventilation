@@ -1,25 +1,48 @@
-/* BAER homepage live repair — presentation only */
-/* Fix the visible factory figures without changing the underlying business data. */
-#about .stat-grid .stat-item .js-counter { font-size:0 !important; line-height:1 !important; }
-#about .stat-grid .stat-item .js-counter::before { font-size:clamp(28px,2.8vw,38px); line-height:1; font-weight:900; color:#0f172a; }
-#about .stat-grid .stat-item:nth-child(1) .js-counter::before { content:'20+'; }
-#about .stat-grid .stat-item:nth-child(2) .js-counter::before { content:'50k+'; }
-#about .stat-grid .stat-item:nth-child(3) .js-counter::before { content:'100+'; }
-#about .stat-grid .stat-item:nth-child(4) .js-counter::before { content:'50+'; }
+/* BAER homepage live presentation fix — static CSS, no business data changes */
+html body {
+  display:flex !important;
+  flex-direction:column !important;
+  min-height:100vh !important;
+}
+html body > nav.navbar { order:1 !important; }
+html body > .hero-slider { order:2 !important; }
+html body > main#products { order:3 !important; }
+html body > #applications { order:4 !important; }
+html body > #factory-video { order:5 !important; }
+html body > #certifications { order:6 !important; }
+html body > #about { order:7 !important; }
+html body > #why-baer { order:8 !important; }
+html body > section:nth-of-type(7) { order:9 !important; }
+html body > section:nth-of-type(8) { order:10 !important; }
+html body > section:nth-of-type(9) { order:11 !important; }
+html body > #inquiry { order:12 !important; }
+html body > footer { order:13 !important; }
+html body > .floating-tools,
+html body > .modal-overlay { order:99 !important; }
 
-/* The Application section is a direct child of body after main#products. */
-body { display:flex !important; flex-direction:column !important; }
-body > nav.navbar { order:1 !important; }
-body > .hero-slider { order:2 !important; }
-body > main#products { order:3 !important; }
-body > #applications { order:4 !important; }
-body > #factory-video { order:5 !important; }
-body > #certifications { order:6 !important; }
-body > #about { order:7 !important; }
-body > #why-baer { order:8 !important; }
-body > section:nth-of-type(7) { order:9 !important; }
-body > section:nth-of-type(8) { order:10 !important; }
-body > section:nth-of-type(9) { order:11 !important; }
-body > #inquiry { order:12 !important; }
-body > footer { order:13 !important; }
-body > .floating-tools, body > .modal-overlay { order:99 !important; }
+/* Factory counters: preserve the actual published figures even before JS animation starts. */
+#about .stat-grid .stat-item .js-counter { font-size:0 !important; line-height:1 !important; }
+#about .stat-grid .stat-item .js-counter::before {
+  font-size:clamp(28px,2.8vw,38px) !important;
+  line-height:1 !important;
+  font-weight:900 !important;
+  color:#0f172a !important;
+}
+#about .stat-grid .stat-item:nth-child(1) .js-counter::before { content:'20+' !important; }
+#about .stat-grid .stat-item:nth-child(2) .js-counter::before { content:'50k+' !important; }
+#about .stat-grid .stat-item:nth-child(3) .js-counter::before { content:'100+' !important; }
+#about .stat-grid .stat-item:nth-child(4) .js-counter::before { content:'50+' !important; }
+
+#applications { background:linear-gradient(180deg,#0b1220 0%,#090d16 100%) !important; }
+#applications > .container { display:grid !important; }
+#applications .app-card { min-height:420px !important; border-radius:3px !important; }
+#about.section-padding { background:#fff !important; }
+
+@media (max-width:900px){
+  #applications > .container > div:last-child { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+  #applications .app-card { min-height:320px !important; }
+}
+@media (max-width:560px){
+  #applications > .container > div:last-child { grid-template-columns:1fr !important; }
+  #applications .app-card { min-height:280px !important; }
+}
