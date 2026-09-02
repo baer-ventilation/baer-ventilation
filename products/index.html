@@ -68,10 +68,10 @@ a{text-decoration:none;color:inherit;}
 .download-box{background:var(--light);border:1px solid var(--line);border-radius:12px;padding:30px;text-align:center;margin-bottom:44px;}
 .download-box h3{font-size:18px;color:var(--dark);margin-bottom:8px;}
 .download-box p{font-size:13.5px;color:var(--muted);margin-bottom:16px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:24px;}
 .card{border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.25s;background:#fff;display:flex;flex-direction:column;}
 .card:hover{box-shadow:0 12px 30px rgba(15,23,42,.1);transform:translateY(-3px);}
-.card-img{height:210px;background:var(--light);display:flex;align-items:center;justify-content:center;padding:14px;}
+.card-img{aspect-ratio:1/1;background:var(--light);display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden;}
 .card-img img{max-width:100%;max-height:100%;object-fit:contain;}
 .card-body{padding:22px;display:flex;flex-direction:column;flex:1;}
 .card-body .cat{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--red);text-transform:uppercase;margin-bottom:6px;}
@@ -253,7 +253,7 @@ footer .fmail{color:#E21E26;font-weight:700;}
       </div>
     </div>
     <div class="card">
-      <div class="card-img"><img src="https://sc02.alicdn.com/kf/H5fbe6fbc92284181968eba3dff7ed880E.jpg" alt="Window Exhaust Fans" loading="lazy" decoding="async" width="600" height="600"></div>
+      <div class="card-img"><img src="https://sc02.alicdn.com/kf/H5fbe6fbc92284181968eba3dff7ed880E.jpg" alt="Window Exhaust Fans" loading="eager" fetchpriority="high" decoding="async" width="600" height="600"></div>
       <div class="card-body">
         <span class="cat">Window Exhaust Fans</span>
         <h3>Window Exhaust Fans</h3>
@@ -262,7 +262,7 @@ footer .fmail{color:#E21E26;font-weight:700;}
       </div>
     </div>
     <div class="card">
-      <div class="card-img"><img src="https://sc02.alicdn.com/kf/H42e66ea71d5445fcbb62c7c68e493d94v.jpg" alt="Wall & Shutter Fans" loading="lazy" decoding="async" width="600" height="600"></div>
+      <div class="card-img"><img src="https://sc02.alicdn.com/kf/H42e66ea71d5445fcbb62c7c68e493d94v.jpg" alt="Wall & Shutter Fans" loading="eager" decoding="async" width="600" height="600"></div>
       <div class="card-body">
         <span class="cat">Wall & Shutter Fans</span>
         <h3>Wall & Shutter Fans</h3>
@@ -271,7 +271,7 @@ footer .fmail{color:#E21E26;font-weight:700;}
       </div>
     </div>
     <div class="card">
-      <div class="card-img"><img src="https://sc02.alicdn.com/kf/Hf77c8f2216ff4576b9f83c896fdd000fq.jpg" alt="Mixed Flow Inline Duct Fans" loading="lazy" decoding="async" width="600" height="600"></div>
+      <div class="card-img"><img src="https://sc02.alicdn.com/kf/Hf77c8f2216ff4576b9f83c896fdd000fq.jpg" alt="Mixed Flow Inline Duct Fans" loading="eager" decoding="async" width="600" height="600"></div>
       <div class="card-body">
         <span class="cat">Mixed Flow Inline Duct Fans</span>
         <h3>Mixed Flow Inline Duct Fans</h3>
@@ -280,7 +280,7 @@ footer .fmail{color:#E21E26;font-weight:700;}
       </div>
     </div>
     <div class="card">
-      <div class="card-img"><img src="https://sc02.alicdn.com/kf/H0f20bd34e6864282a2d71d6aa8f11a35f.jpg" alt="Silent Bathroom Fans" loading="lazy" decoding="async" width="600" height="600"></div>
+      <div class="card-img"><img src="https://sc02.alicdn.com/kf/H0f20bd34e6864282a2d71d6aa8f11a35f.jpg" alt="Silent Bathroom Fans" loading="eager" decoding="async" width="600" height="600"></div>
       <div class="card-body">
         <span class="cat">Silent Bathroom Fans</span>
         <h3>Silent Bathroom Fans</h3>
@@ -289,7 +289,7 @@ footer .fmail{color:#E21E26;font-weight:700;}
       </div>
     </div>
     <div class="card">
-      <div class="card-img"><img src="https://sc02.alicdn.com/kf/Hb4c5e8471a3e46d599e56f223890a1d36.jpg" alt="Silent Cabinet Fans" loading="lazy" decoding="async" width="600" height="600"></div>
+      <div class="card-img"><img src="https://sc02.alicdn.com/kf/Hb4c5e8471a3e46d599e56f223890a1d36.jpg" alt="Silent Cabinet Fans" loading="eager" decoding="async" width="600" height="600"></div>
       <div class="card-body">
         <span class="cat">Silent Cabinet Fans</span>
         <h3>Silent Cabinet Fans</h3>
