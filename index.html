@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -178,6 +178,41 @@
   ]
 }
 </script>
+
+<!-- BAER HOMEPAGE PRESENTATION REPAIR 2026-09-02 -->
+<style>
+/* Keep existing business data; repair only visible presentation and layout behavior. */
+#about .stat-grid .stat-item .js-counter {
+  font-size: 0 !important;
+  line-height: 1 !important;
+}
+#about .stat-grid .stat-item .js-counter::before {
+  font-size: clamp(28px,2.8vw,38px);
+  line-height: 1;
+  font-weight: 900;
+  color: #0f172a;
+}
+#about .stat-grid .stat-item:nth-child(1) .js-counter::before { content: '20+'; }
+#about .stat-grid .stat-item:nth-child(2) .js-counter::before { content: '50k+'; }
+#about .stat-grid .stat-item:nth-child(3) .js-counter::before { content: '100+'; }
+#about .stat-grid .stat-item:nth-child(4) .js-counter::before { content: '50+'; }
+
+/* #products contains the remaining homepage modules. */
+main#products {
+  display: flex !important;
+  flex-direction: column !important;
+}
+main#products > section { order: 0; }
+main#products > #applications { order: 10 !important; }
+main#products > #factory-video { order: 20 !important; }
+main#products > #certifications { order: 30 !important; }
+main#products > #about { order: 40 !important; }
+main#products > #why-baer { order: 50 !important; }
+main#products > section:nth-of-type(7) { order: 60 !important; }
+main#products > section:nth-of-type(8) { order: 70 !important; }
+main#products > section:nth-of-type(9) { order: 80 !important; }
+main#products > #inquiry { order: 90 !important; }
+</style>
 </head>
 
 
