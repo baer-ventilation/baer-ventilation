@@ -108,7 +108,6 @@ body > .modal-overlay { order:99; }
 /* ============================================================
    BAER Homepage — stronger reference-style composition
    ============================================================ */
-/* Applications: make this a clearly differentiated editorial block. */
 #applications {
   padding:92px 0 104px !important;
   background:
@@ -201,7 +200,6 @@ body > .modal-overlay { order:99; }
   transform:scale(1.06) !important;
 }
 
-/* Factory: turn the existing section into a stronger two-part visual story. */
 #about.section-padding {
   padding:104px 0 112px !important;
 }
@@ -273,4 +271,149 @@ body > .modal-overlay { order:99; }
   #about.section-padding { padding:76px 0 84px !important; }
   #about .factory-image { min-height:0 !important; }
   #about .factory-image img { height:300px !important; }
+}
+
+/* ============================================================
+   BAER Homepage — upgraded product showcase
+   Business data, product names, links and specifications remain unchanged.
+   ============================================================ */
+#products {
+  max-width:none !important;
+  width:100% !important;
+  margin:0 !important;
+  padding:88px max(16px, calc((100vw - 1240px) / 2)) 104px !important;
+  background:#f5f7fa !important;
+}
+#products > section {
+  margin-top:0 !important;
+  margin-bottom:70px !important;
+  position:relative !important;
+}
+#products > section:last-child { margin-bottom:0 !important; }
+#products > section > div:first-child {
+  border-bottom:0 !important;
+  display:block !important;
+  width:100% !important;
+  margin-bottom:28px !important;
+  position:relative !important;
+  padding-left:17px !important;
+}
+#products > section > div:first-child::before {
+  content:'';
+  position:absolute;
+  left:0;
+  top:3px;
+  width:4px;
+  height:34px;
+  background:#e21e26;
+}
+#products > section > div:first-child::after {
+  content:'';
+  display:block;
+  width:58px;
+  height:2px;
+  background:#e21e26;
+  margin-top:11px;
+}
+#products > section > div:first-child h2 {
+  font-size:clamp(28px,3.2vw,40px) !important;
+  line-height:1.05 !important;
+  letter-spacing:-.8px !important;
+  color:#0f172a !important;
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
+  font-weight:900 !important;
+}
+#products .baer-grid {
+  display:grid !important;
+  gap:18px !important;
+}
+#products .baer-card {
+  background:#fff !important;
+  border:1px solid #e4e8ee !important;
+  border-radius:4px !important;
+  box-shadow:0 10px 30px rgba(15,23,42,.07) !important;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease !important;
+}
+#products .baer-card:hover {
+  transform:translateY(-5px) !important;
+  border-color:#d5dbe4 !important;
+  box-shadow:0 20px 42px rgba(15,23,42,.12) !important;
+}
+#products .baer-card img {
+  background:#fff !important;
+}
+#products .baer-card h3,
+#products .baer-card h4 {
+  color:#0f172a !important;
+  font-weight:800 !important;
+}
+#products .click-hint {
+  color:#e21e26 !important;
+  font-size:10px !important;
+  font-weight:800 !important;
+  letter-spacing:1.2px !important;
+}
+#products > section:first-child .baer-card:first-child {
+  min-height:460px !important;
+}
+#products > section:first-child .baer-card:first-child img {
+  height:340px !important;
+  padding:18px !important;
+}
+#products > section:first-child .baer-card:first-child > div:last-child {
+  padding:22px 24px 24px !important;
+  border-top:1px solid #edf0f4 !important;
+}
+#products > section:first-child > div:nth-child(3) > div {
+  min-height:106px !important;
+  padding:16px !important;
+}
+#products > section:first-child > div:nth-child(3) > div img {
+  width:90px !important;
+  height:90px !important;
+}
+#products > section:first-child > div:nth-child(3) > div + div { margin-top:0 !important; }
+#products > section:not(:first-child) .baer-grid {
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+}
+#products > section:not(:first-child) .baer-card {
+  min-height:285px !important;
+  overflow:hidden !important;
+}
+#products > section:not(:first-child) .baer-card img {
+  width:100% !important;
+  height:210px !important;
+  object-fit:contain !important;
+  padding:18px !important;
+  border-bottom:1px solid #edf0f4 !important;
+}
+#products > section:not(:first-child) .baer-card > div:last-child {
+  padding:17px 18px 19px !important;
+}
+#products > section:not(:first-child) .baer-card h3,
+#products > section:not(:first-child) .baer-card h4 {
+  font-size:16px !important;
+  margin:0 0 7px !important;
+}
+
+@media (max-width:1100px){
+  #products { padding-left:24px !important; padding-right:24px !important; }
+  #products > section:first-child .baer-grid { grid-template-columns:1fr 1fr !important; }
+  #products > section:not(:first-child) .baer-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+}
+@media (max-width:760px){
+  #products { padding:68px 18px 82px !important; }
+  #products > section { margin-bottom:54px !important; }
+  #products > section:first-child .baer-grid { grid-template-columns:1fr !important; }
+  #products > section:first-child .baer-card:first-child { min-height:auto !important; }
+  #products > section:first-child > div:nth-child(3) > div { min-height:0 !important; }
+  #products > section:not(:first-child) .baer-grid { grid-template-columns:1fr !important; }
+  #products > section:not(:first-child) .baer-card img { height:240px !important; }
+}
+@media (max-width:560px){
+  #products { padding:58px 14px 70px !important; }
+  #products > section > div:first-child { padding-left:14px !important; }
+  #products > section > div:first-child h2 { font-size:27px !important; }
 }
