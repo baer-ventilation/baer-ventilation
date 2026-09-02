@@ -1,0 +1,95 @@
+/* BAER homepage live QA fix — desktop + mobile */
+/* Presentation only. Existing business copy/data stays unchanged. */
+
+/* 1) Remove stray list items accidentally rendered inside hero slides. */
+.hero-slider .slide > li { display:none !important; }
+
+/* 2) Keep homepage section order correct even if older CSS is cached. */
+body { display:flex !important; flex-direction:column !important; }
+body > nav.navbar { order:1 !important; }
+body > .hero-slider { order:2 !important; }
+body > main#products { order:3 !important; }
+body > #applications { order:4 !important; }
+body > #factory-video { order:5 !important; }
+body > #certifications { order:6 !important; }
+body > #about { order:7 !important; }
+body > #why-baer { order:8 !important; }
+body > section:nth-of-type(7) { order:9 !important; }
+body > section:nth-of-type(8) { order:10 !important; }
+body > section:nth-of-type(9) { order:11 !important; }
+body > #inquiry { order:12 !important; }
+body > footer { order:13 !important; }
+body > .floating-tools, body > .modal-overlay { order:99 !important; }
+
+/* 3) Factory counters: always show the verified existing figures. */
+#about .stat-grid .stat-item .js-counter {
+  font-size:0 !important;
+  line-height:1 !important;
+}
+#about .stat-grid .stat-item .js-counter::before {
+  font-size:clamp(28px,2.8vw,38px);
+  line-height:1;
+  font-weight:900;
+  color:#e21e26;
+}
+#about .stat-grid .stat-item:nth-child(1) .js-counter::before { content:'20+'; }
+#about .stat-grid .stat-item:nth-child(2) .js-counter::before { content:'50k+'; }
+#about .stat-grid .stat-item:nth-child(3) .js-counter::before { content:'100+'; }
+#about .stat-grid .stat-item:nth-child(4) .js-counter::before { content:'50+'; }
+
+/* 4) Desktop: ensure the factory section has a clean split and workshop wall. */
+#about .factory-intro { grid-template-columns:minmax(0,1.15fr) minmax(330px,.85fr) !important; gap:56px !important; }
+#about .factory-text { min-width:0 !important; }
+#about .factory-image { min-width:0 !important; }
+
+/* 5) Mobile navigation and content spacing. */
+@media (max-width:768px) {
+  .navbar { height:60px !important; }
+  .nav-content { height:60px !important; padding:0 16px !important; gap:12px !important; }
+  .logo { font-size:20px !important; }
+  .nav-links { max-height:calc(100vh - 60px) !important; overflow-y:auto !important; }
+  .hero-slider { margin-top:60px !important; min-height:300px !important; height:78vw !important; max-height:520px !important; }
+  .slide-content { max-width:92vw !important; padding:0 18px !important; }
+  .hero-title { font-size:clamp(24px,7vw,36px) !important; letter-spacing:-.6px !important; }
+  .hero-desc { font-size:13px !important; line-height:1.6 !important; max-width:88vw !important; }
+  .hero-tag { font-size:10px !important; letter-spacing:1.6px !important; padding:5px 10px !important; margin-bottom:12px !important; }
+  .baer-btn-v2 { min-height:44px !important; padding:11px 18px !important; font-size:12px !important; }
+
+  /* Prevent certification fan from creating horizontal overflow. */
+  #certifications { overflow:hidden !important; }
+  .cert-fan-wrap {
+    height:300px !important;
+    width:100% !important;
+    overflow:visible !important;
+    transform:scale(.66) !important;
+    transform-origin:center bottom !important;
+  }
+  .cert-doc--1 { transform:rotate(-20deg) translateX(36px) !important; margin-right:-34px !important; }
+  .cert-doc--2 { transform:rotate(-10deg) translateX(17px) !important; margin-right:-20px !important; }
+  .cert-doc--3 { transform:rotate(0deg) translateX(0) !important; }
+  .cert-doc--4 { transform:rotate(10deg) translateX(-17px) !important; margin-left:-20px !important; }
+  .cert-doc--5 { transform:rotate(20deg) translateX(-36px) !important; margin-left:-30px !important; }
+  .cert-doc--6 { transform:rotate(23deg) translateX(-46px) !important; margin-left:-34px !important; }
+
+  /* Compact floating tools so they do not cover the inquiry form. */
+  .floating-tools { right:10px !important; bottom:12px !important; gap:6px !important; }
+  .tool-btn { font-size:11px !important; padding:9px 12px 9px 10px !important; gap:6px !important; }
+  .tool-btn svg { width:16px !important; height:16px !important; }
+
+  /* Prevent fixed-width grids from overflowing the viewport. */
+  #products > section:not(:first-child) .baer-grid { grid-template-columns:1fr !important; }
+  .container { width:100% !important; }
+}
+
+@media (max-width:480px) {
+  .hero-slider { height:86vw !important; min-height:300px !important; }
+  .slider-dots { bottom:16px !important; }
+  #applications { padding-left:0 !important; padding-right:0 !important; }
+  #about .factory-image img { height:280px !important; }
+  .inquiry-form { margin-left:12px !important; margin-right:12px !important; width:auto !important; }
+}
+
+/* 6) Extra-wide screens: keep content aligned to the visual center. */
+@media (min-width:1600px) {
+  #products { padding-left:max(24px,calc((100vw - 1360px)/2)) !important; padding-right:max(24px,calc((100vw - 1360px)/2)) !important; }
+}
