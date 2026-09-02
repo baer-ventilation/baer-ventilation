@@ -52,16 +52,22 @@
   .stat{text-align:center;padding:24px 16px;}
   .stat .num{font-size:34px;font-weight:900;color:var(--baer-red);line-height:1.1;}
   .stat .lbl{font-size:13px;color:var(--baer-gray);margin-top:6px;font-weight:600;}
-  .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px;margin-top:12px;}
-  .cert-item{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:24px 20px;text-align:center;transition:all .3s cubic-bezier(.4,.0,.2,1);position:relative;display:flex;flex-direction:column;height:100%;}
-  .cert-item:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(15,23,42,.12);border-color:#CBD5E1;}
-  .cert-badge{position:absolute;top:12px;right:12px;background:linear-gradient(135deg,#DC2626 0%,#EF4444 100%);color:#fff;font-size:11px;font-weight:800;padding:6px 12px;border-radius:20px;letter-spacing:.5px;text-transform:uppercase;}
-  .cert-img-wrap{margin:16px 0 20px;flex-grow:1;}
-  .cert-item img{width:100%;height:200px;object-fit:contain;background:linear-gradient(135deg,#F8FAFC 0%,#F1F5F9 100%);border-radius:8px;transition:transform .3s ease;}
-  .cert-item:hover img{transform:scale(1.04);}
-  .cert-main{font-size:16px;font-weight:800;color:var(--baer-dark);margin-bottom:6px;line-height:1.3;}
-  .cert-sub{font-size:12px;font-weight:600;color:#0284C7;margin-bottom:12px;letter-spacing:.3px;}
-  .cert-desc{font-size:13px;color:var(--baer-gray);line-height:1.6;margin-top:auto;}
+  .cert-grid{display:flex;justify-content:center;align-items:flex-end;flex-wrap:wrap;padding:40px 16px;position:relative;height:400px;margin-top:12px;}
+  .cert-item{width:120px;height:260px;background:#fff;border:2px solid #E2E8F0;border-radius:12px;padding:16px 12px;text-align:center;transition:all .4s cubic-bezier(.34,1.56,.64,1);position:absolute;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;box-shadow:0 4px 12px rgba(15,23,42,.08);}
+  .cert-item:nth-child(1){left:5%;transform:rotateZ(-20deg);}
+  .cert-item:nth-child(2){left:18%;transform:rotateZ(-12deg);}
+  .cert-item:nth-child(3){left:31%;transform:rotateZ(-4deg);}
+  .cert-item:nth-child(4){left:44%;transform:rotateZ(4deg);}
+  .cert-item:nth-child(5){left:57%;transform:rotateZ(12deg);}
+  .cert-item:nth-child(6){left:70%;transform:rotateZ(20deg);}
+  .cert-item:hover{bottom:40px;box-shadow:0 20px 40px rgba(15,23,42,.15);border-color:#DC2626;z-index:10;}
+  .cert-badge{display:inline-block;background:linear-gradient(135deg,#DC2626 0%,#EF4444 100%);color:#fff;font-size:10px;font-weight:800;padding:4px 10px;border-radius:12px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px;flex-shrink:0;}
+  .cert-img-wrap{width:60px;height:80px;flex-shrink:0;margin-bottom:6px;}
+  .cert-item img{width:100%;height:100%;object-fit:contain;background:linear-gradient(135deg,#F8FAFC 0%,#F1F5F9 100%);border-radius:6px;transition:transform .3s ease;}
+  .cert-item:hover img{transform:scale(1.08);}
+  .cert-main{font-size:13px;font-weight:800;color:var(--baer-dark);margin-bottom:2px;line-height:1.2;word-break:break-word;}
+  .cert-sub{font-size:10px;font-weight:600;color:#0284C7;margin-bottom:4px;letter-spacing:.2px;}
+  .cert-desc{font-size:11px;color:var(--baer-gray);line-height:1.4;word-break:break-word;}
   .inquiry-form{background:#fff;border-radius:12px;padding:34px;box-shadow:var(--shadow);}
   .inquiry-form h2{font-size:24px;font-weight:800;color:var(--baer-dark);margin-bottom:8px;}
   .inquiry-form .fs{color:var(--baer-gray);font-size:14px;margin-bottom:24px;}
