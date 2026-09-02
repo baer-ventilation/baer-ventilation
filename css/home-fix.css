@@ -1,0 +1,25 @@
+/* BAER homepage live repair — presentation only */
+/* Fix the visible factory figures without changing the underlying business data. */
+#about .stat-grid .stat-item .js-counter { font-size:0 !important; line-height:1 !important; }
+#about .stat-grid .stat-item .js-counter::before { font-size:clamp(28px,2.8vw,38px); line-height:1; font-weight:900; color:#0f172a; }
+#about .stat-grid .stat-item:nth-child(1) .js-counter::before { content:'20+'; }
+#about .stat-grid .stat-item:nth-child(2) .js-counter::before { content:'50k+'; }
+#about .stat-grid .stat-item:nth-child(3) .js-counter::before { content:'100+'; }
+#about .stat-grid .stat-item:nth-child(4) .js-counter::before { content:'50+'; }
+
+/* The Application section is a direct child of body after main#products. */
+body { display:flex !important; flex-direction:column !important; }
+body > nav.navbar { order:1 !important; }
+body > .hero-slider { order:2 !important; }
+body > main#products { order:3 !important; }
+body > #applications { order:4 !important; }
+body > #factory-video { order:5 !important; }
+body > #certifications { order:6 !important; }
+body > #about { order:7 !important; }
+body > #why-baer { order:8 !important; }
+body > section:nth-of-type(7) { order:9 !important; }
+body > section:nth-of-type(8) { order:10 !important; }
+body > section:nth-of-type(9) { order:11 !important; }
+body > #inquiry { order:12 !important; }
+body > footer { order:13 !important; }
+body > .floating-tools, body > .modal-overlay { order:99 !important; }
