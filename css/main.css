@@ -1168,6 +1168,7 @@ CERTIFICATION CLEAN GRID (replaces fan layout)
 
 
 
+
 /* ============================================================
    CERTIFICATIONS - fanned "playing card" row (homepage)
    Six cards pivot around a shared fan-point just below the
@@ -1191,8 +1192,8 @@ CERTIFICATION CLEAN GRID (replaces fan layout)
 }
 .fc-0 { --t: -38deg; z-index: 1; }
 .fc-1 { --t: -23deg; z-index: 2; }
-.fc-2 { --t:  -8deg; z-index: 4; }
-.fc-3 { --t:   8deg; z-index: 4; }
+.fc-2 { --t:  -8deg; z-index: 6; } /* CE - the featured card on top */
+.fc-3 { --t:   8deg; z-index: 3; }
 .fc-4 { --t:  23deg; z-index: 2; }
 .fc-5 { --t:  38deg; z-index: 1; }
 .fan-card--featured { --w: 190px; }
@@ -1229,11 +1230,11 @@ CERTIFICATION CLEAN GRID (replaces fan layout)
   .fan-card__face { height: 286px; }
 }
 @media (max-width: 820px) {
-  .cert-fan { height: 288px; }
+  .cert-fan { height: 272px; }
   .fan-card { --w: 100px; --pivot: 150px; --tp: .55; }
   .fan-card--featured { --w: 110px; }
-  .fan-card__face { height: 170px; padding: 8px 8px 34px; }
-  .fan-card__name { font-size: 9px; bottom: 9px; letter-spacing: .7px; }
+  .fan-card__face { height: 170px; padding: 8px 8px 12px; }
+  .fan-card__name { display: none; }   /* too narrow for long cert names */
   .fan-card__badge { top: 16px; font-size: 9px; }
 }
 @media (max-width: 390px) {
