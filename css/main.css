@@ -1143,3 +1143,23 @@ CERTIFICATION CLEAN GRID (replaces fan layout)
   .why-grid { grid-template-columns: 1fr; gap: 0; }
   .why-card { padding: 32px 24px; }
 }
+
+/* ============================================================
+   HOMEPAGE STAT GRID - mobile readability fix
+   style.css forces 4 columns down to 320px, which clips the stat
+   labels (measured: clipping begins at <=430px viewport).
+   Switch to a 2x2 grid on phones and give the labels room.
+   main.css loads last, so these win over style.css !important.
+   ============================================================ */
+@media (max-width: 560px) {
+  #about .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+  #about .stat-item { padding: 14px 10px !important; }
+  #about .stat-label {
+    font-size: 11px !important;
+    letter-spacing: .2px !important;
+    line-height: 1.35 !important;
+  }
+}
