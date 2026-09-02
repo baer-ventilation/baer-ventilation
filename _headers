@@ -1,0 +1,21 @@
+/* Cloudflare Pages: load the live homepage repair stylesheet before rendering */
+/*
+  This adds a standard Link stylesheet header without modifying page business content.
+*/
+/*
+  https://developers.cloudflare.com/pages/configuration/headers/
+*/
+/*
+  The Link header is attached to all routes.
+*/
+/*
+  Link: </css/home-fix.css>; rel="stylesheet"
+*/
+/*
+  Real Cloudflare Pages syntax:
+*/
+/*
+/*
+  *
+    Link: </css/home-fix.css>; rel="stylesheet"
+*/
