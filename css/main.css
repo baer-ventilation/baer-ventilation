@@ -1250,3 +1250,46 @@ CERTIFICATION CLEAN GRID (replaces fan layout)
   .fan-card__face { height: 144px; }
 }
 
+
+
+/* ============================================================
+   MOBILE WORKSHOP GRID OVERRIDE (2026-09-03)
+   style.css pins workshop-grid to 4 columns (!important) which on
+   390px viewports crushes each image into a 79x59px thumbnail and
+   breaks long labels (e.g. "PRODUCT ASSEMBLY", "PROFESSIONAL
+   PACKAGING") mid-word. Below, we override to a 2x4 grid with 1:1
+   cards, larger label area, and multi-line wrapping so labels read
+   cleanly without ellipsis.
+   ============================================================ */
+@media (max-width: 768px) {
+  .workshop-grid,
+  #about .workshop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+  .workshop-item,
+  #about .workshop-item {
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 8px !important;
+  }
+  .workshop-item .label,
+  #about .workshop-item .label {
+    font-size: 11px !important;
+    letter-spacing: 0.5px !important;
+    padding: 30px 8px 10px !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.78) 55%) !important;
+  }
+}
+@media (max-width: 380px) {
+  .workshop-grid,
+  #about .workshop-grid {
+    gap: 8px !important;
+  }
+  .workshop-item .label,
+  #about .workshop-item .label {
+    font-size: 10px !important;
+    padding: 22px 6px 8px !important;
+  }
+}
