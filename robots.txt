@@ -30,9 +30,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-# Chinese and Arabic versions are canonical alternates — keep them crawlable
-User-agent: *
-Allow: /zh/
-Allow: /ar/
-
 Sitemap: https://baer-ventilation.com/sitemap.xml
