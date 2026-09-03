@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0Y7GNF2D0H');
+</script>
+<title>Exhaust Fan CFM Calculator | BAER Ventilation</title>
+<meta name="description" content="Free exhaust fan CFM calculator: enter room dimensions and air changes per hour to get the required CFM and m³/h for bathrooms, kitchens, workshops and warehouses.">
+<link rel="canonical" href="https://baer-ventilation.com/cfm-calculator">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BAER Ventilation">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Exhaust Fan CFM Calculator | BAER Ventilation">
+<meta property="og:description" content="Free exhaust fan CFM calculator: enter room dimensions and air changes per hour to get the required CFM and m³/h for bathrooms, kitchens, workshops and warehouses.">
+<meta property="og:url" content="https://baer-ventilation.com/cfm-calculator">
+<meta property="og:image" content="https://sc02.alicdn.com/kf/A4fa2bde5c7754b548a9cf5da5e3bec3aQ.png">
+<meta property="og:image:alt" content="Exhaust Fan CFM Calculator | BAER Ventilation">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Exhaust Fan CFM Calculator | BAER Ventilation">
+<meta name="twitter:description" content="Free exhaust fan CFM calculator: get the required CFM and m³/h for bathrooms, kitchens, workshops and warehouses.">
+<meta name="twitter:image" content="https://sc02.alicdn.com/kf/A4fa2bde5c7754b548a9cf5da5e3bec3aQ.png">
+<meta name="theme-color" content="#0F172A">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "y7asoc678j");
+</script>
+<style>
+.baer-breadcrumb{font-size:13px;line-height:1.6;margin:0 0 14px;letter-spacing:.2px;}
+.baer-breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0;padding:0;}
+.baer-breadcrumb li{display:inline-flex;align-items:center;gap:6px;color:inherit;opacity:.75;}
+.baer-breadcrumb li:last-child{opacity:1;font-weight:600;}
+.baer-breadcrumb a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;}
+.baer-breadcrumb a:hover{border-bottom-color:currentColor;}
+.baer-breadcrumb .sep{opacity:.45;font-size:12px;}
+.baer-breadcrumb[dir="rtl"] ol{flex-direction:row-reverse;justify-content:flex-end;}
+.calc-hero{background:linear-gradient(135deg,#0f1f3d 0%,#1a3a6b 100%);color:#fff;padding:64px 20px 48px;text-align:center;}
+.calc-hero h1{font-size:clamp(26px,4vw,40px);font-weight:800;margin:0 0 14px;}
+.calc-hero p{color:#CBD5E1;font-size:16px;max-width:600px;margin:0 auto;}
+.calc-body{max-width:860px;margin:40px auto 0;padding:0 20px 80px;color:#334155;}
+.calc-card{background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:28px;margin:0 0 8px;box-shadow:0 2px 10px rgba(15,31,61,.05);}
+.calc-card h2{font-size:20px;font-weight:800;margin:0 0 6px;color:#0f1f3d;}
+.calc-card .sub{color:#64748B;font-size:13.5px;margin:0 0 20px;}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media(max-width:620px){.calc-grid{grid-template-columns:1fr;}}
+.field label{display:block;font-size:13px;font-weight:600;color:#334155;margin-bottom:6px;}
+.field input,.field select{width:100%;padding:11px 13px;border:1px solid #CBD5E1;border-radius:8px;font-size:15px;color:#1E293B;background:#fff;}
+.field input:focus,.field select:focus{outline:none;border-color:#C0392B;box-shadow:0 0 0 3px rgba(192,57,43,.12);}
+.unit-toggle{display:flex;gap:0;border:1px solid #CBD5E1;border-radius:8px;overflow:hidden;margin-bottom:18px;}
+.unit-toggle button{flex:1;padding:9px;font-size:13px;font-weight:600;border:none;background:#f8fafc;color:#475569;cursor:pointer;}
+.unit-toggle button.active{background:#0f1f3d;color:#fff;}
+.calc-result{background:#0f1f3d;color:#fff;border-radius:12px;padding:24px;margin-top:22px;text-align:center;display:none;}
+.calc-result.show{display:block;}
+.calc-result .big{font-size:clamp(28px,5vw,44px);font-weight:800;line-height:1.1;margin:6px 0 2px;color:#fff;}
+.calc-result .big span{color:#FF8B97;}
+.calc-result .unit{font-size:14px;color:#94A3B8;}
+.calc-result .note{font-size:13px;color:#94A3B8;margin-top:12px;}
+.calc-result a{color:#FF8B97;font-weight:600;}
+.formula{background:#f8fafc;border:1px solid #E2E8F0;border-radius:10px;padding:16px 20px;text-align:center;font-size:16px;color:#0f1f3d;margin:16px 0;font-weight:600;}
+.calc-body h2{font-size:22px;font-weight:800;color:#0f1f3d;margin:34px 0 12px;}
+.calc-body h3{font-size:17px;font-weight:700;color:#1E293B;margin:22px 0 8px;}
+.calc-body p{font-size:15px;line-height:1.8;color:#334155;margin:0 0 12px;}
+.calc-body table{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0;}
+.calc-body th{background:#0f1f3d;color:#fff;text-align:left;padding:10px 13px;font-weight:600;}
+.calc-body td{padding:10px 13px;border:1px solid #E2E8F0;color:#334155;}
+.calc-body tbody tr:nth-child(even){background:#f8fafc;}
+.calc-body ul{margin:8px 0 14px 20px;font-size:15px;color:#334155;}
+.calc-body li{margin-bottom:7px;}
+.faq-item{border:1px solid #E2E8F0;border-radius:10px;margin-bottom:12px;background:#fff;overflow:hidden;}
+.faq-item details summary{padding:18px 22px;cursor:pointer;font-weight:700;font-size:14.5px;list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none;color:#1E293B;}
+.faq-item details summary::-webkit-details-marker{display:none;}
+.faq-item details summary .icon{color:#C0392B;font-size:22px;transition:transform .25s;}
+.faq-item details[open] summary .icon{transform:rotate(45deg);}
+.faq-item details .ans{padding:0 22px 18px;color:#64748B;font-size:14px;line-height:1.8;}
+.cta-box{background:#f8fafc;border:1px solid #E2E8F0;border-radius:12px;padding:36px;text-align:center;margin-top:40px;}
+.cta-box h3{font-size:20px;font-weight:800;margin:0 0 10px;color:#0f1f3d;}
+.cta-box p{color:#64748B;margin:0 0 22px;font-size:14px;}
+.btn-red{display:inline-block;background:#C0392B;color:#fff;padding:14px 32px;border-radius:6px;font-weight:700;text-decoration:none;font-size:15px;}
+.btn-red:hover{background:#a93226;}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://baer-ventilation.com/#organization",
+      "name": "BAER Ventilation",
+      "alternateName": "Zhejiang BAER Electrical Technology Co., Ltd.",
+      "url": "https://baer-ventilation.com/",
+      "logo": {"@type": "ImageObject", "url": "https://baer-ventilation.com/img/logo.png", "width": 300, "height": 80},
+      "description": "BAER Ventilation is a China manufacturer of exhaust fans and ventilation equipment: ceiling, window, wall shutter, inline duct, silent bathroom and cabinet fans. Factory direct supply to the Middle East, Europe and North America.",
+      "address": {"@type": "PostalAddress", "streetAddress": "No. 8-1 Jingwu Road, Ganlin Town, Shengzhou", "addressLocality": "Shaoxing", "addressRegion": "Zhejiang", "postalCode": "312400", "addressCountry": "CN"},
+      "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "sunny@zjbaer.com", "telephone": "+86-136-5585-9122", "availableLanguage": ["en", "zh", "ar"], "areaServed": ["SA", "AE", "IQ", "KW", "QA", "YE", "US", "CA", "DE", "GB", "FR"]}]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://baer-ventilation.com/cfm-calculator",
+      "url": "https://baer-ventilation.com/cfm-calculator",
+      "name": "Exhaust Fan CFM Calculator",
+      "isPartOf": {"@id": "https://baer-ventilation.com/#website"},
+      "inLanguage": "en",
+      "description": "Free exhaust fan CFM calculator: get the required CFM and m³/h for bathrooms, kitchens, workshops and warehouses.",
+      "breadcrumb": {"@id": "https://baer-ventilation.com/cfm-calculator#breadcrumb"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://baer-ventilation.com/cfm-calculator#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://baer-ventilation.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Resources", "item": "https://baer-ventilation.com/resources"},
+        {"@type": "ListItem", "position": 3, "name": "Exhaust Fan CFM Calculator", "item": "https://baer-ventilation.com/cfm-calculator"}
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Exhaust Fan CFM Calculator",
+      "url": "https://baer-ventilation.com/cfm-calculator",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "description": "Calculate the required exhaust fan airflow (CFM and m³/h) from room dimensions and air changes per hour.",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does CFM mean for an exhaust fan?",
+          "acceptedAnswer": {"@type": "Answer", "text": "CFM stands for cubic feet per minute and measures how much air a fan moves in one minute. A bathroom exhaust fan typically needs 50–80 CFM, while a kitchen or workshop needs several hundred CFM depending on room size and air changes per hour."}
+        },
+        {
+          "@type": "Question",
+          "name": "How do I convert CFM to m³/h?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Multiply CFM by 1.699 to get m³/h. For example, 100 CFM ≈ 170 m³/h. To convert m³/h back to CFM, divide by 1.699."}
+        },
+        {
+          "@type": "Question",
+          "name": "How many air changes per hour does a bathroom need?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A bathroom typically needs 8 air changes per hour (ACH), a residential kitchen 15, and a commercial kitchen up to 20. Warehouses usually require 6 ACH."}
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;">
+    <a href="/" style="font-size:22px;font-weight:900;color:#C0392B;text-decoration:none;letter-spacing:-0.5px;">BAER<span style="color:#1E293B;font-weight:400;font-size:14px;margin-left:6px;">VENTILATION</span></a>
+    <nav style="display:flex;gap:24px;font-size:14px;font-weight:600;">
+      <a href="/" style="color:#1E293B;text-decoration:none;">Home</a>
+      <a href="/products/" style="color:#1E293B;text-decoration:none;">Products</a>
+      <a href="/faq" style="color:#1E293B;text-decoration:none;">FAQ</a>
+      <a href="/#inquiry" style="background:#C0392B;color:#fff;padding:8px 18px;border-radius:5px;text-decoration:none;">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<div class="calc-hero">
+  <nav class="baer-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">/</li><li><a href="/resources">Resources</a></li><li class="sep" aria-hidden="true">/</li><li aria-current="page">CFM Calculator</li></ol></nav>
+  <h1>Exhaust Fan CFM Calculator</h1>
+  <p>Enter your room dimensions and air changes per hour to get the exact airflow your exhaust fan must deliver.</p>
+</div>
+
+<div class="calc-body">
+
+  <div class="calc-card">
+    <h2>Sizing calculator</h2>
+    <p class="sub">Results are a minimum sizing guide — add a 10–20% margin for duct bends, filters and long runs.</p>
+
+    <div class="unit-toggle" id="unitToggle">
+      <button type="button" class="active" data-unit="ft">Feet &amp; CFM</button>
+      <button type="button" data-unit="m">Metres &amp; m³/h</button>
+    </div>
+
+    <div class="calc-grid">
+      <div class="field">
+        <label for="L">Length <span class="unit-lbl">(ft)</span></label>
+        <input type="number" id="L" min="0" step="0.1" placeholder="e.g. 12">
+      </div>
+      <div class="field">
+        <label for="W">Width <span class="unit-lbl">(ft)</span></label>
+        <input type="number" id="W" min="0" step="0.1" placeholder="e.g. 10">
+      </div>
+      <div class="field">
+        <label for="H">Height <span class="unit-lbl">(ft)</span></label>
+        <input type="number" id="H" min="0" step="0.1" placeholder="e.g. 8">
+      </div>
+      <div class="field">
+        <label for="ach">Room type (air changes per hour)</label>
+        <select id="ach">
+          <option value="8" selected>Bathroom / toilet — 8 ACH</option>
+          <option value="15">Residential kitchen — 15 ACH</option>
+          <option value="20">Commercial kitchen — 20 ACH</option>
+          <option value="6">Warehouse / storage — 6 ACH</option>
+          <option value="10">Workshop / garage — 10 ACH</option>
+          <option value="12">Laundry / utility — 12 ACH</option>
+          <option value="6">Office / meeting room — 6 ACH</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="calc-result" id="result">
+      <div class="unit" id="resultLabel">Minimum airflow required</div>
+      <div class="big"><span id="resultPrimary">—</span></div>
+      <div class="note" id="resultSecondary"></div>
+      <div class="note" id="resultRec"></div>
+    </div>
+  </div>
+
+  <h2>What is CFM and why it matters</h2>
+  <p><strong>CFM (cubic feet per minute)</strong> is the amount of air an exhaust fan moves in one minute. In metric markets — the Middle East, Europe and Australia — the same figure is usually quoted as <strong>m³/h (cubic metres per hour)</strong>. Both measure the same thing: how fast the fan can replace the air in a room.</p>
+  <p>The single biggest reason an exhaust fan "doesn't work" is that it was sized for the room's floor area instead of its <strong>volume</strong> and the <strong>air changes per hour (ACH)</strong> the application requires. A 50 CFM fan that is adequate for a small bathroom will do almost nothing in a 500 m³ restaurant kitchen.</p>
+
+  <h2>The formula</h2>
+  <div class="formula">CFM = (Length × Width × Height) × ACH ÷ 60</div>
+  <p>For metric: <strong>m³/h = Room volume (m³) × ACH</strong>. To convert, <strong>1 CFM ≈ 1.699 m³/h</strong>.</p>
+
+  <h3>Air changes per hour (ACH) by application</h3>
+  <table>
+    <thead><tr><th>Application</th><th>Recommended ACH</th><th>Typical fan type</th></tr></thead>
+    <tbody>
+      <tr><td>Bathroom / toilet</td><td>8</td><td>Ceiling or window exhaust fan</td></tr>
+      <tr><td>Residential kitchen</td><td>15</td><td>Wall or window exhaust fan</td></tr>
+      <tr><td>Commercial kitchen</td><td>20</td><td>High-pressure inline or centrifugal fan</td></tr>
+      <tr><td>Warehouse / storage</td><td>6</td><td>Wall shutter or axial fan</td></tr>
+      <tr><td>Workshop / garage</td><td>10</td><td>Wall or inline duct fan</td></tr>
+      <tr><td>Office / meeting room</td><td>6</td><td>Silent inline or ceiling fan</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Worked example: bathroom</h2>
+  <p>A bathroom measuring <strong>10 ft × 8 ft × 8 ft</strong> (volume 640 ft³) needs 8 air changes per hour:</p>
+  <div class="formula">CFM = 640 × 8 ÷ 60 = 85 CFM (≈ 145 m³/h)</div>
+  <p>You would select a fan rated at least <strong>90–100 CFM</strong> after adding a small margin for the duct run.</p>
+
+  <h2>Two things the calculator can't see</h2>
+  <ul>
+    <li><strong>Duct resistance (static pressure):</strong> every bend, grille and long run reduces real-world airflow. Add 10–20% to the calculated CFM, or use a fan with a steeper pressure curve (an inline or mixed-flow fan rather than a basic axial fan).</li>
+    <li><strong>Filters and shutters:</strong> backdraft shutters and insect screens reduce airflow. Size up rather than down.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq-item">
+    <details>
+      <summary>What does CFM mean for an exhaust fan? <span class="icon">＋</span></summary>
+      <div class="ans">CFM stands for cubic feet per minute and measures how much air a fan moves in one minute. A bathroom exhaust fan typically needs 50–80 CFM, while a kitchen or workshop needs several hundred CFM depending on room size and air changes per hour.</div>
+    </details>
+  </div>
+  <div class="faq-item">
+    <details>
+      <summary>How do I convert CFM to m³/h? <span class="icon">＋</span></summary>
+      <div class="ans">Multiply CFM by 1.699 to get m³/h — for example, 100 CFM ≈ 170 m³/h. To convert m³/h back to CFM, divide by 1.699.</div>
+    </details>
+  </div>
+  <div class="faq-item">
+    <details>
+      <summary>How many air changes per hour does a bathroom need? <span class="icon">＋</span></summary>
+      <div class="ans">A bathroom typically needs 8 air changes per hour (ACH), a residential kitchen 15, and a commercial kitchen up to 20. Warehouses usually require 6 ACH.</div>
+    </details>
+  </div>
+
+  <div class="cta-box">
+    <h3>Not sure what fan to buy?</h3>
+    <p>Send us your room dimensions and application — our engineers reply with a recommended model and full specifications within one working day.</p>
+    <a href="/#inquiry" class="btn-red">Request a Recommendation</a>
+  </div>
+</div>
+
+<footer style="background:#0f1f3d;color:#94A3B8;text-align:center;padding:32px 20px;font-size:13px;">
+  <p style="margin:0;">© 2026 BAER Ventilation · <a href="/" style="color:#C0392B;text-decoration:none;">baer-ventilation.com</a></p>
+</footer>
+
+<script>
+(function(){
+  var unit = 'ft';
+  var toggle = document.getElementById('unitToggle');
+  var labels = document.querySelectorAll('.unit-lbl');
+  function setUnit(u){
+    unit = u;
+    var btns = toggle.querySelectorAll('button');
+    btns.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-unit') === u); });
+    labels.forEach(function(l){ l.textContent = (u === 'ft') ? '(ft)' : '(m)'; });
+    calc();
+  }
+  toggle.addEventListener('click', function(e){
+    var b = e.target.closest('button');
+    if (b) setUnit(b.getAttribute('data-unit'));
+  });
+  function calc(){
+    var L = parseFloat(document.getElementById('L').value);
+    var W = parseFloat(document.getElementById('W').value);
+    var H = parseFloat(document.getElementById('H').value);
+    var ach = parseFloat(document.getElementById('ach').value);
+    var res = document.getElementById('result');
+    if (!(L > 0) || !(W > 0) || !(H > 0)) { res.classList.remove('show'); return; }
+    var primary, secondary, rec;
+    if (unit === 'ft') {
+      var cfm = L * W * H * ach / 60;
+      var m3h = cfm * 1.699;
+      primary = Math.round(cfm) + ' <span>CFM</span>';
+      secondary = '≈ ' + Math.round(m3h) + ' m³/h';
+      rec = 'Add 10–20% margin for ducting → size up to <strong>~' + Math.round(cfm * 1.15) + ' CFM</strong>. <a href="/products/">Browse exhaust fans</a>';
+    } else {
+      var m3h2 = L * W * H * ach;
+      var cfm2 = m3h2 / 1.699;
+      primary = Math.round(m3h2) + ' <span>m³/h</span>';
+      secondary = '≈ ' + Math.round(cfm2) + ' CFM';
+      rec = 'Add 10–20% margin for ducting → size up to <strong>~' + Math.round(m3h2 * 1.15) + ' m³/h</strong>. <a href="/products/">Browse exhaust fans</a>';
+    }
+    document.getElementById('resultLabel').textContent = (unit === 'ft') ? 'Minimum airflow required' : 'Minimum airflow required';
+    document.getElementById('resultPrimary').innerHTML = primary;
+    document.getElementById('resultSecondary').textContent = secondary;
+    document.getElementById('resultRec').innerHTML = rec;
+    res.classList.add('show');
+  }
+  ['L','W','H','ach'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', calc);
+    document.getElementById(id).addEventListener('change', calc);
+  });
+})();
+</script>
+
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+});
+var _baerForm = document.querySelector('form');
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
+});
+</script>
+</body>
+</html>
