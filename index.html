@@ -68,37 +68,7 @@
 
 
 
-<script type="application/ld+json">
 
-{
-
-  "@context":"https://schema.org",
-
-  "@type":"Manufacturer",
-
-  "name":"BAER Ventilation",
-
-  "description":"Manufacturer of industrial ventilation fans and ventilation equipment for industrial and commercial projects, global supply chain with in‑house production & quality control.",
-
-  "url":"https://baer-ventilation.com/",
-
-  "video":{
-
-    "@type":"VideoObject",
-
-    "name":"SEE HOW BAER FANS ARE MADE",
-
-    "description":"BAER Ventilation factory tour showing fan manufacturing, assembly lines and quality‑control testing.",
-
-    "contentUrl":"https://baer-ventilation.com/factory-tour-baer.mp4",
-    "thumbnailUrl":"https://baer-ventilation.com/factory-tour-thumbnail.jpg",
-    "uploadDate":"2026-08-27"
-
-  }
-
-}
-
-</script>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -115,7 +85,10 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": [
+        "Organization",
+        "Manufacturer"
+      ],
       "@id": "https://baer-ventilation.com/#organization",
       "name": "BAER Ventilation",
       "alternateName": "Zhejiang BAER Electrical Technology Co., Ltd.",
@@ -160,7 +133,10 @@
             "FR"
           ]
         }
-      ]
+      ],
+      "video": {
+        "@id": "https://baer-ventilation.com/#factory-video"
+      }
     },
     {
       "@type": "WebSite",
@@ -171,6 +147,15 @@
         "@id": "https://baer-ventilation.com/#organization"
       },
       "inLanguage": "en"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "SEE HOW BAER FANS ARE MADE",
+      "description": "BAER Ventilation factory tour showing fan manufacturing, assembly lines and quality‑control testing.",
+      "contentUrl": "https://baer-ventilation.com/factory-tour-baer.mp4",
+      "thumbnailUrl": "https://baer-ventilation.com/factory-tour-thumbnail.jpg",
+      "uploadDate": "2026-08-27",
+      "@id": "https://baer-ventilation.com/#factory-video"
     }
   ]
 }
@@ -261,7 +246,7 @@
 
                     <span class="hero-tag" data-i18n="h-t2">Modern Living Standards</span>
 
-                    <h1 class="hero-title" data-i18n="h-title2">PREMIUM <span>EXHAUST FAN</span><br>SERIES</h1>
+                    <h1 class="hero-title" data-i18n="h-title2">Exhaust Fan <span>Manufacturer &amp; Supplier</span> in China</h1>
 
                     <p class="hero-desc" data-i18n="h-d2">Sleek designs with intelligent humidity sensors, delivering 26dB whisper-quiet performance for modern interiors.</p>
 
