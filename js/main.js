@@ -367,19 +367,22 @@
 
             desc:  'Heavy-duty axial fan for industrial ventilation. High static pressure, continuous duty, IP55 rated for harsh environments.',
 
-            specs: [['Size','300mm ~ 800mm'],['Airflow','1000~25000 m³/h'],['Static Pressure','Up to 180 Pa'],['Power','0.25~5.5 kW'],['IP Rating','IP55']] },
+            specs: [['Size','300mm ~ 800mm'],['Airflow','1000~25000 m³/h'],['Static Pressure','Up to 180 Pa'],['Power','0.25~5.5 kW'],['IP Rating','IP55']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">Model</th><th>Size</th><th>Voltage</th><th>Power</th><th>Speed</th><th>Airflow</th><th>Noise</th></tr><tr><th class="unit">(inch)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(r/min)</th><th class="unit">(CFM)</th><th class="unit">(dB)</th></tr><tr><td>FA8-20 8"</td><td>200 mm</td><td>220/50</td><td>20 W</td><td>1400 r/min</td><td>360 CFM</td><td>46 dB</td></tr><tr><td>FA10-25 10"</td><td>250 mm</td><td>220/50</td><td>30 W</td><td>1400 r/min</td><td>540 CFM</td><td>50 dB</td></tr><tr><td>FA12-30 12"</td><td>300 mm</td><td>220/50</td><td>45 W</td><td>1400 r/min</td><td>760 CFM</td><td>55 dB</td></tr><tr><td>FA14-35 14"</td><td>350 mm</td><td>220/50</td><td>100 W</td><td>1400 r/min</td><td>1650 CFM</td><td>60 dB</td></tr><tr><td>FA16-40 16"</td><td>400 mm</td><td>220/50</td><td>150 W</td><td>1400 r/min</td><td>2000 CFM</td><td>68 dB</td></tr></table>' },
 
       ar: { title: 'مروحة محورية صناعية',
 
             desc:  'مروحة محورية للأعمال الشاقة للتهوية الصناعية. ضغط ستاتيكي عالٍ، تشغيل مستمر، مقاومة IP55 للبيئات القاسية.',
 
-            specs: [['Size','300mm ~ 800mm'],['Airflow','1000~25000 m³/h'],['Static Pressure','Up to 180 Pa'],['Power','0.25~5.5 kW'],['IP Rating','IP55']] },
+            specs: [['Size','300mm ~ 800mm'],['Airflow','1000~25000 m³/h'],['Static Pressure','Up to 180 Pa'],['Power','0.25~5.5 kW'],['IP Rating','IP55']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">الموديل</th><th>الحجم</th><th>الجهد</th><th>القدرة</th><th>السرعة</th><th>تدفق الهواء</th><th>الضوضاء</th></tr><tr><th class="unit">(inch)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(r/min)</th><th class="unit">(CFM)</th><th class="unit">(dB)</th></tr><tr><td>FA8-20 8"</td><td>200 mm</td><td>220/50</td><td>20 W</td><td>1400 r/min</td><td>360 CFM</td><td>46 dB</td></tr><tr><td>FA10-25 10"</td><td>250 mm</td><td>220/50</td><td>30 W</td><td>1400 r/min</td><td>540 CFM</td><td>50 dB</td></tr><tr><td>FA12-30 12"</td><td>300 mm</td><td>220/50</td><td>45 W</td><td>1400 r/min</td><td>760 CFM</td><td>55 dB</td></tr><tr><td>FA14-35 14"</td><td>350 mm</td><td>220/50</td><td>100 W</td><td>1400 r/min</td><td>1650 CFM</td><td>60 dB</td></tr><tr><td>FA16-40 16"</td><td>400 mm</td><td>220/50</td><td>150 W</td><td>1400 r/min</td><td>2000 CFM</td><td>68 dB</td></tr></table>' },
 
       zh: { title: '工业轴流风机',
 
             desc:  '重型轴流风机，适用于工业通风场合。高静压，可连续运行，IP55防护等级，耐恶劣环境。',
 
-            specs: [['Size','300mm ~ 800mm'],['Airflow','1000~25000 m³/h'],['Static Pressure','Up to 180 Pa'],['Power','0.25~5.5 kW'],['IP Rating','IP55']] }
+            specs: [['Size','300mm ~ 800mm'],['Airflow','1000~25000 m³/h'],['Static Pressure','Up to 180 Pa'],['Power','0.25~5.5 kW'],['IP Rating','IP55']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">型号</th><th>尺寸</th><th>电压</th><th>功率</th><th>转速</th><th>风量</th><th>噪音</th></tr><tr><th class="unit">(英寸)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(r/min)</th><th class="unit">(CFM)</th><th class="unit">(dB)</th></tr><tr><td>FA8-20 8"</td><td>200 mm</td><td>220/50</td><td>20 W</td><td>1400 r/min</td><td>360 CFM</td><td>46 dB</td></tr><tr><td>FA10-25 10"</td><td>250 mm</td><td>220/50</td><td>30 W</td><td>1400 r/min</td><td>540 CFM</td><td>50 dB</td></tr><tr><td>FA12-30 12"</td><td>300 mm</td><td>220/50</td><td>45 W</td><td>1400 r/min</td><td>760 CFM</td><td>55 dB</td></tr><tr><td>FA14-35 14"</td><td>350 mm</td><td>220/50</td><td>100 W</td><td>1400 r/min</td><td>1650 CFM</td><td>60 dB</td></tr><tr><td>FA16-40 16"</td><td>400 mm</td><td>220/50</td><td>150 W</td><td>1400 r/min</td><td>2000 CFM</td><td>68 dB</td></tr></table>' }
 
     },
 
