@@ -340,19 +340,22 @@
 
             desc:  'Two-layer grille design for improved airflow direction control. Ideal for through-wall installation in residential and commercial buildings.',
 
-            specs: [['Size','150mm / 200mm'],['Airflow','140~380 m³/h'],['Noise','≤32 dB(A)'],['Power','18~35 W'],['Voltage','220V / 50Hz']] },
+            specs: [['Size','150mm / 200mm'],['Airflow','140~380 m³/h'],['Noise','≤32 dB(A)'],['Power','18~35 W'],['Voltage','220V / 50Hz']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">Model</th><th>Panel Size</th><th>Install Size</th><th>Voltage</th><th>Power</th><th>Airflow</th><th>Noise</th><th>Pcs/Ctn</th><th>CBM</th><th>G.W.</th><th>N.W.</th></tr><tr><th class="unit">(mm)</th><th class="unit">(mm)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(m³/h)</th><th class="unit">(dB)</th><th class="unit">(pcs)</th><th class="unit">(m³)</th><th class="unit">(kg)</th><th class="unit">(kg)</th></tr><tr><td>KLT-20B 8"</td><td>300×300</td><td>245×245</td><td>220/50</td><td>40 W</td><td>468 m³/h</td><td>38 dB</td><td>8 pcs/ctn</td><td>0.116 m³</td><td>14.3 kg</td><td>13 kg</td></tr><tr><td>KLT-25B 10"</td><td>335×335</td><td>280×280</td><td>220/50</td><td>40 W</td><td>792 m³/h</td><td>42 dB</td><td>8 pcs/ctn</td><td>0.149 m³</td><td>16.9 kg</td><td>15.4 kg</td></tr><tr><td>KLT-30B 12"</td><td>380×380</td><td>325×325</td><td>220/50</td><td>40 W</td><td>984 m³/h</td><td>45 dB</td><td>5 pcs/ctn</td><td>0.122 m³</td><td>13.8 kg</td><td>12.8 kg</td></tr></table>' },
 
       ar: { title: 'مروحة نافذة مزدوجة الشبك',
 
             desc:  'تصميم شبكي مزدوج لتحسين التحكم في اتجاه تدفق الهواء. مثالية للتركيب في الجدران للمباني السكنية والتجارية.',
 
-            specs: [['Size','150mm / 200mm'],['Airflow','140~380 m³/h'],['Noise','≤32 dB(A)'],['Power','18~35 W'],['Voltage','220V / 50Hz']] },
+            specs: [['Size','150mm / 200mm'],['Airflow','140~380 m³/h'],['Noise','≤32 dB(A)'],['Power','18~35 W'],['Voltage','220V / 50Hz']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">الموديل</th><th>حجم اللوحة</th><th>حجم التركيب</th><th>الجهد</th><th>القدرة</th><th>تدفق الهواء</th><th>الضوضاء</th><th>قطعة/كرتون</th><th>حجم الكرتون</th><th>الوزن القائم</th><th>الوزن الصافي</th></tr><tr><th class="unit">(mm)</th><th class="unit">(mm)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(m³/h)</th><th class="unit">(dB)</th><th class="unit">(pcs)</th><th class="unit">(m³)</th><th class="unit">(kg)</th><th class="unit">(kg)</th></tr><tr><td>KLT-20B 8"</td><td>300×300</td><td>245×245</td><td>220/50</td><td>40 W</td><td>468 m³/h</td><td>38 dB</td><td>8 pcs/ctn</td><td>0.116 m³</td><td>14.3 kg</td><td>13 kg</td></tr><tr><td>KLT-25B 10"</td><td>335×335</td><td>280×280</td><td>220/50</td><td>40 W</td><td>792 m³/h</td><td>42 dB</td><td>8 pcs/ctn</td><td>0.149 m³</td><td>16.9 kg</td><td>15.4 kg</td></tr><tr><td>KLT-30B 12"</td><td>380×380</td><td>325×325</td><td>220/50</td><td>40 W</td><td>984 m³/h</td><td>45 dB</td><td>5 pcs/ctn</td><td>0.122 m³</td><td>13.8 kg</td><td>12.8 kg</td></tr></table>' },
 
       zh: { title: '双格栅窗式换气扇',
 
             desc:  '双层格栅设计，有效改善气流方向控制。适合住宅及商业建筑穿墙安装。',
 
-            specs: [['Size','150mm / 200mm'],['Airflow','140~380 m³/h'],['Noise','≤32 dB(A)'],['Power','18~35 W'],['Voltage','220V / 50Hz']] }
+            specs: [['Size','150mm / 200mm'],['Airflow','140~380 m³/h'],['Noise','≤32 dB(A)'],['Power','18~35 W'],['Voltage','220V / 50Hz']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">型号</th><th>面板尺寸</th><th>安装尺寸</th><th>电压</th><th>功率</th><th>风量</th><th>噪音</th><th>装箱数</th><th>单箱体积</th><th>毛重</th><th>净重</th></tr><tr><th class="unit">(mm)</th><th class="unit">(mm)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(m³/h)</th><th class="unit">(dB)</th><th class="unit">(件)</th><th class="unit">(m³)</th><th class="unit">(Kg/箱)</th><th class="unit">(Kg/箱)</th></tr><tr><td>KLT-20B 8"</td><td>300×300</td><td>245×245</td><td>220/50</td><td>40 W</td><td>468 m³/h</td><td>38 dB</td><td>8 pcs/ctn</td><td>0.116 m³</td><td>14.3 kg</td><td>13 kg</td></tr><tr><td>KLT-25B 10"</td><td>335×335</td><td>280×280</td><td>220/50</td><td>40 W</td><td>792 m³/h</td><td>42 dB</td><td>8 pcs/ctn</td><td>0.149 m³</td><td>16.9 kg</td><td>15.4 kg</td></tr><tr><td>KLT-30B 12"</td><td>380×380</td><td>325×325</td><td>220/50</td><td>40 W</td><td>984 m³/h</td><td>45 dB</td><td>5 pcs/ctn</td><td>0.122 m³</td><td>13.8 kg</td><td>12.8 kg</td></tr></table>' }
 
     },
 
