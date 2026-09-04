@@ -111,22 +111,22 @@
 
   /* spec label translations: key → [en, ar, zh] */
   var specLabels = {
-    'Size':            ['Size',            'المقاس',           '尺寸'],
-    'Airflow':         ['Airflow',         'تدفق الهواء',      '风量'],
-    'Noise':           ['Noise',           'مستوى الضوضاء',    '噪音'],
-    'Power':           ['Power',           'الطاقة',           '功率'],
-    'Voltage':         ['Voltage',         'الجهد الكهربائي',  '电压'],
-    'Certification':   ['Certification',   'الشهادات',         '认证'],
-    'Static Pressure': ['Static Pressure', 'الضغط الستاتيكي',  '静压'],
-    'IP Rating':       ['IP Rating',       'درجة الحماية IP',  'IP防护等级'],
-    'Motor':           ['Motor',           'المحرك',           '电机'],
-    'Energy Saving':   ['Energy Saving',   'توفير الطاقة',     '节能'],
-    'Control':         ['Control',         'التحكم',           '控制方式'],
-    'Filter':          ['Filter',          'الفلتر',           '过滤器'],
-    'Heat Recovery':   ['Heat Recovery',   'استعادة الحرارة',  '热回收效率'],
-    'Application':     ['Application',     'التطبيقات',        '应用场景'],
-    'Switch':          ['Switch',          'مفتاح التشغيل',    '开关方式'],
-    'MOQ':             ['MOQ',             'الحد الأدنى للطلب','最小起订量']
+    'Size':            ['Size',            'المقاس',           '尺寸',     'mm'],
+    'Airflow':         ['Airflow',         'تدفق الهواء',      '风量',     'm³/h'],
+    'Noise':           ['Noise',           'مستوى الضوضاء',    '噪音',     'dB(A)'],
+    'Power':           ['Power',           'الطاقة',           '功率',     'W'],
+    'Voltage':         ['Voltage',         'الجهد الكهربائي',  '电压',     'V/Hz'],
+    'Certification':   ['Certification',   'الشهادات',         '认证',     ''],
+    'Static Pressure': ['Static Pressure', 'الضغط الستاتيكي',  '静压',     'Pa'],
+    'IP Rating':       ['IP Rating',       'IP',               'IP防护等级','IP'],
+    'Motor':           ['Motor',           'المحرك',           '电机',     ''],
+    'Energy Saving':   ['Energy Saving',   'توفير الطاقة',     '节能',     ''],
+    'Control':         ['Control',         'التحكم',           '控制方式', ''],
+    'Filter':          ['Filter',          'الفلتر',           '过滤器',   ''],
+    'Heat Recovery':   ['Heat Recovery',   'استعادة الحرارة',  '热回收效率',''],
+    'Application':     ['Application',     'التطبيقات',        '应用场景', ''],
+    'Switch':          ['Switch',          'مفتاح التشغيل',    '开关方式', ''],
+    'MOQ':             ['MOQ',             'الحد الأدنى للطلب','最小起订量','pcs']
   };
 
   /* inquiry button label per language */
@@ -290,7 +290,9 @@
     var specsHtml = data.specs.map(function (row) {
       var labelEntry = specLabels[row[0]];
       var label = labelEntry ? labelEntry[langIdx] : row[0];
-      return '<tr><th>' + label + '</th><td>' + row[1] + '</td></tr>';
+      var unit = (labelEntry && labelEntry[3]) ? labelEntry[3] : '';
+      var unitHtml = unit ? '<small class="baer-unit">(' + unit + ')</small>' : '';
+      return '<tr><th>' + label + unitHtml + '</th><td>' + row[1] + '</td></tr>';
     }).join('');
 
     var btnLabel = inquireLabel[lang] || inquireLabel['en'];
@@ -299,7 +301,8 @@
       '<img src="' + entry.img + '" alt="' + data.title + '" loading="lazy">' +
       '<h2>' + data.title + '</h2>' +
       '<p>' + data.desc + '</p>' +
-      (data.specs.length ? '<table><tbody>' + specsHtml + '</tbody></table>' : '') +
+      (data.specs.length ? '<table class="baer-modal-spec"><tbody>' + specsHtml + '</tbody></table>' +
+       '<style>.baer-modal-spec th small.baer-unit{display:block;font-size:10px;font-weight:500;color:#888;margin-top:3px;text-transform:none;letter-spacing:0;}</style>' : '') +
       '<div style="margin-top:24px;"><a href="#inquiry" class="baer-btn-v2" onclick="closeProductModal()" style="text-decoration:none;">' + btnLabel + '</a></div>';
 
     overlay.classList.add('open');
