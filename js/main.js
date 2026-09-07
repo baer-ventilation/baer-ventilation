@@ -280,7 +280,7 @@
 
     p1: {
 
-      img: 'https://sc02.alicdn.com/kf/H5ab785de74ed4850a9fbf3621c91530cH.jpg',
+      img: '/assets/images/H5ab785de74ed4850a9fbf3621c91530cH.webp',
 
       en: { title: 'Ceiling Mount Exhaust Fan',
 
@@ -307,7 +307,7 @@
 
     p2: {
 
-      img: 'https://sc02.alicdn.com/kf/H5fbe6fbc92284181968eba3dff7ed880E.jpg',
+      img: '/assets/images/H5fbe6fbc92284181968eba3dff7ed880E.webp',
 
       en: { title: 'Standard Window Fan',
 
@@ -334,7 +334,7 @@
 
     p3: {
 
-      img: 'https://sc02.alicdn.com/kf/A216d65f6e04a43438a882ca3e9b88721Z.png',
+      img: '/assets/images/A216d65f6e04a43438a882ca3e9b88721Z.webp',
 
       en: { title: 'Double-Grill Window Fan',
 
@@ -361,7 +361,7 @@
 
     p4: {
 
-      img: 'https://sc02.alicdn.com/kf/H42e66ea71d5445fcbb62c7c68e493d94v.jpg',
+      img: '/assets/images/H42e66ea71d5445fcbb62c7c68e493d94v.webp',
 
       en: { title: 'Industrial Axial Fan',
 
@@ -388,7 +388,7 @@
 
     p5: {
 
-      img: 'https://sc02.alicdn.com/kf/Hf77c8f2216ff4576b9f83c896fdd000fq.jpg',
+      img: '/assets/images/Hf77c8f2216ff4576b9f83c896fdd000fq.webp',
 
       en: { title: 'Standard Mixed Flow Series',
 
@@ -415,7 +415,7 @@
 
     p7: {
 
-      img: 'https://sc02.alicdn.com/kf/A69a6450d8e504c9a9c1dcaedccad5c3e2.png',
+      img: '/assets/images/A69a6450d8e504c9a9c1dcaedccad5c3e2.webp',
 
       en: { title: 'High-Efficiency Booster Fan',
 
@@ -442,7 +442,7 @@
 
     p8: {
 
-      img: 'https://sc02.alicdn.com/kf/A96cb71eed6d94b289be81e750dfc9fe1M.png',
+      img: '/assets/images/A96cb71eed6d94b289be81e750dfc9fe1M.webp',
 
       en: { title: 'Intelligent DC Inverter Fan',
 
@@ -469,7 +469,7 @@
 
     p9: {
 
-      img: 'https://sc02.alicdn.com/kf/H0f20bd34e6864282a2d71d6aa8f11a35f.jpg',
+      img: '/assets/images/H0f20bd34e6864282a2d71d6aa8f11a35f.webp',
 
       en: { title: 'Export Pro Bathroom Series',
 
@@ -493,7 +493,7 @@
 
     'p3-n2': {
 
-      img: 'https://sc02.alicdn.com/kf/Abe879211958d43a4996a2f163a09d541e.png',
+      img: '/assets/images/Abe879211958d43a4996a2f163a09d541e.webp',
 
       en: { title: 'Circular Pull-Cord Fan',
 
@@ -520,7 +520,7 @@
 
     p10: {
 
-      img: 'https://sc02.alicdn.com/kf/Hb4c5e8471a3e46d599e56f223890a1d36.jpg',
+      img: '/assets/images/Hb4c5e8471a3e46d599e56f223890a1d36.webp',
 
       en: { title: 'Acoustic Cabinet Fan',
 
@@ -547,7 +547,7 @@
 
     p13: {
 
-      img: 'https://sc02.alicdn.com/kf/Ac07b0ea4758d43eca21098ba7444ee35Q.png',
+      img: '/assets/images/Ac07b0ea4758d43eca21098ba7444ee35Q.webp',
 
       en: { title: 'Fresh Air Purification Unit',
 
