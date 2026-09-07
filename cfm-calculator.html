@@ -11,8 +11,8 @@
   gtag('js', new Date());
   gtag('config', 'G-0Y7GNF2D0H');
 </script>
-<title>Exhaust Fan CFM Calculator | BAER Ventilation</title>
-<meta name="description" content="Free exhaust fan CFM calculator: enter room dimensions and air changes per hour to get the required CFM and m³/h for bathrooms, kitchens, workshops and warehouses.">
+<title>Fan CFM Calculator: Exhaust, Whole House & Axial Fan Sizing | BAER</title>
+<meta name="description" content="Free fan CFM calculator: size exhaust fans, whole house ventilation and axial fans by room dimensions and air changes per hour. Formulas, ACH tables, worked examples and installation verification included.">
 <link rel="canonical" href="https://baer-ventilation.com/cfm-calculator">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BAER Ventilation">
@@ -150,6 +150,16 @@
           "@type": "Question",
           "name": "How many air changes per hour does a bathroom need?",
           "acceptedAnswer": {"@type": "Answer", "text": "A bathroom typically needs 8 air changes per hour (ACH), a residential kitchen 15, and a commercial kitchen up to 20. Warehouses usually require 6 ACH."}
+        },
+        {
+          "@type": "Question",
+          "name": "How do I calculate CFM for a whole house fan?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Multiply the total volume of the conditioned space (length × width × ceiling height, in feet) by 15–20 air changes per hour, then divide by 60. A 2,000 sq ft house with 9 ft ceilings needs about 4,500 CFM of continuous extract."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is a wall exhaust fan better than a ceiling exhaust fan?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A wall fan exhausts directly outside with minimal duct loss, so it delivers close to its rated CFM — ideal for kitchens and workshops. A ceiling fan is quieter and hidden but typically loses 15–20% of airflow to duct resistance, so size up one step if you choose ceiling mounting."}
         }
       ]
     }
@@ -255,6 +265,36 @@
     <li><strong>Filters and shutters:</strong> backdraft shutters and insect screens reduce airflow. Size up rather than down.</li>
   </ul>
 
+  <h2>How to calculate the CFM of an axial fan</h2>
+  <p>An <a href="/inline-duct-fan-vs-axial-fan" style="color:#C0392B;font-weight:700;">axial fan</a> is rated at a specific test pressure, and the number on the datasheet is measured at a set static pressure — often 0 Pa, called <em>free air</em>. The real CFM you get depends on the resistance of your installation:</p>
+  <ul>
+    <li><strong>Free-air rating:</strong> a fan advertising 984 CFM may deliver that only with no duct, no shutter and no grille attached.</li>
+    <li><strong>Operating point:</strong> real airflow is where the fan's pressure curve crosses your system's resistance curve — typically 20–40% below the free-air number for a wall installation with a shutter.</li>
+    <li><strong>Practical rule:</strong> if you must have 500 CFM at the blade, spec a fan whose free-air rating is 650–700 CFM, or choose a <a href="/inline-duct-fans" style="color:#C0392B;font-weight:700;">mixed-flow inline fan</a> whose curve holds up under pressure.</li>
+  </ul>
+  <p>This is why our product pages list CFM <em>at rated pressure</em>, not just free air — see the <a href="/exhaust-fans" style="color:#C0392B;font-weight:700;">exhaust fan range</a> for tested values per model.</p>
+
+  <h2>Whole house fan size calculator</h2>
+  <p>For whole-house ventilation the goal is 15–20 air changes per hour in hot climates (a shortcut rule is 30 CFM per 100 sq ft of floor area). Calculate the total volume of the conditioned space, then apply the same formula with a higher ACH:</p>
+  <div class="formula">Whole-house CFM = Total volume (ft³) × 15 ÷ 60</div>
+  <p>Example: a 2,000 sq ft house with 9 ft ceilings has a volume of 18,000 ft³, so it needs <strong>4,500 CFM</strong> of continuous extract. In practice this is delivered by several fans zoned by area — bathrooms and kitchens on their own controls — rather than one oversized unit. For hot, humid Gulf climates, run the fans continuously at low speed; see our <a href="/exhaust-fan-middle-east-climate" style="color:#C0392B;font-weight:700;">Middle East climate ventilation guide</a>.</p>
+
+  <h2>Wall vs ceiling fan: does the CFM change?</h2>
+  <p>The required CFM stays the same — air changes depend on room volume, not where the fan sits. What changes is how much of the rated CFM you actually get:</p>
+  <ul>
+    <li><strong>Wall / window fans</strong> exhaust straight outside with almost no duct loss, so you get close to the rated CFM. They are the first choice for kitchens, workshops and ground-floor rooms — see the full comparison in our <a href="/ceiling-vs-window-fan" style="color:#C0392B;font-weight:700;">ceiling vs window fan guide</a>.</li>
+    <li><strong>Ceiling fans</strong> are ducted through the roof space, adding bends and resistance. Add 15–20% to your CFM target, or step up one model size.</li>
+  </ul>
+
+  <h2>Verify real airflow after installation</h2>
+  <p>For commercial projects, consultants increasingly ask for <strong>ventilation verification</strong> — proof that the installed system delivers the design airflow. A simple commissioning check anyone can run:</p>
+  <ol>
+    <li>Measure air velocity at the grille with an anemometer, averaged over a 5-point grid.</li>
+    <li>CFM = average velocity (fpm) × free grille area (sq ft).</li>
+    <li>Accept values within ±10% of the calculated design. If measured airflow is lower, check shutter drag, duct leaks and backdraft flaps first.</li>
+  </ol>
+  <p>BAER can supply factory test curves and test reports for any model on request — useful for consultant-submitted projects and tender documentation.</p>
+
   <h2>Frequently asked questions</h2>
 
   <div class="faq-item">
@@ -273,6 +313,18 @@
     <details>
       <summary>How many air changes per hour does a bathroom need? <span class="icon">＋</span></summary>
       <div class="ans">A bathroom typically needs 8 air changes per hour (ACH), a residential kitchen 15, and a commercial kitchen up to 20. Warehouses usually require 6 ACH.</div>
+    </details>
+  </div>
+  <div class="faq-item">
+    <details>
+      <summary>How do I calculate CFM for a whole house fan? <span class="icon">＋</span></summary>
+      <div class="ans">Multiply the total volume of the conditioned space (length × width × ceiling height, in feet) by 15–20 air changes per hour, then divide by 60. A 2,000 sq ft house with 9 ft ceilings needs about 4,500 CFM of continuous extract.</div>
+    </details>
+  </div>
+  <div class="faq-item">
+    <details>
+      <summary>Is a wall exhaust fan better than a ceiling exhaust fan? <span class="icon">＋</span></summary>
+      <div class="ans">A wall fan exhausts directly outside with minimal duct loss, so it delivers close to its rated CFM — ideal for kitchens and workshops. A ceiling fan is quieter and hidden but typically loses 15–20% of airflow to duct resistance, so size up one step if you choose ceiling mounting.</div>
     </details>
   </div>
 
