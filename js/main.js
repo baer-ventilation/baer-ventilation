@@ -421,19 +421,22 @@
 
             desc:  'Mixed flow booster for long duct runs. High static pressure overcomes resistance in complex HVAC systems.',
 
-            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','300~1200 m³/h'],['Static Pressure','Up to 280 Pa'],['Power','55~250 W']] },
+            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','300~1200 m³/h'],['Static Pressure','Up to 280 Pa'],['Power','55~250 W']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">Model</th><th>Size</th><th>Outlet Size</th><th>Voltage</th><th>Power</th><th>Airflow</th><th>Wind Pressure</th><th>Speed</th></tr><tr><th class="unit">(mm)</th><th class="unit">(mm)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(m³/h)</th><th class="unit">(pa)</th><th class="unit">(r/min)</th></tr><tr><td>4-inch Booster Single Speed</td><td>360×205×180</td><td>Φ100</td><td>48 W</td><td>290 m³/h</td><td>150 pa</td><td>2750 r/min</td></tr><tr><td>6-inch Booster Single Speed</td><td>365×235×200</td><td>Φ150</td><td>60 W</td><td>620 m³/h</td><td>300 pa</td><td>2450 r/min</td></tr><tr><td>8-inch Booster Single Speed</td><td>385×255×225</td><td>Φ200</td><td>120 W</td><td>1120 m³/h</td><td>380 pa</td><td>2100 r/min</td></tr><tr><td>4-inch Booster Two Speed</td><td>360×205×180</td><td>Φ100</td><td>H:48 L:42</td><td>H:330 L:280</td><td>H:150 L:110</td><td>H:2750 L:2450</td></tr><tr><td>6-inch Booster Two Speed</td><td>365×235×200</td><td>Φ150</td><td>H:60 L:50</td><td>H:600 L:480</td><td>H:300 L:245</td><td>H:2450 L:2000</td></tr><tr><td>8-inch Booster Two Speed</td><td>385×255×225</td><td>Φ200</td><td>H:120 L:90</td><td>H:1200 L:900</td><td>H:380 L:274</td><td>H:2100 L:1950</td></tr></table>' },
 
       ar: { title: 'معزز تدفق عالي الكفاءة',
 
             desc:  'معزز تدفق مختلط لمسارات القنوات الطويلة. ضغط ستاتيكي عالٍ يتغلب على مقاومة أنظمة HVAC المعقدة.',
 
-            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','300~1200 m³/h'],['Static Pressure','Up to 280 Pa'],['Power','55~250 W']] },
+            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','300~1200 m³/h'],['Static Pressure','Up to 280 Pa'],['Power','55~250 W']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">الموديل</th><th>الحجم</th><th>حجم المخرج</th><th>الجهد</th><th>القدرة</th><th>تدفق الهواء</th><th>ضغط الهواء</th><th>السرعة</th></tr><tr><th class="unit">(mm)</th><th class="unit">(mm)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(m³/h)</th><th class="unit">(pa)</th><th class="unit">(r/min)</th></tr><tr><td>4 بوصة معزز سرعة واحدة</td><td>360×205×180</td><td>Φ100</td><td>48 W</td><td>290 m³/h</td><td>150 pa</td><td>2750 r/min</td></tr><tr><td>6 بوصة معزز سرعة واحدة</td><td>365×235×200</td><td>Φ150</td><td>60 W</td><td>620 m³/h</td><td>300 pa</td><td>2450 r/min</td></tr><tr><td>8 بوصة معزز سرعة واحدة</td><td>385×255×225</td><td>Φ200</td><td>120 W</td><td>1120 m³/h</td><td>380 pa</td><td>2100 r/min</td></tr><tr><td>4 بوصة معزز سرعتان</td><td>360×205×180</td><td>Φ100</td><td>H:48 L:42</td><td>H:330 L:280</td><td>H:150 L:110</td><td>H:2750 L:2450</td></tr><tr><td>6 بوصة معزز سرعتان</td><td>365×235×200</td><td>Φ150</td><td>H:60 L:50</td><td>H:600 L:480</td><td>H:300 L:245</td><td>H:2450 L:2000</td></tr><tr><td>8 بوصة معزز سرعتان</td><td>385×255×225</td><td>Φ200</td><td>H:120 L:90</td><td>H:1200 L:900</td><td>H:380 L:274</td><td>H:2100 L:1950</td></tr></table>' },
 
       zh: { title: '高效助推风机',
 
             desc:  '斜流助推风机，适用于长管道场合。超高静压，克服复杂暖通系统阻力。',
 
-            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','300~1200 m³/h'],['Static Pressure','Up to 280 Pa'],['Power','55~250 W']] }
+            specs: [['Size','150mm / 200mm / 250mm'],['Airflow','300~1200 m³/h'],['Static Pressure','Up to 280 Pa'],['Power','55~250 W']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">型号</th><th>尺寸</th><th>出风口</th><th>电压</th><th>功率</th><th>风量</th><th>风压</th><th>转速</th></tr><tr><th class="unit">(mm)</th><th class="unit">(mm)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(m³/h)</th><th class="unit">(pa)</th><th class="unit">(r/min)</th></tr><tr><td>4寸 助推风机 单速</td><td>360×205×180</td><td>Φ100</td><td>48 W</td><td>290 m³/h</td><td>150 pa</td><td>2750 r/min</td></tr><tr><td>6寸 助推风机 单速</td><td>365×235×200</td><td>Φ150</td><td>60 W</td><td>620 m³/h</td><td>300 pa</td><td>2450 r/min</td></tr><tr><td>8寸 助推风机 单速</td><td>385×255×225</td><td>Φ200</td><td>120 W</td><td>1120 m³/h</td><td>380 pa</td><td>2100 r/min</td></tr><tr><td>4寸 助推风机 双速</td><td>360×205×180</td><td>Φ100</td><td>H:48 L:42</td><td>H:330 L:280</td><td>H:150 L:110</td><td>H:2750 L:2450</td></tr><tr><td>6寸 助推风机 双速</td><td>365×235×200</td><td>Φ150</td><td>H:60 L:50</td><td>H:600 L:480</td><td>H:300 L:245</td><td>H:2450 L:2000</td></tr><tr><td>8寸 助推风机 双速</td><td>385×255×225</td><td>Φ200</td><td>H:120 L:90</td><td>H:1200 L:900</td><td>H:380 L:274</td><td>H:2100 L:1950</td></tr></table>' }
 
     },
 
