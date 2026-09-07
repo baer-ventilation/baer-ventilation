@@ -499,19 +499,22 @@
 
             desc:  'Classic round panel design with convenient pull-cord switch. Perfect for bathrooms and kitchens without wall switches. Compact and easy to install.',
 
-            specs: [['Size','100mm / 150mm'],['Airflow','60~140 m³/h'],['Noise','≤26 dB(A)'],['Power','8~18 W'],['Switch','Pull-cord']] },
+            specs: [['Size','100mm / 150mm'],['Airflow','60~140 m³/h'],['Noise','≤26 dB(A)'],['Power','8~18 W'],['Switch','Pull-cord']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">Model</th><th>Panel Size</th><th>Install Size</th><th>Voltage</th><th>Power</th><th>Airflow</th><th>Noise</th></tr><tr><th class="unit">(mm)</th><th class="unit">(mm)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(m³/h)</th><th class="unit">(dB)</th></tr><tr><td>Khg-150 6"</td><td>206×206</td><td>180-190</td><td>220/50</td><td>15 W</td><td>210 m³/h</td><td>38 dB</td></tr><tr><td>Khg-200 8"</td><td>272×272</td><td>240-260</td><td>220/50</td><td>20 W</td><td>260 m³/h</td><td>40 dB</td></tr></table>' },
 
       ar: { title: 'مروحة دائرية بسلسلة سحب',
 
             desc:  'تصميم لوحة دائري كلاسيكي مع مفتاح سلسلة سحب مريح. مثالية للحمامات والمطابخ التي لا تحتوي على مفاتيح حائط. مدمجة وسهلة التركيب.',
 
-            specs: [['Size','100mm / 150mm'],['Airflow','60~140 m³/h'],['Noise','≤26 dB(A)'],['Power','8~18 W'],['Switch','سلسلة سحب']] },
+            specs: [['Size','100mm / 150mm'],['Airflow','60~140 m³/h'],['Noise','≤26 dB(A)'],['Power','8~18 W'],['Switch','سلسلة سحب']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">الموديل</th><th>حجم اللوحة</th><th>حجم التركيب</th><th>الجهد</th><th>القدرة</th><th>تدفق الهواء</th><th>الضوضاء</th></tr><tr><th class="unit">(mm)</th><th class="unit">(mm)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(m³/h)</th><th class="unit">(dB)</th></tr><tr><td>Khg-150 6"</td><td>206×206</td><td>180-190</td><td>220/50</td><td>15 W</td><td>210 m³/h</td><td>38 dB</td></tr><tr><td>Khg-200 8"</td><td>272×272</td><td>240-260</td><td>220/50</td><td>20 W</td><td>260 m³/h</td><td>40 dB</td></tr></table>' },
 
       zh: { title: '圆型拉绳换气扇',
 
             desc:  '经典圆形面板设计，配备便捷拉绳开关。特别适合没有墙壁开关的卫浴和厨房。体积小巧，安装简便。',
 
-            specs: [['Size','100mm / 150mm'],['Airflow','60~140 m³/h'],['Noise','≤26 dB(A)'],['Power','8~18 W'],['Switch','拉绳开关']] }
+            specs: [['Size','100mm / 150mm'],['Airflow','60~140 m³/h'],['Noise','≤26 dB(A)'],['Power','8~18 W'],['Switch','拉绳开关']],
+            specTable: '<table class="spec-table"><tr><th rowspan="2">型号</th><th>面板尺寸</th><th>安装尺寸</th><th>电压</th><th>功率</th><th>风量</th><th>噪音</th></tr><tr><th class="unit">(mm)</th><th class="unit">(mm)</th><th class="unit">(V/Hz)</th><th class="unit">(W)</th><th class="unit">(m³/h)</th><th class="unit">(dB)</th></tr><tr><td>Khg-150 6"</td><td>206×206</td><td>180-190</td><td>220/50</td><td>15 W</td><td>210 m³/h</td><td>38 dB</td></tr><tr><td>Khg-200 8"</td><td>272×272</td><td>240-260</td><td>220/50</td><td>20 W</td><td>260 m³/h</td><td>40 dB</td></tr></table>' }
 
     },
 
