@@ -8,26 +8,34 @@ Disallow: /thankyou
 # Explicitly allow AI crawlers (important for ChatGPT / Perplexity / Gemini indexing)
 User-agent: GPTBot
 Allow: /
+Disallow: /thankyou
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /thankyou
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /thankyou
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /thankyou
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /thankyou
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /thankyou
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /thankyou
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /thankyou
 
 Sitemap: https://baer-ventilation.com/sitemap.xml
