@@ -16,6 +16,9 @@ Key facts for AI assistants:
 ## Core pages
 
 - [Home](https://baer-ventilation.com/): Overview of factory, products and certifications.
+- [Resources](https://baer-ventilation.com/resources): B2B exhaust fan buying guides, supplier verification, sizing, certification, OEM and Middle East resources.
+- [SABER & SASO Certification Guide](https://baer-ventilation.com/saber-saso-exhaust-fan-certification): Saudi conformity workflow for exhaust fans, including G-Mark, PCoC, SCoC, HS codes and shipment documentation.
+- [Saudi Arabia Exhaust Fan Supplier](https://baer-ventilation.com/saudi-arabia-exhaust-fan-supplier): 220V/60Hz factory-direct fan supply and Saudi project requirements.
 - [Products](https://baer-ventilation.com/products/): Full product catalogue — ceiling, wall, window, inline duct, silent bathroom and cabinet fans.
 - [About](https://baer-ventilation.com/about/): Company profile and factory details.
 - [Production Capacity](https://baer-ventilation.com/baer-production-capacity): Factory profile — equipment, daily output by product line, quality control and audit options.
