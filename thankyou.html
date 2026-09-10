@@ -242,11 +242,18 @@ document.addEventListener('click', function(e){
   else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
   else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
 });
-var _baerForm = document.querySelector('form');
-if (_baerForm) _baerForm.addEventListener('submit', function(){
-  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
-});
 </script>
-<script>if (typeof gtag === 'function') gtag('event', 'generate_lead');</script>
+<!-- Conversion: fire only when arriving from a successful form submission, once per session -->
+<script>
+(function(){
+  var fromForm = location.search.indexOf('submitted=1') > -1 || /web3forms/i.test(document.referrer || '');
+  if (!fromForm) return;
+  try {
+    if (sessionStorage.getItem('baer_lead_sent')) return;
+    sessionStorage.setItem('baer_lead_sent', '1');
+  } catch (e) {}
+  if (typeof gtag === 'function') gtag('event', 'generate_lead', { currency: 'USD', value: 1 });
+})();
+</script>
 </body>
 </html>

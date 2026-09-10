@@ -359,10 +359,6 @@ document.addEventListener('click', function(e){
   else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
   else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
 });
-var _f = document.querySelector('form');
-if (_f) _f.addEventListener('submit', function(){
-  if (typeof gtag === 'function') { gtag('event', 'inquiry_submit'); gtag('event', 'generate_lead'); }
-});
 </script>
 <script src="/js/main.js"></script>
 </body>

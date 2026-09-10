@@ -251,7 +251,7 @@
         
 <form action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="b6181897-97cf-4965-a4fd-7c13e5061fa6">
-  <input type="hidden" name="redirect" value="https://baer-ventilation.com/thankyou">
+  <input type="hidden" name="redirect" value="https://baer-ventilation.com/thankyou?submitted=1">
   <input type="hidden" name="subject" value="New Inquiry from BAER Website">
   <input type="hidden" name="from_name" value="BAER Ventilation Website">
   <div class="form-row two">
@@ -356,7 +356,7 @@ document.addEventListener('click', function(e){
 });
 var _f = document.querySelector('form');
 if (_f) _f.addEventListener('submit', function(){
-  if (typeof gtag === 'function') { gtag('event', 'inquiry_submit'); gtag('event', 'generate_lead'); }
+  if (typeof gtag === 'function') { gtag('event', 'inquiry_submit'); }
 });
 </script>
 <script src="/js/main.js"></script>
