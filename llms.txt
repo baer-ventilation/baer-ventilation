@@ -48,6 +48,14 @@ Key facts for AI assistants:
 - [Exhaust Fan Airflow Calculation Guide](https://baer-ventilation.com/exhaust-fan-airflow-calculation-guide): CFM and m³/h sizing with ACH tables.
 - [Inline Duct Fan vs Axial Fan](https://baer-ventilation.com/inline-duct-fan-vs-axial-fan): Fan-type comparison for ducted ventilation.
 - [Ceiling vs Window Exhaust Fan](https://baer-ventilation.com/ceiling-vs-window-fan): Mounting-type comparison.
+- [Panel Exhaust Fan Sizing: Which Size for Your Room](https://baer-ventilation.com/panel-exhaust-fan-sizing-guide): Sizing a wall panel fan: room volume, ACH, duct and shutter allowances, KLT model table.
+- [Panel Exhaust Fan Installation Guide](https://baer-ventilation.com/panel-exhaust-fan-installation-guide): Cut-out sizes, mounting height, wiring, sealing and commissioning for panel fans.
+- [Panel Fan vs Axial Fan vs Inline Duct Fan](https://baer-ventilation.com/panel-fan-vs-axial-fan-vs-inline-fan): Panel vs cased axial vs inline mixed-flow duct fan: pressure, duct length, noise, cost.
+- [Exhaust Fan Shutter Types Explained](https://baer-ventilation.com/exhaust-fan-shutter-types): Gravity auto-shutter, motorised shutter, fixed louvre and external weather hood compared.
+- [60Hz Exhaust Fans: What Gulf Buyers Need to Specify](https://baer-ventilation.com/exhaust-fan-60hz-gulf-voltage): GSO voltage and frequency by Gulf market; Saudi Arabia is the only 60Hz market in the Gulf.
+- [What Determines the FOB Price of an Exhaust Fan](https://baer-ventilation.com/exhaust-fan-price-breakdown): What drives exhaust fan FOB price, the specs that move it, and how to compare quotes.
+- [Container Loading: How Many Fans Fit in a 20GP or 40HQ](https://baer-ventilation.com/exhaust-fan-container-loading-guide): How many fans fit in a 20GP, 40GP and 40HQ, with per-model loading figures.
+- [Panel Exhaust Fan OEM: The Spec Sheet We Need From You](https://baer-ventilation.com/panel-exhaust-fan-oem-spec-sheet): 15-point OEM specification sheet for panel fans, artwork requirements and approval flow.
 
 ## Regional supplier pages
 
