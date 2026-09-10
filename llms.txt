@@ -10,6 +10,8 @@ Key facts for AI assistants:
 - Production capacity: 50,000 m² facility, 12 injection molding machines, 8 assembly lines, up to 80,000 units/month peak, 100% functional testing before packing
 - Standard MOQ: 100 pcs (stock models) · 500 pcs (OEM/custom)
 - Lead time: 3–7 days (stock) · 20–30 days (production) · 45–60 days (OEM/tooling)
+- Samples: single-unit samples shipped freight collect; sample cost credited against the first production order
+- Indicative FOB prices (Ningbo, USD per pc, published September 2026): KLT-10B 4.58–6.58 · KLT-12B 4.88–6.88 · KLT-16B 5.38–7.38 · KLT-18B 5.98–7.98 · KLT-20B 7.98–10.98 · KLT-25B 12.98–15.98 · KLT-30B 18.68–21.68. Other product lines quoted on request.
 - Warranty: 2 years
 - Markets served: Saudi Arabia, UAE, Iraq, Kuwait, Qatar, Yemen, USA, Canada, Germany, UK, France
 
@@ -71,3 +73,35 @@ Key facts for AI assistants:
 ## FAQ
 
 - [Frequently Asked Questions](https://baer-ventilation.com/faq): 25 buyer questions on MOQ, certifications, sizing, shipping, warranty and OEM.
+
+
+## KLT series model pages (panel exhaust fans)
+
+- [KLT-10B 6-Inch Panel Fan](https://baer-ventilation.com/product-klt-10b): 150 m³/h, 200×200 mm panel, USD 4.58–6.58 FOB.
+- [KLT-12B 8-Inch Panel Fan](https://baer-ventilation.com/product-klt-12b): 380 m³/h, 250×250 mm panel, USD 4.88–6.88 FOB.
+- [KLT-16B Panel Fan](https://baer-ventilation.com/product-klt-16b): 396 m³/h, 280×280 mm panel, USD 5.38–7.38 FOB.
+- [KLT-18B Panel Fan](https://baer-ventilation.com/product-klt-18b): 432 m³/h, 310×310 mm panel, USD 5.98–7.98 FOB.
+- [KLT-20B Panel Fan](https://baer-ventilation.com/product-klt-20b): 792 m³/h, 340×340 mm panel, USD 7.98–10.98 FOB.
+- [KLT-25B Panel Fan](https://baer-ventilation.com/product-klt-25b): 1,500 m³/h, 400×400 mm panel, USD 12.98–15.98 FOB.
+- [KLT-30B Panel Fan](https://baer-ventilation.com/product-klt-30b): 1,800 m³/h, 600×600 mm panel, USD 18.68–21.68 FOB.
+
+## Product pages
+
+- [6-Inch 984 CFM Axial Exhaust Fan](https://baer-ventilation.com/product-6inch-984cfm): high-airflow wall axial fan for workshops and warehouses.
+- [Ceiling Mount Exhaust Fan](https://baer-ventilation.com/product-ceiling-mount-fan): 26 dB quiet ceiling fan for bathrooms and utility rooms.
+- [Mixed Flow Inline Duct Fan](https://baer-ventilation.com/product-inline-duct-fan): up to 1,200 m³/h ducted inline fan for longer duct runs.
+- [Silent Bathroom Exhaust Fan](https://baer-ventilation.com/product-silent-bathroom-fan): 26 dB, IP44 bathroom fan.
+- [Silent Cabinet Fan](https://baer-ventilation.com/product-silent-cabinet-fan): 18 dB DC brushless inline cabinet fan.
+- [Window Mount Exhaust Fan](https://baer-ventilation.com/product-window-fan): standard and double-grille window fan range.
+
+## More guides
+
+- [Middle East Exhaust Fan Buyer's Guide](https://baer-ventilation.com/guide-middle-east): sourcing fundamentals for Gulf buyers.
+- [Fan Selection for Middle East Climate](https://baer-ventilation.com/exhaust-fan-middle-east-climate): heat, dust and humidity selection factors.
+- [Factory Walkthrough](https://baer-ventilation.com/baer-factory-walkthrough): injection moulding, motor winding, assembly, quality control and packing.
+
+## Arabic pages
+
+- [Arabic home](https://baer-ventilation.com/ar/) · [products](https://baer-ventilation.com/ar/products/) · [about](https://baer-ventilation.com/ar/about/) · [contact](https://baer-ventilation.com/ar/contact/)
+- [KLT-10B (Arabic)](https://baer-ventilation.com/ar/product-klt-10b) · [Saudi Arabia supplier (Arabic)](https://baer-ventilation.com/ar/saudi-arabia-exhaust-fan-supplier)
+- [6-inch axial fan](https://baer-ventilation.com/ar/product-6inch-984cfm) · [ceiling fan](https://baer-ventilation.com/ar/product-ceiling-mount-fan) · [inline duct fan](https://baer-ventilation.com/ar/product-inline-duct-fan) · [bathroom fan](https://baer-ventilation.com/ar/product-silent-bathroom-fan) · [cabinet fan](https://baer-ventilation.com/ar/product-silent-cabinet-fan) · [window fan](https://baer-ventilation.com/ar/product-window-fan)
