@@ -96,3 +96,34 @@
 /zh/product-silent-bathroom-fan.html                       /zh/product-silent-bathroom-fan 301
 /zh/product-silent-cabinet-fan.html                        /zh/product-silent-cabinet-fan 301
 /zh/product-window-fan.html                                /zh/product-window-fan 301
+
+# --- appended 2026-09-21: fix GSC 重定向错误 - legacy 404 paths now 301 to live pages ---
+/product-klt-16b/                                    /klt-series-panel-exhaust-fan 301
+/klt-16b                                             /klt-series-panel-exhaust-fan 301
+/klt-16b/                                            /klt-series-panel-exhaust-fan 301
+/klt16b                                              /klt-series-panel-exhaust-fan 301
+/klt16b/                                             /klt-series-panel-exhaust-fan 301
+/product-16b                                         /klt-series-panel-exhaust-fan 301
+/product-16b/                                        /klt-series-panel-exhaust-fan 301
+/home                                                / 301
+/home/                                               / 301
+/en                                                  / 301
+/en/                                                 / 301
+/catalog                                             /products/ 301
+/catalog/                                            /products/ 301
+/catalog.html                                        /products/ 301
+/about-us                                            /about/ 301
+/about-us/                                           /about/ 301
+/company                                             /about/ 301
+/contact-us                                          /contact/ 301
+/contact-us/                                         /contact/ 301
+/faqs                                                /faq 301
+/faqs/                                               /faq 301
+/thank-you                                           /thankyou 301
+/thank-you/                                          /thankyou 301
+/shutter                                             /exhaust-fan-shutter-types 301
+/shutter/                                            /exhaust-fan-shutter-types 301
+/grille                                              /exhaust-fan-shutter-types 301
+/blog                                                /resources 301
+/news                                                /resources 301
+/products/klt-10b                                    /product-klt-10b 301
