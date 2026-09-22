@@ -238,18 +238,28 @@
       · <a href="https://www.youtube.com/@BAERVentilation" target="_blank" rel="noopener" style="color:#E21E26;text-decoration:none;">YouTube</a></p>
 </footer>
 <script>
+function _baerGtagCtx(){ return { page_path: window.location.pathname, page_title: document.title }; }
 document.addEventListener('click', function(e){
   var t = e.target;
   while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
   if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
   var href = t.getAttribute('href') || '';
-  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
-  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
-  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
-  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+  var ctx = _baerGtagCtx();
+  ctx.link_text = (t.textContent || '').trim().slice(0, 120);
+  ctx.link_url = href;
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click', ctx); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click', ctx); }
+  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download', ctx); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click', ctx); }
 });
 var _baerForm = document.querySelector('form');
-if (_baerForm) _baerForm.addEventListener('submit', function(){ if (typeof gtag === 'function') gtag('event', 'inquiry_submit'); });
+if (_baerForm) _baerForm.addEventListener('submit', function(){
+  if (typeof gtag === 'function') {
+    var ctx = _baerGtagCtx();
+    ctx.form_id = _baerForm.id || '';
+    gtag('event', 'inquiry_submit', ctx);
+  }
+});
 </script>
 
 <script src="/js/reveal.js?v=1" defer></script></body>
