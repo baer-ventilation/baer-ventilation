@@ -252,11 +252,11 @@ document.addEventListener('click', function(e){
   else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download', ctx); }
   else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click', ctx); }
 });
-var _baerForm = document.querySelector('form');
+var _baerForm = document.querySelector('#inquiry-form');
 if (_baerForm) _baerForm.addEventListener('submit', function(){
   if (typeof gtag === 'function') {
     var ctx = _baerGtagCtx();
-    ctx.form_id = _baerForm.id || '';
+    ctx.form_id = _baerForm.id || 'inquiry-form';
     gtag('event', 'inquiry_submit', ctx);
   }
 });
