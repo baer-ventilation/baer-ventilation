@@ -1413,7 +1413,7 @@
 
                 </div>
 
-                <form action="https://mail.baer-ventilation.com/submit" method="POST">
+                <form id="inquiry-form" action="https://mail.baer-ventilation.com/submit" method="POST">
 
                     <input type="hidden" name="access_key" value="b6181897-97cf-4965-a4fd-7c13e5061fa6">
 
@@ -1764,11 +1764,21 @@ document.addEventListener('click', function(e){
   else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download', ctx); }
   else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click', ctx); }
 });
-var _baerForm = document.querySelector('form');
+var _baerForm = document.querySelector('#inquiry-form');
 if (_baerForm) _baerForm.addEventListener('submit', function(){
   if (typeof gtag === 'function') {
     var ctx = _baerGtagCtx();
-    ctx.form_id = _baerForm.id || '';
+    ctx.form_id = _baerForm.id || 'inquiry-form';
+    ctx.source_page = window.location.pathname;
+    try {
+      var _baerRef = document.referrer || '';
+      if (_baerRef) {
+        var _baerRefUrl = new URL(_baerRef);
+        if (_baerRefUrl.protocol.indexOf('http') === 0 && _baerRefUrl.origin === window.location.origin) {
+          ctx.source_page = _baerRefUrl.pathname;
+        }
+      }
+    } catch (e) { ctx.source_page = window.location.pathname; }
     gtag('event', 'inquiry_submit', ctx);
   }
 });
