@@ -246,12 +246,15 @@
         <h2>发送您的询盘</h2>
         <p class="fs">请告知型号、数量、电压与目的港——我们 24 小时内报价。</p>
         
-<form action="https://mail.baer-ventilation.com/submit" method="POST">
+<form data-baer-form action="https://baer-form-guard.sunny-cee.workers.dev/submit" method="POST">
   <input type="hidden" name="access_key" value="b6181897-97cf-4965-a4fd-7c13e5061fa6">
   <input type="hidden" name="redirect" value="https://baer-ventilation.com/thankyou?submitted=1">
   <input type="hidden" name="subject" value="New Inquiry from BAER Website">
   <input type="hidden" name="from_name" value="BAER Ventilation Website">
   <input type="checkbox" name="botcheck" style="display:none;">
+  <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+  <input type="hidden" name="baer_ts" value="">
+  <input type="hidden" name="baer_sig" value="">
   <input type="hidden" name="page_source" value="Contact page (ZH, Chinese)">
   <div class="form-row two">
     <input type="text" name="name" class="form-input" placeholder="姓名 *" required>
@@ -362,5 +365,20 @@ if (_f) _f.addEventListener('submit', function(){
 </script>
 <script src="/js/main.js"></script>
 
-<script src="/js/reveal.js?v=1" defer></script></body>
+<script src="/js/reveal.js?v=1" defer></script><script>
+(function(){
+  var EP="https://baer-form-guard.sunny-cee.workers.dev";
+  function arm(){
+    var forms=document.querySelectorAll("form[data-baer-form]");
+    fetch(EP+"/token",{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){
+      for(var i=0;i<forms.length;i++){
+        var ts=forms[i].querySelector('input[name="baer_ts"]'), sg=forms[i].querySelector('input[name="baer_sig"]');
+        if(ts) ts.value=d.ts; if(sg) sg.value=d.sig;
+      }
+    }).catch(function(){});
+  }
+  if(document.readyState!=="loading"){arm();}else{document.addEventListener("DOMContentLoaded",arm);}
+})();
+</script>
+</body>
 </html>
