@@ -57,6 +57,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://baer-ventilation.com/verify/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://baer-ventilation.com/contact/</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -293,6 +299,12 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/about/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://baer-ventilation.com/ar/verify/</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

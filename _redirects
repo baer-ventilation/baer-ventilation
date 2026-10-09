@@ -134,3 +134,8 @@
 /privacy-policy/                                          /privacy/ 301
 /cookie-policy                                            /privacy/#cookies 301
 /cookies                                                  /privacy/#cookies 301
+
+# --- appended 2026-10-09: /verify/ company verification pages ---
+/verify.html                                               /verify/ 301
+/ar/verify.html                                            /ar/verify/ 301
+/zh/verify.html                                            /zh/verify/ 301
