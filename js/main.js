@@ -240,6 +240,8 @@
 
     'IP Rating':       ['IP Rating',       'IP',               'IP防护等级','IP'],
 
+    'Moisture Protection': ['Moisture Protection','الحماية من الرطوبة','防潮性能',''],
+
     'Motor':           ['Motor',           'المحرك',           '电机',     ''],
 
     'Energy Saving':   ['Energy Saving',   'توفير الطاقة',     '节能',     ''],
@@ -475,19 +477,19 @@
 
             desc:  'Complete bathroom exhaust fan range covering ceiling, wall, and window-mounted configurations. CE certified, designed specifically for Middle East and European export markets.',
 
-            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['IP Rating','IP44 (bathroom safe)'],['Certification','CE, RoHS'],['MOQ','500 pcs']] },
+            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['Moisture Protection','Moisture-resistant housing'],['Certification','CE, RoHS'],['MOQ','500 pcs']] },
 
       ar: { title: 'سلسلة حمامات التصدير الاحترافية',
 
             desc:  'مجموعة كاملة من مراوح شفط الحمامات تشمل التركيب في السقف والجدار والنافذة. معتمدة CE، مصممة خصيصاً لأسواق التصدير في الشرق الأوسط وأوروبا.',
 
-            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['IP Rating','IP44 (مقاوم للرطوبة)'],['Certification','CE, RoHS'],['MOQ','500 قطعة']] },
+            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['Moisture Protection','هيكل مقاوم للرطوبة'],['Certification','CE, RoHS'],['MOQ','500 قطعة']] },
 
       zh: { title: '出口专业卫浴系列',
 
             desc:  '完整卫浴换气扇系列，涵盖吸顶、壁装和窗装款式。CE认证，专为中东及欧洲出口市场设计。',
 
-            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['IP Rating','IP44（浴室安全）'],['Certification','CE, RoHS'],['MOQ','500件起订']] }
+            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['Moisture Protection','防潮机身'],['Certification','CE, RoHS'],['MOQ','500件起订']] }
 
     },
 
