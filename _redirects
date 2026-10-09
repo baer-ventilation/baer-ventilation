@@ -127,3 +127,10 @@
 /blog                                                /resources 301
 /news                                                /resources 301
 /products/klt-10b                                    /product-klt-10b 301
+
+# --- appended 2026-10-09: privacy policy page (GDPR / cookie notice) ---
+/privacy.html                                              /privacy/ 301
+/privacy-policy                                           /privacy/ 301
+/privacy-policy/                                          /privacy/ 301
+/cookie-policy                                            /privacy/#cookies 301
+/cookies                                                  /privacy/#cookies 301
