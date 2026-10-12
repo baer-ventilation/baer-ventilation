@@ -45,6 +45,14 @@
   .verdict strong { color: #166534; }
   .cta-box { background: #0f1f3d; color: #fff; border-radius: 12px; padding: 40px; text-align: center; margin-top: 60px; }
   .btn-red { display: inline-block; background: #C0392B; color: #fff; padding: 14px 32px; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 15px; }
+
+  .faqwrap{max-width:820px;margin:48px 0 8px;}
+  .faqwrap details{border:1px solid #E2E8F0;border-radius:8px;margin-bottom:10px;background:#fff;}
+  .faqwrap summary{padding:18px 22px;cursor:pointer;font-weight:700;font-size:15px;color:#1E293B;list-style:none;display:flex;justify-content:space-between;align-items:center;}
+  .faqwrap summary::-webkit-details-marker{display:none;}
+  .faqwrap summary span{color:#C0392B;font-size:20px;font-weight:400;}
+  .faqwrap details[open] summary span{transform:rotate(45deg);}
+  .faqwrap .fa{padding:0 22px 18px;color:#475569;font-size:14px;line-height:1.75;}
 </style>
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
@@ -175,6 +183,7 @@
     }
   ]
 }</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I calculate exhaust fan airflow (CFM) for a room?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply the room volume by the required air changes per hour (ACH), then divide by 60. For a 20 ft x 15 ft x 10 ft room (3,000 ft3) at 8 ACH: 3,000 x 8 / 60 = 400 CFM. In metric, airflow (m3/h) = room volume (m3) x ACH."}}, {"@type": "Question", "name": "What ACH (air changes per hour) should an exhaust fan deliver?", "acceptedAnswer": {"@type": "Answer", "text": "Residential bathrooms need 8 ACH; commercial kitchens and humid Gulf-climate spaces need 10-15 ACH; warehouses and factories typically 6-10 ACH based on heat and pollutant load. Round up to the nearest standard fan size."}}, {"@type": "Question", "name": "How do I convert CFM to m3/h (and back)?", "acceptedAnswer": {"@type": "Answer", "text": "1 CFM is about 1.699 m3/h. Multiply CFM by 1.7 to get m3/h; divide m3/h by 1.7 to get CFM. BAER specs list both units - for example the 6-inch shutter fan delivers 984 CFM (about 1,672 m3/h)."}}, {"@type": "Question", "name": "Should I add extra CFM for ducts, elbows and filters?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Budget roughly 10-15% loss per 90-degree elbow, 1-2% per metre of straight duct, and 10-20% for filters. Add 20-30% headroom to the calculated CFM so the installed fan still meets the target after system losses."}}, {"@type": "Question", "name": "How do I size an exhaust fan for a warehouse or factory?", "acceptedAnswer": {"@type": "Answer", "text": "Size by heat and contaminant load, not just volume. Use CFM = (heat load in watts x 3.16) / temperature rise in C for heat removal, or a dilution formula for pollutants. For most industrial bays plan 6-10 ACH and confirm against process heat with our engineers."}}]}</script>
 </head>
 <body>
 
@@ -296,6 +305,15 @@
 <li><a href="/bathroom-exhaust-fan-cfm-guide" style="color:#C0392B;font-weight:700;text-decoration:none;">Bathroom Exhaust Fan CFM: How Much Do You Need?</a></li>
 <li><a href="/inline-duct-fans" style="color:#C0392B;font-weight:700;text-decoration:none;">Inline Duct Fans: Sizing, Types &amp; Selection</a></li>
 </ul>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faqwrap">
+      <details><summary>How do I calculate exhaust fan airflow (CFM) for a room? <span>+</span></summary><div class="fa">Multiply the room volume by the required air changes per hour (ACH), then divide by 60. For a 20 ft x 15 ft x 10 ft room (3,000 ft3) at 8 ACH: 3,000 x 8 / 60 = 400 CFM. In metric, airflow (m3/h) = room volume (m3) x ACH.</div></details>
+      <details><summary>What ACH (air changes per hour) should an exhaust fan deliver? <span>+</span></summary><div class="fa">Residential bathrooms need 8 ACH; commercial kitchens and humid Gulf-climate spaces need 10-15 ACH; warehouses and factories typically 6-10 ACH based on heat and pollutant load. Round up to the nearest standard fan size.</div></details>
+      <details><summary>How do I convert CFM to m3/h (and back)? <span>+</span></summary><div class="fa">1 CFM is about 1.699 m3/h. Multiply CFM by 1.7 to get m3/h; divide m3/h by 1.7 to get CFM. BAER specs list both units - for example the 6-inch shutter fan delivers 984 CFM (about 1,672 m3/h).</div></details>
+      <details><summary>Should I add extra CFM for ducts, elbows and filters? <span>+</span></summary><div class="fa">Yes. Budget roughly 10-15% loss per 90-degree elbow, 1-2% per metre of straight duct, and 10-20% for filters. Add 20-30% headroom to the calculated CFM so the installed fan still meets the target after system losses.</div></details>
+      <details><summary>How do I size an exhaust fan for a warehouse or factory? <span>+</span></summary><div class="fa">Size by heat and contaminant load, not just volume. Use CFM = (heat load in watts x 3.16) / temperature rise in C for heat removal, or a dilution formula for pollutants. For most industrial bays plan 6-10 ACH and confirm against process heat with our engineers.</div></details>
+  </div>
 
   <div class="cta-box">
     <h3>Get your project sized by the factory</h3>
