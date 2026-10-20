@@ -138,7 +138,7 @@
       "breadcrumb": {
         "@id": "https://baer-ventilation.com/exhaust-fan-airflow-calculation-guide#breadcrumb"
       },
-      "dateModified": "2026-09-03"
+      "dateModified": "2026-10-20"
     },
     {
       "@type": "BreadcrumbList",
@@ -179,7 +179,7 @@
         "@id": "https://baer-ventilation.com/#organization"
       },
       "inLanguage": "en",
-      "dateModified": "2026-09-03"
+      "dateModified": "2026-10-20"
     }
   ]
 }</script>
@@ -204,7 +204,7 @@
   <h1>How to Calculate Exhaust Fan Airflow: The Complete CFM & m³/h Sizing Guide</h1>
   <p class="hero-fact" style="color:#ffffff;font-size:15px;line-height:1.7;max-width:720px;margin:14px auto 0;">Exhaust fan airflow is one formula: <strong>required airflow (m³/h) = room volume (m³) × air changes per hour</strong>. A 13.5 m³ bathroom at 8 ACH needs 108 m³/h — specify a fan rated 120–130 m³/h to allow 10–20% for duct resistance and aging. BAER (Zhejiang BAER Electrical Technology Co., Ltd.), a China exhaust fan manufacturer since 2003 — CE, CB and ISO 9001 certified, MOQ 100 pcs, samples in 3–7 days — sizes fans for Gulf-region projects with the same calculation.</p>
   <p>The one calculation that decides whether your ventilation works — with ready-to-use tables and worked examples.</p>
-<p style="font-size:13px;color:#64748B;margin:10px 0 0;">Last updated: September 3, 2026</p>
+<p style="font-size:13px;color:#64748B;margin:10px 0 0;">Last updated: October 20, 2026</p>
 </div>
 
 <div class="body">
@@ -269,7 +269,29 @@
     <strong>Rule of thumb:</strong> If your installation involves real ducting, either size up one fan class or switch from axial to a mixed-flow inline fan. Request the fan's performance table showing airflow at 50/100/150 Pa, not just the free-air headline number.
   </div>
 
-  <h2>Full Worked Example: Gulf-Region Apartment</h2>
+    <!-- MARKER_STEP5_20261020 -->
+  <h2>Step 5: Match the Required Airflow to a Model</h2>
+  <p>The formula gives you a number in m&sup3;/h. Suppliers quote models. The table below bridges the two using the KLT panel fan range we build, with the catalogue airflow in the second column and the two loss bands from the previous section applied in the third and fourth.</p>
+  <table class="compare-table">
+    <thead>
+      <tr><th>Model</th><th>Catalogue airflow</th><th>Free-air CFM</th><th>After &minus;10%<br><span style="font-weight:400;font-size:13px;">grille + shutter</span></th><th>After &minus;40%<br><span style="font-weight:400;font-size:13px;">5 m duct, axial</span></th><th>Room volume cleared at 10 ACH</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>KLT-10B 6&quot;</td><td>150 m&sup3;/h</td><td>88</td><td>135 m&sup3;/h</td><td>90 m&sup3;/h</td><td>15 m&sup3;</td></tr>
+      <tr><td>KLT-12B 8&quot;</td><td>380 m&sup3;/h</td><td>224</td><td>342 m&sup3;/h</td><td>228 m&sup3;/h</td><td>38 m&sup3;</td></tr>
+      <tr><td>KLT-18B 10&quot;</td><td>432 m&sup3;/h</td><td>254</td><td>389 m&sup3;/h</td><td>259 m&sup3;/h</td><td>43 m&sup3;</td></tr>
+      <tr><td>KLT-20B 12&quot;</td><td>792 m&sup3;/h</td><td>466</td><td>713 m&sup3;/h</td><td>475 m&sup3;/h</td><td>79 m&sup3;</td></tr>
+      <tr><td>KLT-25B 14&quot;</td><td>1,500 m&sup3;/h</td><td>883</td><td>1,350 m&sup3;/h</td><td>900 m&sup3;/h</td><td>150 m&sup3;</td></tr>
+      <tr><td>KLT-30B 18&quot;</td><td>1,800 m&sup3;/h</td><td>1,059</td><td>1,620 m&sup3;/h</td><td>1,080 m&sup3;/h</td><td>180 m&sup3;</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:13px;color:#64748B;">The last three columns are arithmetic, not test results: catalogue free-air figures multiplied by the loss percentages stated above, and catalogue airflow divided by 10 ACH. They are a screening tool. If your project needs a declared performance point, ask us for the airflow at 50 / 100 / 150 Pa.</p>
+
+  <h3>Reading the table on a real job</h3>
+  <p>A workshop 5 m &times; 4 m &times; 3 m is 60 m&sup3;. At 10 ACH that is <strong>600 m&sup3;/h required</strong>. Free air, KLT-20B at 792 m&sup3;/h looks like more fan than the job needs. Put it on a 5 m duct run instead and the &minus;40% column gives 475 m&sup3;/h &mdash; short of 600. The honest answer on that job is not a bigger panel fan; it is a BXF inline unit, which is quoted at working pressure rather than free air.</p>
+  <p>This is the decision most quotes get wrong. A panel fan is chosen for its free-air number and then installed on ductwork, where the number no longer applies. If the run is longer than one wall thickness, price the inline range before you price the panel range &mdash; the <a href="/inline-duct-fan-vs-axial-fan">inline versus axial comparison</a> has the pressure ratings side by side.</p>
+
+<h2>Full Worked Example: Gulf-Region Apartment</h2>
   <p>A bedroom 4 m × 3.5 m × 2.8 m (39.2 m³) in a hot climate requiring 12 ACH:</p>
   <ul>
     <li>39.2 m³ × 12 = 470 m³/h</li>
@@ -286,7 +308,22 @@
     <li><strong>Forgetting make-up air</strong> — a fan cannot extract from a sealed room; there must be an inlet path (door undercut, grille, window vent)</li>
   </ul>
 
-  <h2>Need Help Sizing?</h2>
+    <!-- MARKER_CLAIM_20261020 -->
+  <h2>How to Check an Airflow Claim Before You Order</h2>
+  <p>Airflow is the easiest specification to quote loosely, because the same fan produces very different numbers depending on where it is measured. Four questions separate a usable figure from a sales figure.</p>
+  <ul>
+    <li><strong>Free air or at pressure?</strong> Ask for the static pressure the figure was measured at. 1,200 m&sup3;/h at 0 Pa and 1,200 m&sup3;/h at 380 Pa describe two different machines, and the second is worth far more on a ducted job.</li>
+    <li><strong>Which report, and which models?</strong> Ask for the test report number and check that the model series you are buying actually appears in it. A report covering one series does not transfer to another, even from the same factory.</li>
+    <li><strong>Convert the units yourself.</strong> One m&sup3;/h is 0.589 CFM, so a &ldquo;1,000 CFM&rdquo; claim is 1,699 m&sup3;/h. Suppliers quoting whichever unit flatters the comparison are usually quoting the other one on the datasheet.</li>
+    <li><strong>Match the nameplate to the order.</strong> Every BAER unit leaves the assembly bench with a plate carrying its model and serial, so the fan on site can be traced back to the batch it came from.</li>
+  </ul>
+  <figure style="margin:22px 0;">
+    <img src="/assets/images/baer-nameplate-assembly-bench.webp" alt="BAER nameplates and impellers on the factory assembly bench before fitting" loading="lazy" style="width:100%;height:auto;border-radius:8px;display:block;">
+    <figcaption style="font-size:13px;color:#64748B;margin-top:8px;">Our assembly bench: nameplates are fitted to each unit after the motor is mounted, so model and serial stay with the fan through packing and shipping. Photographed at the Shengzhou factory.</figcaption>
+  </figure>
+  <p>If you are comparing us against another quote, send both datasheets and we will state which figure is free air and which is at pressure. That comparison is usually more useful than the price difference. Our own documentation and entity records are listed on the <a href="/verify">verification page</a>.</p>
+
+<h2>Need Help Sizing?</h2>
   <p>Send us your room dimensions, application, and installation type (direct mount or ducted). We'll run the calculation, recommend the right model, and quote factory-direct with volume pricing.</p>
 
   <h2>Apply the Calculation by Market</h2>
