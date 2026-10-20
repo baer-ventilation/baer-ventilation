@@ -100,7 +100,7 @@ footer{background:var(--dark);color:#fff;padding:36px 24px 24px;margin-top:48px;
 .foot-inner a{display:block;font-size:13px;opacity:.75;margin-bottom:6px;}
 .foot-inner a:hover{opacity:1;color:#fff;}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;margin-top:20px;font-size:12px;opacity:.6;text-align:center;}
-@media(max-width:768px){.nav-inner{flex-wrap:wrap;height:auto;padding:12px 16px;gap:10px;}.nav-links{gap:14px;flex-wrap:wrap;}.section{padding:40px 16px;}.foot-inner{grid-template-columns:1fr;}}</style>
+@media(max-width:768px){.nav-inner{flex-wrap:wrap;height:auto;padding:12px 16px;gap:10px;}.nav-links{gap:14px;flex-wrap:wrap;}.section{padding:40px 16px;}.foot-inner{grid-template-columns:1fr;}}.klt-faq details{border:1px solid #E2E8F0;border-radius:10px;background:#fff;margin:0 0 10px;padding:0 16px;}.klt-faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:700;color:#0f1f3d;padding:14px 0;}.klt-faq summary::-webkit-details-marker{display:none;}.klt-faq summary .icon{color:#B91C1C;font-weight:700;}.klt-faq .ans{padding:0 0 16px;color:#334155;line-height:1.7;font-size:15px;}</style>
 </head>
 <body>
 <nav class="navbar"><div class="nav-inner">
@@ -206,6 +206,15 @@ footer{background:var(--dark);color:#fff;padding:36px 24px 24px;margin-top:48px;
 <p>Usually yes. Panel exhaust fans are specified on some projects under a house, distributor or project-specific part number rather than the factory code, so a reference taken from a job BOM will not always match our catalogue directly. Send the code together with the panel dimensions from the drawing and the required airflow and we will confirm the equivalent KLT model. The cut-out size and the airflow are what identify the unit — the code on its own frequently does not.</p>
 <h3>Are the model codes the same for the 110V / 60Hz versions?</h3>
 <p>The code identifies the panel platform and the airflow, not the voltage. The KLT range is 220V / 50Hz as standard, and 110V / 60Hz or other voltages are produced on OEM orders against the same code, with the voltage specified separately on the order. Always state voltage and frequency in full on the RFQ — the nameplate differs even where the model code does not.</p>
+</section>
+<!-- MARKER_FAQ_20261020 -->
+<section class="section">
+<h2>Frequently asked questions</h2>
+<div class="klt-faq">
+<div class="faq-item"><details><summary>Where can I find the KLT-10B / 12B / 18B / 20B / 25B / 30B datasheet codes? <span class="icon">＋</span></summary><div class="ans">The specification table above lists all six codes with panel size, wall cut-out, outlet diameter, airflow, speed, noise, power and export carton data. Each model also has its own datasheet page: KLT-10B (150 m&sup3;/h), KLT-12B (380 m&sup3;/h), KLT-18B (432 m&sup3;/h), KLT-20B (792 m&sup3;/h), KLT-25B (1,500 m&sup3;/h) and KLT-30B (1,800 m&sup3;/h). For a project submittal in a different format, the panel exhaust fan OEM spec sheet covers custom voltages, panel printing and the documentation pack we can supply.</div></details></div>
+<div class="faq-item"><details><summary>I have a project BOM with a code that does not match a KLT model code — can you cross-reference it? <span class="icon">＋</span></summary><div class="ans">Usually yes. Panel exhaust fans are specified on some projects under a house, distributor or project-specific part number rather than the factory code, so a reference taken from a job BOM will not always match our catalogue directly. Send the code together with the panel dimensions from the drawing and the required airflow and we will confirm the equivalent KLT model. The cut-out size and the airflow are what identify the unit — the code on its own frequently does not.</div></details></div>
+<div class="faq-item"><details><summary>Are the model codes the same for the 110V / 60Hz versions? <span class="icon">＋</span></summary><div class="ans">The code identifies the panel platform and the airflow, not the voltage. The KLT range is 220V / 50Hz as standard, and 110V / 60Hz or other voltages are produced on OEM orders against the same code, with the voltage specified separately on the order. Always state voltage and frequency in full on the RFQ — the nameplate differs even where the model code does not.</div></details></div>
+</div>
 </section>
 <section class="section" style="background:var(--light);">
 <h2>Related Resources</h2>
