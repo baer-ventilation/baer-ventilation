@@ -1793,27 +1793,35 @@ document.addEventListener('click', function(e){
   ctx.link_url = href;
   if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click', ctx); }
   else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click', ctx); }
-  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download', ctx); }
+  else if (/\.pdf(\?|$)/i.test(href)) { ctx.file_name = href.split('/').pop().split('?')[0]; gtag('event', 'catalog_download', ctx); }
   else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click', ctx); }
 });
-var _baerForm = document.querySelector('#inquiry-form');
-if (_baerForm) _baerForm.addEventListener('submit', function(){
-  if (typeof gtag === 'function') {
+var _baerForms = document.querySelectorAll('form[data-baer-form]');
+for (var _bi = 0; _bi < _baerForms.length; _bi++) (function(_f){
+  var _started = false;
+  function _start(){
+    if (_started) return;
+    _started = true;
+    if (typeof gtag !== 'function') return;
+    var c = _baerGtagCtx();
+    c.form_id = _f.id || 'inquiry-form';
+    c.form_page = window.location.pathname;
+    gtag('event', 'form_start', c);
+  }
+  _f.addEventListener('focusin', _start);
+  _f.addEventListener('input', _start);
+  _f.addEventListener('submit', function(){
+    if (typeof gtag !== 'function') return;
     var ctx = _baerGtagCtx();
-    ctx.form_id = _baerForm.id || 'inquiry-form';
+    ctx.form_id = _f.id || 'inquiry-form';
     ctx.source_page = window.location.pathname;
     try {
-      var _baerRef = document.referrer || '';
-      if (_baerRef) {
-        var _baerRefUrl = new URL(_baerRef);
-        if (_baerRefUrl.protocol.indexOf('http') === 0 && _baerRefUrl.origin === window.location.origin) {
-          ctx.source_page = _baerRefUrl.pathname;
-        }
-      }
+      var _r = document.referrer || '';
+      if (_r) { var _ru = new URL(_r); if (_ru.origin === window.location.origin) ctx.source_page = _ru.pathname; }
     } catch (e) { ctx.source_page = window.location.pathname; }
     gtag('event', 'inquiry_submit', ctx);
-  }
-});
+  });
+})(_baerForms[_bi]);
 </script>
 
 <script src="/js/reveal.js?v=1" defer></script><script>

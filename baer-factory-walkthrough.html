@@ -154,20 +154,46 @@
 </footer>
 <!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
 <script>
+function _baerGtagCtx(){ return { page_path: window.location.pathname, page_title: document.title }; }
 document.addEventListener('click', function(e){
   var t = e.target;
   while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
   if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
   var href = t.getAttribute('href') || '';
-  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click'); }
-  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click'); }
-  else if (/\.pdf(\?|$)/i.test(href)) { gtag('event', 'catalog_download'); }
-  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click'); }
+  var ctx = _baerGtagCtx();
+  ctx.link_text = (t.textContent || '').trim().slice(0, 120);
+  ctx.link_url = href;
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click', ctx); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click', ctx); }
+  else if (/\.pdf(\?|$)/i.test(href)) { ctx.file_name = href.split('/').pop().split('?')[0]; gtag('event', 'catalog_download', ctx); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click', ctx); }
 });
-var _baerForm = document.querySelector('form');
-if (_baerForm) _baerForm.addEventListener('submit', function(){
-  if (typeof gtag === 'function') gtag('event', 'inquiry_submit');
-});
+var _baerForms = document.querySelectorAll('form[data-baer-form]');
+for (var _bi = 0; _bi < _baerForms.length; _bi++) (function(_f){
+  var _started = false;
+  function _start(){
+    if (_started) return;
+    _started = true;
+    if (typeof gtag !== 'function') return;
+    var c = _baerGtagCtx();
+    c.form_id = _f.id || 'inquiry-form';
+    c.form_page = window.location.pathname;
+    gtag('event', 'form_start', c);
+  }
+  _f.addEventListener('focusin', _start);
+  _f.addEventListener('input', _start);
+  _f.addEventListener('submit', function(){
+    if (typeof gtag !== 'function') return;
+    var ctx = _baerGtagCtx();
+    ctx.form_id = _f.id || 'inquiry-form';
+    ctx.source_page = window.location.pathname;
+    try {
+      var _r = document.referrer || '';
+      if (_r) { var _ru = new URL(_r); if (_ru.origin === window.location.origin) ctx.source_page = _ru.pathname; }
+    } catch (e) { ctx.source_page = window.location.pathname; }
+    gtag('event', 'inquiry_submit', ctx);
+  });
+})(_baerForms[_bi]);
 </script>
 
 <script src="/js/reveal.js?v=1" defer></script></body>

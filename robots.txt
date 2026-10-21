@@ -38,4 +38,21 @@ User-agent: cohere-ai
 Allow: /
 Disallow: /thankyou
 
+# User-initiated / on-demand fetchers (a person asks an assistant to open a page)
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /thankyou
+
+User-agent: Claude-User
+Allow: /
+Disallow: /thankyou
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /thankyou
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /thankyou
+
 Sitemap: https://baer-ventilation.com/sitemap.xml
