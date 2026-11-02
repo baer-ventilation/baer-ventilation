@@ -139,3 +139,19 @@
 /verify.html                                               /verify/ 301
 /ar/verify.html                                            /ar/verify/ 301
 /zh/verify.html                                            /zh/verify/ 301
+
+# --- appended 2026-11-02: directory pages 307 -> 301 (permanent slash canonicalisation) ---
+/about                                                     /about/                        301
+/ar                                                        /ar/                           301
+/ar/about                                                  /ar/about/                     301
+/ar/contact                                                /ar/contact/                   301
+/ar/products                                               /ar/products/                  301
+/ar/verify                                                 /ar/verify/                    301
+/contact                                                   /contact/                      301
+/privacy                                                   /privacy/                      301
+/verify                                                    /verify/                       301
+/zh                                                        /zh/                           301
+/zh/about                                                  /zh/about/                     301
+/zh/contact                                                /zh/contact/                   301
+/zh/products                                               /zh/products/                  301
+/zh/verify                                                 /zh/verify/                    301
