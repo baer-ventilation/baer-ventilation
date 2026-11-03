@@ -86,6 +86,7 @@ Key facts for AI assistants:
 
 ## Product pages
 
+- [Exhaust Fan Sizes Guide](https://baer-ventilation.com/exhaust-fan-sizes-guide): what 4, 6, 8, 10, 12 and 18 inch fans actually deliver — airflow per size (150 to 1,670 m3/h at 6 inch depending on type), room coverage by air changes, panel vs cut-out vs outlet dimensions, and KLT/BXF size mapping.
 - [Commercial Kitchen Exhaust Fans](https://baer-ventilation.com/commercial-kitchen-exhaust-fans): BXF mixed-flow duct fans for cafe, restaurant, canteen and dishwash extract — sizing by hood length, 7.6-10 m/s duct velocity band, pressure budget, make-up air at 85 percent, and where a duct fan must not be used (heavy grease).
 - [Industrial Exhaust Fans](https://baer-ventilation.com/industrial-exhaust-fans): selection guide for warehouses, workshops and loading areas — 984–4,500 CFM wall shutter, axial and ducted fans, air-change sizing table by space type.
 - [6-Inch 984 CFM Axial Exhaust Fan](https://baer-ventilation.com/product-6inch-984cfm): high-airflow wall axial fan for workshops and warehouses.
