@@ -238,16 +238,25 @@
 
   <p>The most common reason a ventilation system underperforms is not the fan's quality — it's the <strong>size</strong>. An undersized fan never clears the room; an oversized one wastes energy and creates noise and drafts. This guide shows the standard calculation used by HVAC engineers, with tables you can apply directly.</p>
 
-  <figure style="margin:26px 0;text-align:center;">
+  <div class="glance-card" style="background:var(--light);border:1px solid #E2E8F0;border-left:4px solid var(--red);border-radius:12px;padding:22px 26px;max-width:900px;margin:0 0 34px;">
+  <div style="font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--red);text-transform:uppercase;margin-bottom:10px;">At a Glance</div>
+  <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.8;color:var(--dark);">
+      <li>Core formula: airflow = room volume &times; ACH &divide; 60 &mdash; a 3,000 ft&sup3; room at 8 ACH needs 400 CFM.</li>
+      <li>Catalog airflow is measured at free air (0 Pa); ducts, bends and grilles cut real output, so budget for static pressure before matching a model.</li>
+      <li>Unit conversion: CFM &times; 1.7 = m&sup3;/h, m&sup3;/h &divide; 1.7 = CFM &mdash; BAER spec sheets list both.</li>
+  </ul>
+  <div style="margin-top:14px;padding-top:12px;border-top:1px solid #E2E8F0;font-size:13.5px;line-height:2;color:var(--text);"><strong style="color:var(--dark);">On this page:</strong> <a href="#measure-room-volume" style="color:#334155;text-decoration:none;border-bottom:1px solid #CBD5E1;">1. Room volume</a> <span style="color:#CBD5E1;">&middot;</span> <a href="#choose-ach" style="color:#334155;text-decoration:none;border-bottom:1px solid #CBD5E1;">2. Choose ACH</a> <span style="color:#CBD5E1;">&middot;</span> <a href="#apply-formula" style="color:#334155;text-decoration:none;border-bottom:1px solid #CBD5E1;">3. Apply the formula</a> <span style="color:#CBD5E1;">&middot;</span> <a href="#unit-conversion" style="color:#334155;text-decoration:none;border-bottom:1px solid #CBD5E1;">4. Convert units</a> <span style="color:#CBD5E1;">&middot;</span> <a href="#static-pressure" style="color:#334155;text-decoration:none;border-bottom:1px solid #CBD5E1;">5. Static pressure</a> <span style="color:#CBD5E1;">&middot;</span> <a href="#match-model" style="color:#334155;text-decoration:none;border-bottom:1px solid #CBD5E1;">6. Match a model</a> <span style="color:#CBD5E1;">&middot;</span> <a href="#worked-example" style="color:#334155;text-decoration:none;border-bottom:1px solid #CBD5E1;">Worked example</a> <span style="color:#CBD5E1;">&middot;</span> <a href="#common-sizing-mistakes" style="color:#334155;text-decoration:none;border-bottom:1px solid #CBD5E1;">Common mistakes</a></div>
+</div>
+<figure style="margin:26px 0;text-align:center;">
     <img src="/images/motor-test-bench.webp" alt="Motor test bench at the BAER factory measuring exhaust fan airflow and power" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
     <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Every BAER motor batch runs on a test bench before assembly — the rated airflow in the tables is measured, not estimated.</figcaption>
   </figure>
 
-<h2>Step 1: Measure the Room Volume</h2>
+<h2 id="measure-room-volume">Step 1: Measure the Room Volume</h2>
   <div class="formula">Room volume (m³) = Length (m) × Width (m) × Height (m)</div>
   <p>Example: a bathroom 2.5 m × 2 m × 2.7 m = 13.5 m³.</p>
 
-  <h2>Step 2: Choose Air Changes per Hour (ACH)</h2>
+  <h2 id="choose-ach">Step 2: Choose Air Changes per Hour (ACH)</h2>
   <p>ACH is how many times per hour the entire room's air is replaced. Standards by application:</p>
   <table class="compare-table">
     <thead>
@@ -267,13 +276,13 @@
     </tbody>
   </table>
 
-  <h2>Step 3: Apply the Formula</h2>
+  <h2 id="apply-formula">Step 3: Apply the Formula</h2>
   <div class="formula">Required airflow (m³/h) = Room volume (m³) × ACH</div>
   <p>Worked example — the bathroom from Step 1, at 8 ACH:</p>
   <p>13.5 m³ × 8 = <strong>108 m³/h required</strong></p>
   <p>Add a 10–20% margin for duct resistance and aging: <strong>target a fan rated 120–130 m³/h</strong>.</p>
 
-  <h2>Step 4: Convert Between m³/h and CFM</h2>
+  <h2 id="unit-conversion">Step 4: Convert Between m³/h and CFM</h2>
   <p>Suppliers quote both units. Conversion:</p>
   <div class="formula">CFM = m³/h ÷ 1.699 &nbsp;&nbsp;|&nbsp;&nbsp; m³/h = CFM × 1.699</div>
   <table class="compare-table">
@@ -290,7 +299,7 @@
     </tbody>
   </table>
 
-  <h2>The Calculation That Most Buyers Forget: Static Pressure</h2>
+  <h2 id="static-pressure">The Calculation That Most Buyers Forget: Static Pressure</h2>
   <p>Catalog airflow is measured at <strong>free air (0 Pa)</strong>. Real installations have ducts, bends, grilles and shutters that create resistance:</p>
   <ul>
     <li>Direct wall/window mount (no duct): nearly full catalog airflow — see the <a href="/wall-mounted-vs-ceiling-exhaust-fan" style="color:#C0392B;font-weight:700;">wall vs ceiling comparison</a> for the full loss table</li>
@@ -358,7 +367,7 @@
   <p>Two things follow from the shape of that chart. First, the operating point sits well below the catalogue figure even on a modest duct run &mdash; on the schematic above it is roughly 20% down, which is exactly the 10&ndash;20% loss most installations show. Second, the left-hand part of the fan curve is flat: a small increase in resistance there costs a lot of airflow, while the same increase near free air costs almost nothing. That is why a blocked filter or a half-closed shutter can halve the extract while the fan still sounds normal.</p>
   <p><strong>What to ask a supplier for.</strong> A performance table, not a headline number: airflow at 0, 50, 100 and 150 Pa for the model you are buying. Pick the model whose airflow <em>at your calculated static pressure</em> still meets the air-change target. If a supplier can only quote a free-air figure, treat that figure as a best case and size up one step for any ducted installation. Our own model tables are on the <a href="/exhaust-fan-sizes-guide" style="color:#C0392B;font-weight:700;">size guide</a>, and if airflow has already dropped on a unit in service, the <a href="/exhaust-fan-maintenance-guide" style="color:#C0392B;font-weight:700;">maintenance guide</a> covers what usually caused it.</p>
     <!-- MARKER_STEP5_20261020 -->
-  <h2>Step 5: Match the Required Airflow to a Model</h2>
+  <h2 id="match-model">Step 5: Match the Required Airflow to a Model</h2>
   <p>The formula gives you a number in m&sup3;/h. Suppliers quote models. The table below bridges the two using the KLT panel fan range we build, with the catalogue airflow in the second column and the two loss bands from the previous section applied in the third and fourth.</p>
   <table class="compare-table">
     <thead>
@@ -379,7 +388,7 @@
   <p>A workshop 5 m &times; 4 m &times; 3 m is 60 m&sup3;. At 10 ACH that is <strong>600 m&sup3;/h required</strong>. Free air, KLT-20B at 792 m&sup3;/h looks like more fan than the job needs. Put it on a 5 m duct run instead and the &minus;40% column gives 475 m&sup3;/h &mdash; short of 600. The honest answer on that job is not a bigger panel fan; it is a BXF inline unit, which is quoted at working pressure rather than free air.</p>
   <p>This is the decision most quotes get wrong. A panel fan is chosen for its free-air number and then installed on ductwork, where the number no longer applies. If the run is longer than one wall thickness, price the inline range before you price the panel range &mdash; the <a href="/inline-duct-fan-vs-axial-fan">inline versus axial comparison</a> has the pressure ratings side by side.</p>
 
-<h2>Full Worked Example: Gulf-Region Apartment</h2>
+<h2 id="worked-example">Full Worked Example: Gulf-Region Apartment</h2>
   <p>A bedroom 4 m × 3.5 m × 2.8 m (39.2 m³) in a hot climate requiring 12 ACH:</p>
   <ul>
     <li>39.2 m³ × 12 = 470 m³/h</li>
@@ -387,7 +396,7 @@
     <li>Recommended: two window/wall fans of ~280 m³/h each, or one ceiling inline system</li>
   </ul>
 
-  <h2>Common Sizing Mistakes</h2>
+  <h2 id="common-sizing-mistakes">Common Sizing Mistakes</h2>
   <ul>
     <li><strong>Sizing by floor area instead of volume</strong> — ceiling height changes everything</li>
     <li><strong>Ignoring the backdraft shutter</strong> — adds 5–10 Pa resistance on every cycle</li>
@@ -397,7 +406,7 @@
   </ul>
 
     <!-- MARKER_CLAIM_20261020 -->
-  <h2>How to Check an Airflow Claim Before You Order</h2>
+  <h2 id="check-airflow-claim">How to Check an Airflow Claim Before You Order</h2>
   <p>Airflow is the easiest specification to quote loosely, because the same fan produces very different numbers depending on where it is measured. Four questions separate a usable figure from a sales figure.</p>
   <ul>
     <li><strong>Free air or at pressure?</strong> Ask for the static pressure the figure was measured at. 1,200 m&sup3;/h at 0 Pa and 1,200 m&sup3;/h at 380 Pa describe two different machines, and the second is worth far more on a ducted job.</li>
@@ -411,10 +420,10 @@
   </figure>
   <p>If you are comparing us against another quote, send both datasheets and we will state which figure is free air and which is at pressure. That comparison is usually more useful than the price difference. Our own documentation and entity records are listed on the <a href="/verify">verification page</a>.</p>
 
-<h2>Need Help Sizing?</h2>
+<h2 id="need-help-sizing">Need Help Sizing?</h2>
   <p>Send us your room dimensions, application, and installation type (direct mount or ducted). We'll run the calculation, recommend the right model, and quote factory-direct with volume pricing.</p>
 
-  <h2>Apply the Calculation by Market</h2>
+  <h2 id="market-application">Apply the Calculation by Market</h2>
   <p>Once you have the airflow figure, these pages cover the market and climate conditions that decide the rest of the specification.</p>
   <ul>
 <li><a href="/exhaust-fan-middle-east-climate" style="color:#C0392B;font-weight:700;text-decoration:none;">Exhaust Fans for the Middle East Climate</a></li>
@@ -423,7 +432,7 @@
 <li><a href="/uae-exhaust-fan-supplier" style="color:#C0392B;font-weight:700;text-decoration:none;">UAE Exhaust Fan Supplier</a></li>
 <li><a href="/product-inline-duct-fan" style="color:#C0392B;font-weight:700;text-decoration:none;">Inline Duct Fan</a></li>
   </ul>
-  <h2>Related Guides</h2>
+  <h2 id="related-guides">Related Guides</h2>
 <ul>
 <li><a href="/cfm-calculator" style="color:#C0392B;font-weight:700;text-decoration:none;">Exhaust Fan CFM Calculator (instant sizing tool)</a></li>
 <li><a href="/panel-exhaust-fan-sizing-guide" style="color:#C0392B;font-weight:700;text-decoration:none;">Panel Exhaust Fan Sizing Guide</a></li>
@@ -431,7 +440,7 @@
 <li><a href="/inline-duct-fans" style="color:#C0392B;font-weight:700;text-decoration:none;">Inline Duct Fans: Sizing, Types &amp; Selection</a></li>
 </ul>
 
-  <h2>Frequently Asked Questions</h2>
+  <h2 id="faq">Frequently Asked Questions</h2>
   <div class="faqwrap">
       <details><summary>How do I calculate exhaust fan airflow (CFM) for a room? <span>+</span></summary><div class="fa">Multiply the room volume by the required air changes per hour (ACH), then divide by 60. For a 20 ft x 15 ft x 10 ft room (3,000 ft3) at 8 ACH: 3,000 x 8 / 60 = 400 CFM. In metric, airflow (m3/h) = room volume (m3) x ACH.</div></details>
       <details><summary>What ACH (air changes per hour) should an exhaust fan deliver? <span>+</span></summary><div class="fa">Residential bathrooms need 8 ACH; commercial kitchens and humid Gulf-climate spaces need 10-15 ACH; warehouses and factories typically 6-10 ACH based on heat and pollutant load. Round up to the nearest standard fan size.</div></details>
