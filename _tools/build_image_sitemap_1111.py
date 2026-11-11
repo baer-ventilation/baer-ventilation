@@ -73,8 +73,15 @@ def main():
     raw = io.open(SITEMAP, encoding="utf-8", newline="").read()
     nl = "\r\n" if "\r\n" in raw else "\n"
 
-    # strip any previously generated image blocks (idempotent re-run)
-    raw = re.sub(r"[ \t]*<image:image>.*?</image:image>\s*", "", raw, flags=re.S)
+    # strip any previously generated image blocks (idempotent re-run).
+    # NOTE: consume exactly ONE trailing newline, never \s* — otherwise the
+    # indent of the following "  </url>" is eaten and the insert-phase
+    # block.replace("  </url>", ...) no longer matches (non-idempotent bug).
+    raw = re.sub(
+        r"[ \t]*<image:image>(?s:.*?)</image:image>[ \t]*\r?\n?",
+        "",
+        raw,
+    )
 
     # namespace declaration
     if "xmlns:image" not in raw:

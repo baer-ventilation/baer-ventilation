@@ -393,9 +393,17 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/ec-motor-vs-ac-motor-duct-fan</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-11</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/baer-motor-test-bench.webp</image:loc>
+      <image:title>Motor run through electrical parameter checks on the test bench at the BAER factory</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/inline-fan-controller.webp</image:loc>
+      <image:title>Wiring and speed-control connections fitted during exhaust fan final assembly at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-moq-guide</loc>
@@ -429,7 +437,7 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/baer-production-capacity</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-11</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
