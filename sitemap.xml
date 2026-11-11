@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- BAER Ventilation canonical sitemap. EN + AR (Arabic pages re-enabled 2026-09-08 for Middle East strategy). -->
   <!-- 2026-09-03 P0: removed 22 zh/ar machine-translated stubs and /thankyou -->
   <url>
@@ -7,6 +8,86 @@
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/A4fa2bde5c7754b548a9cf5da5e3bec3aQ.webp</image:loc>
+      <image:title>BAER Ventilation Products</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H5ab785de74ed4850a9fbf3621c91530cH.webp</image:loc>
+      <image:title>Ceiling Mount Exhaust Fan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H5fbe6fbc92284181968eba3dff7ed880E.webp</image:loc>
+      <image:title>Standard Window Fan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/A216d65f6e04a43438a882ca3e9b88721Z.webp</image:loc>
+      <image:title>Double-Grill Window Fan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H42e66ea71d5445fcbb62c7c68e493d94v.webp</image:loc>
+      <image:title>Industrial Axial Fan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hf77c8f2216ff4576b9f83c896fdd000fq.webp</image:loc>
+      <image:title>Standard Mixed Flow Series</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/A69a6450d8e504c9a9c1dcaedccad5c3e2.webp</image:loc>
+      <image:title>High-efficiency inline duct booster fan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/A96cb71eed6d94b289be81e750dfc9fe1M.webp</image:loc>
+      <image:title>Intelligent DC Inverter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H0f20bd34e6864282a2d71d6aa8f11a35f.webp</image:loc>
+      <image:title>Export Pro Bathroom Series</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Abe879211958d43a4996a2f163a09d541e.webp</image:loc>
+      <image:title>Circular Pull-Cord Fan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hb4c5e8471a3e46d599e56f223890a1d36.webp</image:loc>
+      <image:title>Acoustic Cabinet Series</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Ac07b0ea4758d43eca21098ba7444ee35Q.webp</image:loc>
+      <image:title>Fresh Air Purification Unit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_3c.webp</image:loc>
+      <image:title>CCC Certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_iso9001.webp</image:loc>
+      <image:title>ISO 9001 Certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_ce.webp</image:loc>
+      <image:title>CE Certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_cb.webp</image:loc>
+      <image:title>CB scheme test report (IEC 60335-2-80)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hfb326e99a2ae4e9caea179320f45bf57Y.webp</image:loc>
+      <image:title>Residential exhaust fans for bedroom, kitchen and bathroom</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hec5a13f240a64a4abb56c37f601a6877S.webp</image:loc>
+      <image:title>Commercial ventilation fans for office, mall and hotel</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hc569fcd0b6de46489946f63751a93234k.webp</image:loc>
+      <image:title>BAER ventilation fan factory in Shengzhou, Zhejiang</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H1ffa8f663c8d4673a363cbbc1d122767i.webp</image:loc>
+      <image:title>Raw materials and molds for exhaust fan production</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/products/</loc>
@@ -19,42 +100,82 @@
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H42e66ea71d5445fcbb62c7c68e493d94v.webp</image:loc>
+      <image:title>BAER 6 inch 984CFM industrial wall shutter exhaust fan</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-inline-duct-fan</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hf77c8f2216ff4576b9f83c896fdd000fq.webp</image:loc>
+      <image:title>BAER mixed flow inline duct fan</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-silent-bathroom-fan</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H0f20bd34e6864282a2d71d6aa8f11a35f.webp</image:loc>
+      <image:title>BAER silent bathroom exhaust fan series</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-window-fan</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H5fbe6fbc92284181968eba3dff7ed880E.webp</image:loc>
+      <image:title>BAER window mount exhaust fan standard series</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-ceiling-mount-fan</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H5ab785de74ed4850a9fbf3621c91530cH.webp</image:loc>
+      <image:title>BAER ceiling mount exhaust fan 100-200mm</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-silent-cabinet-fan</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hb4c5e8471a3e46d599e56f223890a1d36.webp</image:loc>
+      <image:title>BAER silent cabinet fan DC brushless</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/about/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_ce.webp</image:loc>
+      <image:title>CE certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_iso9001.webp</image:loc>
+      <image:title>ISO 9001 certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_3c.webp</image:loc>
+      <image:title>CCC certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_cb.webp</image:loc>
+      <image:title>CB scheme test report (IEC 60335-2-80)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/verify/</loc>
@@ -67,6 +188,22 @@
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_ce.webp</image:loc>
+      <image:title>CE certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_iso9001.webp</image:loc>
+      <image:title>ISO 9001 certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_3c.webp</image:loc>
+      <image:title>CCC certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_cb.webp</image:loc>
+      <image:title>CB scheme test report (IEC 60335-2-80)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/resources</loc>
@@ -76,7 +213,7 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fans</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -91,6 +228,14 @@
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/baer-factory-assembly-line.webp</image:loc>
+      <image:title>Finished ceiling panel exhaust fans staged on the assembly floor at the BAER factory</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/baer-container-loading.webp</image:loc>
+      <image:title>Export container loaded with cartoned BAER exhaust fans before dispatch</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/faq</loc>
@@ -127,6 +272,10 @@
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-factory-gate.webp</image:loc>
+      <image:title>BAER ventilation fan factory in Shengzhou Zhejiang China</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/baer-factory-walkthrough</loc>
@@ -151,6 +300,14 @@
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/motor-test-bench.webp</image:loc>
+      <image:title>Motor test bench at the BAER factory measuring exhaust fan airflow and power</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/baer-nameplate-assembly-bench.webp</image:loc>
+      <image:title>BAER nameplates and impellers on the factory assembly bench before fitting</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/middle-east-exhaust-fan-supplier</loc>
@@ -169,6 +326,14 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/panel-fan-assembly-line.webp</image:loc>
+      <image:title>BAER exhaust fans on the assembly line at our Zhejiang factory before shipment to Riyadh projects</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/container-loading.webp</image:loc>
+      <image:title>Finished BAER ventilation fans being loaded into an export container for shipment to Riyadh via Jeddah or Dammam</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/uae-exhaust-fan-supplier</loc>
@@ -193,22 +358,42 @@
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/panel-fan-assembly-line.webp</image:loc>
+      <image:title>Panel exhaust fans on the BAER assembly line ready for testing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/baer-motor-test-bench.webp</image:loc>
+      <image:title>Motor run on a test bench at the BAER factory before assembly</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/baer-shaft-qc-caliper.webp</image:loc>
+      <image:title>Shaft diameter checked with a digital caliper at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/bathroom-exhaust-fan-cfm-guide</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/baer-bathroom-fan-installs.webp</image:loc>
+      <image:title>Bathroom exhaust fan installed four ways: wall, inline duct, ceiling and window mount</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/wall-mounted-vs-ceiling-exhaust-fan</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/baer-bathroom-fan-installs.webp</image:loc>
+      <image:title>Four bathroom exhaust fan installations: wall mounted, ducted, ceiling recessed and window mounted</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ec-motor-vs-ac-motor-duct-fan</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -254,30 +439,50 @@
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/klt-series-lineup.webp</image:loc>
+      <image:title>KLT panel exhaust fan series, 6 to 18 inch, packed for shipment at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-klt-12b</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/klt-dimension-diagram-en.webp</image:loc>
+      <image:title>KLT panel exhaust fan dimension diagram: front panel size, wall cut-out size and duct outlet size</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-klt-18b</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/klt-shutter-function-en.webp</image:loc>
+      <image:title>KLT gravity auto-shutter open while the fan runs and closed when it stops</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-klt-20b</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/product-klt-20b.webp</image:loc>
+      <image:title>KLT-20B panel exhaust fan body with duct outlet, top view</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-klt-25b</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/product-klt-25b.webp</image:loc>
+      <image:title>KLT-25B panel exhaust fan body with duct outlet</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-klt-30b</loc>
@@ -290,6 +495,10 @@
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/klt-series-lineup.webp</image:loc>
+      <image:title>KLT panel exhaust fan series, 6 to 18 inch, packed for shipment at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/</loc>
@@ -302,12 +511,52 @@
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H5ab785de74ed4850a9fbf3621c91530cH.webp</image:loc>
+      <image:title>مراوح طرد سقفية</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H5fbe6fbc92284181968eba3dff7ed880E.webp</image:loc>
+      <image:title>مراوح نوافذ</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H42e66ea71d5445fcbb62c7c68e493d94v.webp</image:loc>
+      <image:title>مراوح طرد حائطية صناعية</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hf77c8f2216ff4576b9f83c896fdd000fq.webp</image:loc>
+      <image:title>مراوح قنوات مختلطة التدفق</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H0f20bd34e6864282a2d71d6aa8f11a35f.webp</image:loc>
+      <image:title>مراوح حمامات صامتة</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hb4c5e8471a3e46d599e56f223890a1d36.webp</image:loc>
+      <image:title>مراوح خزائن صامتة</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/about/</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_ce.webp</image:loc>
+      <image:title>CE certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_iso9001.webp</image:loc>
+      <image:title>ISO 9001 certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_3c.webp</image:loc>
+      <image:title>CCC certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_cb.webp</image:loc>
+      <image:title>CB scheme test report (IEC 60335-2-80)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/verify/</loc>
@@ -320,6 +569,22 @@
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_ce.webp</image:loc>
+      <image:title>CE certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_iso9001.webp</image:loc>
+      <image:title>ISO 9001 certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_3c.webp</image:loc>
+      <image:title>CCC certificate</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/cert_cb.webp</image:loc>
+      <image:title>CB scheme test report (IEC 60335-2-80)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/product-klt-10b</loc>
@@ -332,12 +597,20 @@
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H42e66ea71d5445fcbb62c7c68e493d94v.webp</image:loc>
+      <image:title>مروحة طرد حائطية صناعية BAER مقاس 6 بوصة 984 CFM</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/product-ceiling-mount-fan</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H5ab785de74ed4850a9fbf3621c91530cH.webp</image:loc>
+      <image:title>مروحة طرد سقفية BAER مقاس 100-200 مم</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/commercial-kitchen-exhaust-fans</loc>
@@ -349,30 +622,50 @@
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hf77c8f2216ff4576b9f83c896fdd000fq.webp</image:loc>
+      <image:title>مروحة قنوات مختلطة التدفق BAER</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/product-silent-bathroom-fan</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H0f20bd34e6864282a2d71d6aa8f11a35f.webp</image:loc>
+      <image:title>سلسلة مراوح الحمامات الصامتة BAER</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/product-silent-cabinet-fan</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/Hb4c5e8471a3e46d599e56f223890a1d36.webp</image:loc>
+      <image:title>مروحة خزانة صامتة BAER بمحرك DC</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/product-window-fan</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H5fbe6fbc92284181968eba3dff7ed880E.webp</image:loc>
+      <image:title>مروحة طرد نوافذ BAER السلسلة القياسية</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/saber-saso-exhaust-fan-certification</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/container-loading.webp</image:loc>
+      <image:title>Exhaust fan export cartons loaded in a shipping container at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/ar/saudi-arabia-exhaust-fan-supplier</loc>
@@ -403,6 +696,10 @@
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/klt-series-lineup.webp</image:loc>
+      <image:title>KLT series panel exhaust fans with gravity auto-shutter as standard</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-60hz-gulf-voltage</loc>
@@ -439,23 +736,43 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/inline-fan-controller.webp</image:loc>
+      <image:title>Inline duct fan speed controller inspected before packing at BAER</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/assets/images/H42e66ea71d5445fcbb62c7c68e493d94v.webp</image:loc>
+      <image:title>BAER industrial wall shutter exhaust fan for warehouse ventilation</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/commercial-kitchen-exhaust-fans</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/assembly-workers.webp</image:loc>
+      <image:title>Workers assembling commercial kitchen exhaust fans at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-sizes-guide</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/fan-size-lineup.webp</image:loc>
+      <image:title>BAER inline duct fan size lineup from 4 inch to 12 inch</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-maintenance-guide</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/shaft-qc-caliper.webp</image:loc>
+      <image:title>Digital caliper checking a fan motor shaft at BAER quality control</image:title>
+    </image:image>
   </url>
 </urlset>
