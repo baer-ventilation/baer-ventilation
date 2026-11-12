@@ -849,22 +849,30 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-price-breakdown</loc>
-    <lastmod>2026-11-12</lastmod></lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://baer-ventilation.com/images/baer-fan-housing-components.webp</image:loc>
       <image:title>Moulded fan housings and impellers in a production basket at the BAER factory</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/inline-impellers.webp</image:loc>
+      <image:title>Inline duct fans with red and blue impellers on the BAER sample room shelf</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-container-loading-guide</loc>
-    <lastmod>2026-11-12</lastmod></lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://baer-ventilation.com/images/baer-cartons-on-pallets.webp</image:loc>
       <image:title>Export cartons stacked on pallets ready for container loading at the BAER warehouse</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/carton-instruction.webp</image:loc>
+      <image:title>English installation manual placed on top of a wrapped inline duct fan inside its export carton</image:title>
     </image:image>
   </url>
   <url>
