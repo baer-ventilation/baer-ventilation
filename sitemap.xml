@@ -137,11 +137,11 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-ceiling-mount-fan</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://baer-ventilation.com/assets/images/H5ab785de74ed4850a9fbf3621c91530cH.webp</image:loc>
+      <image:loc>https://baer-ventilation.com/images/ceiling-fan-product.webp</image:loc>
       <image:title>BAER ceiling mount exhaust fan 100-200mm</image:title>
     </image:image>
   </url>
@@ -213,9 +213,17 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fans</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/mobile-industrial-fans.webp</image:loc>
+      <image:title>Movable industrial axial fans in black, yellow and blue at the BAER factory</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/showroom-wall.webp</image:loc>
+      <image:title>A wall of BAER exhaust fan samples in the factory showroom</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/inline-duct-fans</loc>
@@ -279,9 +287,37 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/baer-factory-walkthrough</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-gate-stone.webp</image:loc>
+      <image:title>Factory gate stone engraved with Zhejiang Baer Electrical Technology Co., Ltd. in Shengzhou, Zhejiang</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/moulded-parts.webp</image:loc>
+      <image:title>Injection-moulded fan housings, impellers and panels staged in the BAER workshop</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/assembly-conveyor.webp</image:loc>
+      <image:title>Conveyor assembly line for exhaust fans at the BAER factory</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/assembly-bench-worker.webp</image:loc>
+      <image:title>Worker fitting a ceiling exhaust fan at a BAER assembly bench</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/packing-cartons.webp</image:loc>
+      <image:title>Stacked BAER export cartons in the packing area</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/warehouse-cartons.webp</image:loc>
+      <image:title>Palletized cartons in the BAER finished-goods warehouse</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/showroom-wall.webp</image:loc>
+      <image:title>Sample racks with BAER exhaust fan models in the factory showroom</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/bathroom-exhaust-fan-buying-guide</loc>
@@ -437,9 +473,29 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/baer-production-capacity</loc>
-    <lastmod>2026-11-11</lastmod></lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/injection-hall.webp</image:loc>
+      <image:title>Row of injection moulding machines in the BAER factory</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/winding-station.webp</image:loc>
+      <image:title>Motor winding station with digital tester at the BAER factory</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/warehouse-aisle.webp</image:loc>
+      <image:title>Carton storage aisle in the BAER finished-goods warehouse</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/showroom-racks.webp</image:loc>
+      <image:title>Shelves of exhaust fan samples in the BAER sample room</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/cert-wall.webp</image:loc>
+      <image:title>Certificates and test reports displayed on a rack at the BAER factory</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -701,12 +757,20 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-shutter-types</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://baer-ventilation.com/images/klt-series-lineup.webp</image:loc>
       <image:title>KLT series panel exhaust fans with gravity auto-shutter as standard</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/shutter-open.webp</image:loc>
+      <image:title>Gravity shutter blades open on a BAER metal exhaust fan, exposing the impeller</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/shutter-closed.webp</image:loc>
+      <image:title>Gravity shutter blades closed on a BAER metal exhaust fan</image:title>
     </image:image>
   </url>
   <url>
@@ -741,7 +805,7 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/industrial-exhaust-fans</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -749,7 +813,7 @@
       <image:title>Inline duct fan speed controller inspected before packing at BAER</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://baer-ventilation.com/assets/images/H42e66ea71d5445fcbb62c7c68e493d94v.webp</image:loc>
+      <image:loc>https://baer-ventilation.com/images/mobile-industrial-fans.webp</image:loc>
       <image:title>BAER industrial wall shutter exhaust fan for warehouse ventilation</image:title>
     </image:image>
   </url>
