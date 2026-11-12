@@ -227,9 +227,13 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/inline-duct-fans</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-inline-duct-fan-shelf.webp</image:loc>
+      <image:title>Shelves of axial and mixed-flow inline duct fans in the BAER sample room</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/cfm-calculator</loc>
@@ -247,9 +251,13 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/faq</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-sample-room.webp</image:loc>
+      <image:title>BAER sample room with exhaust fans arranged on display shelves</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/guide-middle-east</loc>
@@ -259,9 +267,13 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/ceiling-vs-window-fan</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-ceiling-fan-duct-rear.webp</image:loc>
+      <image:title>Ceiling exhaust fan shown from the rear with its duct connection</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-middle-east-climate</loc>
@@ -271,9 +283,17 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/how-to-verify-china-exhaust-fan-manufacturer</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-factory-sign-legal-name.webp</image:loc>
+      <image:title>BAER factory entrance sign showing the legal name Zhejiang Baer Electrical Technology Co., Ltd</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-certificate-wall.webp</image:loc>
+      <image:title>Certificates and test reports displayed in the BAER office</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-certifications-guide</loc>
@@ -321,15 +341,23 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/bathroom-exhaust-fan-buying-guide</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-white-ceiling-exhaust-fan.webp</image:loc>
+      <image:title>White ceiling-mounted exhaust fan with plastic blades in the BAER sample room</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/inline-duct-fan-vs-axial-fan</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-inline-fan-cutaway.webp</image:loc>
+      <image:title>Inline duct fan opened up to show the motor and impeller inside the housing</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-airflow-calculation-guide</loc>
@@ -347,15 +375,23 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/middle-east-exhaust-fan-supplier</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-export-cartons-stacked.webp</image:loc>
+      <image:title>Export cartons stacked in the BAER factory warehouse before shipment</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/saudi-arabia-exhaust-fan-supplier</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-warehouse-aisle.webp</image:loc>
+      <image:title>Warehouse aisle with packed export goods at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/riyadh-exhaust-fan-supplier</loc>
@@ -373,9 +409,13 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/uae-exhaust-fan-supplier</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-foam-packaging-stack.webp</image:loc>
+      <image:title>Stacks of moulded foam packaging at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/qatar-exhaust-fan-supplier</loc>
@@ -443,15 +483,23 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-moq-guide</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-export-cartons-warehouse.webp</image:loc>
+      <image:title>Export cartons stacked in the BAER finished-goods warehouse</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/oem-private-label-exhaust-fan-guide</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-injection-moulding-machine.webp</image:loc>
+      <image:title>Injection moulding machine producing plastic fan components at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/yemen-exhaust-fan-supplier</loc>
@@ -550,9 +598,13 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-klt-30b</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-panel-fan-klt-front.webp</image:loc>
+      <image:title>KLT square panel wall exhaust fan with front grille and duct outlet in the BAER sample room</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/product-klt-10b</loc>
@@ -739,21 +791,33 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/panel-exhaust-fan-sizing-guide</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-green-shutter-panel-fan.webp</image:loc>
+      <image:title>Green shutter-type panel exhaust fan in the BAER sample room</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/panel-exhaust-fan-installation-guide</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-shutter-fan-side.webp</image:loc>
+      <image:title>Panel exhaust fan with open gravity shutters viewed from an angle</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/panel-fan-vs-axial-fan-vs-inline-fan</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-fan-types-shelf.webp</image:loc>
+      <image:title>Axial, inline and centrifugal exhaust fan models on BAER sample room shelves</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-shutter-types</loc>
@@ -775,27 +839,43 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-60hz-gulf-voltage</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-hi-pot-test.webp</image:loc>
+      <image:title>Dielectric strength test on a fan motor at the BAER laboratory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-price-breakdown</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-fan-housing-components.webp</image:loc>
+      <image:title>Moulded fan housings and impellers in a production basket at the BAER factory</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-container-loading-guide</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-cartons-on-pallets.webp</image:loc>
+      <image:title>Export cartons stacked on pallets ready for container loading at the BAER warehouse</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/panel-exhaust-fan-oem-spec-sheet</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-12</lastmod></lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-panel-fan-display.webp</image:loc>
+      <image:title>Wall of panel exhaust fan models on display in the BAER sample room</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://baer-ventilation.com/privacy/</loc>
