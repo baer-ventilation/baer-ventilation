@@ -431,7 +431,7 @@
   </url>
   <url>
     <loc>https://baer-ventilation.com/exhaust-fan-noise-levels-guide</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -445,6 +445,14 @@
     <image:image>
       <image:loc>https://baer-ventilation.com/assets/images/baer-shaft-qc-caliper.webp</image:loc>
       <image:title>Shaft diameter checked with a digital caliper at the BAER factory</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-white-ceiling-exhaust-fan.webp</image:loc>
+      <image:title>White ceiling exhaust fan with wide plastic blades in the BAER sample room</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-ceiling-fan-duct-rear.webp</image:loc>
+      <image:title>Ceiling exhaust fan seen from behind with its duct connection collar</image:title>
     </image:image>
   </url>
   <url>
