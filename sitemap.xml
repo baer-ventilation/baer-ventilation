@@ -943,4 +943,14 @@
       <image:title>Digital caliper checking a fan motor shaft at BAER quality control</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://baer-ventilation.com/exhaust-fan-rfq-template</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-panel-fan-klt-front.webp</image:loc>
+      <image:title>KLT panel exhaust fan at the BAER factory</image:title>
+    </image:image>
+  </url>
 </urlset>

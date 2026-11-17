@@ -1,0 +1,28 @@
+BAER VENTILATION - EXHAUST FAN RFQ TEMPLATE
+Zhejiang Baer Electrical Technology Co.,ltd
+https://baer-ventilation.com  |  sunny@zjbaer.com  |  WhatsApp +86 136 5585 9122
+Copy this template, fill in what you know, leave the rest "TBC", and email it back.
+
+1. Company name:
+2. Contact person / email / phone:
+3. Destination country and port:
+4. Quantity (per model, total):
+5. Fan type (panel / window / ceiling / inline / axial / centrifugal):
+6. Impeller diameter (mm):
+7. Required airflow (m3/h or CFM):
+8. Required static pressure (Pa):
+9. Voltage / frequency (e.g. 220-240V 50Hz / 110-120V 60Hz):
+10. Motor type (shaded pole / ball bearing / EC):
+11. Installation (wall / window / ceiling / duct inline):
+12. Shutter type (none / manual / automatic):
+13. Noise limit (dB(A)) if any:
+14. IP rating if required:
+15. Operating temperature / humidity:
+16. Certification needed (CE / CB / CCC / ISO 9001):
+17. HS code for your customs (if specified):
+18. OEM/ODM: logo, nameplate, packaging, plug type:
+19. Target delivery window (optional, not a fixed date):
+20. Anything else (drawings, samples, references):
+
+Send to: sunny@zjbaer.com   WhatsApp: +86 136 5585 9122
+Factory-direct quotation. We reply within one working day.
