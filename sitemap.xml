@@ -1003,4 +1003,14 @@
       <image:title>Middle East exhaust fan manufacturer hub (Arabic)</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://baer-ventilation.com/exhaust-fan-ip-rating-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/baer-fan-housing-components.webp</image:loc>
+      <image:title>Exhaust fan IP rating guide - housing components</image:title>
+    </image:image>
+  </url>
 </urlset>
