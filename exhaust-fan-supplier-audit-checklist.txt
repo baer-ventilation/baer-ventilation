@@ -1,0 +1,81 @@
+EXHAUST FAN SUPPLIER AUDIT SCORECARD
+Zhejiang Baer Electrical Technology Co.,ltd | baer-ventilation.com
+Score each line: 0 = no evidence, 1 = verbal only, 2 = document or on-camera proof
+Total possible: 60. Below 35 = keep the order at sample stage.
+
+A. LEGAL IDENTITY AND ENTITY
+  [  ] 1. Legal name on licence = quotation = invoice = bank beneficiary
+  [  ] 2. Unified Social Credit Code supplied and checkable on enterprise registry
+  [  ] 3. Registered address matches the site, or office/factory split declared
+  [  ] 4. Legal registration date and factory heritage date stated separately
+  [  ] 5. Export company / factory relationship documented if two entities used
+
+B. CERTIFICATES AND TEST REPORTS
+  [  ] 6. Certificate number, issuer and validity date for every claim
+  [  ] 7. Certificate scope covers the exact model family being purchased
+  [  ] 8. Report model code matches the delivered nameplate
+  [  ] 9. Voltage and frequency on report match destination market
+  [  ] 10. Number verifiable at issuer or CNCA / CQC platform
+
+C. PRODUCTION CAPABILITY
+  [  ] 11. In-house injection moulding, or outsource partner named
+  [  ] 12. Motor winding and assembly on site
+  [  ] 13. Annual capacity stated per line and per model family
+  [  ] 14. Daily peak labelled as peak, not a monthly average
+  [  ] 15. MOQ and mixed-model container policy in writing
+
+D. QUALITY CONTROL
+  [  ] 16. Incoming material check on impellers, bearings and cable
+  [  ] 17. Hi-pot / dielectric test: state 100% or sampled
+  [  ] 18. Airflow and noise measured on a test bench
+  [  ] 19. Backdraft shutter function checked on the line
+  [  ] 20. Nameplate and carton checked against approved artwork
+
+E. ENGINEERING AND DOCUMENTATION
+  [  ] 21. Performance curve for the exact model
+  [  ] 22. Dimensioned drawing, not a catalogue photo
+  [  ] 23. Applicable standard named (e.g. IEC 60335-2-80)
+  [  ] 24. Customs support: HS 8414512000 for fans up to 125 W
+  [  ] 25. Unknowns marked TBC instead of guessed
+
+F. COMMERCIAL CONTINUITY
+  [  ] 26. Sample terms stated apart from mass production
+  [  ] 27. Warranty duration and claim procedure in writing
+  [  ] 28. Bank beneficiary confirmed by live call, never email alone
+  [  ] 29. Shutters and motors available for at least two years
+  [  ] 30. At least one reference from your own region or market
+
+EIGHT PHOTOS TO REQUEST (one session, date visible)
+  [  ] 1. Gate with legal-name sign
+  [  ] 2. Moulding hall with machines running
+  [  ] 3. Motor winding station
+  [  ] 4. Assembly line with workers
+  [  ] 5. Hi-pot test with unit connected
+  [  ] 6. Airflow bench readout for your model
+  [  ] 7. Certificate held next to a nameplate
+  [  ] 8. Export cartons with shipping marks
+
+TEN RED FLAGS
+  [  ] 1. Legal name on PI differs from business licence
+  [  ] 2. Certificate screenshot with no number or issuer
+  [  ] 3. Quoted model absent from the test report
+  [  ] 4. Supplier claims factory but video never leaves showroom
+  [  ] 5. Quotation drops with no specification change
+  [  ] 6. Bank details changed by email only
+  [  ] 7. Testing laboratory described only as "independent"
+  [  ] 8. Every certification claimed, including irrelevant ones
+  [  ] 9. Every audit line answered yes with no documents
+  [  ] 10. Only catalogue photos, nothing shown in production
+
+BAER VERIFIABLE DETAILS
+  Legal name: Zhejiang Baer Electrical Technology Co.,ltd
+  USCC: 91330683MA29E0KR3C
+  Legal entity registered September 2017 (factory heritage since 2003)
+  Employees: 51-100 | Annual capacity: 1,000,000 units/year
+  ISO 9001:2015: 04625Q15304R1M (CNCA, valid to 2028-11-16)
+  CCC: 2024010702612682 (CQC, valid to 2029-03-11)
+  CE EMC: XH2601E0321945GC / report XH2601E0321945GR (XHIT)
+  CB safety report: 60444427 001 (TUV Rheinland, LCIE originator)
+  MOQ: 100 pcs stock / 500 pcs OEM per model
+
+Send the completed scorecard to sunny@zjbaer.com with your RFQ.
