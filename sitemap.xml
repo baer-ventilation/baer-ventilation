@@ -1023,4 +1023,14 @@
       <image:title>IE motor efficiency classes guide - motor winding station</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://baer-ventilation.com/exhaust-fan-troubleshooting-guide</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/motor-test-bench.webp</image:loc>
+      <image:title>Exhaust fan troubleshooting guide - motor test bench</image:title>
+    </image:image>
+  </url>
 </urlset>
