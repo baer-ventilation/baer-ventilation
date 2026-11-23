@@ -1013,4 +1013,14 @@
       <image:title>Exhaust fan IP rating guide - housing components</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://baer-ventilation.com/exhaust-fan-motor-efficiency-ie-classes</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/winding-station.webp</image:loc>
+      <image:title>IE motor efficiency classes guide - motor winding station</image:title>
+    </image:image>
+  </url>
 </urlset>
