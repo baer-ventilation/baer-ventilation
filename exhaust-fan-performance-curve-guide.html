@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date()); gtag('config', 'G-0Y7GNF2D0H');
+</script>
+<title>Fan Performance Curve Guide: Read P-Q Curves & Duty Points</title>
+<meta name="description" content="Learn how to read a fan performance curve: airflow, static pressure, duty point and system resistance, with worked examples and BAER BXF rated values.">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://baer-ventilation.com/exhaust-fan-performance-curve-guide">
+<link rel="alternate" hreflang="en" href="https://baer-ventilation.com/exhaust-fan-performance-curve-guide">
+<link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/exhaust-fan-performance-curve-guide">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BAER Ventilation">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Fan Performance Curve Guide: Read P-Q Curves & Duty Points">
+<meta property="og:description" content="Learn how to read a fan performance curve: airflow, static pressure, duty point and system resistance, with worked examples and BAER BXF rated values.">
+<meta property="og:url" content="https://baer-ventilation.com/exhaust-fan-performance-curve-guide">
+<meta property="og:image" content="https://baer-ventilation.com/images/motor-test-bench.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="900">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fan Performance Curve Guide: Read P-Q Curves & Duty Points">
+<meta name="twitter:description" content="Learn how to read a fan performance curve: airflow, static pressure, duty point and system resistance, with worked examples and BAER BXF rated values.">
+<meta name="twitter:image" content="https://baer-ventilation.com/images/motor-test-bench.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Fan Performance Curve Guide: Read P-Q Curves & Duty Points","description":"Learn how to read a fan performance curve: airflow, static pressure, duty point and system resistance, with worked examples and BAER BXF rated values.","url":"https://baer-ventilation.com/exhaust-fan-performance-curve-guide","about":{"@type":"Organization","@id":"https://baer-ventilation.com/#organization","name":"BAER Ventilation","legalName":"Zhejiang Baer Electrical Technology Co.,ltd","url":"https://baer-ventilation.com/"},"inLanguage":"en","dateModified":"2026-11-23"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does a fan performance curve actually show?","acceptedAnswer":{"@type":"Answer","text":"It plots the airflow a fan delivers against the static pressure it can overcome at a given speed. Read it right to left: at zero pressure the fan moves its maximum airflow (free delivery), and at zero airflow it develops its maximum pressure (shut-off). Your fan will run somewhere on the line between those two ends, never at either extreme in a real installation."}},{"@type":"Question","name":"Why is the airflow in the catalogue higher than what I measure on site?","acceptedAnswer":{"@type":"Answer","text":"Because catalogue airflow is measured with free inlet and free outlet. Once you connect ductwork, filters, grilles or a long run, the system resists airflow and the fan slides up its curve: pressure rises and airflow falls. If the catalogue says 620 m³/h and you measure less, the duct system — not the motor — is usually the reason."}},{"@type":"Question","name":"Can I read the maximum airflow and maximum pressure as one duty point?","acceptedAnswer":{"@type":"Answer","text":"No. They are two different ends of the same curve. A catalogue that lists 620 m³/h and 300 Pa side by side is giving you the free-delivery airflow and the shut-off pressure, not a point where both happen together. Ask the supplier for the curve or a stated duty point with both figures at the same operating condition."}},{"@type":"Question","name":"What is system resistance and why does it matter?","acceptedAnswer":{"@type":"Answer","text":"It is the pressure your ducts, bends, filters and grilles lose at a given airflow. Resistance rises roughly with the square of airflow: double the air and the loss is about four times higher. The fan can only deliver where its own curve meets the system curve, which is why the same fan performs differently in two installations."}},{"@type":"Question","name":"Do I need a curve for every model I buy?","acceptedAnswer":{"@type":"Answer","text":"For a standard wall or window fan on a short duct run, a rated airflow figure is usually enough. For a ducted inline fan, a long run, a filter, a significant height change or any project with a specified duty point, request the model-specific curve. Keep it in the submittal pack with the test standard and the voltage used."}},{"@type":"Question","name":"How do I check a supplier's curve is trustworthy?","acceptedAnswer":{"@type":"Answer","text":"Ask which test standard was used, which model and voltage were tested, and whether the report is from an accredited lab. Compare the shut-off pressure and free-delivery airflow with the catalogue. Be cautious of a curve with no test reference or one that shows identical performance across different motor ratings."}}]}</script>
+<style>
+  .hero { background: linear-gradient(135deg,#0f1f3d 0%,#1a3a6b 100%); color:#fff; padding:80px 20px 60px; text-align:center; }
+  .hero h1 { font-size:clamp(22px,3.5vw,38px); font-weight:800; margin:0 0 16px; max-width:840px; margin-left:auto; margin-right:auto; }
+  .hero p { color:#CBD5E1; font-size:15px; max-width:700px; margin:0 auto; }
+  .body { max-width:820px; margin:0 auto; padding:60px 20px 80px; }
+  .body h2 { font-size:22px; font-weight:800; color:#1E293B; margin:48px 0 16px; border-left:4px solid #C0392B; padding-left:14px; }
+  .body p, .body li { color:#475569; font-size:15px; line-height:1.85; }
+  .body ul,.body ol { padding-left:22px; }
+  .body h3 { font-size:17px; color:#1E293B; margin:26px 0 8px; }
+  .compare-table { width:100%; border-collapse:collapse; margin:24px 0; font-size:14px; }
+  .compare-table th { background:#0f1f3d; color:#fff; text-align:left; padding:10px 12px; }
+  .compare-table td { padding:9px 12px; border-bottom:1px solid #E2E8F0; color:#475569; vertical-align:top; }
+  .table-scroll { overflow-x:auto; }
+  .cta-box { background:#F8FAFC; border:1px solid #E2E8F0; border-radius:10px; padding:22px; margin:28px 0; }
+  .cta-box h3 { margin:0 0 8px; color:#1E293B; }
+  .cta-box p { margin:0 0 14px; }
+  .btn-red { display:inline-block; background:#C0392B; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:700; }
+  .baer-breadcrumb ol { list-style:none; display:flex; gap:8px; padding:0; margin:0 0 18px; font-size:13px; color:#94A3B8; justify-content:center; flex-wrap:wrap; }
+  .baer-breadcrumb a { color:#CBD5E1; text-decoration:none; }
+  .bv-topbar { background:#0a1730; padding:7px 20px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  .bv-topbar a { color:#e8eaee; text-decoration:none; }
+  .bv-topbar .bv-mail,.bv-topbar .bv-tel { color:#c2c8d2; }
+  .bv-wa-btn { display:inline-flex; align-items:center; gap:6px; background:#25D366; color:#fff !important; padding:5px 14px; border-radius:18px; font-weight:600; }
+  @media (max-width:640px){.bv-topbar .bv-mail,.bv-topbar .bv-tel{display:none;}.bv-topbar-in{justify-content:center;padding:6px 12px;}}
+</style>
+</head>
+<body>
+<div class="bv-topbar"><div class="bv-topbar-in">
+  <a class="bv-mail" href="mailto:sunny@zjbaer.com">sunny@zjbaer.com</a>
+  <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+    <span class="bv-tel">WhatsApp/WeChat: +86 136 5585 9122</span>
+    <a class="bv-wa-btn" href="https://wa.me/8613655859122?text=Hello%20BAER%2C%20please%20send%20the%20P-Q%20curve%20for%20model%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="15" height="15"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.5A9.9 9.9 0 1 0 12.04 2Z"/></svg><span>WhatsApp</span></a>
+  </div></div></div>
+<header class="site-header"><div class="container" style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;">
+  <a href="/" style="font-size:22px;font-weight:900;color:#C0392B;text-decoration:none;">BAER<span style="color:#1E293B;font-weight:400;font-size:14px;margin-left:6px;">VENTILATION</span></a>
+  <nav style="display:flex;gap:24px;font-size:14px;font-weight:600;">
+    <a href="/" style="color:#1E293B;text-decoration:none;">Home</a>
+    <a href="/products/" style="color:#1E293B;text-decoration:none;">Products</a>
+    <a href="/resources" style="color:#1E293B;text-decoration:none;">Resources</a>
+    <a href="/#inquiry" style="background:#C0392B;color:#fff;padding:8px 18px;border-radius:5px;text-decoration:none;">Get Quote</a>
+  </nav></div></header>
+<div class="hero">
+  <nav class="baer-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">/</li><li><a href="/resources">Resources</a></li><li class="sep" aria-hidden="true">/</li><li aria-current="page">Fan Performance Curve Guide</li></ol></nav>
+<h1>How to Read a Fan Performance Curve (P-Q Curve Guide)</h1>
+<p class="hero-fact" style="color:#ffffff;font-size:15px;line-height:1.7;max-width:740px;margin:14px auto 0;">BAER (Zhejiang Baer Electrical Technology Co.,ltd) — factory-direct exhaust and inline duct fans — explains how to read a fan performance curve and choose a real duty point before you order.</p>
+<p>Airflow in a catalogue is not airflow in your building. This guide explains the P-Q curve, the system curve and the duty point in plain terms, using BAER BXF rated values as worked examples.</p>
+<p style="font-size:13px;color:#CBD5E1;margin:10px 0 0;">Last updated: November 23, 2026</p>
+</div>
+<div class="body">
+<p>A fan performance curve is the single most useful document in a ventilation specification, and the one most often ignored. A buyer compares two fans by the airflow number in a catalogue, installs the one with the bigger figure, and finds that the room never reaches the expected air changes. The curve explains why: a fan does not deliver one fixed volume of air. It delivers a volume that depends on how hard the duct system pushes back.</p>
+<p>This guide is written for distributors, contractors and project buyers who need to read a curve without an engineering degree. It uses the published BXF inline duct fan values from BAER as examples and states clearly where an illustration is schematic rather than measured. By the end you should be able to ask a supplier for the right document and check whether the answer makes sense.</p>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/motor-test-bench.webp" alt="Motor and fan test bench used to measure fan performance" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Performance data starts on a test bench — ask which standard and which model was tested</figcaption>
+</figure>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/baer-fan-types-shelf.webp" alt="Range of exhaust fan families on display" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Different fan families have different curve shapes — the family matters as much as the size</figcaption>
+</figure>
+<h2 id="what-is">What a fan performance curve shows</h2>
+<p>A performance curve — often called a P-Q curve, where P is pressure and Q is flow — is a graph of airflow against static pressure at one fan speed. The horizontal axis is airflow, usually in m³/h or CFM. The vertical axis is static pressure, usually in pascals (Pa) or inches of water gauge. The line itself is the promise the fan makes: at every pressure on the vertical axis, it will move the corresponding airflow on the horizontal axis.</p>
+<p>Read the line from left to right. At the far left, airflow is zero and the fan develops its highest pressure; this is the shut-off point, where the fan would spin against a fully blocked outlet. At the far right, pressure is zero and airflow is at its maximum; this is free delivery, the condition of a fan blowing through an open wall with no duct attached. Neither end is a useful operating condition. A real fan always runs somewhere on the curve between them.</p>
+<p>That is the first thing to take away: a fan has a range of performance, not a single number. The number printed in big type on a catalogue page is almost always the free-delivery airflow, measured under the easiest possible conditions. Your installation will never be that easy.</p>
+<div style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:10px;padding:18px;margin:24px 0;text-align:center;">
+<svg viewBox="0 0 640 360" width="100%" style="max-width:620px;height:auto;" role="img" aria-label="Schematic fan P-Q curve showing airflow on horizontal axis and static pressure on vertical axis">
+  <line x1="80" y1="300" x2="600" y2="300" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="80" y1="300" x2="80" y2="40" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="340" y="330" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;">Airflow (m³/h) →</text>
+  <text x="26" y="170" text-anchor="middle" transform="rotate(-90 26 170)" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;">Static pressure (Pa) →</text>
+  <path d="M 90 70 C 200 82, 320 150, 560 292" fill="none" stroke="#C0392B" stroke-width="3"/>
+  <circle cx="90" cy="70" r="5" fill="#C0392B"/>
+  <text x="100" y="62" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;">shut-off: max pressure, zero flow</text>
+  <circle cx="560" cy="292" r="5" fill="#C0392B"/>
+  <text x="430" y="278" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;">free delivery: max flow, ~0 Pa</text>
+  <circle cx="330" cy="158" r="6" fill="#0f1f3d"/>
+  <line x1="330" y1="158" x2="330" y2="300" stroke="#0f1f3d" stroke-dasharray="4 3"/>
+  <line x1="80" y1="158" x2="330" y2="158" stroke="#0f1f3d" stroke-dasharray="4 3"/>
+  <text x="338" y="152" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;;font-weight:bold;">duty point</text>
+  <text x="336" y="316" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;">Qd</text>
+  <text x="58" y="162" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;">Pd</text>
+  <text x="320" y="348" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;;fill:#94A3B8;">Schematic only — not measured BAER test data</text>
+</svg>
+<p style="font-size:12.5px;color:#64748b;margin:6px 0 0;">Fig. 1 — The shape of a fan curve. The red line is a typical axial/mixed-flow characteristic; the exact shape differs by model and speed.</p>
+</div>
+<h2 id="axes">The two axes, and why they move together</h2>
+<p>Airflow and pressure are not independent. As resistance rises, airflow falls. As resistance falls, airflow rises. The fan cannot be made to deliver its free-delivery volume into a long duct simply by buying a stronger motor — the aerodynamic shape of the impeller sets the relationship, and the curve is the picture of that relationship.</p>
+<p>Static pressure is the resistance the fan must overcome: duct friction, elbows, filters, grilles, dampers and height differences. It is called static because it is the pressure in the system, not the velocity pressure of the moving air. When a supplier asks for the static pressure of your project, they are asking how hard the fan has to push before any air moves through the outlet.</p>
+<p>One practical unit note. European and Asian catalogues use pascals; North American catalogues often use inches of water gauge (in. w.g.). Roughly 250 Pa equals 1 in. w.g. Mixing the two without converting is a common cause of a fan that is badly oversized or undersized. State the unit on every RFQ.</p>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/inline-impellers.webp" alt="Mixed-flow impellers — blade geometry sets the curve shape" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Blade shape and motor speed determine the curve; duct length determines where you land on it</figcaption>
+</figure>
+<h2 id="duty-point">Finding the duty point</h2>
+<p>The duty point is the place where the fan actually operates in your system. It is not chosen by the supplier and it is not printed on the fan. It is found by drawing a second line on the same graph: the system resistance curve.</p>
+<p>System resistance rises with airflow, roughly in proportion to the square of the flow. At zero airflow, resistance is zero; as you push more air through the same duct, the pressure loss climbs steeply. Plot that rising curve on the fan graph and the two lines cross. That crossing is the duty point — the only airflow and pressure pair at which the fan and the duct agree.</p>
+<p>Move the crossing by changing the system, not the fan. A shorter duct, a larger diameter, fewer elbows and a clean filter all lower the system curve, moving the duty point to the right: more airflow, less pressure. A long run, a fine filter or a closed damper raise it, moving the point left: less airflow, more pressure. This is why the same fan can give completely different results in two buildings.</p>
+<div style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:10px;padding:18px;margin:24px 0;text-align:center;">
+<svg viewBox="0 0 640 360" width="100%" style="max-width:620px;height:auto;" role="img" aria-label="Schematic showing fan curve and system resistance curve crossing at the operating point">
+  <line x1="80" y1="300" x2="600" y2="300" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="80" y1="300" x2="80" y2="40" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="340" y="330" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;">Airflow (m³/h) →</text>
+  <text x="26" y="170" text-anchor="middle" transform="rotate(-90 26 170)" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;">Static pressure (Pa) →</text>
+  <path d="M 90 70 C 210 95, 360 175, 560 292" fill="none" stroke="#C0392B" stroke-width="3"/>
+  <path d="M 80 296 Q 300 288, 560 92" fill="none" stroke="#2563EB" stroke-width="3"/>
+  <circle cx="390" cy="188" r="7" fill="#0f1f3d"/>
+  <text x="402" y="182" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;;font-weight:bold;">operating point</text>
+  <text x="500" y="120" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;;fill:#2563EB;">system resistance</text>
+  <text x="170" y="120" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;;fill:#C0392B;">fan curve</text>
+  <text x="320" y="348" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;fill:#475569;;fill:#94A3B8;">Schematic only — not measured BAER test data</text>
+</svg>
+<p style="font-size:12.5px;color:#64748b;margin:6px 0 0;">Fig. 2 — The fan delivers where its curve crosses the system curve. Less duct resistance moves the point right and down (more airflow); more resistance moves it left and up.</p>
+</div>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/baer-inline-fan-cutaway.webp" alt="Cutaway of an inline mixed-flow fan housing" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">A mixed-flow impeller holds pressure better than a simple axial fan as the duct gets longer</figcaption>
+</figure>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/assembly-bench-worker.webp" alt="Worker assembling fans on the BAER production line" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">A stated duty point should be traceable to the model built on this line</figcaption>
+</figure>
+<h2 id="rated-values">What BAER rated values mean — and what they do not</h2>
+<p>The table below is copied from the published BXF inline duct fan specification. It gives six models with rated airflow, maximum static pressure, speed, power and noise at 220–240 V / 50 Hz.</p>
+<div class="table-scroll">
+<table class="compare-table">
+<thead><tr><th>Model</th><th>Duct size</th><th>Airflow (m³/h)</th><th>Airflow (CFM)</th><th>Max static pressure (Pa)</th><th>Power (W)</th><th>Noise dB(A)</th></tr></thead>
+<tbody>
+<tr><td>BXF-100</td><td>Φ100 mm</td><td>290</td><td>171</td><td>150</td><td>48</td><td>28–31</td></tr>
+<tr><td>BXF-125</td><td>Φ125 mm</td><td>420</td><td>247</td><td>180</td><td>50</td><td>28–31</td></tr>
+<tr><td>BXF-150</td><td>Φ150 mm</td><td>620</td><td>365</td><td>300</td><td>60</td><td>28–32</td></tr>
+<tr><td>BXF-200</td><td>Φ200 mm</td><td>1,200</td><td>706</td><td>380</td><td>120</td><td>45–50</td></tr>
+<tr><td>BXF-250</td><td>Φ250 mm</td><td>1,800</td><td>1,060</td><td>488</td><td>200</td><td>54–60</td></tr>
+<tr><td>BXF-315</td><td>Φ315 mm</td><td>2,200</td><td>1,295</td><td>693</td><td>330</td><td>60–70</td></tr>
+</tbody>
+</table>
+</div>
+<p><b>Read this carefully:</b> the airflow column and the static pressure column are not one operating point. The airflow figure is the free-delivery value with free inlet and free outlet; the pressure figure is the maximum the model can develop at shut-off. A BXF-150 does not deliver 620 m³/h against 300 Pa. It delivers 620 m³/h at approximately zero pressure, or 300 Pa at approximately zero airflow, somewhere in between depending on your duct. If a supplier quotes a duty point, both figures must be stated for the same condition.</p>
+<p>These are rated catalogue values, not a P-Q test report. BAER supplies model-specific curves on request together with the test standard used. The schematic drawings on this page illustrate how to read a curve; they are not measured BAER data and must not be used for selection. Ask for the real curve before you approve a project submittal.</p>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/baer-inline-duct-fan-shelf.webp" alt="BXF inline duct fan range on the shelf" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Six duct sizes from 100 to 315 mm — pick from the curve, not from the biggest catalogue number</figcaption>
+</figure>
+<h2 id="worked">Two worked selection examples</h2>
+<h3>Example 1 — a short bathroom duct</h3>
+<p>A bathroom needs 85 m³/h. The fan discharges through 1.5 m of Φ100 mm flexible duct and one grille, with no filter. System resistance at that flow is modest, in the region of 30–50 Pa. A BXF-100 is rated to 290 m³/h free delivery and up to 150 Pa shut-off, so both the flow and the pressure capability sit well above the requirement. The fan will operate near the low-pressure end of its curve and will comfortably meet the target. Sizing from the free-delivery number alone would also point to BXF-100, so here the simple method happens to agree.</p>
+<h3>Example 2 — a long kitchen duct with a filter</h3>
+<p>A small commercial kitchen needs 700 m³/h through 9 m of Φ200 mm duct, four elbows, a grease filter and an external grille. Resistance at that airflow can easily exceed 250 Pa. A BXF-200 is rated 1,200 m³/h free delivery and up to 380 Pa at shut-off. Reading only the airflow column suggests it is twice what is needed. Reading the curve tells a different story: at 250 Pa the delivered airflow may be far below 700 m³/h, because a large part of the pressure capability has been consumed by the duct. The correct move is to reduce resistance — larger duct, fewer bends, cleaner filter — or step up to BXF-250, not to assume that 1,200 m³/h will arrive at the grille.</p>
+<p>Both examples use the rated values above to show the reasoning. Neither is a substitute for a model-specific curve. Once you know the required airflow and an estimate of system pressure, the <a href="/cfm-calculator" style="color:#C0392B;font-weight:700;">CFM calculator</a> helps derive the airflow, and our <a href="/exhaust-fan-airflow-calculation-guide" style="color:#C0392B;font-weight:700;">airflow calculation guide</a> works through the room-volume and duct methods in detail.</p>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/inline-fan-controller.webp" alt="Inline fan controller — speed control moves the operating point" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Changing speed changes the curve itself, which is why a speed controller is not the same as a bigger fan</figcaption>
+</figure>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/baer-ceiling-fan-duct-rear.webp" alt="Rear view of a ceiling exhaust fan and duct connection" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">The duct connection is where catalogue airflow stops and system resistance begins</figcaption>
+</figure>
+<h2 id="mistakes">Four mistakes when reading a curve</h2>
+<h3>1. Treating free-delivery airflow as installed airflow</h3>
+<p>This is the most common error. The headline number assumes no duct. If your system has a duct, a filter or a grille, the actual airflow will be lower. Ask for the value at your expected static pressure, not at zero.</p>
+<h3>2. Adding the pressure values of two fans in series</h3>
+<p>Two fans in the same duct do not simply double the pressure unless they are matched and spaced correctly. Poorly arranged fans can fight each other. Use the combined curve supplied for the arrangement rather than adding numbers yourself.</p>
+<h3>3. Ignoring fan speed</h3>
+<p>A curve is valid for one speed. Reduce speed with a controller and the whole curve moves down; airflow falls roughly in proportion to speed, and pressure falls roughly with the square. A 110 V / 60 Hz version will also behave differently from the 220 V / 50 Hz rating in the catalogue.</p>
+<h3>4. Assuming a bigger impeller always solves a pressure problem</h3>
+<p>A larger fan at the same speed may give more airflow but not necessarily more pressure. Mixed-flow and centrifugal designs hold pressure better than a simple axial fan as resistance rises. For a long duct, the fan family matters as much as the diameter — see the <a href="/inline-duct-fans" style="color:#C0392B;font-weight:700;">inline duct fan guide</a> for the comparison.</p>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/baer-hi-pot-test.webp" alt="Electrical safety testing at the BAER factory" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">A performance curve and an electrical safety report are two different documents — request both</figcaption>
+</figure>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/inline-impellers.webp" alt="Mixed-flow impeller detail" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Ask which impeller and motor combination produced the curve you were sent</figcaption>
+</figure>
+<h2 id="request">How to ask a supplier for a curve</h2>
+<p>A precise request gets a precise answer. State the model code, the voltage and frequency, the required airflow, your estimated static pressure, and the duct diameter and length. Ask for the curve with the test standard, the test laboratory and the date. If the supplier answers with a catalogue page instead, repeat the request in writing and keep it in the RFQ record.</p>
+<p>Check the reply against three things: whether the shut-off pressure and free-delivery airflow match the catalogue, whether the tested voltage matches your market, and whether the document is for the exact model rather than a family representative. A curve that shows identical performance for models with different motor ratings is a warning sign. If you are comparing factories, our <a href="/exhaust-fan-supplier-audit-checklist" style="color:#C0392B;font-weight:700;">30-point supplier audit checklist</a> includes the document checks that go with a performance claim.</p>
+<p>At BAER, a request for a model-specific curve goes to the technical team with your duty point. We return the curve, the test reference and a recommended model in one reply so you can compare like with like. Send the same information through the <a href="/exhaust-fan-rfq-template" style="color:#C0392B;font-weight:700;">20-item RFQ template</a> if you prefer a structured format.</p>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/fan-size-lineup.webp" alt="Range of fan sizes — airflow and pressure must be read together" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Select on airflow and pressure together, not on diameter alone</figcaption>
+</figure>
+<figure style="margin:26px 0;text-align:center;">
+    <img src="/images/panel-fan-assembly-line.webp" alt="Panel exhaust fan assembly line" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+    <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">A curve is only useful when the delivered fan matches the model that was tested</figcaption>
+</figure>
+<h2 id="faq">Frequently asked questions</h2>
+<h3>What does a fan performance curve actually show?</h3>
+<p>It plots the airflow a fan delivers against the static pressure it can overcome at a given speed. Read it right to left: at zero pressure the fan moves its maximum airflow (free delivery), and at zero airflow it develops its maximum pressure (shut-off). Your fan will run somewhere on the line between those two ends, never at either extreme in a real installation.</p>
+<h3>Why is the airflow in the catalogue higher than what I measure on site?</h3>
+<p>Because catalogue airflow is measured with free inlet and free outlet. Once you connect ductwork, filters, grilles or a long run, the system resists airflow and the fan slides up its curve: pressure rises and airflow falls. If the catalogue says 620 m³/h and you measure less, the duct system — not the motor — is usually the reason.</p>
+<h3>Can I read the maximum airflow and maximum pressure as one duty point?</h3>
+<p>No. They are two different ends of the same curve. A catalogue that lists 620 m³/h and 300 Pa side by side is giving you the free-delivery airflow and the shut-off pressure, not a point where both happen together. Ask the supplier for the curve or a stated duty point with both figures at the same operating condition.</p>
+<h3>What is system resistance and why does it matter?</h3>
+<p>It is the pressure your ducts, bends, filters and grilles lose at a given airflow. Resistance rises roughly with the square of airflow: double the air and the loss is about four times higher. The fan can only deliver where its own curve meets the system curve, which is why the same fan performs differently in two installations.</p>
+<h3>Do I need a curve for every model I buy?</h3>
+<p>For a standard wall or window fan on a short duct run, a rated airflow figure is usually enough. For a ducted inline fan, a long run, a filter, a significant height change or any project with a specified duty point, request the model-specific curve. Keep it in the submittal pack with the test standard and the voltage used.</p>
+<h3>How do I check a supplier's curve is trustworthy?</h3>
+<p>Ask which test standard was used, which model and voltage were tested, and whether the report is from an accredited lab. Compare the shut-off pressure and free-delivery airflow with the catalogue. Be cautious of a curve with no test reference or one that shows identical performance across different motor ratings.</p>
+<h2 id="related">Related guides</h2>
+<ul>
+<li><a href="/exhaust-fan-airflow-calculation-guide" style="color:#C0392B;font-weight:700;">How to Calculate Exhaust Fan Airflow (CFM and m³/h)</a></li>
+<li><a href="/cfm-calculator" style="color:#C0392B;font-weight:700;">Exhaust Fan CFM Calculator</a></li>
+<li><a href="/inline-duct-fans" style="color:#C0392B;font-weight:700;">Inline Duct Fans: The Complete Guide</a></li>
+<li><a href="/product-inline-duct-fan" style="color:#C0392B;font-weight:700;">BAER BXF Inline Duct Fan Specifications</a></li>
+<li><a href="/exhaust-fans" style="color:#C0392B;font-weight:700;">Exhaust Fans: The Complete Buyer’s Guide</a></li>
+<li><a href="/exhaust-fan-sizes-guide" style="color:#C0392B;font-weight:700;">Exhaust Fan Sizes Guide</a></li>
+<li><a href="/exhaust-fan-supplier-audit-checklist" style="color:#C0392B;font-weight:700;">Exhaust Fan Supplier Audit Checklist: 30 Points</a></li>
+<li><a href="/contact" style="color:#C0392B;font-weight:700;">Request the Curve for Your Model</a></li>
+</ul>
+<div class="cta-box">
+  <h3>Need the curve for a specific model?</h3>
+  <p>Send the model code, airflow, estimated pressure and duct details. We return the curve and test reference with the quotation.</p>
+  <a href="/#inquiry" class="btn-red">Request Performance Data</a>
+</div>
+</div>
+<footer style="background:#0f1f3d;color:#94A3B8;text-align:center;padding:32px 20px;font-size:13px;">
+  <p style="margin:0;">© 2026 BAER Ventilation · <a href="/" style="color:#C0392B;text-decoration:none;">baer-ventilation.com</a>
+      · <a href="https://www.youtube.com/@BAERVentilation" target="_blank" rel="noopener" style="color:#E21E26;text-decoration:none;">YouTube</a> · <a href="https://www.linkedin.com/company/baer-ventilation" target="_blank" rel="noopener" style="color:#E21E26;text-decoration:none;">LinkedIn</a></p>
+  <p style="margin:14px 0 0;font-size:12px;opacity:.85;"><a href="/privacy/" style="color:inherit;text-decoration:underline;">Privacy Policy</a> &middot; <a href="/privacy/#cookies" style="color:inherit;text-decoration:underline;">Cookie Notice</a> &middot; <a href="/verify/" style="color:inherit;text-decoration:underline;">Verify Our Company</a></p>
+</footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+function _baerGtagCtx(){ return { page_path: window.location.pathname, page_title: document.title }; }
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  var ctx = _baerGtagCtx();
+  ctx.link_text = (t.textContent || '').trim().slice(0, 120); ctx.link_url = href;
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event', 'whatsapp_click', ctx); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event', 'email_click', ctx); }
+  else if (/\.pdf(\?|$)/i.test(href)) { ctx.file_name = href.split('/').pop().split('?')[0]; gtag('event', 'catalog_download', ctx); }
+  else if (href.indexOf('tel:') === 0) { gtag('event', 'phone_click', ctx); }
+});
+</script>
+<script src="/js/reveal.js?v=1" defer></script></body>
+</html>
