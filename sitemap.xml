@@ -1033,4 +1033,15 @@
       <image:title>Exhaust fan troubleshooting guide - motor test bench</image:title>
     </image:image>
   </url>
+<!-- GB29539-LINK:sitemap -->
+  <url>
+    <loc>https://baer-ventilation.com/gb-29539-2025-ventilating-fan-energy-efficiency</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://baer-ventilation.com/images/winding-station.webp</image:loc>
+      <image:title>GB 29539-2025 energy efficiency guide - motor winding station</image:title>
+    </image:image>
+  </url>
 </urlset>
