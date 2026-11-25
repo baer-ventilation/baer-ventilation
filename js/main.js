@@ -477,19 +477,19 @@
 
             desc:  'Complete bathroom exhaust fan range covering ceiling, wall, and window-mounted configurations. CE certified, designed specifically for Middle East and European export markets.',
 
-            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['Moisture Protection','Moisture-resistant housing'],['Certification','CE, RoHS'],['MOQ','500 pcs']] },
+            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['Moisture Protection','Moisture-resistant housing'],['Certification','CE, RoHS'],['MOQ','100 pcs']] },
 
       ar: { title: 'سلسلة حمامات التصدير الاحترافية',
 
             desc:  'مجموعة كاملة من مراوح شفط الحمامات تشمل التركيب في السقف والجدار والنافذة. معتمدة CE، مصممة خصيصاً لأسواق التصدير في الشرق الأوسط وأوروبا.',
 
-            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['Moisture Protection','هيكل مقاوم للرطوبة'],['Certification','CE, RoHS'],['MOQ','500 قطعة']] },
+            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['Moisture Protection','هيكل مقاوم للرطوبة'],['Certification','CE, RoHS'],['MOQ','100 قطعة']] },
 
       zh: { title: '出口专业卫浴系列',
 
             desc:  '完整卫浴换气扇系列，涵盖吸顶、壁装和窗装款式。CE认证，专为中东及欧洲出口市场设计。',
 
-            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['Moisture Protection','防潮机身'],['Certification','CE, RoHS'],['MOQ','500件起订']] }
+            specs: [['Airflow','50~220 m³/h'],['Noise','≤28 dB(A)'],['Moisture Protection','防潮机身'],['Certification','CE, RoHS'],['MOQ','100件起订']] }
 
     },
 
@@ -746,7 +746,7 @@
 
       'cert-tag': 'CERTIFIED & COMPLIANT', 'cert-title': 'International Quality Certifications',
 
-      'cert-desc': 'Every BAER product is tested and certified to meet global safety and performance standards.',
+      'cert-desc': 'Certifications cover specific models and voltages; test reports are provided per order.',
 
       'cert-ce': 'EU Market Access', 'cert-3c': 'China Compulsory Cert.', 'cert-iso': 'Quality Management',
 
@@ -770,9 +770,9 @@
 
       'why-tag': 'WHY BAER', 'why-title': 'Why Global Buyers Choose Us',
 
-      'why-1h': 'Factory Direct', 'why-1d': '50,000m² own factory in Zhejiang. No middlemen — direct pricing means 15–30% lower cost vs trading companies.',
+      'why-1h': 'Factory Direct', 'why-1d': '50,000m² own factory in Zhejiang. No middlemen — factory-direct pricing, quoted per order.',
 
-      'why-2h': 'OEM / ODM Capability', 'why-2d': 'Custom logo, color, voltage, blade design, and packaging. MOQ from 500 pcs. Full private-label solutions available.',
+      'why-2h': 'OEM / ODM Capability', 'why-2d': 'Custom logo, color, voltage, blade design, and packaging. MOQ 100 pcs. Full private-label solutions available.',
 
       'why-3h': 'Fast Lead Time', 'why-3d': 'Sample in 7 days. Mass production in 25–35 days. In-stock models ship within 3 days.',
 
@@ -794,7 +794,7 @@
 
       'faq-tag': 'BUYER FAQ', 'faq-title': 'Frequently Asked Questions',
 
-      'faq-q1': 'What is the minimum order quantity (MOQ)?', 'faq-a1': 'Standard stock models: MOQ 100 pcs. OEM/custom models: MOQ 500 pcs. Flexible for first orders.',
+      'faq-q1': 'What is the minimum order quantity (MOQ)?', 'faq-a1': 'MOQ 100 pcs per model for both stock and OEM/custom. Flexible for first orders.',
 
       'faq-q2': 'Do you provide CE and RoHS certificates?', 'faq-a2': 'Yes. All standard models carry CE and RoHS certification. Test reports provided with every shipment.',
 
@@ -856,7 +856,7 @@
 
       'cert-tag': 'معتمد ومتوافق', 'cert-title': 'شهادات الجودة الدولية',
 
-      'cert-desc': 'كل منتج BAER يخضع للاختبار والاعتماد وفق أعلى معايير السلامة العالمية.',
+      'cert-desc': 'تغطي الشهادات طرازات وجهوداً محددة، وتُقدّم تقارير الاختبار مع كل طلب.',
 
       'cert-ce': 'دخول السوق الأوروبي', 'cert-3c': 'شهادة إلزامية صينية', 'cert-iso': 'إدارة الجودة',
 
@@ -880,9 +880,9 @@
 
       'why-tag': 'لماذا BAER', 'why-title': 'لماذا يختارنا المشترون العالميون',
 
-      'why-1h': 'مباشر من المصنع', 'why-1d': 'مصنع خاص 50,000م² في زيجيانغ. بدون وسطاء — أسعار أقل بنسبة 15–30% مقارنة بشركات التجارة.',
+      'why-1h': 'مباشر من المصنع', 'why-1d': 'مصنع خاص 50,000م² في زيجيانغ. بدون وسطاء — تسعير مباشر من المصنع، مع عرض سعر حسب الطلب.',
 
-      'why-2h': 'قدرة OEM / ODM', 'why-2d': 'شعار مخصص، ألوان، جهد، تصميم شفرة، وتغليف. الحد الأدنى للطلب 500 قطعة.',
+      'why-2h': 'قدرة OEM / ODM', 'why-2d': 'شعار مخصص، ألوان، جهد، تصميم شفرة، وتغليف. الحد الأدنى 100 قطعة.',
 
       'why-3h': 'وقت تسليم سريع', 'why-3d': 'عينة في 7 أيام. إنتاج ضخم في 25–35 يوماً. النماذج الجاهزة ترسل خلال 3 أيام.',
 
@@ -904,7 +904,7 @@
 
       'faq-tag': 'أسئلة المشترين', 'faq-title': 'الأسئلة الشائعة',
 
-      'faq-q1': 'ما هو الحد الأدنى لكمية الطلب؟', 'faq-a1': 'النماذج القياسية المتوفرة: 100 قطعة. نماذج OEM المخصصة: 500 قطعة. مرونة في الطلبات الأولى.',
+      'faq-q1': 'ما هو الحد الأدنى لكمية الطلب؟', 'faq-a1': 'MOQ 100 قطعة لكل طراز للنماذج القياسية وOEM. مرونة في الطلبات الأولى.',
 
       'faq-q2': 'هل تقدمون شهادات CE و RoHS؟', 'faq-a2': 'نعم. جميع النماذج القياسية معتمدة CE و RoHS. تقارير الاختبار مرفقة مع كل شحنة.',
 
@@ -966,7 +966,7 @@
 
       'cert-tag': '认证与合规', 'cert-title': '国际质量认证',
 
-      'cert-desc': '每款 BAER 产品均经过测试和认证，符合全球安全与性能标准。',
+      'cert-desc': '认证覆盖具体型号与电压，测试报告按订单提供。',
 
       'cert-ce': 'EU市场准入', 'cert-3c': '中国强制性认证', 'cert-iso': '质量管理体系',
 
@@ -990,9 +990,9 @@
 
       'why-tag': '为什么选择 BAER', 'why-title': '全球买家为何选择我们',
 
-      'why-1h': '工厂直供', 'why-1d': '浙江自有工厂50,000m²，无中间商，比贸易公司价格低15–30%。',
+      'why-1h': '工厂直供', 'why-1d': '浙江自有工厂50,000m²，无中间商，工厂直供，按订单报价。',
 
-      'why-2h': 'OEM / ODM 能力', 'why-2d': '定制Logo、颜色、电压、叶轮设计和包装，起订量500件，支持全套贴牌服务。',
+      'why-2h': 'OEM / ODM 能力', 'why-2d': '定制Logo、颜色、电压、叶轮设计和包装，起订量100件，支持全套贴牌服务。',
 
       'why-3h': '交期保障', 'why-3d': '样品7天，批量生产25–35天，现货3天内发货，灵活应对季节性需求。',
 
@@ -1014,7 +1014,7 @@
 
       'faq-tag': '买家常见问题', 'faq-title': '常见问题解答',
 
-      'faq-q1': '最小起订量（MOQ）是多少？', 'faq-a1': '标准现货型号：100件起。OEM定制型号：500件起。首次合作和样品订单可灵活协商。',
+      'faq-q1': '最小起订量（MOQ）是多少？', 'faq-a1': 'MOQ 100件，现货与OEM定制均适用。首次合作和样品订单可灵活协商。',
 
       'faq-q2': '提供CE和RoHS认证吗？', 'faq-a2': '是的。所有标准型号均持有CE和RoHS认证，每批货随附检测报告和符合性声明。',
 

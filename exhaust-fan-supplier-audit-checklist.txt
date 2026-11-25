@@ -76,6 +76,6 @@ BAER VERIFIABLE DETAILS
   CCC: 2024010702612682 (CQC, valid to 2029-03-11)
   CE EMC: XH2601E0321945GC / report XH2601E0321945GR (XHIT)
   CB safety report: 60444427 001 (TUV Rheinland, LCIE originator)
-  MOQ: 100 pcs stock / 500 pcs OEM per model
+  MOQ: 100 pcs per model (stock and OEM)
 
 Send the completed scorecard to sunny@zjbaer.com with your RFQ.

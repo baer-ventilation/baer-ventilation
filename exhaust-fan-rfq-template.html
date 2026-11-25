@@ -161,7 +161,7 @@
 </figure>
 
 <h2 id="derive">How to derive airflow if you do not know it</h2>
-<p>You do not need a catalogued figure to write a useful RFQ. For a room, the simplest method is air changes per hour: multiply room length by width by height to get cubic metres, then multiply by the number of air changes your application needs. A small bathroom typically needs 8–10 air changes per hour; a commercial kitchen needs far more because it must remove heat and cooking vapour as well as odour. Divide the result by 60 to convert from hours to minutes, and you have a target airflow in m3/h.</p>
+<p>You do not need a catalogued figure to write a useful RFQ. For a room, the simplest method is air changes per hour: multiply room length by width by height to get cubic metres, then multiply by the number of air changes your application needs. A small bathroom typically needs 8–10 air changes per hour; a commercial kitchen needs far more because it must remove heat and cooking vapour as well as odour. In metric units that result is already an airflow in m3/h (cubic metres x ACH). If you measure the room in feet instead, multiply cubic feet by ACH and divide by 60 to get CFM.</p>
 <p>For a ducted system, the fan must also overcome resistance. Every metre of duct, every bend and every filter or grille reduces airflow. If your RFQ only states free-air airflow, the fan may deliver far less once installed. Either state the static pressure you expect, or give the duct diameter, total length and number of bends and ask the supplier to propose a duty point. A longer duct with several elbows usually needs a higher-pressure mixed-flow or centrifugal fan rather than a simple axial type.</p>
 <p>Both methods produce an estimate, and that is fine — the point of the RFQ is to start from a stated assumption that both sides can check. Mark the figure as "calculated, please confirm" so the factory knows to verify it rather than quote it as a fixed requirement. Our <a href="/exhaust-fan-airflow-calculation-guide" style="color:#C0392B;font-weight:700;">airflow calculation guide</a> works through the room-volume and duct methods with examples if you want the detail before sending your request.</p>
 
@@ -173,8 +173,8 @@
 <tbody>
 <tr><td>Company / destination</td><td>Al-... Trading Co., Jeddah, Saudi Arabia — port: Jeddah Islamic Port</td></tr>
 <tr><td>Quantity</td><td>800 pcs ceiling bathroom fan, 100 mm impeller</td></tr>
-<tr><td>Duty point</td><td>85 m3/h free air, 35 Pa static, below 42 dB(A) at 1 m</td></tr>
-<tr><td>Electrical</td><td>220–240 V / 50 Hz, ball-bearing motor, UK-style plug</td></tr>
+<tr><td>Duty point</td><td>85 m3/h at 0 Pa (free air); airflow at 35 Pa static to be confirmed from the performance curve; below 42 dB(A) at 1 m</td></tr>
+<tr><td>Electrical</td><td>220 V / 60 Hz (Saudi Arabia), ball-bearing motor; plug type to be confirmed with the customer</td></tr>
 <tr><td>Installation</td><td>Ceiling mount, ducted, automatic backdraft shutter</td></tr>
 <tr><td>Compliance</td><td>CE and CB test reports required with quotation; confirm SASO documentation route</td></tr>
 <tr><td>OEM</td><td>Customer logo on nameplate, neutral carton, 12-month warranty card</td></tr>
@@ -192,7 +192,7 @@
 <h2 id="oem">Extra items for an OEM or private-label RFQ</h2>
 <p>If the fans will carry your brand, add four lines to the standard checklist. First, the logo artwork and where it goes — on the housing, on the nameplate or only on the carton. Second, the nameplate content, including your model number, voltage, frequency, power and the country-of-origin mark required by your customs. Third, the packaging: neutral brown carton or a printed colour box, and whether a barcode or label is needed. Fourth, the plug and cable: the plug standard, cable length and any approval mark on the cord.</p>
 <p>These items do not change how the fan performs, but they change what leaves the factory and they are the most common source of a rejected shipment. State them in the RFQ even if your answer is "to be confirmed" — that way the supplier knows to send a mock-up before production rather than printing a guess. For branded programmes, ask for a pre-production sample of the nameplate and carton together with the fan sample.</p>
-<p>OEM orders carry a different minimum quantity from stock models because artwork and packaging are made for one buyer. At BAER the stock MOQ is 100 pcs per model and the OEM MOQ is 500 pcs per model, with different models allowed to share one container. State clearly in your RFQ whether you are asking for a stock fan with a neutral carton or a fully customised version — the two are quoted differently and mixing them in one line causes confusion.</p>
+<p>OEM orders carry a different minimum quantity from stock models because artwork and packaging are made for one buyer. At BAER the MOQ is 100 pcs per model for both stock and OEM, with different models allowed to share one container. State clearly in your RFQ whether you are asking for a stock fan with a neutral carton or a fully customised version — the two are quoted differently and mixing them in one line causes confusion.</p>
 
 <h2 id="mistakes">Five mistakes that slow an RFQ down</h2>
 <h3>1. Quoting by impeller size alone</h3>
@@ -214,7 +214,7 @@
 <h2 id="next">What happens after you send it</h2>
 <p>At BAER, a complete RFQ goes to the technical team first. If the duty point is clear, we return a proposed model with its performance data, the certification list and a factory-direct quotation. If a value is missing, we come back with a specific question — not a generic "please advise" — usually on the same working day.</p>
 <p>Samples are available before a container order. A sample lets you measure noise and airflow in the actual installation, which is the only reliable way to confirm a bathroom or kitchen application. For OEM projects we can also send a mock-up of the nameplate and carton before mass production.</p>
-<p>Our standard terms stay simple: MOQ 100 pcs per model for stock versions and 500 pcs per model for OEM customisation, with mixed models allowed in one container. We do not publish fixed pricing — a quotation is issued against your specification, because voltage, motor and packaging change the configuration. Use the <a href="/exhaust-fan-airflow-calculation-guide" style="color:#C0392B;font-weight:700;">airflow calculation guide</a> if you need to derive the duty point before writing your RFQ, or the <a href="/panel-exhaust-fan-sizing-guide" style="color:#C0392B;font-weight:700;">panel fan sizing guide</a> if you are choosing between impeller sizes.</p>
+<p>Our standard terms stay simple: MOQ 100 pcs per model for both stock and OEM customisation, with mixed models allowed in one container. We do not publish fixed pricing — a quotation is issued against your specification, because voltage, motor and packaging change the configuration. Use the <a href="/exhaust-fan-airflow-calculation-guide" style="color:#C0392B;font-weight:700;">airflow calculation guide</a> if you need to derive the duty point before writing your RFQ, or the <a href="/panel-exhaust-fan-sizing-guide" style="color:#C0392B;font-weight:700;">panel fan sizing guide</a> if you are choosing between impeller sizes.</p>
 
 <figure style="margin:26px 0;text-align:center;">
     <img src="/images/baer-export-cartons-stacked.webp" alt="Export cartons — OEM packaging and carton marks belong in the RFQ" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
