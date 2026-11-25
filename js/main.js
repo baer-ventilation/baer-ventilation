@@ -708,7 +708,7 @@
 
       'h-title2': 'PREMIUM <span>EXHAUST FAN</span><br>SERIES',
 
-      'h-d2': 'Sleek designs with intelligent humidity sensors, delivering 26dB whisper-quiet performance for modern interiors.',
+      'h-d2': 'Zhejiang Baer Electrical Technology Co.,ltd is an exhaust fan manufacturer in Shengzhou, China — CE / CB / CCC / ISO 9001, 1,000,000 units/year capacity, legal entity since 2017.',
 
       'hero-view': 'VIEW RANGE',
 
@@ -818,7 +818,7 @@
 
       'h-title2': 'سلسلة <span>مراوح الشفط</span><br>الممتازة',
 
-      'h-d2': 'تصميمات أنيقة مع مستشعرات الرطوبة الذكية، أداء هادئ 26dB للمساحات الداخلية الحديثة.',
+      'h-d2': 'شركة Zhejiang Baer Electrical Technology Co.,ltd هي شركة تصنيع مراوح شفط في شنتشو، الصين — CE / CB / CCC / ISO 9001، بطاقة إنتاجية 1,000,000 وحدة/سنة، تأسست عام 2017.',
 
       'hero-view': 'استعرض المنتجات',
 
@@ -928,7 +928,7 @@
 
       'h-title2': '高端<span>换气扇</span><br>系列',
 
-      'h-d2': '智能湿度传感器，26dB超静音设计，专为现代室内空间打造。',
+      'h-d2': '浙江巴尔电器科技有限公司（Zhejiang Baer Electrical Technology Co.,ltd）是位于中国嵊州的换气扇制造商 —— CE / CB / CCC / ISO 9001，年产能 100 万台，2017 年注册。',
 
       'hero-view': '查看系列',
 
