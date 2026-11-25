@@ -1,0 +1,404 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Generate GB 29539-2025 energy efficiency standard guide page. Writes CRLF."""
+import io, sys
+
+PATH = "gb-29539-2025-ventilating-fan-energy-efficiency.html"
+APPLY = "--apply" in sys.argv
+
+HEAD = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y7GNF2D0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date()); gtag('config', 'G-0Y7GNF2D0H');
+</script>
+<title>GB 29539-2025: China Fan Energy Efficiency Standard Explained</title>
+<meta name="description" content="GB 29539-2025 took effect 1 Nov 2026: 3 energy grades, standby/off-mode limits and DC fans in scope. What applies, what is excluded, and how export buyers should read it.">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://baer-ventilation.com/gb-29539-2025-ventilating-fan-energy-efficiency">
+<link rel="alternate" hreflang="en" href="https://baer-ventilation.com/gb-29539-2025-ventilating-fan-energy-efficiency">
+<link rel="alternate" hreflang="x-default" href="https://baer-ventilation.com/gb-29539-2025-ventilating-fan-energy-efficiency">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BAER Ventilation">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="GB 29539-2025: China Fan Energy Efficiency Standard Explained">
+<meta property="og:description" content="GB 29539-2025 took effect 1 Nov 2026: 3 energy grades, standby/off-mode limits and DC fans in scope. What applies, what is excluded, and how export buyers should read it.">
+<meta property="og:url" content="https://baer-ventilation.com/gb-29539-2025-ventilating-fan-energy-efficiency">
+<meta property="og:image" content="https://baer-ventilation.com/images/winding-station.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="900">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GB 29539-2025: China Fan Energy Efficiency Standard Explained">
+<meta name="twitter:description" content="GB 29539-2025 took effect 1 Nov 2026: 3 energy grades, standby/off-mode limits and DC fans in scope. What applies, what is excluded, and how export buyers should read it.">
+<meta name="twitter:image" content="https://baer-ventilation.com/images/winding-station.webp">
+<script type="application/ld+json">WEBPAGE_JSONLD</script>
+<script type="application/ld+json">BREADCRUMB_JSONLD</script>
+<script type="application/ld+json">FAQ_JSONLD</script>
+<style>
+  .hero { background: linear-gradient(135deg,#0f1f3d 0%,#1a3a6b 100%); color:#fff; padding:80px 20px 60px; text-align:center; }
+  .hero h1 { font-size:clamp(22px,3.5vw,38px); font-weight:800; margin:0 0 16px; max-width:860px; margin-left:auto; margin-right:auto; }
+  .hero p { color:#CBD5E1; font-size:15px; max-width:720px; margin:0 auto; }
+  .body { max-width:820px; margin:0 auto; padding:60px 20px 80px; }
+  .body h2 { font-size:22px; font-weight:800; color:#1E293B; margin:48px 0 16px; border-left:4px solid #C0392B; padding-left:14px; }
+  .body p, .body li { color:#475569; font-size:15px; line-height:1.85; }
+  .body ul,.body ol { padding-left:22px; }
+  .body h3 { font-size:17px; color:#1E293B; margin:26px 0 8px; }
+  .compare-table { width:100%; border-collapse:collapse; margin:24px 0; font-size:14px; }
+  .compare-table th { background:#0f1f3d; color:#fff; text-align:left; padding:10px 12px; }
+  .compare-table td { padding:9px 12px; border-bottom:1px solid #E2E8F0; color:#475569; vertical-align:top; }
+  .table-scroll { overflow-x:auto; }
+  .cta-box { background:#F8FAFC; border:1px solid #E2E8F0; border-radius:10px; padding:22px; margin:28px 0; }
+  .cta-box h3 { margin:0 0 8px; color:#1E293B; }
+  .cta-box p { margin:0 0 14px; }
+  .btn-red { display:inline-block; background:#C0392B; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none; font-weight:700; }
+  .note-box { background:#FFFBEB; border-left:4px solid #D97706; padding:16px 20px; margin:24px 0; }
+  .note-box p { margin:0; color:#78350F; font-size:14px; }
+  .baer-breadcrumb ol { list-style:none; display:flex; gap:8px; padding:0; margin:0 0 18px; font-size:13px; color:#94A3B8; justify-content:center; flex-wrap:wrap; }
+  .baer-breadcrumb a { color:#CBD5E1; text-decoration:none; }
+  .bv-topbar { background:#0a1730; padding:7px 20px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  .bv-topbar a { color:#e8eaee; text-decoration:none; }
+  .bv-topbar .bv-mail,.bv-topbar .bv-tel { color:#c2c8d2; }
+  .bv-wa-btn { display:inline-flex; align-items:center; gap:6px; background:#25D366; color:#fff !important; padding:5px 14px; border-radius:18px; font-weight:600; }
+  @media (max-width:640px){.bv-topbar .bv-mail,.bv-topbar .bv-tel{display:none;}.bv-topbar-in{justify-content:center;padding:6px 12px;}}
+</style>
+</head>
+<body>
+<div class="bv-topbar"><div class="bv-topbar-in">
+  <a class="bv-mail" href="mailto:sunny@zjbaer.com">sunny@zjbaer.com</a>
+  <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+    <span class="bv-tel">WhatsApp/WeChat: +86 136 5585 9122</span>
+    <a class="bv-wa-btn" href="https://wa.me/8613655859122?text=Hello%20BAER%2C%20question%20about%20GB%2029539-2025" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="15" height="15"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.5A9.9 9.9 0 1 0 12.04 2Z"/></svg><span>WhatsApp</span></a>
+  </div></div></div>
+<header class="site-header"><div class="container" style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;">
+  <a href="/" style="font-size:22px;font-weight:900;color:#C0392B;text-decoration:none;">BAER<span style="color:#1E293B;font-weight:400;font-size:14px;margin-left:6px;">VENTILATION</span></a>
+  <nav style="display:flex;gap:24px;font-size:14px;font-weight:600;">
+    <a href="/" style="color:#1E293B;text-decoration:none;">Home</a>
+    <a href="/products/" style="color:#1E293B;text-decoration:none;">Products</a>
+    <a href="/resources" style="color:#1E293B;text-decoration:none;">Resources</a>
+    <a href="/#inquiry" style="background:#C0392B;color:#fff;padding:8px 18px;border-radius:5px;text-decoration:none;">Get Quote</a>
+  </nav></div></header>
+<div class="hero">
+  <nav class="baer-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li class="sep" aria-hidden="true">/</li><li><a href="/resources">Resources</a></li><li class="sep" aria-hidden="true">/</li><li aria-current="page">GB 29539-2025</li></ol></nav>
+<h1>GB 29539-2025: China's New Fan Energy Efficiency Standard, Explained</h1>
+<p class="hero-fact" style="color:#ffffff;font-size:15px;line-height:1.7;max-width:760px;margin:14px auto 0;">BAER (Zhejiang Baer Electrical Technology Co.,ltd) — factory-direct exhaust and inline duct fans — explains what China's mandatory 2026 efficiency standard covers, what it excludes, and what it means for buyers.</p>
+<p>From 1 November 2026, household ventilating fans sold in China must meet three energy grades and new standby limits. Here is the plain-language reading for importers — including why this domestic standard is different from the certificates an export shipment needs.</p>
+<p style="font-size:13px;color:#CBD5E1;margin:10px 0 0;">Last updated: November 24, 2026</p>
+</div>
+<div class="body">
+'''
+
+BODY = '''
+<p>China updated its mandatory energy efficiency rules for ventilating fans in late 2025, and the new version took effect on 1 November 2026. If you source fans from China — for domestic sale there or for re-export — the standard number GB 29539-2025 is likely to appear in a supplier email or a tender document. This guide explains what it actually says, which products fall inside its scope, and how to read a claim without confusing a domestic efficiency grade with an export certificate.</p>
+<p>We write this as standard interpretation, not as a product claim. BAER does not state a GB energy grade for its fans, and this page explains why that distinction matters for an export buyer.</p>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/winding-station.webp" alt="Motor winding station at a fan factory" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Motor and impeller design set the efficiency baseline — but which standard applies depends on the market and the product category.</figcaption>
+</figure>
+
+<h2 id="short">The short version</h2>
+<div class="note-box"><p><strong>GB 29539-2025</strong> is a <strong>mandatory Chinese national standard</strong> titled "Minimum allowable values of energy efficiency and energy efficiency grades for household and similar range hoods and ventilating fans". Published 31 October 2025 and effective <strong>1 November 2026</strong>, it merges and replaces GB 29539-2013 (range hoods) and GB 32049-2015 (household AC ventilating fans). For fans it sets <strong>three grades (grade 1 best)</strong>, makes grade 3 the market-entry floor, adds <strong>standby ≤2.0 W / off-mode ≤1.0 W</strong>, and brings <strong>DC fans</strong> into scope for the first time.</p></div>
+<p>It is a <strong>domestic market-access rule for China</strong>. It is not an import requirement for Saudi Arabia, the UAE, the EU or North America, and it is not a substitute for CE, CB, SASO/SABER or an IEC motor class. Buyers exporting from China should understand it because it shapes what a compliant Chinese factory builds — but the certificate your shipment needs is set by the destination country.</p>
+
+<h2 id="timeline">What changed, and when</h2>
+<p>The 2025 edition is a consolidation. Two older standards were folded into one, the grade scale was cut from five to three for range hoods, and the fan section was rewritten around airflow-per-watt with new standby and off-mode limits.</p>
+<div class="table-scroll">
+<table class="compare-table">
+<thead><tr><th>Item</th><th>Old standards</th><th>GB 29539-2025</th></tr></thead>
+<tbody>
+<tr><td>Standards replaced</td><td>GB 29539-2013 and GB 32049-2015</td><td>One merged mandatory standard</td></tr>
+<tr><td>Published</td><td>2013 / 2015</td><td>31 October 2025</td></tr>
+<tr><td>Effective date</td><td>—</td><td>1 November 2026</td></tr>
+<tr><td>Fan energy grades</td><td>3 grades (AC only)</td><td>3 grades, AC and DC fans</td></tr>
+<tr><td>Standby / off-mode</td><td>Not set in the old fan standard</td><td>Standby ≤2.0 W, off-mode ≤1.0 W</td></tr>
+<tr><td>Transition for existing stock</td><td>—</td><td>Products made/imported before the effective date get 13 more months (to 1 Dec 2027)</td></tr>
+</tbody>
+</table>
+</div>
+<div style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:10px;padding:18px;margin:24px 0;text-align:center;">
+<svg viewBox="0 0 900 220" width="100%" style="max-width:840px;height:auto;" role="img" aria-label="Schematic timeline: GB 29539-2025 published October 2025, effective November 2026, transition ends December 2027">
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <line x1="80" y1="110" x2="830" y2="110" stroke="#CBD5E1" stroke-width="3"/>
+    <circle cx="160" cy="110" r="10" fill="#0f1f3d"/><circle cx="470" cy="110" r="10" fill="#C0392B"/><circle cx="790" cy="110" r="10" fill="#64748B"/>
+    <text x="160" y="72" fill="#0f1f3d" font-weight="700" font-size="14">Published</text>
+    <text x="160" y="90" fill="#475569" font-size="12">31 Oct 2025</text>
+    <text x="470" y="72" fill="#C0392B" font-weight="700" font-size="14">Takes effect</text>
+    <text x="470" y="90" fill="#475569" font-size="12">1 Nov 2026</text>
+    <text x="790" y="72" fill="#475569" font-weight="700" font-size="14">Transition ends</text>
+    <text x="790" y="90" fill="#475569" font-size="12">1 Dec 2027</text>
+    <text x="470" y="160" fill="#475569" font-size="12.5">Newly produced fans must meet the standard from the effective date.</text>
+    <text x="470" y="184" fill="#475569" font-size="12.5">Units made or imported earlier have a 13-month sell-through window.</text>
+  </g>
+</svg>
+<p style="font-size:11.5px;color:#94A3B8;margin:10px 0 0;">Schematic only — dates are from the published standard; confirm the official text for legal wording.</p>
+</div>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/panel-fan-assembly-line.webp" alt="Panel exhaust fan assembly line" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">A merged standard means factories must re-check fan families against one updated rule, not two.</figcaption>
+</figure>
+
+<h2 id="grades">The three energy grades</h2>
+<p>For ventilating fans the standard grades products by <strong>efficiency value — airflow per unit of input power</strong>, expressed as m³/(min·W) and measured at defined static-pressure points. Grade 1 is the most efficient; grade 3 is the minimum allowed to be sold. Different fan types (A, B, D and non-duct ceiling types) have their own tables, and the metric differs by impeller size or rated airflow.</p>
+<div class="table-scroll">
+<table class="compare-table">
+<thead><tr><th>Grade</th><th>Meaning</th><th>Status under the standard</th></tr></thead>
+<tbody>
+<tr><td>Grade 1</td><td>Highest efficiency band</td><td>Above the mandatory floor; a marketing advantage in China</td></tr>
+<tr><td>Grade 2</td><td>Middle band</td><td>Compliant</td></tr>
+<tr><td>Grade 3</td><td>Lowest allowed band</td><td><strong>Energy efficiency limit value</strong> — the market-entry floor</td></tr>
+<tr><td>Below grade 3</td><td>Does not meet the limit</td><td>Cannot be produced or sold in the Chinese domestic market</td></tr>
+</tbody>
+</table>
+</div>
+<p>Two details matter in practice. First, the grade is measured at a <strong>stated duty point</strong> (for B and D types, at 25 Pa static pressure) — a free-air airflow number alone cannot establish a grade. Second, the standard sets a <strong>standby limit of 2.0 W and an off-mode limit of 1.0 W</strong> across covered products, a requirement the previous fan standard did not contain. A fan with an always-on electronic controller now has to account for that draw.</p>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/inline-impellers.webp" alt="Inline fan impellers of different diameters" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Efficiency thresholds are set by impeller size or rated airflow, so the same grade can mean a different number for different types.</figcaption>
+</figure>
+<p>Reading the value correctly takes care. The unit m³/(min·W) means cubic metres of air moved per minute for each watt of input power: a higher number is better. A-grade tables are indexed by impeller diameter, while B and D types are indexed by rated airflow and measured at 25 Pa. Because the two families use different denominators, a grade 1 B-type fan and a grade 1 A-type fan are not claiming the same numerical efficiency — each is meeting the threshold for its own category. Compare within a type, and always at the stated test point.</p>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/baer-panel-fan-klt-front.webp" alt="BAER KLT panel exhaust fan, front view" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">A small panel fan is graded within its own impeller-size band, not against a larger inline model.</figcaption>
+</figure>
+
+<h2 id="dc">DC fans and the new standby rule</h2>
+<p>The biggest technical change in the 2025 edition is the inclusion of <strong>DC ventilating fans</strong>. The earlier GB 32049-2015 covered household AC fans only, so a buyer comparing an older "GB compliant" claim with a new one may be looking at two different scopes. If a supplier quotes GB 29539-2025 for a DC model, that is now a meaningful statement; quoting the older standard for the same model is not.</p>
+<p>The 2025 edition also introduces a <strong>standby power limit of 2.0 W and an off-mode limit of 1.0 W</strong>. These are measured separately from the running efficiency under the standard's test method. In practical terms, a fan with an always-powered receiver, Wi-Fi module or electronic speed controller has to keep that standby draw low enough to pass. A model that performs well when running can still fail the standard because of what it consumes when switched off — a detail that rarely appears in a sales brochure.</p>
+<div class="table-scroll">
+<table class="compare-table">
+<thead><tr><th>Requirement</th><th>Old fan standard (GB 32049-2015)</th><th>GB 29539-2025</th></tr></thead>
+<tbody>
+<tr><td>Motor / supply type</td><td>AC ventilating fans</td><td>AC and DC fans</td></tr>
+<tr><td>Running efficiency</td><td>3 grades by airflow per watt</td><td>3 grades, separate tables by fan type</td></tr>
+<tr><td>Standby power</td><td>No limit</td><td>≤2.0 W</td></tr>
+<tr><td>Off-mode power</td><td>No limit</td><td>≤1.0 W</td></tr>
+<tr><td>Heated multi-function units</td><td>Not addressed</td><td>Heating-energy limit added</td></tr>
+</tbody>
+</table>
+</div>
+<p>For a buyer, the standby figure is worth asking about on any fan with electronics. Two fans with the same running efficiency can differ in annual consumption if one idles at 0.5 W and the other at 1.9 W, and the difference grows with hours of connected but idle time.</p>
+
+<h2 id="scope">Which products are in scope</h2>
+<p>The standard is written for household and similar-use products, not for industrial equipment. A fan falls inside it only when it meets all three electrical and size conditions, and is not caught by one of the exclusions.</p>
+<div class="table-scroll">
+<table class="compare-table">
+<thead><tr><th>Condition</th><th>Limit in GB 29539-2025</th></tr></thead>
+<tbody>
+<tr><td>Supply</td><td>Single-phase, rated voltage ≤250 V</td></tr>
+<tr><td>Input power</td><td>Rated ventilation input ≤500 W</td></tr>
+<tr><td>Impeller diameter</td><td>≤500 mm</td></tr>
+<tr><td>Drive</td><td>Motor-driven ventilating fans and multi-function units with ventilation</td></tr>
+<tr><td>Motor type</td><td>AC and, new in 2025, DC fans</td></tr>
+</tbody>
+</table>
+</div>
+<p>Fan types A, B, C and D follow the definitions in GB/T 14806-2017. The standard sets separate efficiency tables for A-type, non-duct ceiling A-type, B-type, B-type multi-function units and D-type fans. C-type fans, bidirectional-discharge fans, and B or D types with maximum static pressure below 25 Pa are outside the standard.</p>
+
+<h2 id="excluded">The exclusions that matter to industrial buyers</h2>
+<p>This is the section most relevant to a B2B importer. Many fans exported from China are <strong>not</strong> covered by GB 29539-2025 at all — and quoting it for them would be the wrong standard.</p>
+<div class="table-scroll">
+<table class="compare-table">
+<thead><tr><th>Excluded from GB 29539-2025</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Fans designed specifically for industrial use</td><td>Industrial extraction and process fans are outside the household/similar scope</td></tr>
+<tr><td>Commercial range hoods and commercial cooking extraction</td><td>Covered only by the household range-hood provisions otherwise</td></tr>
+<tr><td>Fans for corrosive, flammable/explosive, dusty, steam or gas atmospheres</td><td>Special-condition fans are excluded</td></tr>
+<tr><td>Fans for refrigeration, air conditioners or air-to-air energy recovery</td><td>Excluded by the standard's scope clause</td></tr>
+<tr><td>Fans embedded in other appliances; marine fans</td><td>Excluded</td></tr>
+<tr><td>C-type, bidirectional, and B/D types below 25 Pa max static pressure</td><td>Defined out of the efficiency tables</td></tr>
+</tbody>
+</table>
+</div>
+<div style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:10px;padding:18px;margin:24px 0;text-align:center;">
+<svg viewBox="0 0 720 260" width="100%" style="max-width:680px;height:auto;" role="img" aria-label="Schematic decision path for whether a fan falls under GB 29539-2025">
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <rect x="230" y="16" width="260" height="40" rx="8" fill="#0f1f3d"/><text x="360" y="42" fill="#fff" font-size="13">Is the fan household / similar use?</text>
+    <rect x="230" y="86" width="260" height="40" rx="8" fill="#334155"/><text x="360" y="112" fill="#fff" font-size="13">≤250 V, ≤500 W, impeller ≤500 mm?</text>
+    <rect x="230" y="156" width="260" height="40" rx="8" fill="#C0392B"/><text x="360" y="182" fill="#fff" font-size="13">Not specially industrial or excluded?</text>
+    <rect x="120" y="216" width="200" height="36" rx="8" fill="#DBEAFE" stroke="#2563EB"/><text x="220" y="240" fill="#1D4ED8" font-size="12.5">Yes → GB 29539 applies</text>
+    <rect x="400" y="216" width="200" height="36" rx="8" fill="#FEF2F2" stroke="#C0392B"/><text x="500" y="240" fill="#B91C1C" font-size="12.5">No → out of scope</text>
+    <g stroke="#64748B" stroke-width="1.5"><line x1="360" y1="56" x2="360" y2="84"/><line x1="360" y1="126" x2="360" y2="154"/><line x1="300" y1="196" x2="220" y2="214"/><line x1="420" y1="196" x2="500" y2="214"/></g>
+  </g>
+</svg>
+<p style="font-size:11.5px;color:#94A3B8;margin:10px 0 0;">Schematic only — final classification must follow the official standard text and the product's exact specification.</p>
+</div>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/baer-inline-fan-cutaway.webp" alt="Cutaway of an inline mixed-flow exhaust fan" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Application and specification decide the standard — not the fan's appearance.</figcaption>
+</figure>
+
+<h2 id="export">What this means for export buyers</h2>
+<p>For a buyer importing Chinese fans into Saudi Arabia, the Gulf or Europe, GB 29539-2025 is <strong>background context, not your clearance document</strong>. The standard is a Chinese domestic energy-efficiency requirement. Your shipment is cleared against the rules of the destination country: in Saudi that means the G-Mark and SABER route; in the EU, CE and applicable ecodesign rules; in the Gulf states, their own conformity schemes.</p>
+<p>So when a supplier says "our fans meet GB 29539", ask two questions: <strong>does the standard actually cover this model</strong> (many industrial fans do not), and <strong>which document are they really offering</strong> — a domestic China energy-label filing, or a test report relevant to your market? A grade 1 label for the Chinese market does not clear a container in Jeddah.</p>
+<p>The confusion is understandable, because "efficiency" appears in several unrelated frameworks. The table below separates them. Each exists for a different reason and a different authority; none automatically satisfies another.</p>
+<div class="table-scroll">
+<table class="compare-table">
+<thead><tr><th>Framework</th><th>Market</th><th>What it states</th><th>Clears your shipment?</th></tr></thead>
+<tbody>
+<tr><td>GB 29539-2025 energy label</td><td>Chinese domestic</td><td>Energy grade for household fans</td><td>No — not outside China</td></tr>
+<tr><td>IE motor class (IEC 60034-30)</td><td>International reference</td><td>AC motor efficiency at rated output</td><td>No — a motor label, not a product certificate</td></tr>
+<tr><td>CB report / certificate</td><td>International (IEC)</td><td>Product safety test evidence</td><td>Supports a file; rarely clears customs alone</td></tr>
+<tr><td>G-Mark</td><td>GCC states</td><td>Gulf conformity for regulated goods</td><td>Yes, within the GCC scheme</td></tr>
+<tr><td>SABER PCoC + SCoC</td><td>Saudi Arabia</td><td>Product and per-shipment conformity</td><td>Yes, for Saudi clearance</td></tr>
+</tbody>
+</table>
+</div>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/fan-size-lineup.webp" alt="Range of exhaust fan sizes" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Impeller size is one of the three structural limits that decide whether the Chinese standard applies at all.</figcaption>
+</figure>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/baer-sample-room.webp" alt="BAER sample room with fan models" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Match the document to the model and the destination — a grade for one market is not a passport to another.</figcaption>
+</figure>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/motor-test-bench.webp" alt="Fan motor on a test bench" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Ask which test method and duty point sit behind any efficiency number on a quotation.</figcaption>
+</figure>
+
+<h2 id="verify">How to check an efficiency claim</h2>
+<p>Energy-efficiency claims follow the same verification discipline as any other technical document: get the report, match it to the model, and confirm it belongs to the right market.</p>
+<ol>
+<li><strong>Name the exact model and type.</strong> Ask whether the fan is A, B, C or D type, its voltage, input power and impeller diameter — the first two decide if the standard even applies.</li>
+<li><strong>Ask for the filing, not just the letter.</strong> In China, energy-label products are registered on the China Energy Label system; a model-specific filing number should be checkable.</li>
+<li><strong>Check the grade and the number.</strong> Grade 3 is the floor. Ask for the measured efficiency value and the static-pressure point, not just "grade 1".</li>
+<li><strong>Check standby and off-mode figures.</strong> Under the 2025 edition these are part of compliance, so a missing value is a gap.</li>
+<li><strong>Keep it separate from export certificates.</strong> File the energy-label document beside — not instead of — the CB report, G-Mark or SABER records your destination requires.</li>
+</ol>
+<p>For the wider set of documents and how to check them, see the <a href="/exhaust-fan-certifications-guide" style="color:#C0392B;font-weight:700;">exhaust fan certifications guide</a>, the <a href="/how-to-verify-china-exhaust-fan-manufacturer" style="color:#C0392B;font-weight:700;">manufacturer verification guide</a> and the <a href="/saber-saso-exhaust-fan-certification" style="color:#C0392B;font-weight:700;">SABER/SASO guide</a>. For the motor-side framework that applies in many export markets, read the <a href="/exhaust-fan-motor-efficiency-ie-classes" style="color:#C0392B;font-weight:700;">IE efficiency classes guide</a>.</p>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/showroom-wall.webp" alt="BAER showroom displaying exhaust fan product families" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">Different product families sit under different standards — identify the model and market before accepting a claim.</figcaption>
+</figure>
+<div class="note-box"><p><strong>Our position:</strong> BAER does not claim a GB 29539 energy grade for its fans, and many of the industrial and export configurations we build fall outside the standard's household scope. Tell us your model, market and the document your tender asks for, and we will state plainly what we can and cannot supply.</p></div>
+<figure style="margin:26px 0;text-align:center;">
+  <img src="/images/assembly-bench-worker.webp" alt="Worker assembling exhaust fans" width="960" height="720" loading="lazy" style="max-width:100%;height:auto;border-radius:8px;">
+  <figcaption style="font-size:12.5px;color:#64748b;margin-top:8px;">A credible claim ties a standard, a model and a test report together in one file.</figcaption>
+</figure>
+
+<h2 id="faq">Frequently asked questions</h2>
+<h3>What is GB 29539-2025?</h3>
+<p>A mandatory Chinese national standard for the energy efficiency of household and similar range hoods and ventilating fans. It was published on 31 October 2025, took effect on 1 November 2026, and replaces GB 29539-2013 and GB 32049-2015.</p>
+<h3>Does it apply to export fans?</h3>
+<p>It is a Chinese domestic market-access rule. A fan exported to Saudi Arabia, the UAE or Europe is cleared against that destination's requirements, not against GB 29539. Understanding the standard helps you read a Chinese supplier's documents, but it does not replace CE, CB, G-Mark or SABER.</p>
+<h3>How many energy grades are there?</h3>
+<p>Three, with grade 1 the most efficient. Grade 3 is the energy efficiency limit value — the lowest grade allowed to be produced and sold in the Chinese domestic market. Products below it cannot be sold there.</p>
+<h3>When did the standard take effect?</h3>
+<p>1 November 2026. Products manufactured or imported before that date receive a 13-month transition, extending to 1 December 2027.</p>
+<h3>Are DC fans covered?</h3>
+<p>Yes. The 2025 edition brings DC ventilating fans into scope for the first time, alongside the AC fans covered by the earlier standard.</p>
+<h3>Which fans are excluded?</h3>
+<p>Fans designed specifically for industrial use, commercial cooking extraction, fans for corrosive or explosive atmospheres, fans for refrigeration or air conditioning, embedded and marine fans, and C-type or low-static-pressure B/D types are outside the standard.</p>
+<h3>Does a grade 1 energy label prove a fan is efficient in my application?</h3>
+<p>Not by itself. The grade is measured at defined test points in the Chinese system. For your installation, compare airflow and input power at your actual duty point, and check the performance curve.</p>
+
+<h2 id="next">Specify the model, market and document</h2>
+<p>Tell us where the fans are going and which documents your tender needs. We will confirm what applies to the exact models you are buying.</p>
+<ul>
+<li><a href="/exhaust-fan-certifications-guide" style="color:#C0392B;font-weight:700;">Exhaust Fan Certifications Guide</a></li>
+<li><a href="/exhaust-fan-motor-efficiency-ie-classes" style="color:#C0392B;font-weight:700;">IE Motor Efficiency Classes Explained</a></li>
+<li><a href="/saber-saso-exhaust-fan-certification" style="color:#C0392B;font-weight:700;">SABER &amp; SASO Certification Guide</a></li>
+<li><a href="/exhaust-fan-performance-curve-guide" style="color:#C0392B;font-weight:700;">Fan Performance Curve Guide</a></li>
+<li><a href="/resources" style="color:#C0392B;font-weight:700;">Resources Library</a></li>
+</ul>
+<div class="cta-box">
+  <h3>Need documents for a specific model and market?</h3>
+  <p>Send the model list and destination country. We will confirm the applicable documents within one working day.</p>
+  <a href="/#inquiry" class="btn-red">Request Documents</a>
+</div>
+</div>
+<footer style="background:#0f1f3d;color:#94A3B8;text-align:center;padding:32px 20px;font-size:13px;">
+  <p style="margin:0;">© 2026 BAER Ventilation · <a href="/" style="color:#C0392B;text-decoration:none;">baer-ventilation.com</a>
+      · <a href="https://www.youtube.com/@BAERVentilation" target="_blank" rel="noopener" style="color:#E21E26;text-decoration:none;">YouTube</a> · <a href="https://www.linkedin.com/company/baer-ventilation" target="_blank" rel="noopener" style="color:#E21E26;text-decoration:none;">LinkedIn</a></p>
+  <p style="margin:14px 0 0;font-size:12px;opacity:.85;"><a href="/privacy/" style="color:inherit;text-decoration:underline;">Privacy Policy</a> &middot; <a href="/privacy/#cookies" style="color:inherit;text-decoration:underline;">Cookie Notice</a> &middot; <a href="/verify/" style="color:inherit;text-decoration:underline;">Verify Our Company</a></p>
+</footer>
+<!-- GA4 conversion events: WhatsApp / email / PDF catalog / phone / form -->
+<script>
+function _baerGtagCtx(){ return { page_path: window.location.pathname, page_title: document.title }; }
+document.addEventListener('click', function(e){
+  var t = e.target;
+  while (t && t !== document.body && t.tagName !== 'A') { t = t.parentElement; }
+  if (!t || t.tagName !== 'A' || typeof gtag !== 'function') return;
+  var href = t.getAttribute('href') || '';
+  var ctx = _baerGtagCtx();
+  ctx.link_text = (t.textContent || '').trim().slice(0,120); ctx.link_url = href;
+  if (/wa\.me|whatsapp/i.test(href)) { gtag('event','whatsapp_click',ctx); }
+  else if (href.indexOf('mailto:') === 0) { gtag('event','email_click',ctx); }
+  else if (/\.pdf(\?|$)/i.test(href)) { ctx.file_name=href.split('/').pop().split('?')[0]; gtag('event','catalog_download',ctx); }
+  else if (href.indexOf('tel:') === 0) { gtag('event','phone_click',ctx); }
+});
+</script>
+<script src="/js/reveal.js?v=1" defer></script></body>
+</html>
+'''
+
+import json
+WEBPAGE = {
+  "@context":"https://schema.org","@type":"WebPage",
+  "name":"GB 29539-2025: China Fan Energy Efficiency Standard Explained",
+  "description":"GB 29539-2025 took effect 1 Nov 2026: 3 energy grades, standby/off-mode limits and DC fans in scope. What applies, what is excluded, and how export buyers should read it.",
+  "url":"https://baer-ventilation.com/gb-29539-2025-ventilating-fan-energy-efficiency",
+  "about":{"@type":"Organization","@id":"https://baer-ventilation.com/#organization","name":"BAER Ventilation","legalName":"Zhejiang Baer Electrical Technology Co.,ltd","url":"https://baer-ventilation.com/"},
+  "inLanguage":"en","dateModified":"2026-11-24"
+}
+BREAD = {
+  "@context":"https://schema.org","@type":"BreadcrumbList",
+  "@id":"https://baer-ventilation.com/gb-29539-2025-ventilating-fan-energy-efficiency#breadcrumb",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://baer-ventilation.com/"},
+    {"@type":"ListItem","position":2,"name":"Resources","item":"https://baer-ventilation.com/resources"},
+    {"@type":"ListItem","position":3,"name":"GB 29539-2025","item":"https://baer-ventilation.com/gb-29539-2025-ventilating-fan-energy-efficiency"}
+  ]
+}
+FAQS = [
+ ("What is GB 29539-2025?","A mandatory Chinese national standard for the energy efficiency of household and similar range hoods and ventilating fans. It was published on 31 October 2025, took effect on 1 November 2026, and replaces GB 29539-2013 and GB 32049-2015."),
+ ("Does it apply to export fans?","It is a Chinese domestic market-access rule. A fan exported to Saudi Arabia, the UAE or Europe is cleared against that destination's requirements, not against GB 29539. Understanding the standard helps you read a Chinese supplier's documents, but it does not replace CE, CB, G-Mark or SABER."),
+ ("How many energy grades are there?","Three, with grade 1 the most efficient. Grade 3 is the energy efficiency limit value - the lowest grade allowed to be produced and sold in the Chinese domestic market. Products below it cannot be sold there."),
+ ("When did the standard take effect?","1 November 2026. Products manufactured or imported before that date receive a 13-month transition, extending to 1 December 2027."),
+ ("Are DC fans covered?","Yes. The 2025 edition brings DC ventilating fans into scope for the first time, alongside the AC fans covered by the earlier standard."),
+ ("Which fans are excluded?","Fans designed specifically for industrial use, commercial cooking extraction, fans for corrosive or explosive atmospheres, fans for refrigeration or air conditioning, embedded and marine fans, and C-type or low-static-pressure B/D types are outside the standard."),
+ ("Does a grade 1 energy label prove a fan is efficient in my application?","Not by itself. The grade is measured at defined test points in the Chinese system. For your installation, compare airflow and input power at your actual duty point, and check the performance curve.")
+]
+FAQ_JSONLD = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FAQS
+]}
+
+html = HEAD.replace("WEBPAGE_JSONLD", json.dumps(WEBPAGE, ensure_ascii=False))
+html = html.replace("BREADCRUMB_JSONLD", json.dumps(BREAD, ensure_ascii=False))
+html = html.replace("FAQ_JSONLD", json.dumps(FAQ_JSONLD, ensure_ascii=False)) + BODY
+
+# self-check before write
+import re
+words = re.findall(r"[A-Za-z0-9][A-Za-z0-9'&-]*", re.sub(r"<script.*?</script>|<style.*?</style>","",html,flags=re.S).replace("<"," <"))
+text_only = re.sub(r"<[^>]+>"," ",re.sub(r"<script.*?</script>|<style.*?</style>","",html,flags=re.S))
+wc = len(re.findall(r"[A-Za-z0-9][A-Za-z0-9'&-]*", text_only))
+imgs = len(re.findall(r"<img ",html))
+tables = html.count("<table")
+svgs = len(re.findall(r"<svg viewBox",html))
+print("words:",wc,"| imgs:",imgs,"| tables:",tables,"| svgs:",svgs)
+assert imgs == 10, imgs
+assert tables == 6, tables
+assert svgs == 3, svgs
+assert 2400 <= wc <= 2900, wc
+assert "SAA" not in html and not re.search(r"(?:USD|US\$)\s?\d|\$\d", html)
+for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>',html,re.S):
+    json.loads(m.group(1))
+print("JSON-LD all valid")
+# every img src has .webp
+for src in re.findall(r'src="/images/([^"]+)"',html):
+    assert src.endswith(".webp"), src
+    import os
+    assert os.path.exists("images/"+src), "missing file "+src
+print("all 10 image files exist with .webp")
+
+if not APPLY:
+    print("DRY RUN - pass --apply to write")
+    sys.exit(0)
+out = html.replace("\n","\r\n").encode("utf-8")
+with open(PATH,"wb") as f:
+    f.write(out)
+print("WRITTEN",PATH,len(out),"bytes")

@@ -732,7 +732,7 @@
 
       'f-title': 'Industry Leading Manufacturing',
 
-      'f-desc': 'Zhejiang Baer Electrical Technology Co., Ltd. is a professional ventilation supplier in Shengzhou, China.',
+      'f-desc': 'Zhejiang Baer Electrical Technology Co.,ltd is a professional ventilation supplier in Shengzhou, China.',
 
       'ws-1': 'RAW MATERIAL & MOLDS', 'ws-2': 'INJECTION MOLDING LINE', 'ws-3': 'CNC LASER CUTTING',
 
