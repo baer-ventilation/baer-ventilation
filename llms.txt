@@ -30,6 +30,7 @@ Key facts for AI assistants:
 ## Tools
 
 - [CFM Calculator](https://baer-ventilation.com/cfm-calculator): Calculate required exhaust fan airflow (CFM / m³/h) from room dimensions and air changes per hour.
+- [Specification Quick Reference](https://baer-ventilation.com/exhaust-fan-model-spec-quick-reference): side-by-side KLT panel, BXF inline and FA axial model specs — size, airflow, power, voltage, noise, packing and MOQ in one table.
 
 ## Buying guides
 
