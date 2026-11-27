@@ -750,7 +750,7 @@
 
       'cert-ce': 'EU Market Access', 'cert-3c': 'China Compulsory Cert.', 'cert-iso': 'Quality Management',
 
-      'cert-cb': 'IEC Global Safety', 'cert-saa': 'Australia Approved', 'cert-etl': 'North America Listed',
+      'cert-cb': 'IEC Global Safety', 'cert-saa': 'Renewal per order', 'cert-etl': 'North America Listed',
 
       'cert-note': '* Certificates available upon request with every order',
 
@@ -860,7 +860,7 @@
 
       'cert-ce': 'دخول السوق الأوروبي', 'cert-3c': 'شهادة إلزامية صينية', 'cert-iso': 'إدارة الجودة',
 
-      'cert-cb': 'سلامة IEC العالمية', 'cert-saa': 'معتمد في أستراليا', 'cert-etl': 'مدرج في أمريكا الشمالية',
+      'cert-cb': 'سلامة IEC العالمية', 'cert-saa': 'تجديد لكل طلب', 'cert-etl': 'مدرج في أمريكا الشمالية',
 
       'cert-note': '* الشهادات متاحة عند الطلب مع كل طلبية',
 
@@ -970,7 +970,7 @@
 
       'cert-ce': 'EU市场准入', 'cert-3c': '中国强制性认证', 'cert-iso': '质量管理体系',
 
-      'cert-cb': 'IEC国际安全认证', 'cert-saa': '澳大利亚认证', 'cert-etl': '北美市场认证',
+      'cert-cb': 'IEC国际安全认证', 'cert-saa': '按订单续期', 'cert-etl': '北美市场认证',
 
       'cert-note': '* 每批订单均可提供认证报告',
 
